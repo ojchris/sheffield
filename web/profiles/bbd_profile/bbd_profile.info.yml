@@ -1,0 +1,79 @@
+name: BBD Custom Profile
+type: profile
+description: Profile creation in Drupal9.
+core_version_requirement: ^8.8.0 || ^9.0
+
+distribution:
+  name: BBD Custom Distribution.
+
+dependencies:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - automated_cron
+  - back_to_top
+  - block
+  - block_content
+  - breakpoint
+  - captcha
+  - ckeditor
+  - ckeditor_youtube
+  - color
+  - config_split
+  - config_ignore
+  - comment
+  - config
+  - contact
+  - contextual
+  - datetime
+  - devel
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - entity_reference_revisions
+  - eu_cookie_compliance
+  - field
+  - field_ui
+  - file
+  - filter
+  - flood_control
+  - focal_point
+  - google_analytics
+  - help
+  - health_check
+  - history
+  - image
+  - link
+  - maillog
+  - masquerade
+  - menu_link_content
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - paragraphs
+  - path
+  - pathauto
+  - quickedit
+  - redirect
+  - replicate
+  - rdf
+  - recaptcha
+  - search
+  - search_api
+  - shortcut
+  - scheduler
+  - system
+  - taxonomy
+  - taxonomy_manager
+  - text
+  - token
+  - toolbar
+  - user
+  - views_ui
+  - views
+
+themes:
+  - stable
+  - classy
+  - bartik
+  - seven

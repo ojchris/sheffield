@@ -1,0 +1,23 @@
+parameters:
+  ascii:
+    succeeded: ~
+  tasks:
+    git_blacklist:
+      keywords:
+        - '(var_|)dump\(.*\);*'
+        - 'die(;|\(.*\));*'
+        - 'dpm\(.*\);*'
+        - 'console\.log\(.*\);*'
+        - 'console\.debug\(.*\);*'
+      regexp_type: P
+      triggered_by: [ 'php','module','inc' ]
+
+    phpcs:
+      standard: 'Drupal'
+      triggered_by: [ 'php','module','inc' ]
+
+    phpstan:
+      level: 1
+      triggered_by: [ 'php','module','inc' ]
+      memory_limit: '-1'
+

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#
+# Run the hook command.
+#
+
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat $COMMIT_MSG_FILE)
+
+if [[ ! "$COMMIT_MSG" =~ ^(.*)?\[(#[0-9]{9}|ops)\](.*)?$ ]]; then
+  tput setaf 1
+  echo "|=============================================================================|"
+  echo "| Error: the commit message is not in the proper format.                      |"
+  echo "| Please ensure your commit message contains the Pivotal Tracker story number |"
+  echo "| at the start or end of the commit message, inside square brackets, and with |"
+  echo "| a hash tag preceding the story ID.                                          |"
+  echo "| Example: '[#123456789] Description of commit'.                              |";
+  echo "|=============================================================================|"
+  tput sgr0
+  exit 1
+fi

@@ -1,0 +1,11 @@
+diff --git a/health_check/health_check.routing.yml b/health_check/health_check.routing.yml
+index f91f908..92a1c8d 100755
+--- a/health_check/health_check.routing.yml
++++ b/health_check/health_check.routing.yml
+@@ -1,5 +1,5 @@
+ health_check.content:
+-  path: '/health'
++  path: '/h9u89rfvguw08egcalujnbgy787km'
+   defaults:
+     _controller: '\Drupal\health_check\Controller\HealthController::content'
+   requirements:
