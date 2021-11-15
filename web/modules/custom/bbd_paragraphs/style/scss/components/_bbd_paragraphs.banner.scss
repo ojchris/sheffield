@@ -1,0 +1,18 @@
+.paragraph--type--paragraph-banner {
+  position: relative;
+
+  .field--name-field-image {
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .banner-text-wrapper {
+    @include absolute($top: 50%, $left: 50%);
+    @include transform(translate(-50%, -50%));
+    color: $white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}

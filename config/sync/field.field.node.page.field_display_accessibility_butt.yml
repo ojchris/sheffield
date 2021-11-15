@@ -1,0 +1,23 @@
+uuid: 2bb116ae-7429-42e6-94f7-bc5570e0c00e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_accessibility_butt
+    - node.type.page
+id: node.page.field_display_accessibility_butt
+field_name: field_display_accessibility_butt
+entity_type: node
+bundle: page
+label: 'Display "Accessibility" button'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

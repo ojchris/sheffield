@@ -1,0 +1,31 @@
+uuid: e834e83a-04dc-4000-aebb-7de19afe6e09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_text_panel.field_right_body
+    - field.field.paragraph.two_column_text_panel.field_text
+    - paragraphs.paragraphs_type.two_column_text_panel
+  module:
+    - text
+id: paragraph.two_column_text_panel.default
+targetEntityType: paragraph
+bundle: two_column_text_panel
+mode: default
+content:
+  field_right_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

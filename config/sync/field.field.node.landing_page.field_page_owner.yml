@@ -1,0 +1,29 @@
+uuid: 48162c20-a5a2-42a0-8dc7-cce38c60d509
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_owner
+    - node.type.landing_page
+id: node.landing_page.field_page_owner
+field_name: field_page_owner
+entity_type: node
+bundle: landing_page
+label: 'Page owner'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

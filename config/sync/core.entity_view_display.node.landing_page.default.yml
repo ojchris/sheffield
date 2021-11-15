@@ -1,0 +1,85 @@
+uuid: dc865b84-3771-40da-82ad-c731ee284f2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_content_sections
+    - field.field.node.landing_page.field_display_accessibility_butt
+    - field.field.node.landing_page.field_display_social_sharing_but
+    - field.field.node.landing_page.field_hide_title
+    - field.field.node.landing_page.field_page_owner
+    - field.field.node.landing_page.field_review_date
+    - node.type.landing_page
+  module:
+    - datetime
+    - entity_reference_revisions
+    - user
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  field_content_sections:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_display_accessibility_butt:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_display_social_sharing_but:
+    weight: 106
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_hide_title:
+    weight: 103
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_page_owner:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_review_date:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

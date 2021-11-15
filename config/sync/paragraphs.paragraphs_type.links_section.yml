@@ -1,0 +1,12 @@
+uuid: 765cd84c-54e4-490d-b882-87a10588e5f2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yWL3M6UenDHwL_Jy5PDa4RoDn0Tq2oeygFT-U7XodXI
+id: links_section
+label: 'Links section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

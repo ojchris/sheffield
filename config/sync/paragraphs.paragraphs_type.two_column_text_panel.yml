@@ -1,0 +1,10 @@
+uuid: 1c8f0a32-fae3-46f2-9578-e0263f3d71ea
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_text_panel
+label: 'Two-column text panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

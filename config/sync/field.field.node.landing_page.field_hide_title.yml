@@ -1,0 +1,23 @@
+uuid: 214982b3-82c2-46f3-87b6-3df4a7e501d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_title
+    - node.type.landing_page
+id: node.landing_page.field_hide_title
+field_name: field_hide_title
+entity_type: node
+bundle: landing_page
+label: 'Hide title'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
