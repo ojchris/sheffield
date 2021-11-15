@@ -1,0 +1,48 @@
+uuid: 9721177b-253b-403b-8334-a8769c2474fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.four_column_card.field_image
+    - field.field.paragraph.four_column_card.field_link
+    - field.field.paragraph.four_column_card.field_title
+    - paragraphs.paragraphs_type.four_column_card
+  module:
+    - link
+    - media
+id: paragraph.four_column_card.default
+targetEntityType: paragraph
+bundle: four_column_card
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

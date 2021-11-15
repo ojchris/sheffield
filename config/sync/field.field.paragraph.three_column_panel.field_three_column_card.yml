@@ -1,0 +1,82 @@
+uuid: 58bbe863-b77d-44a0-8773-61f68cbcca17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_three_column_card
+    - paragraphs.paragraphs_type.three_column_card
+    - paragraphs.paragraphs_type.three_column_panel
+  module:
+    - entity_reference_revisions
+id: paragraph.three_column_panel.field_three_column_card
+field_name: field_three_column_card
+entity_type: paragraph
+bundle: three_column_panel
+label: 'Three-column card'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      three_column_card: three_column_card
+    target_bundles_drag_drop:
+      accordion:
+        weight: 19
+        enabled: false
+      accordion_wrapper:
+        weight: 20
+        enabled: false
+      carousel_slide:
+        weight: 21
+        enabled: false
+      four_column_card:
+        weight: 22
+        enabled: false
+      four_column_panel:
+        weight: 23
+        enabled: false
+      homepage_carousel:
+        weight: 24
+        enabled: false
+      links_section:
+        weight: 25
+        enabled: false
+      listing:
+        weight: 26
+        enabled: false
+      page_header:
+        weight: 27
+        enabled: false
+      paragraph_banner:
+        weight: 28
+        enabled: false
+      simple_text:
+        weight: 29
+        enabled: false
+      three_column_card:
+        enabled: true
+        weight: 30
+      three_column_panel:
+        weight: 31
+        enabled: false
+      two_column_card:
+        weight: 32
+        enabled: false
+      two_column_panel:
+        weight: 33
+        enabled: false
+      two_column_text_panel:
+        weight: 34
+        enabled: false
+      video_panel:
+        weight: 35
+        enabled: false
+      webform:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

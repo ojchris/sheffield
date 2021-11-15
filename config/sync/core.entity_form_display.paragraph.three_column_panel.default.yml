@@ -1,0 +1,38 @@
+uuid: aca0c914-bdbd-4cce-8306-7c8e72880d34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_column_panel.field_three_column_card
+    - field.field.paragraph.three_column_panel.field_title
+    - paragraphs.paragraphs_type.three_column_panel
+  module:
+    - paragraphs
+id: paragraph.three_column_panel.default
+targetEntityType: paragraph
+bundle: three_column_panel
+mode: default
+content:
+  field_three_column_card:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

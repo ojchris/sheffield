@@ -1,0 +1,10 @@
+uuid: a7de5b3c-e04d-49ed-9a72-d5e081d85d41
+langcode: en
+status: true
+dependencies: {  }
+id: four_column_panel
+label: 'Four-column panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

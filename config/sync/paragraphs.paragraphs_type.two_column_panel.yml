@@ -1,0 +1,10 @@
+uuid: 3dc66e68-322c-4722-95db-8c69de283608
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_panel
+label: 'Two-column panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

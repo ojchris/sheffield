@@ -1,0 +1,25 @@
+uuid: fd5f7f90-e54c-4f12-b0af-3d51f5bed23f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_carousel.field_slide
+    - paragraphs.paragraphs_type.homepage_carousel
+  module:
+    - entity_reference_revisions
+id: paragraph.homepage_carousel.default
+targetEntityType: paragraph
+bundle: homepage_carousel
+mode: default
+content:
+  field_slide:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

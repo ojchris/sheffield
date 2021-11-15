@@ -1,0 +1,57 @@
+uuid: 20351ece-3277-4ba2-8dd5-b2269f4cf21a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.course_page.body
+    - field.field.node.course_page.field_content_sections
+    - field.field.node.course_page.field_date
+    - field.field.node.course_page.field_display_accessibility_butt
+    - field.field.node.course_page.field_display_social_sharing_but
+    - field.field.node.course_page.field_image
+    - field.field.node.course_page.field_location
+    - field.field.node.course_page.field_time
+    - node.type.course_page
+  module:
+    - manage_display
+    - text
+id: node.course_page.teaser
+targetEntityType: node
+bundle: course_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: title
+    weight: -50
+    region: content
+    settings:
+      tag: h2
+      linked: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_content_sections: true
+  field_date: true
+  field_display_accessibility_butt: true
+  field_display_social_sharing_but: true
+  field_image: true
+  field_location: true
+  field_time: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

@@ -1,0 +1,23 @@
+uuid: b5d71067-ab57-4224-9c13-9b6de6677c1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_accessibility_butt
+    - node.type.course_page
+id: node.course_page.field_display_accessibility_butt
+field_name: field_display_accessibility_butt
+entity_type: node
+bundle: course_page
+label: 'Display "Accessibility" button'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

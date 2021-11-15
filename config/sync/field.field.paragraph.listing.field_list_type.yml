@@ -1,0 +1,52 @@
+uuid: c9d74736-7b18-4fd5-b63b-2fe60da99217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_type
+    - paragraphs.paragraphs_type.listing
+  module:
+    - viewsreference
+id: paragraph.listing.field_list_type
+field_name: field_list_type
+entity_type: paragraph
+bundle: listing
+label: 'List type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    embed: 0
+  preselect_views:
+    courses: courses
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    maillog_overview: 0
+    media: 0
+    media_library: 0
+    redirect: 0
+    scheduler_scheduled_content: 0
+    site_search: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

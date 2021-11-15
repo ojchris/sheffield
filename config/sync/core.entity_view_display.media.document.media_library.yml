@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.document.field_background_colour
+    - field.field.media.document.field_description
     - field.field.media.document.field_media_file
     - image.style.medium
     - media.type.document
@@ -25,6 +27,8 @@ content:
     region: content
 hidden:
   created: true
+  field_background_colour: true
+  field_description: true
   field_media_file: true
   langcode: true
   name: true

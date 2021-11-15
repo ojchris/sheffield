@@ -1,0 +1,10 @@
+uuid: a388a3ce-5c5d-4f9f-bde3-c7034a9015bc
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_slide
+label: 'Carousel slide'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

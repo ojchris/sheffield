@@ -1,0 +1,10 @@
+uuid: eb5c137d-ebc6-47a5-a2db-89d9e5be48cd
+langcode: en
+status: true
+dependencies: {  }
+id: download_panel
+label: 'Download panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

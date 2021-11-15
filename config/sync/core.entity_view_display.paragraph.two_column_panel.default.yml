@@ -1,0 +1,25 @@
+uuid: e3b11c0d-f984-46b2-a1a4-e15cb32a804d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_panel.field_two_column_card
+    - paragraphs.paragraphs_type.two_column_panel
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_panel.default
+targetEntityType: paragraph
+bundle: two_column_panel
+mode: default
+content:
+  field_two_column_card:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

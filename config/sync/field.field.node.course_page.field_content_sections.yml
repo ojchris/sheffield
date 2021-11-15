@@ -1,0 +1,97 @@
+uuid: d623db69-cc0f-4b3d-8e22-d56998451b2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_sections
+    - node.type.course_page
+    - paragraphs.paragraphs_type.download_panel
+    - paragraphs.paragraphs_type.four_column_panel
+    - paragraphs.paragraphs_type.simple_text
+    - paragraphs.paragraphs_type.three_column_panel
+    - paragraphs.paragraphs_type.two_column_panel
+    - paragraphs.paragraphs_type.two_column_text_panel
+    - paragraphs.paragraphs_type.video_panel
+  module:
+    - entity_reference_revisions
+id: node.course_page.field_content_sections
+field_name: field_content_sections
+entity_type: node
+bundle: course_page
+label: Paragraphs
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      simple_text: simple_text
+      two_column_text_panel: two_column_text_panel
+      video_panel: video_panel
+      four_column_panel: four_column_panel
+      download_panel: download_panel
+      two_column_panel: two_column_panel
+      three_column_panel: three_column_panel
+    target_bundles_drag_drop:
+      accordion:
+        weight: 9
+        enabled: false
+      accordion_wrapper:
+        weight: 10
+        enabled: false
+      carousel_slide:
+        weight: 17
+        enabled: false
+      download_panel:
+        enabled: true
+        weight: 23
+      four_column_card:
+        weight: 20
+        enabled: false
+      four_column_panel:
+        enabled: true
+        weight: 21
+      homepage_carousel:
+        weight: 18
+        enabled: false
+      links_section:
+        weight: 11
+        enabled: false
+      listing:
+        weight: 20
+        enabled: false
+      page_header:
+        weight: 21
+        enabled: false
+      paragraph_banner:
+        weight: 12
+        enabled: false
+      simple_text:
+        enabled: true
+        weight: 13
+      three_column_card:
+        weight: 30
+        enabled: false
+      three_column_panel:
+        enabled: true
+        weight: 31
+      two_column_card:
+        weight: 24
+        enabled: false
+      two_column_panel:
+        enabled: true
+        weight: 25
+      two_column_text_panel:
+        enabled: true
+        weight: 14
+      video_panel:
+        enabled: true
+        weight: 15
+      webform:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

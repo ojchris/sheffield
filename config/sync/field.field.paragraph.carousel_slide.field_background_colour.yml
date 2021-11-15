@@ -1,0 +1,23 @@
+uuid: b0c1a7e5-88c5-4569-b212-d926fa065744
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_colour
+    - paragraphs.paragraphs_type.carousel_slide
+  module:
+    - options
+id: paragraph.carousel_slide.field_background_colour
+field_name: field_background_colour
+entity_type: paragraph
+bundle: carousel_slide
+label: 'Background colour'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: purple
+default_value_callback: ''
+settings: {  }
+field_type: list_string

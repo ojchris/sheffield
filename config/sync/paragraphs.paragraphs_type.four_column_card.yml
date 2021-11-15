@@ -1,0 +1,10 @@
+uuid: 6ff400a2-b754-4784-8891-f2855dcae768
+langcode: en
+status: true
+dependencies: {  }
+id: four_column_card
+label: 'Four-column card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

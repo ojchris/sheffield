@@ -1,0 +1,48 @@
+uuid: af099274-0f28-49d0-bed9-e583030ee681
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_card.field_link
+    - field.field.paragraph.two_column_card.field_text
+    - field.field.paragraph.two_column_card.field_title
+    - paragraphs.paragraphs_type.two_column_card
+  module:
+    - link
+    - manage_display
+    - text
+id: paragraph.two_column_card.default
+targetEntityType: paragraph
+bundle: two_column_card
+mode: default
+content:
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      tag: h4
+      linked: true
+    third_party_settings: {  }
+    type: title
+    region: content
+hidden:
+  search_api_excerpt: true

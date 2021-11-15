@@ -1,0 +1,24 @@
+uuid: 365fbc67-e16b-49a6-9318-ca954e62e385
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Gj3FM3fP6_sb28GlxdqidLVYaxYoeUg8y_YvctVW5Ow
+id: course_page
+label: 'Course page'
+type: 'canonical_entities:node'
+pattern: '/courses/[node:title]'
+selection_criteria:
+  61b8cf57-e371-4f5c-a050-700e32803da6:
+    id: node_type
+    bundles:
+      course_page: course_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 61b8cf57-e371-4f5c-a050-700e32803da6
+selection_logic: and
+weight: -5
+relationships: {  }

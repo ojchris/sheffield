@@ -5,7 +5,14 @@ dependencies:
   config:
     - field.storage.node.field_content_sections
     - node.type.landing_page
+    - paragraphs.paragraphs_type.download_panel
+    - paragraphs.paragraphs_type.four_column_panel
+    - paragraphs.paragraphs_type.homepage_carousel
+    - paragraphs.paragraphs_type.listing
+    - paragraphs.paragraphs_type.page_header
     - paragraphs.paragraphs_type.simple_text
+    - paragraphs.paragraphs_type.three_column_panel
+    - paragraphs.paragraphs_type.two_column_panel
     - paragraphs.paragraphs_type.two_column_text_panel
     - paragraphs.paragraphs_type.video_panel
   module:
@@ -27,7 +34,14 @@ settings:
     target_bundles:
       simple_text: simple_text
       two_column_text_panel: two_column_text_panel
+      listing: listing
+      homepage_carousel: homepage_carousel
       video_panel: video_panel
+      page_header: page_header
+      four_column_panel: four_column_panel
+      download_panel: download_panel
+      two_column_panel: two_column_panel
+      three_column_panel: three_column_panel
     target_bundles_drag_drop:
       accordion:
         weight: 7
@@ -35,15 +49,48 @@ settings:
       accordion_wrapper:
         weight: 8
         enabled: false
+      carousel_slide:
+        weight: 14
+        enabled: false
+      download_panel:
+        enabled: true
+        weight: 23
+      four_column_card:
+        weight: 20
+        enabled: false
+      four_column_panel:
+        enabled: true
+        weight: 21
+      homepage_carousel:
+        enabled: true
+        weight: 15
       links_section:
         weight: 9
         enabled: false
+      listing:
+        enabled: true
+        weight: 13
+      page_header:
+        enabled: true
+        weight: 19
       paragraph_banner:
         weight: 10
         enabled: false
       simple_text:
         enabled: true
         weight: 11
+      three_column_card:
+        weight: 30
+        enabled: false
+      three_column_panel:
+        enabled: true
+        weight: 31
+      two_column_card:
+        weight: 24
+        enabled: false
+      two_column_panel:
+        enabled: true
+        weight: 25
       two_column_text_panel:
         enabled: true
         weight: 13

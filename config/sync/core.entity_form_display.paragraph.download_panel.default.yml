@@ -1,0 +1,33 @@
+uuid: 12df802f-0c13-4414-93a0-652601d13b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.download_panel.field_documents
+    - field.field.paragraph.download_panel.field_title
+    - paragraphs.paragraphs_type.download_panel
+  module:
+    - media_library
+id: paragraph.download_panel.default
+targetEntityType: paragraph
+bundle: download_panel
+mode: default
+content:
+  field_documents:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

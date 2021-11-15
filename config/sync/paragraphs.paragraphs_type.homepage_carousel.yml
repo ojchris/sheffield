@@ -1,0 +1,10 @@
+uuid: c866acc3-35a5-44fe-9ee3-268108b17f37
+langcode: en
+status: true
+dependencies: {  }
+id: homepage_carousel
+label: 'Homepage carousel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

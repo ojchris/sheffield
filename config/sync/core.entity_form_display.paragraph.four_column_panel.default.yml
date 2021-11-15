@@ -1,0 +1,44 @@
+uuid: 4a801987-280b-45f2-b32c-6abcf05381c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.four_column_panel.field_four_column_card
+    - field.field.paragraph.four_column_panel.field_title
+    - paragraphs.paragraphs_type.four_column_panel
+  module:
+    - paragraphs
+id: paragraph.four_column_panel.default
+targetEntityType: paragraph
+bundle: four_column_panel
+mode: default
+content:
+  field_four_column_card:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

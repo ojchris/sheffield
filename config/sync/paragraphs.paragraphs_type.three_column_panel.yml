@@ -1,0 +1,10 @@
+uuid: baf94923-4f1e-489c-b30a-8ef668bb6cfe
+langcode: en
+status: true
+dependencies: {  }
+id: three_column_panel
+label: 'Three-column panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
