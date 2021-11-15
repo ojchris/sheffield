@@ -24,6 +24,13 @@ settings:
             - Subscript
             - '-'
             - RemoveFormat
+            - Underline
+            - JustifyCenter
+            - JustifyRight
+            - JustifyLeft
+            - JustifyBlock
+            - Indent
+            - Outdent
         -
           name: Linking
           items:
@@ -37,6 +44,7 @@ settings:
         -
           name: Media
           items:
+            - DrupalMediaLibrary
             - Blockquote
             - DrupalImage
             - Table
@@ -45,19 +53,34 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
             - ShowBlocks
             - Source
+            - Redo
+            - Undo
+            - SpecialChar
+            - Copy
+            - Cut
+            - Paste
+            - PasteFromWord
+            - PasteText
+            - Maximize
   plugins:
     stylescombo:
       styles: ''
+    drupallink:
+      linkit_enabled: false
+      linkit_profile: ''
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

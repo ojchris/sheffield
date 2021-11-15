@@ -1,0 +1,10 @@
+uuid: 3cf6f416-c763-4822-bc66-fcb64db9a009
+langcode: en
+status: true
+dependencies: {  }
+id: video_panel
+label: 'Video panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.body
+    - field.field.node.page.field_content_sections
+    - field.field.node.page.field_display_accessibility_butt
+    - field.field.node.page.field_display_social_sharing_but
+    - field.field.node.page.field_hide_title
+    - field.field.node.page.field_page_owner
+    - field.field.node.page.field_review_date
     - node.type.page
   module:
-    - text
     - user
 _core:
   default_config_hash: c1CdicGaHvg0fv9G-zXh1Z_5s9DhONFcGT5VjEhfS_c
@@ -16,17 +20,15 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 100
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 101
     region: content
 hidden:
+  field_content_sections: true
+  field_display_accessibility_butt: true
+  field_display_social_sharing_but: true
+  field_hide_title: true
+  field_page_owner: true
+  field_review_date: true
   langcode: true
   search_api_excerpt: true

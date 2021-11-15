@@ -1,0 +1,23 @@
+uuid: 612217ac-cf2a-4339-ab45-c33af438bd8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - text
+_core:
+  default_config_hash: tx4koW4mJTuYf1xuYLQ-ADa-HkwmyT76nmNekK7qEoE
+id: paragraph.accordion.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: accordion
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

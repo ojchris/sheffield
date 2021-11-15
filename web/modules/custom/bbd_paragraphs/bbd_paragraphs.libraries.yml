@@ -1,0 +1,12 @@
+bbd_paragraphs.accordion:
+  version: 1.x
+  js:
+    js/bbd_paragraphs.accordion.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+bbd_paragraphs.general:
+  version: 1.x
+  css:
+    theme:
+      style/css/bbd_classy_paragraphs.css: {}

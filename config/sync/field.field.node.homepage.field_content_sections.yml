@@ -1,0 +1,56 @@
+uuid: 6515d5c9-a010-40d7-9b81-337dc4f8af8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_sections
+    - node.type.homepage
+    - paragraphs.paragraphs_type.simple_text
+    - paragraphs.paragraphs_type.two_column_text_panel
+    - paragraphs.paragraphs_type.video_panel
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_content_sections
+field_name: field_content_sections
+entity_type: node
+bundle: homepage
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      simple_text: simple_text
+      two_column_text_panel: two_column_text_panel
+      video_panel: video_panel
+    target_bundles_drag_drop:
+      accordion:
+        weight: 7
+        enabled: false
+      accordion_wrapper:
+        weight: 8
+        enabled: false
+      links_section:
+        weight: 9
+        enabled: false
+      paragraph_banner:
+        weight: 10
+        enabled: false
+      simple_text:
+        enabled: true
+        weight: 11
+      two_column_text_panel:
+        enabled: true
+        weight: 13
+      video_panel:
+        enabled: true
+        weight: 15
+      webform:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

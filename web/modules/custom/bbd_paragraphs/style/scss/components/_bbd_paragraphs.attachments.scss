@@ -1,0 +1,49 @@
+.paragraph--type--attachment-download {
+  .media--type-document {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    background: $white;
+    padding: 20px;
+    margin-bottom: 20px;
+    @include box-shadow(0 5px 15px 0 $grey-light);
+  }
+
+  .text-wrapper {
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 10px;
+
+    .field--name-name {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.1666;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@include breakpoint($tab) {
+  .paragraph--type--attachment-download {
+    .text-wrapper {
+      font-size: 12px;
+      line-height: 1.25;
+    }
+  }
+}
+
+@include breakpoint($desk) {
+  .paragraph--type--attachment-download {
+    .media--type-document {
+      width: 25%;
+    }
+    .text-wrapper {
+      font-size: 14px;
+      line-height: 20px;
+
+      .field--name-name {
+        font-size: 24px;
+      }
+    }
+  }
+}

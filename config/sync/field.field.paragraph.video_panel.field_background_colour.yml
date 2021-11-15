@@ -1,0 +1,23 @@
+uuid: 386fd3f4-8ee7-4b89-86e4-9c1ed028f01d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_colour
+    - paragraphs.paragraphs_type.video_panel
+  module:
+    - options
+id: paragraph.video_panel.field_background_colour
+field_name: field_background_colour
+entity_type: paragraph
+bundle: video_panel
+label: 'Background colour'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: blue
+default_value_callback: ''
+settings: {  }
+field_type: list_string
