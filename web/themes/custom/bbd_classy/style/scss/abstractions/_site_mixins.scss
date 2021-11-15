@@ -1,0 +1,119 @@
+/* Box Sizing */
+@mixin box-sizing($box-model) {
+  box-sizing: $box-model;
+}
+
+/* Box shadow */
+@mixin box-shadow($properties) {
+  box-shadow: $properties;
+}
+@mixin box-shadow-item {
+  -webkit-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+}
+@mixin box-shadow-input {
+  -webkit-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+}
+@mixin box-shadow-light {
+  -webkit-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+}
+
+/* Transitions */
+@mixin transition($properties) {
+  transition: $properties;
+}
+
+/* Transform */
+@mixin transform($properties) {
+  transform: $properties;
+}
+
+@mixin vertical-align {
+  @include relative($top: 50%);
+  @include transform(translateY(-50%));
+}
+
+/* Background size */
+@mixin background-size-cover {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='%s', sizingMethod='scale');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='%s', sizingMethod='scale');
+}
+
+/* Border Radius */
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+/* Single side border-radius */
+@mixin border-top-radius($radius) {
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+  border-top-right-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  border-bottom-left-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+
+/* Clearfix */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* Mixin position */
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin absolute($args...) {
+  @include position(absolute, $args...);
+}
+@mixin relative($args...) {
+  @include position(relative, $args...);
+}
+@mixin fixed($args...) {
+  @include position(fixed, $args...);
+}
+
+/* Placeholder */
+@mixin placeholder ($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+}

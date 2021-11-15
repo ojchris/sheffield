@@ -1,0 +1,170 @@
+@import  "../variables/_breakpoints.scss";
+@import  "../variables/_fonts.scss";
+
+body {
+  font-size: 16px; // 1em, depends on that value breakpoint values counted
+  font-family: $body-font;
+  line-height: 1.25;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $heading-font;
+  font-weight: 700;
+  margin: 0 0 25px;
+}
+
+h1, .h1 {
+  font-size: 36px;
+  line-height: 1.1666;
+}
+
+h2, .h2 {
+  font-size: 30px;
+  line-height: 1.1666;
+}
+
+h3, .h3 {
+  font-size: 24px;
+}
+
+h4, .h4 {
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+h5, .h5 {
+  font-size: 18px;
+}
+
+h6, .h6 {
+  font-size: 14px;
+  line-height: 1.1428;
+}
+
+p {
+  font-size: 11px;
+  line-height: 15px;
+  margin: 0 0 20px;
+}
+
+.region-content {
+  ul, ol {
+    font-size: 11px;
+    line-height: 15px;
+    margin: 0 0 20px;
+    padding: 0;
+    list-style-position: inside;
+  }
+}
+
+a {
+  position: relative;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  border: none;
+  border-left: 2px solid $grey;
+  margin: 0 0 30px;
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@include breakpoint($tab) {
+  h1, .h1 {
+    font-size: 48px;
+  }
+
+  h2, .h2 {
+    font-size: 40px;
+    line-height: 1.175;
+  }
+
+  h3, .h3 {
+    font-size: 36px;
+  }
+
+  h4, .h4 {
+    font-size: 24px;
+    line-height: 1.2083;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .region-content {
+    ul, ol {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  blockquote {
+    margin-bottom: 30px;
+    font-size: 24px;
+    padding-left: 30px;
+  }
+}
+
+@include breakpoint($desk) {
+  h1, .h1 {
+    font-size: 72px;
+  }
+
+  h2, .h2 {
+    font-size: 64px;
+    line-height: 1.1718;
+  }
+
+  h3, .h3 {
+    font-size: 48px;
+    line-height: 1.1666;
+  }
+
+  h4, .h4 {
+    font-size: 36px;
+    line-height: 1.1666;
+  }
+
+  h5, .h5 {
+    font-size: 24px;
+    line-height: 1.2083;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .region-content {
+    ul, ol {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  blockquote {
+    margin-bottom: 50px;
+  }
+}
+

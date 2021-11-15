@@ -1,0 +1,38 @@
+.ajax-progress-fullscreen,
+.ajax-progress-fullscreen:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  margin-left: -4em;
+  margin-top: .75em;
+}
+
+.ajax-progress-fullscreen {
+  background: none;
+  font-size: 10px;
+  text-indent: -9999em;
+  border-top: .5em solid $green;
+  border-right: .5em solid $green;
+  border-bottom: .5em solid $green;
+  border-left: .5em solid $grey;
+  @include transform(translateZ(0));
+  -webkit-animation: load 1s infinite linear;
+  animation: load .5s infinite linear;
+}
+
+@-webkit-keyframes load {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+@keyframes load {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}

@@ -1,0 +1,23 @@
+uuid: fdfde2d9-7643-45a1-bb44-74f41dab1d0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - bbd_custom
+  theme:
+    - bbd_classy
+id: copyright
+theme: bbd_classy
+region: copyright
+weight: -4
+provider: null
+plugin: copyright
+settings:
+  id: copyright
+  label: Copyright
+  provider: bbd_custom
+  label_display: '0'
+  copyright_body:
+    value: "<p>© Sheffield IAPT [current_year]</p>\r\n"
+    format: full_html
+visibility: {  }

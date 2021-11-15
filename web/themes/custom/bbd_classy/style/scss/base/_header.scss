@@ -1,0 +1,100 @@
+/*******************************************************************************
+ * Region Header
+ ******************************************************************************/
+#header-outer-wrapper {
+  position: relative;
+
+  /* To make header fixed use this styles/class */
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+    padding: 0 1.25em;
+    z-index: 4;
+
+    #nav-opener {
+      right: 1.25em;
+    }
+  }
+}
+
+/* Ordering of elements in the header */
+.block-system-branding-block {
+  order: -3;
+  width: calc(100% - 100px);
+}
+
+.region-header {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  @include align-items(center);
+  padding: 10px 0;
+  margin: 0 auto;
+  max-width: $widedesk_inner;
+
+  > #block-bbd-classy-main-menu {
+    order: -2;
+    width: calc(100% - 290px);
+  }
+}
+
+.search-block-form {
+  order: -1;
+}
+
+#nav-opener {
+  order: 0;
+}
+
+/* Logo and slogan */
+.site-logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.site-name {
+  display: inline-block;
+  vertical-align: top;
+  font: 700 14px/21px $body-font;
+  color: $blue;
+  width: 100%;
+
+  a {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+@include breakpoint($tab) {
+  #header-outer-wrapper {
+    &.fixed {
+      padding: 0 1.875em;
+    }
+  }
+
+  #block-bbd-classy-main-menu {
+    width: calc(100% - 250px);
+  }
+
+  .block-system-branding-block {
+    width: 210px;
+  }
+}
+
+@include breakpoint($desk) {
+  #header-outer-wrapper {
+    &.fixed {
+      padding: 0 2.5em;
+    }
+  }
+}
+
+@include breakpoint($widedesk) {
+  .site-name {
+    font-size: 18px;
+  }
+}

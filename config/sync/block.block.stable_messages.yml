@@ -1,0 +1,22 @@
+uuid: 9fa20629-2f4a-495b-b5b9-91bda8dee8cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stable
+_core:
+  default_config_hash: piPmtlFP5haV1uMlLDDT9S3A_5TJov4yi3tC2-hma4M
+id: stable_messages
+theme: stable
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

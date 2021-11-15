@@ -1,0 +1,20 @@
+uuid: 680c9323-b02b-4fd8-aeea-05fe10d18b4e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bbd_classy
+_core:
+  default_config_hash: GkwWrsKWg9mf8qocZ-nVfuEUnQLzgyQpNS-SGqn2BEQ
+id: bbd_classy_local_actions
+theme: bbd_classy
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

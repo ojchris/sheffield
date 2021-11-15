@@ -1,0 +1,22 @@
+uuid: f0d55e3a-f626-4971-ba47-291dc8298747
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seven
+_core:
+  default_config_hash: 7N16HV2_Q5EOijtrhvijFGw09qZxaaSN61aBgzg5t9w
+id: seven_content
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

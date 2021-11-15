@@ -1,0 +1,11 @@
+uuid: 1506be01-a8da-4fd3-a954-c367c4c4a979
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CkVAckx51-47GMVcNU077DbNPRMUu4CKa2SLHncsxvA
+id: '403'
+label: '403 access denied'
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

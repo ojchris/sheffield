@@ -1,0 +1,27 @@
+name: BBD Classy
+type: theme
+base theme: classy
+description: 'A BBD base theme based on core Classy'
+package: Core
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - bbd_classy/bbd_classy
+
+regions:
+  header: 'Header'
+  help: 'Help'
+  content: 'Content'
+  bottom: 'Bottom'
+  footer: 'Footer'
+  copyright: 'Copyright'
+features:
+  logo: true
+  name: false
+  slogan: false
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  main_menu: true
+  secondary_menu: false

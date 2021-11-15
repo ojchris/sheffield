@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a main menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ *
+ * @ingroup themeable
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul{{ attributes.addClass('menu', 'main-megamenu') }}>
+    {% else %}
+      <ul class="menu sub-menu-level level-{{menu_level}}">
+    {% endif %}
+    {% for item in items %}
+      {%
+        set item_classes = [
+        'menu-item',
+        item.is_expanded ? 'menu-item--expanded',
+        item.is_collapsed ? 'menu-item--collapsed',
+        item.in_active_trail ? 'menu-item--active-trail',
+      ]
+      %}
+      {% if menu_level == 0 %}
+        <li{{ item.attributes.addClass(item_classes, 'menu-item-top') }}>
+      {% else %}
+        <li{{ item.attributes.addClass(item_classes) }}>
+      {% endif %}
+        {% set link_title = item.title %}
+        {% set link_attributes = item.link_attributes %}
+
+        {%
+          set link_classes = [
+            'menu-item-link',
+            item.in_active_trail ? 'active',
+          ]
+        %}
+
+        {% if item.is_expanded and item.below %}
+          {% set link_title %}{{ link_title }} <span class="caret"></span>{% endset %}
+        {% endif %}
+
+        {{ link(link_title, item.url, {'class': link_classes}) }}
+
+        {% if item.below %}
+          <div class="sub-menu">
+            {{ menus.menu_links(item.below, attributes.addClass('sub-nav-group'), menu_level + 1) }}
+          </div>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

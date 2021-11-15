@@ -1,0 +1,23 @@
+uuid: 70348f4b-d5c3-488c-92c6-6e3cfd049b45
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - classy
+_core:
+  default_config_hash: 3kEXrIPky4bLaCO2ap-i25OvWLO4F_sw979QrKMOHR4
+id: classy_search
+theme: classy
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }
