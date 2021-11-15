@@ -55,6 +55,7 @@
     "drupal/search_api": "^1.21",
     "drupal/search_api_solr": "^4.2",
     "drupal/session_limit": "^2.0@beta",
+    "drupal/social_media_links": "^2.8",
     "drupal/taxonomy_manager": "^2.0",
     "drupal/time_range": "^9.0",
     "drupal/token": "^1.9",
