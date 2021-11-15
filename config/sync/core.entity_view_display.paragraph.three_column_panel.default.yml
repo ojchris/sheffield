@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.three_column_panel
   module:
     - entity_reference_revisions
+    - manage_display
 id: paragraph.three_column_panel.default
 targetEntityType: paragraph
 bundle: three_column_panel
@@ -16,7 +17,7 @@ content:
   field_three_column_card:
     type: entity_reference_revisions_entity_view
     weight: 1
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -24,11 +25,12 @@ content:
     region: content
   field_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
-      link_to_entity: false
+      tag: h2
+      linked: true
     third_party_settings: {  }
-    type: string
+    type: title
     region: content
 hidden:
   search_api_excerpt: true
