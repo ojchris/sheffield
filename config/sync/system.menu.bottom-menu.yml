@@ -1,0 +1,8 @@
+uuid: fe33ccc4-71c7-429a-a578-809895cb35dc
+langcode: en
+status: true
+dependencies: {  }
+id: bottom-menu
+label: 'Bottom menu'
+description: ''
+locked: false

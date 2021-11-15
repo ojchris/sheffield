@@ -1,0 +1,25 @@
+uuid: a75a9d4e-ff93-43e3-802a-c24e16dccf38
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.bottom-menu
+  module:
+    - system
+  theme:
+    - bbd_classy
+id: bottommenu
+theme: bbd_classy
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:bottom-menu'
+settings:
+  id: 'system_menu_block:bottom-menu'
+  label: 'Bottom menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }
