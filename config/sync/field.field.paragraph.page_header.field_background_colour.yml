@@ -1,0 +1,23 @@
+uuid: 7db22400-07bd-416c-809c-ca99f1f83fb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_colour
+    - paragraphs.paragraphs_type.page_header
+  module:
+    - options
+id: paragraph.page_header.field_background_colour
+field_name: field_background_colour
+entity_type: paragraph
+bundle: page_header
+label: 'Background colour'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: purple
+default_value_callback: ''
+settings: {  }
+field_type: list_string

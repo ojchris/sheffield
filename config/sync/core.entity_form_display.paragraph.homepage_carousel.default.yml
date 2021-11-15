@@ -1,0 +1,35 @@
+uuid: de1ae189-2b94-4af6-8368-3cceb05e7802
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_carousel.field_slide
+    - paragraphs.paragraphs_type.homepage_carousel
+  module:
+    - paragraphs
+id: paragraph.homepage_carousel.default
+targetEntityType: paragraph
+bundle: homepage_carousel
+mode: default
+content:
+  field_slide:
+    type: paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

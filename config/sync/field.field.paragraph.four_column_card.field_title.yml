@@ -1,0 +1,19 @@
+uuid: 3be92c9b-b06b-4b31-b590-cde83404491b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.four_column_card
+id: paragraph.four_column_card.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: four_column_card
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

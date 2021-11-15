@@ -1,0 +1,98 @@
+uuid: aece9d68-45a5-4e5d-8849-0f9355585929
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.course_page.body
+    - field.field.node.course_page.field_content_sections
+    - field.field.node.course_page.field_date
+    - field.field.node.course_page.field_display_accessibility_butt
+    - field.field.node.course_page.field_display_social_sharing_but
+    - field.field.node.course_page.field_image
+    - field.field.node.course_page.field_location
+    - field.field.node.course_page.field_time
+    - node.type.course_page
+  module:
+    - datetime
+    - datetime_range
+    - entity_reference_revisions
+    - manage_display
+    - media
+    - text
+id: node.course_page.default
+targetEntityType: node
+bundle: course_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_content_sections:
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_date:
+    weight: 4
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'D F Y'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_image:
+    type: media_thumbnail
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_time:
+    weight: 5
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'h:i a'
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_custom
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: title
+    weight: 0
+    region: content
+    settings:
+      tag: h1
+      linked: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_display_accessibility_butt: true
+  field_display_social_sharing_but: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

@@ -9,6 +9,7 @@
  */
 function bbd_paragraphs_preprocess_paragraph(&$variables) {
   $paragraph_type = $variables['paragraph']->getParagraphType();
+  $paragraph = $variables['paragraph'];
 
   $variables['#attached']['library'][] = 'bbd_paragraphs/bbd_paragraphs.general';
 
@@ -25,6 +26,13 @@ function bbd_paragraphs_preprocess_paragraph(&$variables) {
   // Customize "Paragraph: Banner".
   if ($paragraph_type->id == 'paragraph_banner') {
     $variables['attributes']['class'][] = 'banner-content-section';
+  }
+
+  // field_bg
+  if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
+    $field_background_colour = $paragraph->get('field_background_colour')->value;
+
+    $variables['attributes']['class'][] = 'block-bg-' . $field_background_colour;
   }
 }
 

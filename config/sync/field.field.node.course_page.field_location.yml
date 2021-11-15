@@ -1,0 +1,21 @@
+uuid: a2ae5a6a-8de9-4fe4-891f-47972b3bbc39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.course_page
+  module:
+    - text
+id: node.course_page.field_location
+field_name: field_location
+entity_type: node
+bundle: course_page
+label: Location
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

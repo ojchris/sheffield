@@ -1,0 +1,10 @@
+uuid: 8fb8ec72-d213-4a5e-aea3-d98dfdb0411c
+langcode: en
+status: true
+dependencies: {  }
+id: three_column_card
+label: 'Three-column card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

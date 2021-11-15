@@ -1,0 +1,23 @@
+uuid: 85ec325a-b9b7-40f2-ba80-2643501b54b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_background_colour
+    - media.type.document
+  module:
+    - options
+id: media.document.field_background_colour
+field_name: field_background_colour
+entity_type: media
+bundle: document
+label: 'Background colour'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: purple
+default_value_callback: ''
+settings: {  }
+field_type: list_string

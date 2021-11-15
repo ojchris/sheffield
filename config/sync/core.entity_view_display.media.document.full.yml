@@ -1,0 +1,54 @@
+uuid: c5b56cf0-5967-406d-b6dc-bc50b362bd01
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.document.field_background_colour
+    - field.field.media.document.field_description
+    - field.field.media.document.field_media_file
+    - media.type.document
+  module:
+    - file_download_link
+    - manage_display
+    - text
+id: media.document.full
+targetEntityType: media
+bundle: document
+mode: full
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_file:
+    label: visually_hidden
+    weight: 2
+    settings:
+      link_text: Download
+      link_title: null
+      new_tab: true
+      force_download: true
+      custom_classes: ''
+    third_party_settings: {  }
+    type: file_download_link
+    region: content
+  name:
+    type: title
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      tag: h4
+      linked: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_background_colour: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

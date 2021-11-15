@@ -1,0 +1,35 @@
+uuid: a4a2b8b3-7646-498b-aaa3-80f37c94b9fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_panel.field_two_column_card
+    - paragraphs.paragraphs_type.two_column_panel
+  module:
+    - paragraphs
+id: paragraph.two_column_panel.default
+targetEntityType: paragraph
+bundle: two_column_panel
+mode: default
+content:
+  field_two_column_card:
+    type: paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
