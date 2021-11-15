@@ -1,0 +1,14 @@
+uuid: 6f1b85a7-5de8-40e5-a41b-a22bc4a84b07
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8LURRs9kYxjYSPxUFc1dDvn7qjd_znRF7TGhYF0emVA
+id: feedback
+label: 'Website feedback'
+recipients:
+  - admin@bigbluedoor.net
+reply: ''
+weight: 0
+message: null
+redirect: null

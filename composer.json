@@ -97,6 +97,9 @@
       }
     },
     "patches": {
+      "drupal/core": {
+        "Allow 'Put the exposed form in a block' setting to be used with views block displays": "https://www.drupal.org/files/issues/2020-12-22/2681947-40.patch"
+      },
       "drupal/health_check": {
         "Create random path rather than health, in case we need /health as an actual page at some point": "./patches/health_check-update_default_routing_path.patch"
       }

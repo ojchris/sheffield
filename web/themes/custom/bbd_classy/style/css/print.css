@@ -1,0 +1,45 @@
+body {
+  font: 12px;
+  line-height: 1.4;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h2 {
+  font-size: 18pt;
+  margin-top: 25px;
+}
+
+@page {
+  margin: 0.5cm;
+}
+
+header,
+nav,
+footer {
+  display: none;
+}
+
+img {
+  max-width: 500px;
+}
+
+.content-wrapper {
+  width: auto;
+}
+
+.emergency-popup {
+  display: none;
+}
+
+.node__content {
+  background: none;
+}
+
+.node__content {
+  box-shadow: none;
+}

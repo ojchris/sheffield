@@ -1,0 +1,22 @@
+uuid: 16fa93a9-fe6e-41b5-aa10-75b76ad54606
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bbd_classy
+_core:
+  default_config_hash: piPmtlFP5haV1uMlLDDT9S3A_5TJov4yi3tC2-hma4M
+id: bbd_classy_messages
+theme: bbd_classy
+region: help
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,1769 @@
+/* Read the intro about usage of breakpoint http://breakpoint-sass.com/ */
+/* Flexbox containers */
+/* Flexbox direction */
+/* Flexbox wrap */
+/* Flexbox basis */
+/* Flexbox grow */
+/* Flexbox justify content */
+/* Flexbox align items */
+/* Flexbox align content */
+/* Flexbox align self */
+/* Flex */
+/* Order */
+/* Box Sizing */
+/* Box shadow */
+/* Transitions */
+/* Transform */
+/* Background size */
+/* Border Radius */
+/* Single side border-radius */
+/* Clearfix */
+/* Mixin position */
+/* Placeholder */
+/* line 4, ../scss/variables/_typography.scss */
+body {
+  font-size: 16px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.25;
+}
+
+/* line 10, ../scss/variables/_typography.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 25px;
+}
+
+/* line 16, ../scss/variables/_typography.scss */
+h1, .h1 {
+  font-size: 36px;
+  line-height: 1.1666;
+}
+
+/* line 21, ../scss/variables/_typography.scss */
+h2, .h2 {
+  font-size: 30px;
+  line-height: 1.1666;
+}
+
+/* line 26, ../scss/variables/_typography.scss */
+h3, .h3 {
+  font-size: 24px;
+}
+
+/* line 30, ../scss/variables/_typography.scss */
+h4, .h4 {
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+/* line 35, ../scss/variables/_typography.scss */
+h5, .h5 {
+  font-size: 18px;
+}
+
+/* line 39, ../scss/variables/_typography.scss */
+h6, .h6 {
+  font-size: 14px;
+  line-height: 1.1428;
+}
+
+/* line 44, ../scss/variables/_typography.scss */
+p {
+  font-size: 11px;
+  line-height: 15px;
+  margin: 0 0 20px;
+}
+
+/* line 51, ../scss/variables/_typography.scss */
+.region-content ul, .region-content ol {
+  font-size: 11px;
+  line-height: 15px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* line 60, ../scss/variables/_typography.scss */
+a {
+  position: relative;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #000;
+}
+/* line 67, ../scss/variables/_typography.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 73, ../scss/variables/_typography.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 77, ../scss/variables/_typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 81, ../scss/variables/_typography.scss */
+blockquote {
+  border: none;
+  border-left: 2px solid #828282;
+  margin: 0 0 30px;
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  /* line 91, ../scss/variables/_typography.scss */
+  h1, .h1 {
+    font-size: 48px;
+  }
+
+  /* line 95, ../scss/variables/_typography.scss */
+  h2, .h2 {
+    font-size: 40px;
+    line-height: 1.175;
+  }
+
+  /* line 100, ../scss/variables/_typography.scss */
+  h3, .h3 {
+    font-size: 36px;
+  }
+
+  /* line 104, ../scss/variables/_typography.scss */
+  h4, .h4 {
+    font-size: 24px;
+    line-height: 1.2083;
+  }
+
+  /* line 109, ../scss/variables/_typography.scss */
+  p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* line 115, ../scss/variables/_typography.scss */
+  .region-content ul, .region-content ol {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* line 121, ../scss/variables/_typography.scss */
+  blockquote {
+    margin-bottom: 30px;
+    font-size: 24px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 64em) {
+  /* line 129, ../scss/variables/_typography.scss */
+  h1, .h1 {
+    font-size: 72px;
+  }
+
+  /* line 133, ../scss/variables/_typography.scss */
+  h2, .h2 {
+    font-size: 64px;
+    line-height: 1.1718;
+  }
+
+  /* line 138, ../scss/variables/_typography.scss */
+  h3, .h3 {
+    font-size: 48px;
+    line-height: 1.1666;
+  }
+
+  /* line 143, ../scss/variables/_typography.scss */
+  h4, .h4 {
+    font-size: 36px;
+    line-height: 1.1666;
+  }
+
+  /* line 148, ../scss/variables/_typography.scss */
+  h5, .h5 {
+    font-size: 24px;
+    line-height: 1.2083;
+  }
+
+  /* line 153, ../scss/variables/_typography.scss */
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* line 160, ../scss/variables/_typography.scss */
+  .region-content ul, .region-content ol {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* line 166, ../scss/variables/_typography.scss */
+  blockquote {
+    margin-bottom: 50px;
+  }
+}
+/* line 1, ../scss/base/_datepicker.scss */
+.ui-datepicker {
+  width: calc(100% - 40px);
+  max-width: 422px;
+  background: #fff;
+  box-shadow: 0 5px 30px 0 #27AE60;
+  border-radius: 0;
+}
+/* line 8, ../scss/base/_datepicker.scss */
+.ui-datepicker.ui-widget.ui-widget-content {
+  border: 0;
+  padding: 10px 10px 0;
+}
+/* line 13, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-widget {
+  font-size: 13px;
+}
+/* line 17, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-header {
+  background: 0;
+  border-radius: 0;
+  border: 0;
+}
+/* line 23, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-state-default,
+.ui-datepicker .ui-widget-content .ui-state-default,
+.ui-datepicker .ui-widget-header .ui-state-default,
+.ui-datepicker .ui-button,
+.ui-datepicker .ui-button.ui-state-disabled:hover, .ui-datepicker .ui-button.ui-state-disabled:active {
+  background: 0;
+  border: 0;
+}
+/* line 32, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-title {
+  font-weight: bold;
+  font-size: 13px;
+  color: #000;
+  text-transform: uppercase;
+}
+/* line 40, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-calendar td {
+  text-align: center;
+}
+/* line 43, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-calendar td a, .ui-datepicker .ui-datepicker-calendar td span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 30px;
+  padding: 0;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+/* line 58, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-current-day a, .ui-datepicker .ui-datepicker-current-day span {
+  border-radius: 50%;
+  background: #27AE60;
+}
+/* line 64, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-current-day.ui-datepicker-today a, .ui-datepicker .ui-datepicker-current-day.ui-datepicker-today span {
+  background: #27AE60;
+}
+/* line 71, ../scss/base/_datepicker.scss */
+.ui-datepicker .startDate a, .ui-datepicker .endDate a {
+  border-radius: 50%;
+  background: #27AE60;
+}
+/* line 79, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-prev .ui-icon,
+.ui-datepicker .ui-datepicker-next .ui-icon {
+  background: none;
+}
+/* line 82, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-prev .ui-icon::before, .ui-datepicker .ui-datepicker-prev .ui-icon::after,
+.ui-datepicker .ui-datepicker-next .ui-icon::before,
+.ui-datepicker .ui-datepicker-next .ui-icon::after {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  content: '';
+  width: 8px;
+  height: 1px;
+  margin: 0;
+  border-top: 1px solid #27AE60;
+}
+/* line 94, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-prev .ui-icon::before,
+.ui-datepicker .ui-datepicker-next .ui-icon::before {
+  transform: rotate(45deg);
+}
+/* line 98, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-prev .ui-icon::after,
+.ui-datepicker .ui-datepicker-next .ui-icon::after {
+  transform: rotate(-45deg);
+  right: 0;
+  bottom: 12px;
+}
+/* line 105, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-prev:focus,
+.ui-datepicker .ui-datepicker-next:hover,
+.ui-datepicker .ui-datepicker-next:focus {
+  background: none;
+  border: 0;
+}
+/* line 113, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-next .ui-icon::before {
+  transform: rotate(-45deg);
+  right: 10px;
+}
+/* line 118, ../scss/base/_datepicker.scss */
+.ui-datepicker .ui-datepicker-next .ui-icon::after {
+  transform: rotate(45deg);
+  left: auto;
+  right: 10px;
+}
+
+/*******************************************************************************
+ * Region Footer
+ ******************************************************************************/
+/* line 5, ../scss/base/_footer.scss */
+.region-footer .menu {
+  margin: 0 0 20px;
+}
+/* line 8, ../scss/base/_footer.scss */
+.region-footer .menu li {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+/* line 18, ../scss/base/_footer.scss */
+.region-copyright p {
+  font-size: 12px;
+}
+
+@media (min-width: 48em) {
+  /* line 26, ../scss/base/_footer.scss */
+  .region-footer .menu li {
+    font-size: 14px;
+  }
+
+  /* line 33, ../scss/base/_footer.scss */
+  .region-copyright p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 64em) {
+  /* line 42, ../scss/base/_footer.scss */
+  .region-footer .menu li {
+    font-size: 16px;
+  }
+
+  /* line 49, ../scss/base/_footer.scss */
+  .region-copyright p {
+    font-size: 16px;
+  }
+}
+/* line 1, ../scss/base/_form.scss */
+button, input, optgroup, select, textarea {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #4f4f4f;
+}
+
+/* line 6, ../scss/base/_form.scss */
+button, a.button, .form-submit, input[type="submit"] {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px 0 0;
+  font: 700 14px/20px "Roboto", Helvetica, Arial, sans-serif;
+  background: #2F80ED;
+  padding: 11px 20px;
+  color: #fff;
+  border: 0;
+  text-align: center;
+  min-width: 100px;
+  text-decoration: none;
+}
+/* line 19, ../scss/base/_form.scss */
+button:hover, button:focus, a.button:hover, a.button:focus, .form-submit:hover, .form-submit:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  box-shadow: 0 5px 15px #e0e0e0;
+  text-decoration: none;
+}
+/* line 24, ../scss/base/_form.scss */
+button:active, a.button:active, .form-submit:active, input[type="submit"]:active {
+  background: #0E5ECB;
+}
+/* line 28, ../scss/base/_form.scss */
+button[disabled], a.button[disabled], .form-submit[disabled], input[type="submit"][disabled] {
+  opacity: .5;
+}
+/* line 32, ../scss/base/_form.scss */
+button[id^="edit-reset"], button[id^="edit-delete"], a.button[id^="edit-reset"], a.button[id^="edit-delete"], .form-submit[id^="edit-reset"], .form-submit[id^="edit-delete"], input[type="submit"][id^="edit-reset"], input[type="submit"][id^="edit-delete"] {
+  background: #EB5757;
+}
+/* line 37, ../scss/base/_form.scss */
+.red button, .red a.button, .red .form-submit, .red input[type="submit"] {
+  background: #EB5757;
+}
+/* line 40, ../scss/base/_form.scss */
+.red button:active, .red a.button:active, .red .form-submit:active, .red input[type="submit"]:active {
+  background: #AE2626;
+}
+/* line 45, ../scss/base/_form.scss */
+.grey button, .grey a.button, .grey .form-submit, .grey input[type="submit"] {
+  color: #333;
+  background: #e0e0e0;
+}
+/* line 49, ../scss/base/_form.scss */
+.grey button:active, .grey a.button:active, .grey .form-submit:active, .grey input[type="submit"]:active {
+  background: #bdbdbd;
+}
+
+/* line 55, ../scss/base/_form.scss */
+a.button {
+  background: #EB5757;
+  text-decoration: none;
+}
+/* line 59, ../scss/base/_form.scss */
+a.button:active {
+  background: #AE2626;
+}
+
+/* line 64, ../scss/base/_form.scss */
+input, optgroup, select, textarea {
+  background: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+}
+
+/* line 72, ../scss/base/_form.scss */
+input:not([type="radio"], [type='checkbox'], [type="date"], [type="time"], [type="submit"]) {
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 78, ../scss/base/_form.scss */
+input[type="search"] {
+  box-sizing: border-box;
+  padding-right: 40px;
+  background: #f2f2f2 url("../../images/icon-search.png") no-repeat right 15px bottom 50%;
+  background-size: 15px;
+}
+
+/* line 86, ../scss/base/_form.scss */
+.captcha {
+  margin-bottom: 15px;
+}
+
+/* line 90, ../scss/base/_form.scss */
+summary {
+  font-size: 20px;
+  line-height: 1.3;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* line 97, ../scss/base/_form.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-inline-start: inherit;
+  margin-inline-end: inherit;
+  padding-block-start: inherit;
+  padding-inline-start: inherit;
+  padding-inline-end: inherit;
+  padding-block-end: inherit;
+}
+
+/* line 109, ../scss/base/_form.scss */
+details {
+  border: 0;
+  margin: 0;
+}
+/* line 113, ../scss/base/_form.scss */
+details > .details-wrapper {
+  padding: 0;
+}
+
+/* line 118, ../scss/base/_form.scss */
+tr.odd .form-item, tr.even .form-item {
+  margin-bottom: 15px;
+}
+
+/* line 122, ../scss/base/_form.scss */
+.paragraphs-dragdrop__icon {
+  height: 100%;
+}
+
+/* line 126, ../scss/base/_form.scss */
+.form-composite > .fieldset-wrapper > .description,
+.form-item .description {
+  font-size: 1rem;
+  padding-top: 3px;
+}
+
+/* line 134, ../scss/base/_form.scss */
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  margin: 0 -4px 15px 0;
+}
+
+/* line 142, ../scss/base/_form.scss */
+.form-wrapper .paragraphs-dropdown-action.button {
+  max-width: 100%;
+  color: #000;
+}
+/* line 146, ../scss/base/_form.scss */
+.form-wrapper .paragraphs-dropdown-action.button:hover, .form-wrapper .paragraphs-dropdown-action.button:focus {
+  color: #fff;
+}
+
+/* line 152, ../scss/base/_form.scss */
+.field--widget-paragraphs .form-submit {
+  margin-left: 0;
+}
+
+/* line 159, ../scss/base/_form.scss */
+form fieldset fieldset.form-item {
+  margin: 0;
+}
+/* line 165, ../scss/base/_form.scss */
+form .form-time::-webkit-calendar-picker-indicator {
+  font-size: 30px;
+  padding: 0;
+  line-height: 0;
+}
+/* line 172, ../scss/base/_form.scss */
+form .form-time:hover::-webkit-calendar-picker-indicator {
+  opacity: .5;
+}
+/* line 178, ../scss/base/_form.scss */
+form .file {
+  margin-bottom: 20px;
+}
+/* line 181, ../scss/base/_form.scss */
+form .file ~ .button {
+  margin: 0;
+}
+/* line 186, ../scss/base/_form.scss */
+form .selectric {
+  background: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+}
+/* line 192, ../scss/base/_form.scss */
+form .selectric .label {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  height: auto;
+  color: #4f4f4f;
+  margin-left: 0;
+}
+/* line 202, ../scss/base/_form.scss */
+form .selectric .button {
+  height: 100%;
+  width: 30px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #4f4f4f;
+  margin: 0;
+  background: 0;
+}
+/* line 211, ../scss/base/_form.scss */
+form .selectric .button::after {
+  content: inherit;
+}
+/* line 216, ../scss/base/_form.scss */
+form .selectric-items {
+  background: #f2f2f2;
+  width: 100%;
+  padding: 5px;
+  box-shadow: 0 5px 10px 0 #bdbdbd;
+  border-radius: 3px;
+}
+/* line 223, ../scss/base/_form.scss */
+form .selectric-items ul {
+  font-size: inherit;
+}
+/* line 227, ../scss/base/_form.scss */
+form .selectric-items li {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  padding: 10px;
+}
+/* line 232, ../scss/base/_form.scss */
+form .selectric-items li.highlighted {
+  background-color: #bdbdbd;
+  color: #fff;
+}
+/* line 236, ../scss/base/_form.scss */
+form .selectric-items li.highlighted:hover {
+  background-color: #bdbdbd;
+  color: #fff;
+}
+/* line 242, ../scss/base/_form.scss */
+form .selectric-items li:hover {
+  background-color: #e0e0e0;
+}
+/* line 251, ../scss/base/_form.scss */
+form .selectric-hover .selectric .button {
+  color: #333;
+}
+/* line 257, ../scss/base/_form.scss */
+form .selectric-wrapper {
+  display: block;
+}
+/* line 260, ../scss/base/_form.scss */
+form .selectric-wrapper div {
+  display: inherit;
+}
+/* line 264, ../scss/base/_form.scss */
+form .selectric-wrapper .selectric-items {
+  display: none;
+}
+/* line 269, ../scss/base/_form.scss */
+form .selectric-wrapper.selectric-open .selectric-items {
+  display: block;
+  margin-top: -1px;
+}
+/* line 276, ../scss/base/_form.scss */
+.js form input.form-autocomplete {
+  background-position: right 15px bottom 50%;
+}
+/* line 279, ../scss/base/_form.scss */
+.js form input.form-autocomplete.ui-autocomplete-loading {
+  background-position: right 15px bottom 50%;
+}
+/* line 285, ../scss/base/_form.scss */
+form .js-form-type-date input {
+  padding: 10px;
+}
+/* line 288, ../scss/base/_form.scss */
+form .js-form-type-date input.form-date {
+  background: #e0e0e0 url("../../images/icon-calendar.svg") no-repeat right 15px bottom 50%;
+  background-size: 21px 24px;
+}
+/* line 292, ../scss/base/_form.scss */
+form .js-form-type-date input.form-date:hover {
+  background-image: url("../../images/icon-calendar-over.svg");
+}
+/* line 300, ../scss/base/_form.scss */
+form .js-form-type-datetime > .container-inline {
+  width: 100%;
+  margin: 0;
+}
+/* line 305, ../scss/base/_form.scss */
+form .js-form-type-datetime .form-item, form .js-form-type-datetime .form-actions {
+  margin: 0;
+}
+/* line 309, ../scss/base/_form.scss */
+form .js-form-type-datetime .js-form-type-date,
+form .js-form-type-datetime .js-form-type-webform-time {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+}
+/* line 315, ../scss/base/_form.scss */
+form .js-form-type-datetime .js-form-type-date input,
+form .js-form-type-datetime .js-form-type-webform-time input {
+  width: 100%;
+  padding: 8px 10px;
+}
+/* line 321, ../scss/base/_form.scss */
+form .js-form-type-datetime .js-form-type-date {
+  margin-right: 2%;
+}
+/* line 325, ../scss/base/_form.scss */
+form .js-form-type-datetime .js-form-type-webform-time {
+  width: 33%;
+  margin-left: -6px;
+}
+/* line 331, ../scss/base/_form.scss */
+form .form-wrapper {
+  margin-bottom: 25px;
+}
+/* line 336, ../scss/base/_form.scss */
+form .form-actions.form-wrapper:not(:empty) {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+/* line 107, ../scss/abstractions/_site_mixins.scss */
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  color: #bdbdbd;
+}
+/* line 110, ../scss/abstractions/_site_mixins.scss */
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  color: #bdbdbd;
+}
+/* line 113, ../scss/abstractions/_site_mixins.scss */
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  color: #bdbdbd;
+}
+/* line 116, ../scss/abstractions/_site_mixins.scss */
+form input:-moz-placeholder, form textarea:-moz-placeholder {
+  color: #bdbdbd;
+}
+/* line 347, ../scss/base/_form.scss */
+form input[type="file"].form-file {
+  background: #fff url("../../images/icon-image.png") no-repeat 50% 20px;
+  color: transparent;
+  margin-bottom: 5px;
+  padding: 100px 20px 0;
+  background-size: 84px 65px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 356, ../scss/base/_form.scss */
+form input[type="file"].form-file::-webkit-file-upload-button, form input[type="file"].form-file::file-selector-button {
+  display: inline-block;
+  background: #fff;
+  color: #bdbdbd;
+  border: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: underline;
+  visibility: hidden;
+}
+/* line 369, ../scss/base/_form.scss */
+form input[type="file"].form-file::before {
+  color: #bdbdbd;
+  display: block;
+  text-align: center;
+  content: 'Drop your image here, or browse';
+}
+/* line 378, ../scss/base/_form.scss */
+form .focal-point-preview-link:hover, form .focal-point-preview-link:focus {
+  text-decoration: none;
+}
+/* line 382, ../scss/base/_form.scss */
+form .focal-point-preview-link::before {
+  margin-right: 10px;
+}
+/* line 387, ../scss/base/_form.scss */
+form > .form-item {
+  margin: 0 0 25px;
+}
+/* line 390, ../scss/base/_form.scss */
+form > .form-item.checkboxes--wrapper, form > .form-item.radios--wrapper {
+  margin-bottom: 10px;
+}
+/* line 397, ../scss/base/_form.scss */
+form .form-item > label, form .form-item legend {
+  display: block;
+  font: bold 12px/14px "Roboto", Helvetica, Arial, sans-serif;
+  color: #4f4f4f;
+  margin-bottom: 10px;
+}
+/* line 404, ../scss/base/_form.scss */
+form .form-item input[type="tel"], form .form-item.js-form-item-date-field input {
+  width: 100%;
+}
+/* line 410, ../scss/base/_form.scss */
+form h4.label {
+  display: block;
+  font: bold 11px/14px "Roboto", Helvetica, Arial, sans-serif;
+  color: #4f4f4f;
+  margin-bottom: 6px;
+}
+/* line 419, ../scss/base/_form.scss */
+form .js-form-type-checkbox label,
+form .js-form-type-radio label {
+  display: inline-block;
+  padding-left: 25px;
+  font-size: 11px;
+  color: #4f4f4f;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 0;
+  text-transform: none;
+  position: relative;
+  z-index: 0;
+}
+/* line 431, ../scss/base/_form.scss */
+form .js-form-type-checkbox label::before, form .js-form-type-checkbox label::after,
+form .js-form-type-radio label::before,
+form .js-form-type-radio label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+/* line 441, ../scss/base/_form.scss */
+form .js-form-type-checkbox label::before,
+form .js-form-type-radio label::before {
+  background: #f2f2f2;
+  border: 1px solid #bdbdbd;
+}
+/* line 449, ../scss/base/_form.scss */
+form .js-form-type-checkbox .form-checkbox {
+  display: none;
+}
+/* line 453, ../scss/base/_form.scss */
+form .js-form-type-checkbox .form-checkbox:checked + label::after {
+  border-color: #2F80ED;
+  background: #2F80ED url("../../images/icon-check.png") no-repeat 50% 50%;
+  background-size: 50%;
+  z-index: 2;
+}
+/* line 462, ../scss/base/_form.scss */
+form .js-form-type-checkbox label {
+  padding-left: 25px;
+  line-height: 16px;
+}
+/* line 466, ../scss/base/_form.scss */
+form .js-form-type-checkbox label::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+/* line 472, ../scss/base/_form.scss */
+form .js-form-type-checkbox label::after {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+/* line 483, ../scss/base/_form.scss */
+form .js-form-type-radio .form-radio {
+  display: none;
+}
+/* line 487, ../scss/base/_form.scss */
+form .js-form-type-radio .form-radio:checked + label::after {
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2F80ED;
+  border-color: #2F80ED;
+}
+/* line 500, ../scss/base/_form.scss */
+form .js-form-type-radio label::before {
+  border-radius: 50%;
+}
+/* line 506, ../scss/base/_form.scss */
+form .file ~ .button {
+  background: #EB5757;
+  margin-left: 20px;
+  max-width: 200px;
+  min-width: 200px;
+  padding: 15px 20px;
+}
+/* line 513, ../scss/base/_form.scss */
+form .file ~ .button:hover, form .file ~ .button:focus {
+  background: #EB5757;
+}
+
+@media (min-width: 64em) {
+  /* line 520, ../scss/base/_form.scss */
+  summary {
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  /* line 525, ../scss/base/_form.scss */
+  .region-content .paragraphs-dragdrop__list {
+    font-size: 25px;
+  }
+
+  /* line 529, ../scss/base/_form.scss */
+  button, a.button, .form-submit, input[type="submit"] {
+    font-size: 18px;
+    padding: 15px 25px;
+    line-height: 1.1666;
+  }
+
+  /* line 535, ../scss/base/_form.scss */
+  form {
+    max-width: 40em;
+    margin: 0 auto;
+  }
+  /* line 539, ../scss/base/_form.scss */
+  .view-blog form {
+    max-width: 100%;
+  }
+  /* line 544, ../scss/base/_form.scss */
+  form .form-item > label, form .form-item legend {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  /* line 552, ../scss/base/_form.scss */
+  form .js-form-type-checkbox label {
+    padding-left: 29px;
+    line-height: 21px;
+    margin: 0;
+  }
+  /* line 557, ../scss/base/_form.scss */
+  form .js-form-type-checkbox label::before {
+    width: 20px;
+    height: 20px;
+  }
+  /* line 562, ../scss/base/_form.scss */
+  form .js-form-type-checkbox label::after {
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+  }
+  /* line 572, ../scss/base/_form.scss */
+  form .js-form-type-radio label {
+    padding-left: 29px;
+    line-height: 21px;
+    margin: 0;
+  }
+  /* line 580, ../scss/base/_form.scss */
+  form .js-form-type-radio .form-radio:checked + label::after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+  }
+  /* line 590, ../scss/base/_form.scss */
+  form .js-form-type-radio label::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  /* line 599, ../scss/base/_form.scss */
+  form input:not([type="radio"], [type='checkbox'], [type="date"], [type="time"], [type="submit"]) {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px 15px;
+  }
+  /* line 606, ../scss/base/_form.scss */
+  form input[type="search"] {
+    padding-right: 50px;
+    background-size: 20px;
+    background-position: right 17px bottom 50%;
+  }
+  /* line 615, ../scss/base/_form.scss */
+  form .js-form-type-date input.form-date {
+    background-position: right 17px bottom 50%;
+  }
+  /* line 623, ../scss/base/_form.scss */
+  form .js-form-type-date input,
+  form .js-form-type-webform-time input {
+    font-size: 14px;
+    padding: 14px 15px;
+    line-height: 20px;
+  }
+  /* line 633, ../scss/base/_form.scss */
+  form .js-form-type-datetime .js-form-type-date input,
+  form .js-form-type-datetime .js-form-type-webform-time input {
+    font-size: 14px;
+    padding: 14px 15px;
+    line-height: 20px;
+  }
+  /* line 641, ../scss/base/_form.scss */
+  form .js-form-type-datetime .js-form-type-webform-time input {
+    padding: 13px 15px;
+  }
+  /* line 647, ../scss/base/_form.scss */
+  form .selectric {
+    padding: 14px 15px;
+  }
+  /* line 650, ../scss/base/_form.scss */
+  form .selectric .label {
+    font-size: 14px;
+    height: 20px;
+    margin: 0;
+  }
+  /* line 656, ../scss/base/_form.scss */
+  form .selectric .button {
+    width: 40px;
+    line-height: 50px;
+  }
+  /* line 663, ../scss/base/_form.scss */
+  form .selectric-items li {
+    font-size: 14px;
+  }
+  /* line 668, ../scss/base/_form.scss */
+  form textarea {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px 15px;
+    min-height: 150px;
+  }
+  /* line 676, ../scss/base/_form.scss */
+  form > .form-item.checkboxes--wrapper, form > .form-item.radios--wrapper {
+    margin-bottom: 25px;
+  }
+  /* line 682, ../scss/base/_form.scss */
+  form .form-actions {
+    margin-bottom: 30px;
+  }
+  /* line 685, ../scss/base/_form.scss */
+  form .form-actions.form-wrapper:not(:empty) {
+    padding: 30px 0;
+  }
+}
+/* line 1, ../scss/base/_general.scss */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* line 7, ../scss/base/_general.scss */
+table {
+  padding: 0;
+  margin: 0 auto 20px;
+  width: 100%;
+  border: 0;
+}
+/* line 13, ../scss/base/_general.scss */
+table th, table td {
+  font-size: 12px;
+  border: 0;
+  padding: 10px;
+  text-align: left;
+}
+/* line 20, ../scss/base/_general.scss */
+table th {
+  font-weight: 700;
+}
+/* line 26, ../scss/base/_general.scss */
+table tbody tr:nth-child(odd) td {
+  background: #f2f2f2;
+}
+
+/* line 33, ../scss/base/_general.scss */
+figure {
+  margin: 0 0 20px;
+}
+/* line 36, ../scss/base/_general.scss */
+figure.align-left {
+  float: left;
+  margin-right: 20px;
+}
+/* line 41, ../scss/base/_general.scss */
+figure.align-right {
+  float: right;
+  margin-left: 20px;
+}
+/* line 46, ../scss/base/_general.scss */
+figure.align-center {
+  margin: 0 auto;
+}
+
+/* line 51, ../scss/base/_general.scss */
+figcaption,
+.field--name-field-image-caption {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+/* line 60, ../scss/base/_general.scss */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* line 65, ../scss/base/_general.scss */
+img.align-left {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+/* line 70, ../scss/base/_general.scss */
+img.align-right {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+/* line 75, ../scss/base/_general.scss */
+img.align-center {
+  margin-bottom: 20px;
+}
+
+/* line 80, ../scss/base/_general.scss */
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 85, ../scss/base/_general.scss */
+#page-wrapper {
+  background: #fff;
+  padding: 0 1.25em;
+}
+
+/* line 90, ../scss/base/_general.scss */
+#page,
+#footer-wrap {
+  max-width: 83.75em;
+  margin: 0 auto 20px;
+}
+
+/* line 96, ../scss/base/_general.scss */
+.region-content {
+  margin-bottom: 20px;
+}
+
+/* line 100, ../scss/base/_general.scss */
+.messages {
+  margin-bottom: 20px;
+}
+
+/* line 104, ../scss/base/_general.scss */
+.breadcrumb {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 108, ../scss/base/_general.scss */
+.breadcrumb li {
+  font-size: 12px;
+}
+/* line 111, ../scss/base/_general.scss */
+.breadcrumb li::before {
+  content: "/";
+}
+/* line 115, ../scss/base/_general.scss */
+.breadcrumb li:first-child:before {
+  content: none;
+}
+/* line 120, ../scss/base/_general.scss */
+.breadcrumb a {
+  text-decoration: none;
+}
+/* line 123, ../scss/base/_general.scss */
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* line 129, ../scss/base/_general.scss */
+.item-list li {
+  margin: 0 0 20px;
+}
+
+@media screen and (max-width: 30em) {
+  /* line 134, ../scss/base/_general.scss */
+  iframe {
+    height: auto;
+  }
+}
+@media (min-width: 48em) {
+  /* line 140, ../scss/base/_general.scss */
+  #page-wrapper {
+    padding: 0 1.875em;
+  }
+}
+@media (min-width: 64em) {
+  /* line 147, ../scss/base/_general.scss */
+  table th, table td {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* line 153, ../scss/base/_general.scss */
+  #page-wrapper {
+    padding: 0 2.5em;
+  }
+}
+@media (min-width: 90em) {
+  /* line 160, ../scss/base/_general.scss */
+  .breadcrumb li {
+    font-size: 14px;
+  }
+
+  /* line 164, ../scss/base/_general.scss */
+  #page-wrapper {
+    padding: 0 3.125em;
+  }
+}
+/*******************************************************************************
+ * Region Header
+ ******************************************************************************/
+/* line 4, ../scss/base/_header.scss */
+#header-outer-wrapper {
+  position: relative;
+  /* To make header fixed use this styles/class */
+}
+/* line 8, ../scss/base/_header.scss */
+#header-outer-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0 1.25em;
+  z-index: 4;
+}
+/* line 17, ../scss/base/_header.scss */
+#header-outer-wrapper.fixed #nav-opener {
+  right: 1.25em;
+}
+
+/* Ordering of elements in the header */
+/* line 24, ../scss/base/_header.scss */
+.block-system-branding-block {
+  order: -3;
+  width: calc(100% - 100px);
+}
+
+/* line 29, ../scss/base/_header.scss */
+.region-header {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 auto;
+  max-width: 83.75em;
+}
+/* line 38, ../scss/base/_header.scss */
+.region-header > #block-bbd-classy-main-menu {
+  order: -2;
+  width: calc(100% - 290px);
+}
+
+/* line 44, ../scss/base/_header.scss */
+.search-block-form {
+  order: -1;
+}
+
+/* line 48, ../scss/base/_header.scss */
+#nav-opener {
+  order: 0;
+}
+
+/* Logo and slogan */
+/* line 53, ../scss/base/_header.scss */
+.site-logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+/* line 59, ../scss/base/_header.scss */
+.site-name {
+  display: inline-block;
+  vertical-align: top;
+  font: 700 14px/21px "Roboto", Helvetica, Arial, sans-serif;
+  color: #2D9CDB;
+  width: 100%;
+}
+/* line 66, ../scss/base/_header.scss */
+.site-name a {
+  color: #2D9CDB;
+  text-decoration: none;
+}
+
+@media (min-width: 48em) {
+  /* line 74, ../scss/base/_header.scss */
+  #header-outer-wrapper.fixed {
+    padding: 0 1.875em;
+  }
+
+  /* line 79, ../scss/base/_header.scss */
+  #block-bbd-classy-main-menu {
+    width: calc(100% - 250px);
+  }
+
+  /* line 83, ../scss/base/_header.scss */
+  .block-system-branding-block {
+    width: 210px;
+  }
+}
+@media (min-width: 64em) {
+  /* line 90, ../scss/base/_header.scss */
+  #header-outer-wrapper.fixed {
+    padding: 0 2.5em;
+  }
+}
+@media (min-width: 80em) {
+  /* line 97, ../scss/base/_header.scss */
+  .site-name {
+    font-size: 18px;
+  }
+}
+/*******************************************************************************
+ * Region Navigation
+ ******************************************************************************/
+/* line 6, ../scss/base/_navigation.scss */
+#nav-opener {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  cursor: pointer;
+}
+/* line 16, ../scss/base/_navigation.scss */
+#nav-opener:focus {
+  outline-offset: 0;
+}
+/* line 20, ../scss/base/_navigation.scss */
+#nav-opener .label {
+  white-space: nowrap;
+}
+/* line 23, ../scss/base/_navigation.scss */
+#nav-opener .label .hide-mobile-label {
+  display: none;
+}
+
+/* line 29, ../scss/base/_navigation.scss */
+#main-menu-toggle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+/* line 43, ../scss/base/_navigation.scss */
+#main-menu-toggle:hover, #main-menu-toggle:focus {
+  box-shadow: 0 5px 30px 0 rgba(78, 212, 193, 0.2);
+}
+/* line 48, ../scss/base/_navigation.scss */
+#main-menu-toggle .hambuger-bar {
+  display: block;
+  width: 1.3125em;
+  margin: 3px auto 0;
+  height: 3px;
+  background: #000;
+  opacity: 1;
+  position: absolute;
+  left: 9px;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+/* line 60, ../scss/base/_navigation.scss */
+#main-menu-toggle .hambuger-bar-1 {
+  top: 8px;
+  transform-origin: left center;
+}
+/* line 64, ../scss/base/_navigation.scss */
+#main-menu-toggle .hambuger-bar-2 {
+  top: 15px;
+  transform-origin: left center;
+}
+/* line 68, ../scss/base/_navigation.scss */
+#main-menu-toggle .hambuger-bar-3 {
+  top: 22px;
+  transform-origin: left center;
+}
+
+/* line 75, ../scss/base/_navigation.scss */
+#nav-opener:focus #main-menu-toggle {
+  box-shadow: 0 5px 30px 0 rgba(78, 212, 193, 0.2);
+}
+
+/* line 81, ../scss/base/_navigation.scss */
+#main-menu-sidebar.open {
+  display: block;
+}
+/* line 85, ../scss/base/_navigation.scss */
+#main-menu-sidebar ul.menu {
+  margin: 0;
+  text-align: center;
+}
+/* line 89, ../scss/base/_navigation.scss */
+#main-menu-sidebar ul.menu a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+/* line 94, ../scss/base/_navigation.scss */
+#main-menu-sidebar ul.menu a:hover, #main-menu-sidebar ul.menu a:focus {
+  border-bottom-color: #000;
+  text-decoration: none;
+}
+/* line 102, ../scss/base/_navigation.scss */
+#main-menu-sidebar ul.menu .menu-item--active-trail a {
+  border-bottom-color: #000;
+}
+/* line 108, ../scss/base/_navigation.scss */
+#main-menu-sidebar .header-main-menu {
+  font-weight: bold;
+}
+/* line 112, ../scss/base/_navigation.scss */
+#main-menu-sidebar li {
+  padding: .75em 0;
+  font-size: 1rem;
+}
+/* line 117, ../scss/base/_navigation.scss */
+#main-menu-sidebar nav.navigation ul li {
+  display: block;
+}
+
+/* line 122, ../scss/base/_navigation.scss */
+#main-menu-overlay {
+  display: none;
+  background-color: #EB5757;
+  opacity: 1;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* line 135, ../scss/base/_navigation.scss */
+body.overlay-on {
+  /* Scroll menu not body when menu displayed and user scrolls window */
+  overflow: hidden;
+}
+/* line 140, ../scss/base/_navigation.scss */
+.overlay-on #main-menu-sidebar {
+  transform: none;
+  opacity: 1;
+  z-index: 3;
+}
+/* line 146, ../scss/base/_navigation.scss */
+.overlay-on #main-menu-overlay {
+  display: block;
+}
+/* line 151, ../scss/base/_navigation.scss */
+.overlay-on #main-menu-toggle .hambuger-bar-1 {
+  width: 27px;
+  left: 11px;
+  top: 7px;
+  transform: rotate(45deg);
+}
+/* line 158, ../scss/base/_navigation.scss */
+.overlay-on #main-menu-toggle .hambuger-bar-2 {
+  width: 0;
+  opacity: 0;
+}
+/* line 163, ../scss/base/_navigation.scss */
+.overlay-on #main-menu-toggle .hambuger-bar-3 {
+  top: 26px;
+  left: 11px;
+  width: 27px;
+  transform: rotate(-45deg);
+}
+/* line 171, ../scss/base/_navigation.scss */
+.overlay-on #block-bbd-classy-branding {
+  position: relative;
+  z-index: 1;
+}
+/* line 175, ../scss/base/_navigation.scss */
+.overlay-on #block-bbd-classy-branding .site-name a {
+  color: #fff;
+}
+
+/* line 181, ../scss/base/_navigation.scss */
+ul.main-megamenu {
+  margin: 0;
+  text-align: right;
+}
+/* line 185, ../scss/base/_navigation.scss */
+ul.main-megamenu li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+  font: 700 14px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+/* line 191, ../scss/base/_navigation.scss */
+ul.main-megamenu li a {
+  color: #333;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+/* line 196, ../scss/base/_navigation.scss */
+ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
+  border-bottom: 2px solid #333;
+}
+
+@media (max-width: 47.9375em) {
+  /* line 205, ../scss/base/_navigation.scss */
+  .region-header > #block-bbd-classy-main-menu {
+    display: none;
+  }
+
+  /* line 209, ../scss/base/_navigation.scss */
+  #main-menu-sidebar {
+    overflow: auto;
+    display: none;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    right: 0;
+    padding: 40px 20px;
+    height: 100vh;
+    bottom: 0;
+    z-index: 0;
+    background: #EB5757;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0 0;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  /* line 230, ../scss/base/_navigation.scss */
+  #main-menu-sidebar ul.main-megamenu li {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+@media (min-width: 48em) {
+  /* line 240, ../scss/base/_navigation.scss */
+  ul.main-megamenu li {
+    margin: 0 16px;
+  }
+
+  /* line 244, ../scss/base/_navigation.scss */
+  #nav-opener,
+  #main-menu-sidebar {
+    display: none;
+  }
+
+  /* line 249, ../scss/base/_navigation.scss */
+  #main-menu-sidebar {
+    width: calc(100% - 180px);
+  }
+  /* line 253, ../scss/base/_navigation.scss */
+  #main-menu-sidebar ul.menu a {
+    color: #828282;
+  }
+  /* line 258, ../scss/base/_navigation.scss */
+  #main-menu-sidebar nav.navigation ul li {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+  /* line 263, ../scss/base/_navigation.scss */
+  #main-menu-sidebar nav.navigation ul li a {
+    display: block;
+    padding: 5px 0;
+    color: #828282;
+    border-bottom: 3px solid transparent;
+  }
+  /* line 269, ../scss/base/_navigation.scss */
+  #main-menu-sidebar nav.navigation ul li a:hover, #main-menu-sidebar nav.navigation ul li a:focus {
+    text-decoration: none;
+    border-bottom-color: #EB5757;
+  }
+  /* line 277, ../scss/base/_navigation.scss */
+  #main-menu-sidebar nav.navigation ul li.menu-item--active-trail a {
+    text-decoration: none;
+    border-bottom-color: #EB5757;
+  }
+
+  /* line 285, ../scss/base/_navigation.scss */
+  #block-bbd-classy-main-menu {
+    overflow: inherit;
+    height: auto;
+  }
+}
+@media (min-width: 64em) {
+  /* line 293, ../scss/base/_navigation.scss */
+  ul.main-megamenu li {
+    font-size: 18px;
+  }
+
+  /* line 297, ../scss/base/_navigation.scss */
+  #main-menu-sidebar {
+    width: calc(100% - 220px);
+  }
+  /* line 300, ../scss/base/_navigation.scss */
+  #main-menu-sidebar nav.navigation ul li {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+}
+@media (min-width: 68.75em) {
+  /* line 308, ../scss/base/_navigation.scss */
+  #main-menu-sidebar {
+    width: calc(100% - 275px);
+  }
+  /* line 311, ../scss/base/_navigation.scss */
+  #main-menu-sidebar nav.navigation ul li {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+/* line 1, ../scss/base/_preloader.scss */
+.ajax-progress-fullscreen,
+.ajax-progress-fullscreen:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  margin-left: -4em;
+  margin-top: .75em;
+}
+
+/* line 10, ../scss/base/_preloader.scss */
+.ajax-progress-fullscreen {
+  background: none;
+  font-size: 10px;
+  text-indent: -9999em;
+  border-top: 0.5em solid #27AE60;
+  border-right: 0.5em solid #27AE60;
+  border-bottom: 0.5em solid #27AE60;
+  border-left: 0.5em solid #828282;
+  transform: translateZ(0);
+  -webkit-animation: load 1s infinite linear;
+  animation: load .5s infinite linear;
+}
+
+@-webkit-keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 1, ../scss/components/_search-form.scss */
+.search-block-form {
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+  z-index: 1;
+}
+/* line 7, ../scss/components/_search-form.scss */
+.search-block-form h2,
+.search-block-form input[type="search"],
+.search-block-form input[type="text"],
+.search-block-form .form-actions {
+  display: none;
+}
+/* line 14, ../scss/components/_search-form.scss */
+.search-block-form form {
+  position: relative;
+  /* label styles has to be overwritten according to search form configuration */
+}
+/* line 18, ../scss/components/_search-form.scss */
+.search-block-form form label {
+  text-indent: -9999px;
+  overflow: inherit;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  position: relative !important;
+}
+/* line 27, ../scss/components/_search-form.scss */
+.search-block-form form input[type="search"] {
+  background-image: none;
+  padding-right: 15px;
+}
+/* line 34, ../scss/components/_search-form.scss */
+.search-block-form .form-actions.form-wrapper:not(:empty) {
+  padding: 0;
+}
+/* line 39, ../scss/components/_search-form.scss */
+.search-block-form label::after, .search-block-form .form-submit {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../../images/icon-search.svg") no-repeat 50% 50%;
+  background-size: 18px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  min-width: inherit;
+  text-indent: -9999px;
+  z-index: 2;
+}
+/* line 56, ../scss/components/_search-form.scss */
+.search-block-form .form-submit:hover, .search-block-form .form-submit:focus, .search-block-form .button:hover, .search-block-form .button:focus {
+  box-shadow: none;
+}
+/* line 62, ../scss/components/_search-form.scss */
+.search-block-form.search-open input[type="search"],
+.search-block-form.search-open input[type="text"],
+.search-block-form.search-open .form-actions {
+  display: block;
+}
+/* line 68, ../scss/components/_search-form.scss */
+.search-block-form.search-open input[type="search"],
+.search-block-form.search-open input[type="text"] {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 9px 15px 9px 15px;
+  width: 150px;
+}
+/* line 77, ../scss/components/_search-form.scss */
+.search-block-form.search-open .form-actions {
+  padding: 0;
+}
+/* line 82, ../scss/components/_search-form.scss */
+.search-block-form.search-open label::after {
+  content: inherit;
+}
+
+/* line 90, ../scss/components/_search-form.scss */
+.search-form .form-type-search {
+  display: block;
+}
+
+/* line 96, ../scss/components/_search-form.scss */
+.path-search #page {
+  max-width: 40em;
+}
+
+@media (min-width: 48em) {
+  /* line 102, ../scss/components/_search-form.scss */
+  .search-block-form {
+    margin-right: 0;
+  }
+}
+@media (min-width: 64em) {
+  /* line 109, ../scss/components/_search-form.scss */
+  .search-block-form label::after,
+  .search-block-form .form-submit {
+    max-width: 100%;
+  }
+}
+@media (min-width: 80em) {
+  /* line 118, ../scss/components/_search-form.scss */
+  .search-block-form label::after,
+  .search-block-form .form-submit {
+    background-size: 25px;
+  }
+}

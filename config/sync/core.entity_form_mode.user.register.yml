@@ -1,0 +1,12 @@
+uuid: 0dd85c65-9be2-4479-8b55-a164f827c357
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: LO4HasUOZuDlCHxPMcTBBqp605SDfLWagqM9awQDA_M
+id: user.register
+label: Register
+targetEntityType: user
+cache: true

@@ -1,0 +1,16 @@
+uuid: b6ed6f4f-e57f-4522-a8e4-f46a1aa2ff0b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vQOshfzoVtd4IexY3JaMbk9Zv9lFI-ymjKgkgbYCZXI
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format restricted_html'

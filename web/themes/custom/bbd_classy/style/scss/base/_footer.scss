@@ -1,0 +1,53 @@
+/*******************************************************************************
+ * Region Footer
+ ******************************************************************************/
+.region-footer {
+  .menu {
+    margin: 0 0 20px;
+
+    li {
+      font-size: 12px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+    }
+  }
+}
+
+.region-copyright {
+  p {
+    font-size: 12px;
+  }
+}
+
+@include breakpoint($tab) {
+  .region-footer {
+    .menu {
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .region-copyright {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@include breakpoint($desk) {
+  .region-footer {
+    .menu {
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .region-copyright {
+    p {
+      font-size: 16px;
+    }
+  }
+}

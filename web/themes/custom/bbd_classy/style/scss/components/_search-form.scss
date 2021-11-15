@@ -1,0 +1,123 @@
+.search-block-form {
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+  z-index: 1;
+
+  h2,
+  input[type="search"],
+  input[type="text"],
+  .form-actions {
+    display: none;
+  }
+
+  form {
+    position: relative;
+
+    /* label styles has to be overwritten according to search form configuration */
+    label {
+      text-indent: -9999px;
+      overflow: inherit;
+      width: 100%;
+      height: 40px;
+      margin: 0;
+      position: relative !important;
+    }
+
+    input[type="search"] {
+      background-image: none;
+      padding-right: 15px;
+    }
+  }
+
+  .form-actions {
+    &.form-wrapper:not(:empty) {
+      padding: 0;
+    }
+  }
+
+  label::after, .form-submit {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../../images/icon-search.svg") no-repeat 50% 50%;
+    background-size: 18px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    min-width: inherit;
+    text-indent: -9999px;
+    z-index: 2;
+  }
+
+  .form-submit, .button {
+    &:hover, &:focus {
+      @include box-shadow(none);
+    }
+  }
+
+  &.search-open {
+    input[type="search"],
+    input[type="text"],
+    .form-actions {
+      display: block;
+    }
+
+    input[type="search"],
+    input[type="text"] {
+      @include absolute($top: 0, $right: 50px);
+      font-size: 14px;
+      line-height: 20px;
+      padding: 9px 15px 9px 15px;
+      width: 150px;
+    }
+
+    .form-actions {
+      padding: 0;
+    }
+
+    label {
+      &::after {
+        content: inherit;
+      }
+    }
+  }
+}
+
+.search-form {
+  .form-type-search {
+    display: block;
+  }
+}
+
+.path-search {
+  #page {
+    max-width: $widestmob;
+  }
+}
+
+@include breakpoint($tab) {
+  .search-block-form {
+    margin-right: 0;
+  }
+}
+
+@include breakpoint($desk) {
+  .search-block-form {
+    label::after,
+    .form-submit {
+      max-width: 100%;
+    }
+  }
+}
+
+@include breakpoint($widedesk) {
+  .search-block-form {
+    label::after,
+    .form-submit {
+      background-size: 25px;
+    }
+  }
+}

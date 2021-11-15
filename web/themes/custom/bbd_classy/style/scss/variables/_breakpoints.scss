@@ -1,0 +1,40 @@
+// 1em = 16px
+$mobile: 22.5em; // 360px
+$widemob: 30em; // 480px
+$widestmob: 40em; // 640px
+$tab: 48em; // 768px
+$desk: 64em; // 1024px
+$mediumdesk: 68.75em; // 1100px
+$widedesk: 80em; // 1280px
+$widestdesk: 90em; // 1440px
+
+$mobileOnly: max-width 47.9375em; // max-width:767px
+$mobileTabletOnly: max-width 64em; // max-width:1024px
+$tabletOnly: 48em 64em; // min-width:768px and max-width:1024px
+
+// Content width
+$mobile_inner: 20em;
+$tab_inner: 44.25em;
+$desk_inner: 59em;
+$widedesk_inner: 83.75em;
+
+// Content's spacings count
+$mobile_padding: ($mobile - $mobile_inner)/2; // 20px
+$tab_padding: ($tab - $tab_inner)/2; // 30px
+$desk_padding: ($desk - $desk_inner)/2; // 40px
+$widedesk_padding: ($widestdesk - $widedesk_inner)/2; // 50px
+
+$sidebar_content_width: 320;
+
+$breakpoints_min: ('mobile': (min-width: 0px),
+  'widemob': (min-width: #{$mobile}),
+  'tab': (min-width: #{$tab}),
+  'desk': (min-width: #{$desk}),
+  'widedesk': (min-width: #{$widedesk}),
+);
+
+$breakpoints_max: ('mobile': (max-width: #{$mobile}),
+  'widemob': (max-width: #{$tab}),
+  'tab': (max-width: #{$desk}),
+  'desk': (max-width: #{$widedesk}),
+);

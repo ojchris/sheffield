@@ -1,0 +1,27 @@
+uuid: 058eeecb-5d81-4111-a042-af4717b5d8a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - classy
+_core:
+  default_config_hash: xyiKIVMlVphnLS8EFwLeTFud6797CX4Ujxv-ND9pD5U
+id: classy_tools
+theme: classy
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
