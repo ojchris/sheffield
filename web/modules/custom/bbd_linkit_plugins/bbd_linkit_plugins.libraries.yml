@@ -1,0 +1,9 @@
+linkit_plugins:
+  version: VERSION
+  js:
+    js/linkit-plugins.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
