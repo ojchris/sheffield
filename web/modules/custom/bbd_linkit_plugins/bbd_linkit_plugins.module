@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Contains bbd_linkit_plugins.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bbd_linkit_plugins_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bbd_linkit_plugins module.
+    case 'help.page.bbd_linkit_plugins':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Expands capabilities of the Linkit module. Adds extra plugins.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function bbd_linkit_plugins_page_attachments(array &$attachments) {
+  // Attach custom library.
+  $attachments['#attached']['library'][] = 'bbd_linkit_plugins/linkit_plugins';
+}
+
+/**
+ * Implements hook_filter_info_alter().
+ */
+function bbd_linkit_plugins_filter_info_alter(&$info) {
+  if (isset($info['linkit'])) {
+    $info['linkit']['class'] = 'Drupal\bbd_linkit_plugins\Plugin\Filter\ExtendedLinkitFilter';
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function bbd_linkit_plugins_form_editor_link_dialog_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (isset($form['attributes']['class'])) {
+    $form['attributes']['class']['#access'] = FALSE;
+  }
+  if (isset($form['attributes']['id'])) {
+    $form['attributes']['id']['#access'] = FALSE;
+  }
+  if (isset($form['attributes']['rel'])) {
+    $form['attributes']['rel']['#access'] = FALSE;
+  }
+  if (isset($form['advanced'])) {
+    $form['advanced']['#open'] = TRUE;
+  }
+}

@@ -4,6 +4,7 @@ module:
   automated_cron: 0
   back_to_top: 0
   bbd_custom: 0
+  bbd_linkit_plugins: 0
   bbd_paragraphs: 0
   block: 0
   block_content: 0
@@ -26,6 +27,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_advanced_link: 0
   entity_reference_revisions: 0
   entity_type_clone: 0
   field: 0

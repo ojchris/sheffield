@@ -5,13 +5,11 @@ dependencies:
   config:
     - field.field.paragraph.page_header.field_background_colour
     - field.field.paragraph.page_header.field_image
-    - field.field.paragraph.page_header.field_link
     - field.field.paragraph.page_header.field_text
     - field.field.paragraph.page_header.field_title
     - paragraphs.paragraphs_type.page_header
   module:
     - field_group
-    - link
     - manage_display
     - media
     - text
@@ -22,14 +20,15 @@ third_party_settings:
         - field_title
         - field_text
         - field_link
+      label: 'Text Wrapper'
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
+        classes: text-wrapper
         show_empty_fields: false
         id: ''
-        classes: text-wrapper
         element: div
         show_label: false
         label_element: h3
@@ -37,48 +36,35 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Text Wrapper'
 id: paragraph.page_header.default
 targetEntityType: paragraph
 bundle: page_header
 mode: default
 content:
   field_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
     type: media_thumbnail
-    region: content
-  field_link:
-    weight: 4
     label: hidden
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: link
+    weight: 0
     region: content
   field_text:
-    weight: 3
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_title:
-    weight: 2
+    type: title
     label: hidden
     settings:
-      tag: h4
       linked: true
+      tag: h4
     third_party_settings: {  }
-    type: title
+    weight: 2
     region: content
 hidden:
   field_background_colour: true
