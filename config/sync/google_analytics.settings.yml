@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: HuJ72_4FmdV92lluzxsQZ7kELwXX6i3HhfFLF11lhds
 account: ''
 premium: false
 domain_mode: 0
@@ -37,5 +39,3 @@ codesnippet:
 translation_set: false
 cache: false
 debug: false
-_core:
-  default_config_hash: HuJ72_4FmdV92lluzxsQZ7kELwXX6i3HhfFLF11lhds

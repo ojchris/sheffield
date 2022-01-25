@@ -13,12 +13,12 @@ pattern: '/courses/[node:title]'
 selection_criteria:
   61b8cf57-e371-4f5c-a050-700e32803da6:
     id: node_type
-    bundles:
-      course_page: course_page
     negate: false
+    uuid: 61b8cf57-e371-4f5c-a050-700e32803da6
     context_mapping:
       node: node
-    uuid: 61b8cf57-e371-4f5c-a050-700e32803da6
+    bundles:
+      course_page: course_page
 selection_logic: and
 weight: -5
 relationships: {  }

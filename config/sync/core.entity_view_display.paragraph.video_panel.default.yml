@@ -15,22 +15,22 @@ bundle: video_panel
 mode: default
 content:
   field_image:
-    weight: 1
+    type: media_thumbnail
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: media_thumbnail
+    weight: 1
     region: content
   field_video:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_background_colour: true

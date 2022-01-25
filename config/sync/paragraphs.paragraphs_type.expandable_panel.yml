@@ -1,0 +1,10 @@
+uuid: 5afef602-1f1e-4893-9de2-50763e65fee9
+langcode: en
+status: true
+dependencies: {  }
+id: expandable_panel
+label: 'Expandable panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

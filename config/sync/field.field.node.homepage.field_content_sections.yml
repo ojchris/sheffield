@@ -29,7 +29,6 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       simple_text: simple_text
       two_column_text_panel: two_column_text_panel
@@ -40,6 +39,7 @@ settings:
       download_panel: download_panel
       two_column_panel: two_column_panel
       three_column_panel: three_column_panel
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 7
@@ -51,23 +51,23 @@ settings:
         weight: 14
         enabled: false
       download_panel:
-        enabled: true
         weight: 23
+        enabled: true
       four_column_card:
         weight: 20
         enabled: false
       four_column_panel:
-        enabled: true
         weight: 21
-      homepage_carousel:
         enabled: true
+      homepage_carousel:
         weight: 15
+        enabled: true
       links_section:
         weight: 9
         enabled: false
       listing:
-        enabled: true
         weight: 13
+        enabled: true
       page_header:
         weight: 21
         enabled: false
@@ -75,26 +75,26 @@ settings:
         weight: 10
         enabled: false
       simple_text:
-        enabled: true
         weight: 11
+        enabled: true
       three_column_card:
         weight: 30
         enabled: false
       three_column_panel:
-        enabled: true
         weight: 31
+        enabled: true
       two_column_card:
         weight: 24
         enabled: false
       two_column_panel:
-        enabled: true
         weight: 25
+        enabled: true
       two_column_text_panel:
-        enabled: true
         weight: 13
-      video_panel:
         enabled: true
+      video_panel:
         weight: 15
+        enabled: true
       webform:
         weight: 12
         enabled: false

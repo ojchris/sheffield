@@ -1,8 +1,8 @@
+_core:
+  default_config_hash: 4HHP96M4EvFXLlTv2x7sF5zHnLIi_Hw_ckmE76MB6r4
 entity_types:
   - media
   - node
   - taxonomy_term
   - user
   - paragraph
-_core:
-  default_config_hash: 4HHP96M4EvFXLlTv2x7sF5zHnLIi_Hw_ckmE76MB6r4

@@ -15,8 +15,8 @@ plugin: copyright
 settings:
   id: copyright
   label: Copyright
-  provider: bbd_custom
   label_display: '0'
+  provider: bbd_custom
   copyright_body:
     value: "<p>© Sheffield IAPT [current_year]</p>\r\n"
     format: full_html
