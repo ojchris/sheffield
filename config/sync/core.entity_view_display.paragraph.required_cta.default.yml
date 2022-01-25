@@ -1,0 +1,40 @@
+uuid: d78cd216-bfa8-49ee-8c4e-7b5aeada584f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.required_cta.field_link_required_cta
+    - field.field.paragraph.required_cta.field_link_text_required_cta
+    - field.field.paragraph.required_cta.field_title_required_cta
+    - paragraphs.paragraphs_type.required_cta
+id: paragraph.required_cta.default
+targetEntityType: paragraph
+bundle: required_cta
+mode: default
+content:
+  field_link_required_cta:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link_text_required_cta:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title_required_cta:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true
