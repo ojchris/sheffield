@@ -13,13 +13,13 @@ pattern: '/[node:title]'
 selection_criteria:
   af25380f-4a75-4644-8580-7c1d6917b64d:
     id: node_type
+    negate: false
+    uuid: af25380f-4a75-4644-8580-7c1d6917b64d
+    context_mapping:
+      node: node
     bundles:
       landing_page: landing_page
       page: page
-    negate: false
-    context_mapping:
-      node: node
-    uuid: af25380f-4a75-4644-8580-7c1d6917b64d
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       two_column_card: two_column_card
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 15
@@ -53,8 +53,8 @@ settings:
         weight: 23
         enabled: false
       two_column_card:
-        enabled: true
         weight: 24
+        enabled: true
       two_column_panel:
         weight: 25
         enabled: false

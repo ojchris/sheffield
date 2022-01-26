@@ -30,6 +30,7 @@
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
 /web/sites/*/settings.production.php
+/web/sites/*/settings.ddev.php
 
 # Ignore Drupal's file directory
 /web/sites/*/files

@@ -1,0 +1,29 @@
+uuid: 0c5de0f1-80e0-49bf-8af7-3bb4da645ee9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.expandable_panel.field_expandable_box_reference
+    - paragraphs.paragraphs_type.expandable_panel
+  module:
+    - paragraphs
+id: paragraph.expandable_panel.default
+targetEntityType: paragraph
+bundle: expandable_panel
+mode: default
+content:
+  field_expandable_box_reference:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
