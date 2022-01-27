@@ -1,0 +1,12 @@
+uuid: bc716c5a-bd38-46b8-ae85-c46416cd64e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.workflow.draft
+id: draft_creation
+label: Creation
+module: workflow
+wid: draft
+weight: -50
+sysid: 1

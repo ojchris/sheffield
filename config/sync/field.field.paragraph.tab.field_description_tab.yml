@@ -1,0 +1,21 @@
+uuid: c36e0ab8-8fd4-406f-9095-752aa1fe1bbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_tab
+    - paragraphs.paragraphs_type.tab
+  module:
+    - text
+id: paragraph.tab.field_description_tab
+field_name: field_description_tab
+entity_type: paragraph
+bundle: tab
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

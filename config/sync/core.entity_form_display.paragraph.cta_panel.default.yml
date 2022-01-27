@@ -1,0 +1,42 @@
+uuid: 4d1c4f14-163f-4748-a7b5-6b40b74ff3d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_panel.field_optional_cta_reference
+    - field.field.paragraph.cta_panel.field_required_cta_reference
+    - paragraphs.paragraphs_type.cta_panel
+  module:
+    - paragraphs
+id: paragraph.cta_panel.default
+targetEntityType: paragraph
+bundle: cta_panel
+mode: default
+content:
+  field_optional_cta_reference:
+    type: entity_reference_paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_required_cta_reference:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

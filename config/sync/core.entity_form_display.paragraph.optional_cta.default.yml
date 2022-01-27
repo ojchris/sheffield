@@ -1,0 +1,32 @@
+uuid: e6581536-2370-44fa-8d78-38889722c8ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.optional_cta.field_link_optional_cta
+    - field.field.paragraph.optional_cta.field_link_text_optional_cta
+    - paragraphs.paragraphs_type.optional_cta
+id: paragraph.optional_cta.default
+targetEntityType: paragraph
+bundle: optional_cta
+mode: default
+content:
+  field_link_optional_cta:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link_text_optional_cta:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

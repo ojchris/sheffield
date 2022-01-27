@@ -1,0 +1,29 @@
+uuid: 404404cb-8ccf-44ca-88f1-94394fefe227
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabbed_content_panel.field_tab_reference
+    - paragraphs.paragraphs_type.tabbed_content_panel
+  module:
+    - paragraphs
+id: paragraph.tabbed_content_panel.default
+targetEntityType: paragraph
+bundle: tabbed_content_panel
+mode: default
+content:
+  field_tab_reference:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
