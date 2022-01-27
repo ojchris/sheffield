@@ -1,0 +1,16 @@
+uuid: 3be2bef5-7d3e-4cbe-8c2b-15ba1b89d8fa
+langcode: en
+status: true
+dependencies: {  }
+id: content_workflow
+label: 'Content workflow'
+module: workflow
+options:
+  name_as_title: 1
+  fieldset: 1
+  options: radios
+  schedule_enable: true
+  schedule_timezone: 1
+  always_update_entity: 0
+  comment_log_node: 1
+  watchdog_log: 1

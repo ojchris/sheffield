@@ -65,6 +65,7 @@
     "drupal/viewsreference": "^1.7",
     "drupal/webform": "^6.1",
     "drupal/webform_ui": "^6.1",
+    "drupal/workflow": "^1.5",
     "drupal/xmlsitemap": "^1.2",
     "drush/drush": "^10.6",
     "phpstan/phpstan": "^1.0",
