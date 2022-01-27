@@ -23,6 +23,7 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'create draft workflow_transition'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

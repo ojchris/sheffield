@@ -1,0 +1,106 @@
+uuid: d25cc157-aec1-4520-84b2-10321484a2c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_required_cta_reference
+    - paragraphs.paragraphs_type.cta_panel
+    - paragraphs.paragraphs_type.required_cta
+  module:
+    - entity_reference_revisions
+id: paragraph.cta_panel.field_required_cta_reference
+field_name: field_required_cta_reference
+entity_type: paragraph
+bundle: cta_panel
+label: 'Required CTA'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      required_cta: required_cta
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 27
+        enabled: false
+      accordion_wrapper:
+        weight: 28
+        enabled: false
+      carousel_slide:
+        weight: 29
+        enabled: false
+      cta_panel:
+        weight: 30
+        enabled: false
+      download_panel:
+        weight: 31
+        enabled: false
+      expandable_box:
+        weight: 32
+        enabled: false
+      expandable_panel:
+        weight: 33
+        enabled: false
+      four_column_card:
+        weight: 34
+        enabled: false
+      four_column_panel:
+        weight: 35
+        enabled: false
+      homepage_carousel:
+        weight: 36
+        enabled: false
+      links_section:
+        weight: 37
+        enabled: false
+      listing:
+        weight: 38
+        enabled: false
+      optional_cta:
+        weight: 39
+        enabled: false
+      page_header:
+        weight: 40
+        enabled: false
+      paragraph_banner:
+        weight: 41
+        enabled: false
+      required_cta:
+        weight: 42
+        enabled: true
+      simple_text:
+        weight: 43
+        enabled: false
+      tab:
+        weight: 44
+        enabled: false
+      tabbed_content_panel:
+        weight: 45
+        enabled: false
+      three_column_card:
+        weight: 46
+        enabled: false
+      three_column_panel:
+        weight: 47
+        enabled: false
+      two_column_card:
+        weight: 48
+        enabled: false
+      two_column_panel:
+        weight: 49
+        enabled: false
+      two_column_text_panel:
+        weight: 50
+        enabled: false
+      video_panel:
+        weight: 51
+        enabled: false
+      webform:
+        weight: 52
+        enabled: false
+field_type: entity_reference_revisions

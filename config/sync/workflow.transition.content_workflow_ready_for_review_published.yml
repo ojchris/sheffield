@@ -1,0 +1,19 @@
+uuid: b849d0be-4b04-4497-a044-5013c956a225
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.content_workflow_published
+    - workflow.state.content_workflow_ready_for_review
+id: content_workflow_ready_for_review_published
+label: null
+module: workflow
+from_sid: content_workflow_ready_for_review
+to_sid: content_workflow_published
+roles:
+  administrator: administrator
+  content_admin: content_admin
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  content_editor: '0'

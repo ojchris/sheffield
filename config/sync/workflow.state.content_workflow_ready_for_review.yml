@@ -1,0 +1,12 @@
+uuid: 8dbebb9d-0370-410a-954c-db3e38f7933e
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.workflow.content_workflow
+id: content_workflow_ready_for_review
+label: 'Ready for review'
+module: workflow
+wid: content_workflow
+weight: -8
+sysid: 0

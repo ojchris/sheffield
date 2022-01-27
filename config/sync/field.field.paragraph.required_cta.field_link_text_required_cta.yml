@@ -1,0 +1,19 @@
+uuid: 91342bfe-1d50-4730-928a-332d22ac5c70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_text_required_cta
+    - paragraphs.paragraphs_type.required_cta
+id: paragraph.required_cta.field_link_text_required_cta
+field_name: field_link_text_required_cta
+entity_type: paragraph
+bundle: required_cta
+label: 'Link text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

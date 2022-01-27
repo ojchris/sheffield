@@ -1,0 +1,12 @@
+uuid: a17b75c6-9f54-471b-b549-a93af39e2a62
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.content_workflow_ready_for_review
+id: content_workflow_ready_for_review_ready_for_review
+label: null
+module: workflow
+from_sid: content_workflow_ready_for_review
+to_sid: content_workflow_ready_for_review
+roles: {  }
