@@ -1,0 +1,10 @@
+uuid: 9ab9bc22-acd7-4785-a79b-43a70a555f9c
+langcode: en
+status: true
+dependencies: {  }
+id: cta_panel
+label: 'CTA panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
