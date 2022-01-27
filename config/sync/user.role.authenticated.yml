@@ -24,6 +24,7 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'create content_workflow workflow_transition'
   - 'create draft workflow_transition'
   - 'post comments'
   - 'search content'

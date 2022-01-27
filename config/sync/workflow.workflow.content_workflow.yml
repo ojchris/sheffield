@@ -1,9 +1,9 @@
-uuid: 1e5d06cd-e653-414d-ba0f-03d193ad0cf3
+uuid: 3be2bef5-7d3e-4cbe-8c2b-15ba1b89d8fa
 langcode: en
 status: true
 dependencies: {  }
-id: draft
-label: Draft
+id: content_workflow
+label: 'Content workflow'
 module: workflow
 options:
   name_as_title: 1
