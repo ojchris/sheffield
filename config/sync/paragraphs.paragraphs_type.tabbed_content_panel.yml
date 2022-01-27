@@ -1,0 +1,10 @@
+uuid: 0b9ac453-b5b2-413a-b5f2-e3b7d93b689d
+langcode: en
+status: true
+dependencies: {  }
+id: tabbed_content_panel
+label: 'Tabbed content panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
