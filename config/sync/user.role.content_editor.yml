@@ -9,9 +9,11 @@ dependencies:
     - media.type.remote_video
     - media.type.video
     - taxonomy.vocabulary.tags
+    - workflows.workflow.workflow
   module:
     - comment
     - contact
+    - content_moderation
     - media
     - path
     - taxonomy
@@ -34,6 +36,11 @@ permissions:
   - 'create url aliases'
   - 'create video media'
   - 'delete terms in tags'
+  - 'edit any content_workflow workflow_transition'
   - 'edit own comments'
   - 'edit terms in tags'
   - 'post comments'
+  - 'use workflow transition create_new_draft'
+  - 'use workflow transition review'
+  - 'view any unpublished content'
+  - 'view latest version'

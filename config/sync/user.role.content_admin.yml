@@ -16,8 +16,10 @@ dependencies:
     - node.type.landing_page
     - node.type.page
     - taxonomy.vocabulary.tags
+    - workflows.workflow.workflow
   module:
     - comment
+    - content_moderation
     - file
     - filter
     - media
@@ -35,9 +37,12 @@ label: 'Content admin'
 weight: 3
 is_admin: null
 permissions:
+  - 'access any content_workflow workflow_transion overview'
   - 'access any draft workflow_transion overview'
   - 'access comments'
+  - 'access content_workflow workflow_transition form'
   - 'access files overview'
+  - 'access own content_workflow workflow_transion overview'
   - 'access own draft workflow_transion overview'
   - 'access taxonomy manager list'
   - 'access webform overview'
@@ -83,6 +88,7 @@ permissions:
   - 'delete own video media'
   - 'delete terms in tags'
   - 'edit any audio media'
+  - 'edit any content_workflow workflow_transition'
   - 'edit any course_page content'
   - 'edit any document media'
   - 'edit any homepage content'
@@ -92,6 +98,7 @@ permissions:
   - 'edit any video media'
   - 'edit own audio media'
   - 'edit own comments'
+  - 'edit own content_workflow workflow_transition'
   - 'edit own course_page content'
   - 'edit own document media'
   - 'edit own homepage content'
@@ -102,6 +109,7 @@ permissions:
   - 'edit own video media'
   - 'edit terms in tags'
   - 'post comments'
+  - 'revert any content_workflow workflow_transition'
   - 'revert course_page revisions'
   - 'revert homepage revisions'
   - 'revert landing_page revisions'
@@ -116,5 +124,12 @@ permissions:
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format restricted_html'
+  - 'use workflow transition create_new_draft'
+  - 'use workflow transition publish'
+  - 'use workflow transition review'
+  - 'use workflow transition unpublish'
+  - 'view any unpublished content'
+  - 'view latest version'
   - 'view media'
   - 'view own unpublished media'
+  - 'view scheduled content'

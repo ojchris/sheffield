@@ -12,7 +12,6 @@ dependencies:
     - search
     - shortcut
     - system
-    - workflow
 _core:
   default_config_hash: ekPpkMhQMS27UH7u-7_XkstLn02-67tZpL7svxkOLTQ
 id: authenticated
@@ -24,7 +23,6 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'create content_workflow workflow_transition'
   - 'create draft workflow_transition'
   - 'post comments'
   - 'search content'
