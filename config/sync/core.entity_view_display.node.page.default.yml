@@ -20,6 +20,11 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
@@ -32,22 +37,12 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 2
-    region: content
-  field_display_social_sharing_but:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 7
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   title:
     type: title
@@ -56,11 +51,12 @@ content:
       linked: false
       tag: h1
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   created: true
   field_display_accessibility_butt: true
+  field_display_social_sharing_but: true
   field_hide_title: true
   field_page_owner: true
   field_review_date: true
