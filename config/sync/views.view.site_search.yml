@@ -117,7 +117,7 @@ display:
         type: input_required
         options:
           submit_button: Search
-          reset_button: false
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -141,7 +141,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No result for the searched term <strong><i>{{ body }}</i></strong>'
+          content: 'No result for the searched term <strong><i></i></strong>'
           tokenize: true
       sorts: {  }
       arguments: {  }
