@@ -1,0 +1,32 @@
+uuid: bd7baf64-51da-44e8-98b2-222a5e4016bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.expandable_box.field_description_expandable
+    - field.field.paragraph.expandable_box.field_title_expandable
+    - paragraphs.paragraphs_type.expandable_box
+  module:
+    - text
+id: paragraph.expandable_box.default
+targetEntityType: paragraph
+bundle: expandable_box
+mode: default
+content:
+  field_description_expandable:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title_expandable:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

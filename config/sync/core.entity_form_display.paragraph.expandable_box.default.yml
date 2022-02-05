@@ -1,0 +1,34 @@
+uuid: b3b206ca-62ef-46fa-b26d-c066111e8199
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.expandable_box.field_description_expandable
+    - field.field.paragraph.expandable_box.field_title_expandable
+    - paragraphs.paragraphs_type.expandable_box
+  module:
+    - text
+id: paragraph.expandable_box.default
+targetEntityType: paragraph
+bundle: expandable_box
+mode: default
+content:
+  field_description_expandable:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_expandable:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

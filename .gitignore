@@ -29,6 +29,7 @@
 # Ignore sensitive information
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
+web/sites/*/settings.ddev.php
 /web/sites/*/settings.production.php
 
 # Ignore Drupal's file directory

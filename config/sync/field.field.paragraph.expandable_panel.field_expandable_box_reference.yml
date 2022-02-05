@@ -1,0 +1,91 @@
+uuid: c202cf17-dc8b-482e-8b7a-f2f3af69b7c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_expandable_box_reference
+    - paragraphs.paragraphs_type.expandable_box
+    - paragraphs.paragraphs_type.expandable_panel
+  module:
+    - entity_reference_revisions
+id: paragraph.expandable_panel.field_expandable_box_reference
+field_name: field_expandable_box_reference
+entity_type: paragraph
+bundle: expandable_panel
+label: 'Expandable box'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      expandable_box: expandable_box
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 22
+        enabled: false
+      accordion_wrapper:
+        weight: 23
+        enabled: false
+      carousel_slide:
+        weight: 24
+        enabled: false
+      download_panel:
+        weight: 25
+        enabled: false
+      expandable_box:
+        weight: 26
+        enabled: true
+      expandable_panel:
+        weight: 27
+        enabled: false
+      four_column_card:
+        weight: 28
+        enabled: false
+      four_column_panel:
+        weight: 29
+        enabled: false
+      homepage_carousel:
+        weight: 30
+        enabled: false
+      links_section:
+        weight: 31
+        enabled: false
+      listing:
+        weight: 32
+        enabled: false
+      page_header:
+        weight: 33
+        enabled: false
+      paragraph_banner:
+        weight: 34
+        enabled: false
+      simple_text:
+        weight: 35
+        enabled: false
+      three_column_card:
+        weight: 36
+        enabled: false
+      three_column_panel:
+        weight: 37
+        enabled: false
+      two_column_card:
+        weight: 38
+        enabled: false
+      two_column_panel:
+        weight: 39
+        enabled: false
+      two_column_text_panel:
+        weight: 40
+        enabled: false
+      video_panel:
+        weight: 41
+        enabled: false
+      webform:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

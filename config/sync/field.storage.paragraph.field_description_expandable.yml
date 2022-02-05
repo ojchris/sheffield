@@ -1,0 +1,19 @@
+uuid: 93b215e3-80a5-4a4e-b322-f8da3b870b93
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_description_expandable
+field_name: field_description_expandable
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

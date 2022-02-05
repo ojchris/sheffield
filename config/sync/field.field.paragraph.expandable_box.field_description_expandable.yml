@@ -1,0 +1,21 @@
+uuid: fc4275b6-8903-49a5-ab2e-457da44cacbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_expandable
+    - paragraphs.paragraphs_type.expandable_box
+  module:
+    - text
+id: paragraph.expandable_box.field_description_expandable
+field_name: field_description_expandable
+entity_type: paragraph
+bundle: expandable_box
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
