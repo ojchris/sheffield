@@ -17,26 +17,26 @@ bundle: document
 mode: default
 content:
   field_background_colour:
-    weight: 2
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 2
     region: content
   field_description:
-    weight: 1
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_media_file:
+    type: file_default
     label: visually_hidden
-    weight: 0
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 0
     region: content
 hidden:
   created: true

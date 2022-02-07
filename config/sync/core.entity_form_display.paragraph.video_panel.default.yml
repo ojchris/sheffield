@@ -15,25 +15,25 @@ bundle: video_panel
 mode: default
 content:
   field_background_colour:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_image:
+    type: media_library_widget
     weight: 1
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_video:
     type: media_library_widget
     weight: 0
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   status: true

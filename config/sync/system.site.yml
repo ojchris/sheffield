@@ -1,3 +1,7 @@
+_core:
+  default_config_hash: VL4blWmYMVRBcYC3phlzlME2dpr4YKlMAe4E3sQAb-U
+langcode: en
+uuid: 921a9dfe-545e-4827-a49c-89add41a518d
 name: sheffield-iapt.dev.bbdtest.co.uk
 mail: admin@bigbluedoor.net
 slogan: ''
@@ -7,8 +11,4 @@ page:
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: VL4blWmYMVRBcYC3phlzlME2dpr4YKlMAe4E3sQAb-U
-uuid: 921a9dfe-545e-4827-a49c-89add41a518d
