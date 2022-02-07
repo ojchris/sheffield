@@ -1,0 +1,10 @@
+uuid: e0754138-da4f-4d3f-bc00-83a693d45b09
+langcode: en
+status: true
+dependencies: {  }
+id: required_cta
+label: 'Required CTA'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

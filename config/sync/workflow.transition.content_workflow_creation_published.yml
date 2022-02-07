@@ -1,0 +1,19 @@
+uuid: 05b67271-2640-406d-a5dd-375af5ef5d08
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.content_workflow_creation
+    - workflow.state.content_workflow_published
+id: content_workflow_creation_published
+label: null
+module: workflow
+from_sid: content_workflow_creation
+to_sid: content_workflow_published
+roles:
+  administrator: administrator
+  content_admin: content_admin
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  content_editor: '0'
