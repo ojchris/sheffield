@@ -1,0 +1,12 @@
+uuid: ad295b1c-d432-4ee8-a0e6-a17facd8b3dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.workflow.content_workflow
+id: content_workflow_unpublished
+label: Unpublished
+module: workflow
+wid: content_workflow
+weight: -8
+sysid: 0

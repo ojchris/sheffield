@@ -1,0 +1,19 @@
+uuid: 7cabba10-d3bc-420b-94cc-ed6039ff55da
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.content_workflow_published
+    - workflow.state.content_workflow_ready_for_review
+id: content_workflow_published_ready_for_review
+label: null
+module: workflow
+from_sid: content_workflow_published
+to_sid: content_workflow_ready_for_review
+roles:
+  administrator: administrator
+  content_admin: content_admin
+  content_editor: content_editor
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
