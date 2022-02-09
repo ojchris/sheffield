@@ -1,0 +1,97 @@
+uuid: 589ff1d4-8455-476c-aa5f-fa39d23406a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_reference
+    - paragraphs.paragraphs_type.tab
+    - paragraphs.paragraphs_type.tabbed_content_panel
+  module:
+    - entity_reference_revisions
+id: paragraph.tabbed_content_panel.field_tab_reference
+field_name: field_tab_reference
+entity_type: paragraph
+bundle: tabbed_content_panel
+label: Tab
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tab: tab
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 24
+        enabled: false
+      accordion_wrapper:
+        weight: 25
+        enabled: false
+      carousel_slide:
+        weight: 26
+        enabled: false
+      download_panel:
+        weight: 27
+        enabled: false
+      expandable_box:
+        weight: 28
+        enabled: false
+      expandable_panel:
+        weight: 29
+        enabled: false
+      four_column_card:
+        weight: 30
+        enabled: false
+      four_column_panel:
+        weight: 31
+        enabled: false
+      homepage_carousel:
+        weight: 32
+        enabled: false
+      links_section:
+        weight: 33
+        enabled: false
+      listing:
+        weight: 34
+        enabled: false
+      page_header:
+        weight: 35
+        enabled: false
+      paragraph_banner:
+        weight: 36
+        enabled: false
+      simple_text:
+        weight: 37
+        enabled: false
+      tab:
+        weight: 38
+        enabled: true
+      tabbed_content_panel:
+        weight: 39
+        enabled: false
+      three_column_card:
+        weight: 40
+        enabled: false
+      three_column_panel:
+        weight: 41
+        enabled: false
+      two_column_card:
+        weight: 42
+        enabled: false
+      two_column_panel:
+        weight: 43
+        enabled: false
+      two_column_text_panel:
+        weight: 44
+        enabled: false
+      video_panel:
+        weight: 45
+        enabled: false
+      webform:
+        weight: 46
+        enabled: false
+field_type: entity_reference_revisions

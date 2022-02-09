@@ -1,0 +1,46 @@
+uuid: 5c07ad2f-9f19-4f8a-9450-9520381dc94a
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - taxonomy.vocabulary.tags
+    - workflows.workflow.workflow
+  module:
+    - comment
+    - contact
+    - content_moderation
+    - media
+    - path
+    - taxonomy
+    - webform
+    - workflow
+id: content_editor
+label: 'Content editor'
+weight: 4
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access site-wide contact form'
+  - 'access webform submission user'
+  - 'create audio media'
+  - 'create content_workflow workflow_transition'
+  - 'create document media'
+  - 'create image media'
+  - 'create remote_video media'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'create video media'
+  - 'delete terms in tags'
+  - 'edit any content_workflow workflow_transition'
+  - 'edit own comments'
+  - 'edit terms in tags'
+  - 'post comments'
+  - 'use workflow transition create_new_draft'
+  - 'use workflow transition review'
+  - 'view any unpublished content'
+  - 'view latest version'

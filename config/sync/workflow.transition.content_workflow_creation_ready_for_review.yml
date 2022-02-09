@@ -1,0 +1,19 @@
+uuid: a23a7fad-dc21-4797-b1fd-3732703297ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.content_workflow_creation
+    - workflow.state.content_workflow_ready_for_review
+id: content_workflow_creation_ready_for_review
+label: null
+module: workflow
+from_sid: content_workflow_creation
+to_sid: content_workflow_ready_for_review
+roles:
+  administrator: administrator
+  content_admin: content_admin
+  content_editor: content_editor
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
