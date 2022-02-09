@@ -1,0 +1,19 @@
+uuid: 27453622-cf35-4312-abef-858633cd5c53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_optional_cta
+    - paragraphs.paragraphs_type.optional_cta
+id: paragraph.optional_cta.field_link_optional_cta
+field_name: field_link_optional_cta
+entity_type: paragraph
+bundle: optional_cta
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

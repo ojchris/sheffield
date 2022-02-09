@@ -1,0 +1,35 @@
+uuid: c8956455-79bc-458c-b44c-1df6ac756d22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_panel.field_optional_cta_reference
+    - field.field.paragraph.cta_panel.field_required_cta_reference
+    - paragraphs.paragraphs_type.cta_panel
+  module:
+    - entity_reference_revisions
+id: paragraph.cta_panel.default
+targetEntityType: paragraph
+bundle: cta_panel
+mode: default
+content:
+  field_optional_cta_reference:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_required_cta_reference:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

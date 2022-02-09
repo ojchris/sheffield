@@ -1,0 +1,21 @@
+uuid: a2c6137e-9c3f-4790-a7ec-19bddf2c8324
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_title_expandable
+field_name: field_title_expandable
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

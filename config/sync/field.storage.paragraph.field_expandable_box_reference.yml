@@ -1,0 +1,20 @@
+uuid: c856987a-0541-4d1c-ae96-ad6b6cd5eb5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_expandable_box_reference
+field_name: field_expandable_box_reference
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

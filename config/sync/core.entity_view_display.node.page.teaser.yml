@@ -12,7 +12,7 @@ dependencies:
     - field.field.node.page.field_review_date
     - node.type.page
   module:
-    - user
+    - manage_display
 _core:
   default_config_hash: c1CdicGaHvg0fv9G-zXh1Z_5s9DhONFcGT5VjEhfS_c
 id: node.page.teaser
@@ -20,6 +20,16 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   links:
     weight: 101
     region: content

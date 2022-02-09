@@ -1,0 +1,25 @@
+uuid: e987e4c2-7ee6-4bf1-9b5e-d0ee85d9470e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabbed_content_panel.field_tab_reference
+    - paragraphs.paragraphs_type.tabbed_content_panel
+  module:
+    - entity_reference_revisions
+id: paragraph.tabbed_content_panel.default
+targetEntityType: paragraph
+bundle: tabbed_content_panel
+mode: default
+content:
+  field_tab_reference:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

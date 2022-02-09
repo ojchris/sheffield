@@ -1,0 +1,10 @@
+uuid: e164bddd-48da-4932-b576-a4808785f0e6
+langcode: en
+status: true
+dependencies: {  }
+id: expandable_box
+label: 'Expandable box'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
