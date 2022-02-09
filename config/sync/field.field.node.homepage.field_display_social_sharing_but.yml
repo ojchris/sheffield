@@ -1,0 +1,23 @@
+uuid: c2bdb853-b3e9-4068-b713-a07070e64584
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_social_sharing_but
+    - node.type.homepage
+id: node.homepage.field_display_social_sharing_but
+field_name: field_display_social_sharing_but
+entity_type: node
+bundle: homepage
+label: 'Display "Social sharing" buttons'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
