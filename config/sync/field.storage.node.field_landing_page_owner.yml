@@ -1,0 +1,20 @@
+uuid: 436ac069-34c6-4bc5-b7d4-fe8bde2c7555
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_landing_page_owner
+field_name: field_landing_page_owner
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
