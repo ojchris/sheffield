@@ -20,6 +20,16 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_content_sections:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -27,12 +37,12 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   title:
     type: title
@@ -41,7 +51,7 @@ content:
       linked: false
       tag: h1
     third_party_settings: {  }
-    weight: -50
+    weight: 1
     region: content
 hidden:
   created: true

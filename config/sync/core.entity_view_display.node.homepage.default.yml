@@ -4,8 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.homepage.field_content_sections
+    - field.field.node.homepage.field_display_accessibility_butt
+    - field.field.node.homepage.field_display_social_sharing_but
+    - field.field.node.homepage.field_hide_title
+    - field.field.node.homepage.field_homepage_owner
+    - field.field.node.homepage.field_review_date
     - node.type.homepage
   module:
+    - datetime
     - entity_reference_revisions
     - manage_display
 id: node.homepage.default
@@ -13,6 +19,16 @@ targetEntityType: node
 bundle: homepage
 mode: default
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_content_sections:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -20,12 +36,59 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 102
+    weight: 3
+    region: content
+  field_display_accessibility_butt:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_display_social_sharing_but:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_hide_title:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_homepage_owner:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_review_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 9
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
   title:
     type: title
@@ -34,7 +97,7 @@ content:
       linked: false
       tag: h1
     third_party_settings: {  }
-    weight: -50
+    weight: 1
     region: content
 hidden:
   created: true

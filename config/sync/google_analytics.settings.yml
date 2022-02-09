@@ -1,6 +1,6 @@
 _core:
   default_config_hash: HuJ72_4FmdV92lluzxsQZ7kELwXX6i3HhfFLF11lhds
-account: ''
+account: UA-215153386-1
 premium: false
 domain_mode: 0
 cross_domains: ''
@@ -14,6 +14,7 @@ visibility:
 track:
   outbound: true
   mailto: true
+  tel: false
   files: true
   files_extensions: '7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip'
   colorbox: true
@@ -30,6 +31,7 @@ privacy:
   eu_cookie_compliance_anonymizeip: false
   eu_cookie_compliance_categories: null
 custom:
+  parameters: {  }
   dimension: {  }
   metric: {  }
 codesnippet:
@@ -39,3 +41,4 @@ codesnippet:
 translation_set: false
 cache: false
 debug: false
+ua_legacy: null

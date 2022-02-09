@@ -1,4 +1,4 @@
-uuid: a6d2a997-a52a-45e1-b198-357d7f2ec628
+uuid: c10f00d1-4d66-4048-916f-37ecca43b433
 langcode: en
 status: true
 dependencies:
@@ -502,11 +502,24 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'access administration pages'
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'Nothing to review.'
+            format: full_html
+          tokenize: false
       sorts:
         field_review_date_value:
           id: field_review_date_value
