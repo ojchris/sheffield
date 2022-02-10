@@ -37,7 +37,6 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 3
-<<<<<<< Updated upstream
     region: content
   field_display_accessibility_butt:
     type: boolean
@@ -85,8 +84,6 @@ content:
       format_type: medium
     third_party_settings: {  }
     weight: 9
-=======
->>>>>>> Stashed changes
     region: content
   links:
     settings: {  }
