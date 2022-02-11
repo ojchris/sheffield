@@ -56,6 +56,7 @@ hidden:
   field_display_accessibility_butt: true
   field_display_social_sharing_but: true
   field_hide_title: true
+  field_landing_page_owner: true
   field_page_owner: true
   field_review_date: true
   langcode: true
