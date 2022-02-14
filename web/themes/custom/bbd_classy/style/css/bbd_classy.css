@@ -22,95 +22,138 @@
 /* Placeholder */
 /* line 4, ../scss/variables/_typography.scss */
 body {
-  font-size: 16px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  line-height: 1.25;
+  font-size: 14px;
+  font-family: "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
+  line-height: 20px;
 }
 
 /* line 10, ../scss/variables/_typography.scss */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Frutiger LT W01_65 Bold1475746", Arial, sans-serif;
   margin: 0 0 25px;
 }
 
-/* line 16, ../scss/variables/_typography.scss */
-h1, .h1 {
-  font-size: 36px;
-  line-height: 1.1666;
-}
-
-/* line 21, ../scss/variables/_typography.scss */
-h2, .h2 {
-  font-size: 30px;
-  line-height: 1.1666;
-}
-
 /* line 26, ../scss/variables/_typography.scss */
-h3, .h3 {
-  font-size: 24px;
+h1,
+.h1 {
+  font-size: 48px;
+  line-height: 56px;
 }
 
-/* line 30, ../scss/variables/_typography.scss */
-h4, .h4 {
-  font-size: 20px;
-  line-height: 1.15;
+/* line 32, ../scss/variables/_typography.scss */
+h2,
+.h2 {
+  font-size: 40px;
+  line-height: 48px;
 }
 
-/* line 35, ../scss/variables/_typography.scss */
-h5, .h5 {
-  font-size: 18px;
-}
-
-/* line 39, ../scss/variables/_typography.scss */
-h6, .h6 {
-  font-size: 14px;
-  line-height: 1.1428;
+/* line 38, ../scss/variables/_typography.scss */
+h3,
+.h3 {
+  font-size: 36px;
+  line-height: 44px;
 }
 
 /* line 44, ../scss/variables/_typography.scss */
+h4,
+.h4 {
+  font-size: 32px;
+  line-height: 39px;
+}
+
+/* line 50, ../scss/variables/_typography.scss */
+h5,
+.h5 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* line 56, ../scss/variables/_typography.scss */
+h6,
+.h6 {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* line 62, ../scss/variables/_typography.scss */
 p {
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0 0 20px;
 }
-
-/* line 51, ../scss/variables/_typography.scss */
-.region-content ul, .region-content ol {
-  font-size: 11px;
-  line-height: 15px;
-  margin: 0 0 20px;
-  padding: 0;
-  list-style-position: inside;
+/* line 67, ../scss/variables/_typography.scss */
+p.small {
+  font-size: 10px;
+  line-height: 14px;
+}
+/* line 72, ../scss/variables/_typography.scss */
+p.large {
+  font-size: 19px;
+  line-height: 28px;
 }
 
-/* line 60, ../scss/variables/_typography.scss */
+/* line 80, ../scss/variables/_typography.scss */
+.region-content ul,
+.region-content ol {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+/* line 90, ../scss/variables/_typography.scss */
+.region-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+/* line 95, ../scss/variables/_typography.scss */
+.region-content ul > li,
+.region-content ol > li {
+  margin-bottom: 8px;
+}
+
+/* line 101, ../scss/variables/_typography.scss */
 a {
   position: relative;
   text-decoration: underline;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  color: #000;
+  color: #005eb8;
 }
-/* line 67, ../scss/variables/_typography.scss */
+/* line 108, ../scss/variables/_typography.scss */
 a:hover, a:focus {
+  color: black;
   text-decoration: none;
+  background: #FFEB3B;
+  border-bottom: solid 3px #212B32;
 }
 
-/* line 73, ../scss/variables/_typography.scss */
+/* line 117, ../scss/variables/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 77, ../scss/variables/_typography.scss */
+/* line 121, ../scss/variables/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 81, ../scss/variables/_typography.scss */
+/* line 125, ../scss/variables/_typography.scss */
 blockquote {
   border: none;
-  border-left: 2px solid #828282;
+  border-left: 2px solid #4C6272;
   margin: 0 0 30px;
   padding: 0 0 0 20px;
   font-size: 20px;
@@ -118,41 +161,53 @@ blockquote {
 }
 
 @media (min-width: 48em) {
-  /* line 91, ../scss/variables/_typography.scss */
-  h1, .h1 {
+  /* line 135, ../scss/variables/_typography.scss */
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* line 140, ../scss/variables/_typography.scss */
+  h1,
+  .h1 {
     font-size: 48px;
   }
 
-  /* line 95, ../scss/variables/_typography.scss */
-  h2, .h2 {
+  /* line 145, ../scss/variables/_typography.scss */
+  h2,
+  .h2 {
     font-size: 40px;
     line-height: 1.175;
   }
 
-  /* line 100, ../scss/variables/_typography.scss */
-  h3, .h3 {
+  /* line 151, ../scss/variables/_typography.scss */
+  h3,
+  .h3 {
     font-size: 36px;
   }
 
-  /* line 104, ../scss/variables/_typography.scss */
-  h4, .h4 {
+  /* line 156, ../scss/variables/_typography.scss */
+  h4,
+  .h4 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 109, ../scss/variables/_typography.scss */
+  /* line 162, ../scss/variables/_typography.scss */
   p {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
-  /* line 115, ../scss/variables/_typography.scss */
-  .region-content ul, .region-content ol {
-    font-size: 12px;
-    line-height: 16px;
+  /* line 169, ../scss/variables/_typography.scss */
+  .region-content ul,
+  .region-content ol {
+    font-size: 19px;
+    margin-bottom: 24px;
+    line-height: 1.47368;
   }
 
-  /* line 121, ../scss/variables/_typography.scss */
+  /* line 177, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 30px;
     font-size: 24px;
@@ -160,49 +215,60 @@ blockquote {
   }
 }
 @media (min-width: 64em) {
-  /* line 129, ../scss/variables/_typography.scss */
-  h1, .h1 {
+  /* line 186, ../scss/variables/_typography.scss */
+  body {
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  /* line 191, ../scss/variables/_typography.scss */
+  h1,
+  .h1 {
     font-size: 72px;
   }
 
-  /* line 133, ../scss/variables/_typography.scss */
-  h2, .h2 {
+  /* line 196, ../scss/variables/_typography.scss */
+  h2,
+  .h2 {
     font-size: 64px;
     line-height: 1.1718;
   }
 
-  /* line 138, ../scss/variables/_typography.scss */
-  h3, .h3 {
+  /* line 202, ../scss/variables/_typography.scss */
+  h3,
+  .h3 {
     font-size: 48px;
     line-height: 1.1666;
   }
 
-  /* line 143, ../scss/variables/_typography.scss */
-  h4, .h4 {
+  /* line 208, ../scss/variables/_typography.scss */
+  h4,
+  .h4 {
     font-size: 36px;
     line-height: 1.1666;
   }
 
-  /* line 148, ../scss/variables/_typography.scss */
-  h5, .h5 {
+  /* line 214, ../scss/variables/_typography.scss */
+  h5,
+  .h5 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 153, ../scss/variables/_typography.scss */
+  /* line 220, ../scss/variables/_typography.scss */
   p {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 20px;
-  }
-
-  /* line 160, ../scss/variables/_typography.scss */
-  .region-content ul, .region-content ol {
-    font-size: 14px;
+    font-size: 19px;
     line-height: 20px;
   }
 
-  /* line 166, ../scss/variables/_typography.scss */
+  /* line 227, ../scss/variables/_typography.scss */
+  .region-content ul,
+  .region-content ol {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* line 234, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 50px;
   }
@@ -212,7 +278,7 @@ blockquote {
   width: calc(100% - 40px);
   max-width: 422px;
   background: #fff;
-  box-shadow: 0 5px 30px 0 #27AE60;
+  box-shadow: 0 5px 30px 0 #007F3B;
   border-radius: 0;
 }
 /* line 8, ../scss/base/_datepicker.scss */
@@ -243,7 +309,7 @@ blockquote {
 .ui-datepicker .ui-datepicker-title {
   font-weight: bold;
   font-size: 13px;
-  color: #000;
+  color: #212B32;
   text-transform: uppercase;
 }
 /* line 40, ../scss/base/_datepicker.scss */
@@ -257,7 +323,7 @@ blockquote {
   font-size: 13px;
   line-height: 30px;
   padding: 0;
-  color: #000;
+  color: #212B32;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -265,16 +331,16 @@ blockquote {
 /* line 58, ../scss/base/_datepicker.scss */
 .ui-datepicker .ui-datepicker-current-day a, .ui-datepicker .ui-datepicker-current-day span {
   border-radius: 50%;
-  background: #27AE60;
+  background: #007F3B;
 }
 /* line 64, ../scss/base/_datepicker.scss */
 .ui-datepicker .ui-datepicker-current-day.ui-datepicker-today a, .ui-datepicker .ui-datepicker-current-day.ui-datepicker-today span {
-  background: #27AE60;
+  background: #007F3B;
 }
 /* line 71, ../scss/base/_datepicker.scss */
 .ui-datepicker .startDate a, .ui-datepicker .endDate a {
   border-radius: 50%;
-  background: #27AE60;
+  background: #007F3B;
 }
 /* line 79, ../scss/base/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev .ui-icon,
@@ -292,7 +358,7 @@ blockquote {
   width: 8px;
   height: 1px;
   margin: 0;
-  border-top: 1px solid #27AE60;
+  border-top: 1px solid #007F3B;
 }
 /* line 94, ../scss/base/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev .ui-icon::before,
@@ -369,7 +435,7 @@ blockquote {
 }
 /* line 1, ../scss/base/_form.scss */
 button, input, optgroup, select, textarea {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
   color: #4f4f4f;
 }
 
@@ -378,7 +444,7 @@ button, a.button, .form-submit, input[type="submit"] {
   display: inline-block;
   vertical-align: top;
   margin: 0 10px 0 0;
-  font: 700 14px/20px "Roboto", Helvetica, Arial, sans-serif;
+  font: 700 14px/20px "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
   background: #2F80ED;
   padding: 11px 20px;
   color: #fff;
@@ -389,7 +455,7 @@ button, a.button, .form-submit, input[type="submit"] {
 }
 /* line 19, ../scss/base/_form.scss */
 button:hover, button:focus, a.button:hover, a.button:focus, .form-submit:hover, .form-submit:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-  box-shadow: 0 5px 15px #e0e0e0;
+  box-shadow: 0 5px 15px #AEB7BD;
   text-decoration: none;
 }
 /* line 24, ../scss/base/_form.scss */
@@ -402,11 +468,11 @@ button[disabled], a.button[disabled], .form-submit[disabled], input[type="submit
 }
 /* line 32, ../scss/base/_form.scss */
 button[id^="edit-reset"], button[id^="edit-delete"], a.button[id^="edit-reset"], a.button[id^="edit-delete"], .form-submit[id^="edit-reset"], .form-submit[id^="edit-delete"], input[type="submit"][id^="edit-reset"], input[type="submit"][id^="edit-delete"] {
-  background: #EB5757;
+  background: #D5281B;
 }
 /* line 37, ../scss/base/_form.scss */
 .red button, .red a.button, .red .form-submit, .red input[type="submit"] {
-  background: #EB5757;
+  background: #D5281B;
 }
 /* line 40, ../scss/base/_form.scss */
 .red button:active, .red a.button:active, .red .form-submit:active, .red input[type="submit"]:active {
@@ -415,16 +481,16 @@ button[id^="edit-reset"], button[id^="edit-delete"], a.button[id^="edit-reset"],
 /* line 45, ../scss/base/_form.scss */
 .grey button, .grey a.button, .grey .form-submit, .grey input[type="submit"] {
   color: #333;
-  background: #e0e0e0;
+  background: #AEB7BD;
 }
 /* line 49, ../scss/base/_form.scss */
 .grey button:active, .grey a.button:active, .grey .form-submit:active, .grey input[type="submit"]:active {
-  background: #bdbdbd;
+  background: #768692;
 }
 
 /* line 55, ../scss/base/_form.scss */
 a.button {
-  background: #EB5757;
+  background: #D5281B;
   text-decoration: none;
 }
 /* line 59, ../scss/base/_form.scss */
@@ -434,9 +500,9 @@ a.button:active {
 
 /* line 64, ../scss/base/_form.scss */
 input, optgroup, select, textarea {
-  background: #f2f2f2;
+  background: #D8DDE0;
   padding: 10px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #AEB7BD;
   border-radius: 3px;
 }
 
@@ -450,7 +516,7 @@ input:not([type="radio"], [type='checkbox'], [type="date"], [type="time"], [type
 input[type="search"] {
   box-sizing: border-box;
   padding-right: 40px;
-  background: #f2f2f2 url("../../images/icon-search.png") no-repeat right 15px bottom 50%;
+  background: #D8DDE0 url("../../images/icon-search.png") no-repeat right 15px bottom 50%;
   background-size: 15px;
 }
 
@@ -519,7 +585,7 @@ tr.odd .form-item, tr.even .form-item {
 /* line 142, ../scss/base/_form.scss */
 .form-wrapper .paragraphs-dropdown-action.button {
   max-width: 100%;
-  color: #000;
+  color: #212B32;
 }
 /* line 146, ../scss/base/_form.scss */
 .form-wrapper .paragraphs-dropdown-action.button:hover, .form-wrapper .paragraphs-dropdown-action.button:focus {
@@ -555,14 +621,14 @@ form .file ~ .button {
 }
 /* line 186, ../scss/base/_form.scss */
 form .selectric {
-  background: #f2f2f2;
+  background: #D8DDE0;
   padding: 10px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #AEB7BD;
   border-radius: 3px;
 }
 /* line 192, ../scss/base/_form.scss */
 form .selectric .label {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 20px;
@@ -586,10 +652,10 @@ form .selectric .button::after {
 }
 /* line 216, ../scss/base/_form.scss */
 form .selectric-items {
-  background: #f2f2f2;
+  background: #D8DDE0;
   width: 100%;
   padding: 5px;
-  box-shadow: 0 5px 10px 0 #bdbdbd;
+  box-shadow: 0 5px 10px 0 #768692;
   border-radius: 3px;
 }
 /* line 223, ../scss/base/_form.scss */
@@ -598,23 +664,23 @@ form .selectric-items ul {
 }
 /* line 227, ../scss/base/_form.scss */
 form .selectric-items li {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
   font-size: 12px;
   padding: 10px;
 }
 /* line 232, ../scss/base/_form.scss */
 form .selectric-items li.highlighted {
-  background-color: #bdbdbd;
+  background-color: #768692;
   color: #fff;
 }
 /* line 236, ../scss/base/_form.scss */
 form .selectric-items li.highlighted:hover {
-  background-color: #bdbdbd;
+  background-color: #768692;
   color: #fff;
 }
 /* line 242, ../scss/base/_form.scss */
 form .selectric-items li:hover {
-  background-color: #e0e0e0;
+  background-color: #AEB7BD;
 }
 /* line 251, ../scss/base/_form.scss */
 form .selectric-hover .selectric .button {
@@ -651,7 +717,7 @@ form .js-form-type-date input {
 }
 /* line 288, ../scss/base/_form.scss */
 form .js-form-type-date input.form-date {
-  background: #e0e0e0 url("../../images/icon-calendar.svg") no-repeat right 15px bottom 50%;
+  background: #AEB7BD url("../../images/icon-calendar.svg") no-repeat right 15px bottom 50%;
   background-size: 21px 24px;
 }
 /* line 292, ../scss/base/_form.scss */
@@ -701,19 +767,19 @@ form .form-actions.form-wrapper:not(:empty) {
 }
 /* line 107, ../scss/abstractions/_site_mixins.scss */
 form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
-  color: #bdbdbd;
+  color: #768692;
 }
 /* line 110, ../scss/abstractions/_site_mixins.scss */
 form input::-moz-placeholder, form textarea::-moz-placeholder {
-  color: #bdbdbd;
+  color: #768692;
 }
 /* line 113, ../scss/abstractions/_site_mixins.scss */
 form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
-  color: #bdbdbd;
+  color: #768692;
 }
 /* line 116, ../scss/abstractions/_site_mixins.scss */
 form input:-moz-placeholder, form textarea:-moz-placeholder {
-  color: #bdbdbd;
+  color: #768692;
 }
 /* line 347, ../scss/base/_form.scss */
 form input[type="file"].form-file {
@@ -729,7 +795,7 @@ form input[type="file"].form-file {
 form input[type="file"].form-file::-webkit-file-upload-button, form input[type="file"].form-file::file-selector-button {
   display: inline-block;
   background: #fff;
-  color: #bdbdbd;
+  color: #768692;
   border: 0;
   white-space: nowrap;
   cursor: pointer;
@@ -739,7 +805,7 @@ form input[type="file"].form-file::-webkit-file-upload-button, form input[type="
 }
 /* line 369, ../scss/base/_form.scss */
 form input[type="file"].form-file::before {
-  color: #bdbdbd;
+  color: #768692;
   display: block;
   text-align: center;
   content: 'Drop your image here, or browse';
@@ -763,7 +829,7 @@ form > .form-item.checkboxes--wrapper, form > .form-item.radios--wrapper {
 /* line 397, ../scss/base/_form.scss */
 form .form-item > label, form .form-item legend {
   display: block;
-  font: bold 12px/14px "Roboto", Helvetica, Arial, sans-serif;
+  font: bold 12px/14px "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
   color: #4f4f4f;
   margin-bottom: 10px;
 }
@@ -774,7 +840,7 @@ form .form-item input[type="tel"], form .form-item.js-form-item-date-field input
 /* line 410, ../scss/base/_form.scss */
 form h4.label {
   display: block;
-  font: bold 11px/14px "Roboto", Helvetica, Arial, sans-serif;
+  font: bold 11px/14px "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
   color: #4f4f4f;
   margin-bottom: 6px;
 }
@@ -806,8 +872,8 @@ form .js-form-type-radio label::after {
 /* line 441, ../scss/base/_form.scss */
 form .js-form-type-checkbox label::before,
 form .js-form-type-radio label::before {
-  background: #f2f2f2;
-  border: 1px solid #bdbdbd;
+  background: #D8DDE0;
+  border: 1px solid #768692;
 }
 /* line 449, ../scss/base/_form.scss */
 form .js-form-type-checkbox .form-checkbox {
@@ -859,7 +925,7 @@ form .js-form-type-radio label::before {
 }
 /* line 506, ../scss/base/_form.scss */
 form .file ~ .button {
-  background: #EB5757;
+  background: #D5281B;
   margin-left: 20px;
   max-width: 200px;
   min-width: 200px;
@@ -867,7 +933,7 @@ form .file ~ .button {
 }
 /* line 513, ../scss/base/_form.scss */
 form .file ~ .button:hover, form .file ~ .button:focus {
-  background: #EB5757;
+  background: #D5281B;
 }
 
 @media (min-width: 64em) {
@@ -1042,7 +1108,7 @@ table th {
 }
 /* line 26, ../scss/base/_general.scss */
 table tbody tr:nth-child(odd) td {
-  background: #f2f2f2;
+  background: #D8DDE0;
 }
 
 /* line 33, ../scss/base/_general.scss */
@@ -1103,7 +1169,7 @@ iframe {
 
 /* line 85, ../scss/base/_general.scss */
 #page-wrapper {
-  background: #fff;
+  background: #f0f4f5;
   padding: 0 1.25em;
 }
 
@@ -1268,13 +1334,13 @@ iframe {
 .site-name {
   display: inline-block;
   vertical-align: top;
-  font: 700 14px/21px "Roboto", Helvetica, Arial, sans-serif;
-  color: #2D9CDB;
+  font: 700 14px/21px "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
+  color: #005eb8;
   width: 100%;
 }
 /* line 66, ../scss/base/_header.scss */
 .site-name a {
-  color: #2D9CDB;
+  color: #005eb8;
   text-decoration: none;
 }
 
@@ -1350,7 +1416,7 @@ iframe {
 }
 /* line 43, ../scss/base/_navigation.scss */
 #main-menu-toggle:hover, #main-menu-toggle:focus {
-  box-shadow: 0 5px 30px 0 rgba(78, 212, 193, 0.2);
+  box-shadow: 0 5px 30px 0 rgba(0, 127, 59, 0.2);
 }
 /* line 48, ../scss/base/_navigation.scss */
 #main-menu-toggle .hambuger-bar {
@@ -1358,7 +1424,7 @@ iframe {
   width: 1.3125em;
   margin: 3px auto 0;
   height: 3px;
-  background: #000;
+  background: #212B32;
   opacity: 1;
   position: absolute;
   left: 9px;
@@ -1383,7 +1449,7 @@ iframe {
 
 /* line 75, ../scss/base/_navigation.scss */
 #nav-opener:focus #main-menu-toggle {
-  box-shadow: 0 5px 30px 0 rgba(78, 212, 193, 0.2);
+  box-shadow: 0 5px 30px 0 rgba(0, 127, 59, 0.2);
 }
 
 /* line 81, ../scss/base/_navigation.scss */
@@ -1397,18 +1463,18 @@ iframe {
 }
 /* line 89, ../scss/base/_navigation.scss */
 #main-menu-sidebar ul.menu a {
-  color: #000;
+  color: #212B32;
   text-decoration: none;
   border-bottom: 3px solid transparent;
 }
 /* line 94, ../scss/base/_navigation.scss */
 #main-menu-sidebar ul.menu a:hover, #main-menu-sidebar ul.menu a:focus {
-  border-bottom-color: #000;
+  border-bottom-color: #212B32;
   text-decoration: none;
 }
 /* line 102, ../scss/base/_navigation.scss */
 #main-menu-sidebar ul.menu .menu-item--active-trail a {
-  border-bottom-color: #000;
+  border-bottom-color: #212B32;
 }
 /* line 108, ../scss/base/_navigation.scss */
 #main-menu-sidebar .header-main-menu {
@@ -1427,7 +1493,7 @@ iframe {
 /* line 122, ../scss/base/_navigation.scss */
 #main-menu-overlay {
   display: none;
-  background-color: #EB5757;
+  background-color: #D5281B;
   opacity: 1;
   z-index: 2;
   width: 100%;
@@ -1491,7 +1557,7 @@ ul.main-megamenu li {
   display: inline-block;
   vertical-align: top;
   margin: 0 8px;
-  font: 700 14px/16px "Roboto", Helvetica, Arial, sans-serif;
+  font: 700 14px/16px "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
 }
 /* line 191, ../scss/base/_navigation.scss */
 ul.main-megamenu li a {
@@ -1523,7 +1589,7 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
     height: 100vh;
     bottom: 0;
     z-index: 0;
-    background: #EB5757;
+    background: #D5281B;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -1555,7 +1621,7 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   }
   /* line 253, ../scss/base/_navigation.scss */
   #main-menu-sidebar ul.menu a {
-    color: #828282;
+    color: #4C6272;
   }
   /* line 258, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li {
@@ -1567,18 +1633,18 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   #main-menu-sidebar nav.navigation ul li a {
     display: block;
     padding: 5px 0;
-    color: #828282;
+    color: #4C6272;
     border-bottom: 3px solid transparent;
   }
   /* line 269, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li a:hover, #main-menu-sidebar nav.navigation ul li a:focus {
     text-decoration: none;
-    border-bottom-color: #EB5757;
+    border-bottom-color: #D5281B;
   }
   /* line 277, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li.menu-item--active-trail a {
     text-decoration: none;
-    border-bottom-color: #EB5757;
+    border-bottom-color: #D5281B;
   }
 
   /* line 285, ../scss/base/_navigation.scss */
@@ -1629,10 +1695,10 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   background: none;
   font-size: 10px;
   text-indent: -9999em;
-  border-top: 0.5em solid #27AE60;
-  border-right: 0.5em solid #27AE60;
-  border-bottom: 0.5em solid #27AE60;
-  border-left: 0.5em solid #828282;
+  border-top: 0.5em solid #007F3B;
+  border-right: 0.5em solid #007F3B;
+  border-bottom: 0.5em solid #007F3B;
+  border-left: 0.5em solid #4C6272;
   transform: translateZ(0);
   -webkit-animation: load 1s infinite linear;
   animation: load .5s infinite linear;
