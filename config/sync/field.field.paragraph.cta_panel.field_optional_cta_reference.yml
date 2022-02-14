@@ -14,7 +14,7 @@ entity_type: paragraph
 bundle: cta_panel
 label: 'Optional CTA'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

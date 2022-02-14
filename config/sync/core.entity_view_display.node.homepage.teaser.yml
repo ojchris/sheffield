@@ -5,11 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.homepage.field_content_sections
-    - field.field.node.homepage.field_display_accessibility_butt
-    - field.field.node.homepage.field_display_social_sharing_but
-    - field.field.node.homepage.field_hide_title
-    - field.field.node.homepage.field_homepage_owner
-    - field.field.node.homepage.field_review_date
     - node.type.homepage
   module:
     - manage_display
@@ -18,6 +13,11 @@ targetEntityType: node
 bundle: homepage
 mode: teaser
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -33,13 +33,9 @@ content:
     weight: -50
     region: content
 hidden:
+  addtoany: true
   created: true
   field_content_sections: true
-  field_display_accessibility_butt: true
-  field_display_social_sharing_but: true
-  field_hide_title: true
-  field_homepage_owner: true
-  field_review_date: true
   langcode: true
   search_api_excerpt: true
   uid: true
