@@ -1,7 +1,15 @@
 #block-top-cta-bar {
-  //.region-help*/
-  order: 4;
-  padding: 15px 0 0;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+  padding: 15px 0;
   background: $blue-light;
-  width: 100%;
+  width: calc(100% + 40px * 2);
+  margin-left: -40px;
+}
+
+#block-top-cta-bar p {
+  margin: 0;
+  padding: 0;
 }
