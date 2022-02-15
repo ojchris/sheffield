@@ -1,0 +1,39 @@
+#page-wrapper {
+  padding: 0;
+  margin: 0;
+
+  &>* {
+    padding: 0 1.25em;
+  }
+}
+
+@media (min-width: 90em) {
+  #page-wrapper {
+    padding: 0;
+
+    &>* {
+      padding: 0 3.125em;
+    }
+  }
+}
+
+@media (min-width: 64em) {
+  #page-wrapper {
+    padding: 0;
+
+    &>* {
+      padding: 0 2.5em;
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  #page-wrapper {
+    padding: 0;
+
+    &>* {
+      padding: 0 1.875em;
+    }
+  }
+
+}
