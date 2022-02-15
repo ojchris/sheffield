@@ -1720,6 +1720,11 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
     transform: rotate(360deg);
   }
 }
+/* line 1, ../scss/components/_menu.scss */
+nav.block-bbd-classy-main-menu {
+  width: 100%;
+}
+
 /* line 1, ../scss/components/_search-form.scss */
 .search-block-form {
   width: 40px;
