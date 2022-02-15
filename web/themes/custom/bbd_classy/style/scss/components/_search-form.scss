@@ -1,4 +1,4 @@
-.search-block-form {
+#block-views-block-site-search-block-1 .search-block-form {
   width: 40px;
   height: 40px;
   margin-right: 40px;
@@ -36,7 +36,8 @@
     }
   }
 
-  label::after, .form-submit {
+  label::after,
+  .form-submit {
     cursor: pointer;
     content: '';
     position: absolute;
@@ -52,13 +53,17 @@
     z-index: 2;
   }
 
-  .form-submit, .button {
-    &:hover, &:focus {
+  .form-submit,
+  .button {
+
+    &:hover,
+    &:focus {
       @include box-shadow(none);
     }
   }
 
   &.search-open {
+
     input[type="search"],
     input[type="text"],
     .form-actions {
@@ -106,6 +111,7 @@
 
 @include breakpoint($desk) {
   .search-block-form {
+
     label::after,
     .form-submit {
       max-width: 100%;
@@ -115,6 +121,7 @@
 
 @include breakpoint($widedesk) {
   .search-block-form {
+
     label::after,
     .form-submit {
       background-size: 25px;

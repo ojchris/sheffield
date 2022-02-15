@@ -1,4 +1,30 @@
 .region-header>#block-bbd-classy-main-menu {
   order: 3;
   width: 100%;
+  border-top: 1px solid $transparent_white;
+}
+
+ul.main-megamenu {
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  #block-bbd-classy-main-menu {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 48em) {
+
+  #block-bbd-classy-main-menu,
+  #block-microsite-menu-block,
+  .block-bigbluedoor-blocks-microsite-menu {
+    order: 5;
+    overflow: inherit;
+    height: auto;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+  }
 }

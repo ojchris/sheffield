@@ -1,0 +1,25 @@
+uuid: 696fbaaf-bd4f-4142-a1bf-1f8d473f6455
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:46f3f3c9-6f92-4e53-a4a4-3c95a2827222'
+  module:
+    - block_content
+  theme:
+    - bbd_classy
+id: top_cta_bar
+theme: bbd_classy
+region: help
+weight: -7
+provider: null
+plugin: 'block_content:46f3f3c9-6f92-4e53-a4a4-3c95a2827222'
+settings:
+  id: 'block_content:46f3f3c9-6f92-4e53-a4a4-3c95a2827222'
+  label: 'Top CTA Bar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

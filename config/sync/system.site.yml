@@ -2,7 +2,7 @@ _core:
   default_config_hash: VL4blWmYMVRBcYC3phlzlME2dpr4YKlMAe4E3sQAb-U
 langcode: en
 uuid: 921a9dfe-545e-4827-a49c-89add41a518d
-name: sheffield-iapt.dev.bbdtest.co.uk
+name: 'Sheffield IAPT'
 mail: admin@bigbluedoor.net
 slogan: ''
 page:
