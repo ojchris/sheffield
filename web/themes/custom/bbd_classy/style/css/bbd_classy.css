@@ -136,21 +136,22 @@ a {
 a:hover, a:focus {
   color: black;
   text-decoration: none;
-  background: #FFEB3B;
-  border-bottom: solid 3px #212B32;
+  /*background: $yellow;
+  border-bottom: solid 3px $black;
+  */
 }
 
-/* line 117, ../scss/variables/_typography.scss */
+/* line 118, ../scss/variables/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 121, ../scss/variables/_typography.scss */
+/* line 122, ../scss/variables/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 125, ../scss/variables/_typography.scss */
+/* line 126, ../scss/variables/_typography.scss */
 blockquote {
   border: none;
   border-left: 2px solid #4C6272;
@@ -161,45 +162,45 @@ blockquote {
 }
 
 @media (min-width: 48em) {
-  /* line 135, ../scss/variables/_typography.scss */
+  /* line 136, ../scss/variables/_typography.scss */
   body {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 140, ../scss/variables/_typography.scss */
+  /* line 141, ../scss/variables/_typography.scss */
   h1,
   .h1 {
     font-size: 48px;
   }
 
-  /* line 145, ../scss/variables/_typography.scss */
+  /* line 146, ../scss/variables/_typography.scss */
   h2,
   .h2 {
     font-size: 40px;
     line-height: 1.175;
   }
 
-  /* line 151, ../scss/variables/_typography.scss */
+  /* line 152, ../scss/variables/_typography.scss */
   h3,
   .h3 {
     font-size: 36px;
   }
 
-  /* line 156, ../scss/variables/_typography.scss */
+  /* line 157, ../scss/variables/_typography.scss */
   h4,
   .h4 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 162, ../scss/variables/_typography.scss */
+  /* line 163, ../scss/variables/_typography.scss */
   p {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 169, ../scss/variables/_typography.scss */
+  /* line 170, ../scss/variables/_typography.scss */
   .region-content ul,
   .region-content ol {
     font-size: 19px;
@@ -207,7 +208,7 @@ blockquote {
     line-height: 1.47368;
   }
 
-  /* line 177, ../scss/variables/_typography.scss */
+  /* line 178, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 30px;
     font-size: 24px;
@@ -215,60 +216,60 @@ blockquote {
   }
 }
 @media (min-width: 64em) {
-  /* line 186, ../scss/variables/_typography.scss */
+  /* line 187, ../scss/variables/_typography.scss */
   body {
     font-size: 19px;
     line-height: 28px;
   }
 
-  /* line 191, ../scss/variables/_typography.scss */
+  /* line 192, ../scss/variables/_typography.scss */
   h1,
   .h1 {
     font-size: 72px;
   }
 
-  /* line 196, ../scss/variables/_typography.scss */
+  /* line 197, ../scss/variables/_typography.scss */
   h2,
   .h2 {
     font-size: 64px;
     line-height: 1.1718;
   }
 
-  /* line 202, ../scss/variables/_typography.scss */
+  /* line 203, ../scss/variables/_typography.scss */
   h3,
   .h3 {
     font-size: 48px;
     line-height: 1.1666;
   }
 
-  /* line 208, ../scss/variables/_typography.scss */
+  /* line 209, ../scss/variables/_typography.scss */
   h4,
   .h4 {
     font-size: 36px;
     line-height: 1.1666;
   }
 
-  /* line 214, ../scss/variables/_typography.scss */
+  /* line 215, ../scss/variables/_typography.scss */
   h5,
   .h5 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 220, ../scss/variables/_typography.scss */
+  /* line 221, ../scss/variables/_typography.scss */
   p {
     font-size: 19px;
     line-height: 20px;
   }
 
-  /* line 227, ../scss/variables/_typography.scss */
+  /* line 228, ../scss/variables/_typography.scss */
   .region-content ul,
   .region-content ol {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 234, ../scss/variables/_typography.scss */
+  /* line 235, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 50px;
   }
@@ -1407,18 +1408,17 @@ iframe {
   right: 0;
   -webkit-user-select: none;
   user-select: none;
-  width: 40px;
-  height: 40px;
+  width: auto;
   border-radius: 50%;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-/* line 43, ../scss/base/_navigation.scss */
+/* line 42, ../scss/base/_navigation.scss */
 #main-menu-toggle:hover, #main-menu-toggle:focus {
   box-shadow: 0 5px 30px 0 rgba(0, 127, 59, 0.25);
 }
-/* line 48, ../scss/base/_navigation.scss */
+/* line 47, ../scss/base/_navigation.scss */
 #main-menu-toggle .hambuger-bar {
   display: block;
   width: 1.3125em;
@@ -1431,152 +1431,138 @@ iframe {
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-/* line 61, ../scss/base/_navigation.scss */
+/* line 60, ../scss/base/_navigation.scss */
 #main-menu-toggle .hambuger-bar-1 {
   top: 8px;
   transform-origin: left center;
 }
-/* line 66, ../scss/base/_navigation.scss */
+/* line 65, ../scss/base/_navigation.scss */
 #main-menu-toggle .hambuger-bar-2 {
   top: 15px;
   transform-origin: left center;
 }
-/* line 71, ../scss/base/_navigation.scss */
+/* line 70, ../scss/base/_navigation.scss */
 #main-menu-toggle .hambuger-bar-3 {
   top: 22px;
   transform-origin: left center;
 }
 
-/* line 78, ../scss/base/_navigation.scss */
+/* line 77, ../scss/base/_navigation.scss */
 #nav-opener:focus #main-menu-toggle {
   box-shadow: 0 5px 30px 0 rgba(0, 127, 59, 0.25);
 }
 
-/* line 84, ../scss/base/_navigation.scss */
+/* line 83, ../scss/base/_navigation.scss */
 #main-menu-sidebar.open {
   display: block;
 }
-/* line 88, ../scss/base/_navigation.scss */
+/* line 87, ../scss/base/_navigation.scss */
 #main-menu-sidebar ul.menu {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
-/* line 92, ../scss/base/_navigation.scss */
+/* line 91, ../scss/base/_navigation.scss */
 #main-menu-sidebar ul.menu a {
   color: #212B32;
   text-decoration: none;
   border-bottom: 3px solid transparent;
 }
-/* line 97, ../scss/base/_navigation.scss */
+/* line 96, ../scss/base/_navigation.scss */
 #main-menu-sidebar ul.menu a:hover, #main-menu-sidebar ul.menu a:focus {
   border-bottom-color: #212B32;
   text-decoration: none;
 }
-/* line 105, ../scss/base/_navigation.scss */
+/* line 104, ../scss/base/_navigation.scss */
 #main-menu-sidebar ul.menu .menu-item--active-trail a {
   border-bottom-color: #212B32;
 }
-/* line 111, ../scss/base/_navigation.scss */
+/* line 110, ../scss/base/_navigation.scss */
 #main-menu-sidebar .header-main-menu {
   font-weight: bold;
 }
-/* line 115, ../scss/base/_navigation.scss */
+/* line 114, ../scss/base/_navigation.scss */
 #main-menu-sidebar li {
   padding: .75em 0;
   font-size: 1rem;
 }
-/* line 120, ../scss/base/_navigation.scss */
+/* line 119, ../scss/base/_navigation.scss */
 #main-menu-sidebar nav.navigation ul li {
   display: block;
 }
 
-/* line 125, ../scss/base/_navigation.scss */
-#main-menu-overlay {
-  display: none;
-  background-color: #D5281B;
-  opacity: 1;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-/* line 138, ../scss/base/_navigation.scss */
+/* line 127, ../scss/base/_navigation.scss */
 body.overlay-on {
   /* Scroll menu not body when menu displayed and user scrolls window */
   overflow: hidden;
 }
-/* line 143, ../scss/base/_navigation.scss */
+/* line 132, ../scss/base/_navigation.scss */
 .overlay-on #main-menu-sidebar {
   transform: none;
   opacity: 1;
   z-index: 3;
 }
-/* line 149, ../scss/base/_navigation.scss */
+/* line 138, ../scss/base/_navigation.scss */
 .overlay-on #main-menu-overlay {
   display: block;
 }
-/* line 154, ../scss/base/_navigation.scss */
+/* line 143, ../scss/base/_navigation.scss */
 .overlay-on #main-menu-toggle .hambuger-bar-1 {
   width: 27px;
   left: 11px;
   top: 7px;
   transform: rotate(45deg);
 }
-/* line 161, ../scss/base/_navigation.scss */
+/* line 150, ../scss/base/_navigation.scss */
 .overlay-on #main-menu-toggle .hambuger-bar-2 {
   width: 0;
   opacity: 0;
 }
-/* line 166, ../scss/base/_navigation.scss */
+/* line 155, ../scss/base/_navigation.scss */
 .overlay-on #main-menu-toggle .hambuger-bar-3 {
   top: 26px;
   left: 11px;
   width: 27px;
   transform: rotate(-45deg);
 }
-/* line 174, ../scss/base/_navigation.scss */
+/* line 163, ../scss/base/_navigation.scss */
 .overlay-on #block-bbd-classy-branding {
   position: relative;
   z-index: 1;
 }
-/* line 178, ../scss/base/_navigation.scss */
+/* line 167, ../scss/base/_navigation.scss */
 .overlay-on #block-bbd-classy-branding .site-name a {
   color: #fff;
 }
 
-/* line 184, ../scss/base/_navigation.scss */
+/* line 173, ../scss/base/_navigation.scss */
 ul.main-megamenu {
   margin: 0;
-  text-align: right;
 }
-/* line 188, ../scss/base/_navigation.scss */
+/* line 177, ../scss/base/_navigation.scss */
 ul.main-megamenu li {
-  display: inline-block;
+  display: block;
   vertical-align: top;
   margin: 0 8px;
   font: 700 14px/16px "Frutiger LT W01_45 Ligh1475730", Arial, sans-serif;
 }
-/* line 194, ../scss/base/_navigation.scss */
+/* line 183, ../scss/base/_navigation.scss */
 ul.main-megamenu li a {
   color: #333;
   border-bottom: 2px solid transparent;
   text-decoration: none;
 }
-/* line 199, ../scss/base/_navigation.scss */
+/* line 188, ../scss/base/_navigation.scss */
 ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   border-bottom: 2px solid #333;
 }
 
 @media (max-width: 47.9375em) {
-  /* line 208, ../scss/base/_navigation.scss */
+  /* line 197, ../scss/base/_navigation.scss */
   .region-header > #block-bbd-classy-main-menu {
     display: none;
   }
 
-  /* line 212, ../scss/base/_navigation.scss */
+  /* line 201, ../scss/base/_navigation.scss */
   #main-menu-sidebar {
     overflow: auto;
     display: none;
@@ -1597,84 +1583,84 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
     transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  /* line 233, ../scss/base/_navigation.scss */
+  /* line 222, ../scss/base/_navigation.scss */
   #main-menu-sidebar ul.main-megamenu li {
     display: block;
     margin: 0 0 10px;
   }
 }
 @media (min-width: 48em) {
-  /* line 243, ../scss/base/_navigation.scss */
+  /* line 232, ../scss/base/_navigation.scss */
   ul.main-megamenu li {
     margin: 0 16px;
   }
 
-  /* line 248, ../scss/base/_navigation.scss */
+  /* line 237, ../scss/base/_navigation.scss */
   #nav-opener,
   #main-menu-sidebar {
     display: none;
   }
 
-  /* line 253, ../scss/base/_navigation.scss */
+  /* line 242, ../scss/base/_navigation.scss */
   #main-menu-sidebar {
     width: calc(100% - 180px);
   }
-  /* line 257, ../scss/base/_navigation.scss */
+  /* line 246, ../scss/base/_navigation.scss */
   #main-menu-sidebar ul.menu a {
     color: #4C6272;
   }
-  /* line 262, ../scss/base/_navigation.scss */
+  /* line 251, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li {
     display: inline-block;
     padding: 0 8px;
     font-size: 12px;
   }
-  /* line 267, ../scss/base/_navigation.scss */
+  /* line 256, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li a {
     display: block;
     padding: 5px 0;
     color: #4C6272;
     border-bottom: 3px solid transparent;
   }
-  /* line 273, ../scss/base/_navigation.scss */
+  /* line 262, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li a:hover, #main-menu-sidebar nav.navigation ul li a:focus {
     text-decoration: none;
     border-bottom-color: #D5281B;
   }
-  /* line 281, ../scss/base/_navigation.scss */
+  /* line 270, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li.menu-item--active-trail a {
     text-decoration: none;
     border-bottom-color: #D5281B;
   }
 
-  /* line 289, ../scss/base/_navigation.scss */
+  /* line 278, ../scss/base/_navigation.scss */
   #block-bbd-classy-main-menu {
     overflow: inherit;
     height: auto;
   }
 }
 @media (min-width: 64em) {
-  /* line 297, ../scss/base/_navigation.scss */
+  /* line 286, ../scss/base/_navigation.scss */
   ul.main-megamenu li {
     font-size: 18px;
   }
 
-  /* line 302, ../scss/base/_navigation.scss */
+  /* line 291, ../scss/base/_navigation.scss */
   #main-menu-sidebar {
     width: calc(100% - 220px);
   }
-  /* line 305, ../scss/base/_navigation.scss */
+  /* line 294, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li {
     font-size: 14px;
     padding: 0 8px;
   }
 }
 @media (min-width: 68.75em) {
-  /* line 313, ../scss/base/_navigation.scss */
+  /* line 302, ../scss/base/_navigation.scss */
   #main-menu-sidebar {
     width: calc(100% - 275px);
   }
-  /* line 316, ../scss/base/_navigation.scss */
+  /* line 305, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li {
     font-size: 16px;
     padding: 0 10px;
@@ -1785,13 +1771,19 @@ ul.main-megamenu {
   text-align: center;
 }
 
-/* line 10, ../scss/components/_menu.scss */
+@media (min-width: 64em) {
+  /* line 13, ../scss/components/_menu.scss */
+  #block-bbd-classy-main-menu {
+    padding: 20px 0;
+  }
+}
+/* mobile */
+/* line 19, ../scss/components/_menu.scss */
 #nav-opener {
   width: auto;
 }
-
-/* line 14, ../scss/components/_menu.scss */
-#main-menu-toggle {
+/* line 22, ../scss/components/_menu.scss */
+#nav-opener #main-menu-toggle {
   top: 95%;
   right: 40px;
   display: block;
@@ -1806,22 +1798,56 @@ ul.main-megamenu {
   border-radius: 4px;
   cursor: pointer;
 }
-
-@media (min-width: 64em) {
-  /* line 31, ../scss/components/_menu.scss */
-  #block-bbd-classy-main-menu {
-    padding: 20px 0;
-  }
+/* line 38, ../scss/components/_menu.scss */
+#nav-opener.is-active #main-menu-toggle {
+  color: #fff;
+  background: #033F85;
 }
-@media (min-width: 48em) {
-  /* line 38, ../scss/components/_menu.scss */
-  #block-bbd-classy-main-menu {
-    order: 5;
-    overflow: inherit;
-    height: auto;
-    padding: 15px 0;
-    position: relative;
+
+@media (max-width: 48em) {
+  /* line 50, ../scss/components/_menu.scss */
+  ul.main-megamenu {
+    display: block;
+    -webkit-box-pack: unset;
+    justify-content: unset;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  /* line 59, ../scss/components/_menu.scss */
+  #main-menu-sidebar {
+    overflow: auto;
+    display: none;
     width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 20px 0 20px;
+    height: auto;
+    background: #fff;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* line 73, ../scss/components/_menu.scss */
+  #main-menu-sidebar ul.menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border-top: 1px solid #D8DDE0;
+    background: url(../../images/mobile-arrow-right.svg) no-repeat right center;
+    background-size: 24px;
+  }
+
+  /* line 83, ../scss/components/_menu.scss */
+  #main-menu-sidebar ul.menu li a {
+    display: block;
+    padding: 17px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #033F85;
+    border: none;
   }
 }
 /* line 1, ../scss/components/_page-wrapper.scss */
@@ -2026,7 +2052,7 @@ ul.main-megamenu {
   }
 }
 
-/* line 23, ../scss/components/_top-cta-bar.scss */
+/* line 21, ../scss/components/_top-cta-bar.scss */
 #block-top-cta-bar p {
   margin: 0;
   padding: 0;

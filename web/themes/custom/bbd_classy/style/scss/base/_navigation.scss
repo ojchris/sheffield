@@ -33,8 +33,7 @@
   right: 0;
   -webkit-user-select: none;
   user-select: none;
-  width: 40px;
-  height: 40px;
+  width: auto;
   border-radius: 50%;
   @include transform(rotate(0deg));
   @include transition(.5s ease-in-out);
@@ -87,7 +86,7 @@
 
   ul.menu {
     margin: 0;
-    text-align: center;
+    text-align: left;
 
     a {
       color: $black;
@@ -122,17 +121,7 @@
   }
 }
 
-#main-menu-overlay {
-  display: none;
-  background-color: $red;
-  opacity: 1;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
+
 
 .overlay-on {
   @at-root body#{&} {
@@ -183,10 +172,10 @@
 
 ul.main-megamenu {
   margin: 0;
-  text-align: right;
+
 
   li {
-    display: inline-block;
+    display: block;
     vertical-align: top;
     margin: 0 8px;
     font: 700 14px/16px $body-font;
