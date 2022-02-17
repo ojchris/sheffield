@@ -123,7 +123,7 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Search to see results'
+          text_input_required: ''
           text_input_required_format: full_html
       access:
         type: none
@@ -154,19 +154,19 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: search_api_fulltext
-          operator: and
+          operator: or
           value: ''
           group: 1
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: Search
+            label: ''
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: search_api_fulltext
+            identifier: search_term
             required: false
             remember: false
             multiple: false
@@ -207,6 +207,8 @@ display:
           preserve_facet_query_args: false
       relationships: {  }
       use_ajax: false
+      link_display: page_1
+      link_url: ''
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -268,6 +270,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      exposed_block: false
       display_extenders: {  }
       path: site-search
     cache_metadata:
