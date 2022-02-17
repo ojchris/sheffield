@@ -1,12 +1,30 @@
-.region-header>#block-bbd-classy-main-menu {
-  order: 3;
-  width: 100%;
-  border-top: 1px solid $transparent_white;
+ul.main-megamenu {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 98px;
+  text-align: center;
 }
 
-ul.main-megamenu {
-  margin: 0;
+#nav-opener {
+  width: auto;
+}
+
+#main-menu-toggle {
+  top: 95%;
+  right: 40px;
+  display: block;
+  position: relative;
+  width: auto;
+  height: auto;
+  background: #fff;
+  color: #005EB8;
+  border: 1px solid #fff;
+  padding: 10px 12px;
   text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (min-width: 64em) {
@@ -17,9 +35,7 @@ ul.main-megamenu {
 
 @media (min-width: 48em) {
 
-  #block-bbd-classy-main-menu,
-  #block-microsite-menu-block,
-  .block-bigbluedoor-blocks-microsite-menu {
+  #block-bbd-classy-main-menu {
     order: 5;
     overflow: inherit;
     height: auto;

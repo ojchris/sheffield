@@ -57,14 +57,17 @@
     @include transition(.25s ease-in-out);
 
   }
+
   .hambuger-bar-1 {
     top: 8px;
     transform-origin: left center;
   }
+
   .hambuger-bar-2 {
     top: 15px;
     transform-origin: left center;
   }
+
   .hambuger-bar-3 {
     top: 22px;
     transform-origin: left center;
@@ -202,7 +205,7 @@ ul.main-megamenu {
 }
 
 @include breakpoint($mobileOnly) {
-  .region-header > #block-bbd-classy-main-menu {
+  .region-header>#block-bbd-classy-main-menu {
     display: none;
   }
 
@@ -241,6 +244,7 @@ ul.main-megamenu {
       margin: 0 16px;
     }
   }
+
   #nav-opener,
   #main-menu-sidebar {
     display: none;
@@ -294,6 +298,7 @@ ul.main-megamenu {
       font-size: 18px;
     }
   }
+
   #main-menu-sidebar {
     width: calc(100% - 220px);
 

@@ -5,8 +5,19 @@
   z-index: 1;
   padding: 15px 0;
   background: $blue-light;
-  width: calc(100% + 40px * 2);
   margin-left: -40px;
+  width: calc(100% + 28px * 2);
+
+  @media (min-width:768px) {
+    width: calc(100% + 32px * 2);
+  }
+
+  @media (min-width:1024px) {
+    width: calc(100% + 37px * 2);
+  }
+
+
+
 }
 
 #block-top-cta-bar p {

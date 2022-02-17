@@ -11,7 +11,7 @@ dependencies:
 id: views_block__site_search_block_1
 theme: bbd_classy
 region: header
-weight: -6
+weight: -7
 provider: null
 plugin: 'views_block:site_search-block_1'
 settings:

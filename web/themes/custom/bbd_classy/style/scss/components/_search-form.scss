@@ -1,39 +1,56 @@
-#block-views-block-site-search-block-1 .views-exposed-form-site-search-block-1 {
-  width: 40px;
-  height: 40px;
+#views-exposed-form-site-search-block-1 {
+  width: 400px;
+  padding: 0 0 20px 0;
+  height: 45px;
   margin-right: 40px;
   z-index: 1;
 
-  h2,
-  input[type="search"],
-  input[type="text"],
-  .form-actions {
-    display: none;
-  }
-
   form {
-    position: relative;
+    max-width: 40em;
+    margin: 0 auto;
 
-    /* label styles has to be overwritten according to search form configuration */
-    label {
-      text-indent: -9999px;
-      overflow: inherit;
-      width: 100%;
-      height: 40px;
-      margin: 0;
-      position: relative !important;
+    .form--inline {
+      position: relative;
+
+
+      input[type="text"] {
+        height: 45px;
+        width: 400px;
+        background: #fff;
+        border-radius: 4px;
+        color: #8597A3;
+        line-height: normal;
+      }
+
+      .form-actions {
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
     }
 
-    input[type="search"] {
-      background-image: none;
-      padding-right: 15px;
+    .form-actions.form-wrapper:not(:empty) {
+      position: relative;
+      padding: 30px 0;
+      text-align: center;
+      margin: 0;
     }
   }
 
-  .form-actions {
-    &.form-wrapper:not(:empty) {
-      padding: 0;
-    }
+  .visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+  }
+
+  input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
+    width: 400px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px 15px;
   }
 
   label::after,
@@ -41,15 +58,18 @@
     cursor: pointer;
     content: '';
     position: absolute;
-    top: 0;
     right: 0;
-    background: url("../../images/icon-search.svg") no-repeat 50% 50%;
-    background-size: 18px;
-    width: 40px;
-    height: 40px;
-    padding: 0;
+    top: 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 0;
+    background: $yellow-light url("../../images/icon-search.svg") no-repeat center center;
+    background-size: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 0;
     min-width: inherit;
     text-indent: -9999px;
+    padding: 9px 15px 9px 15px;
     z-index: 2;
   }
 
@@ -62,55 +82,58 @@
     }
   }
 
-  &.search-open {
-
-    input[type="search"],
-    input[type="text"],
-    .form-actions {
-      display: block;
-    }
-
-    input[type="search"],
-    input[type="text"] {
-      @include absolute($top: 0, $right: 50px);
-      font-size: 14px;
-      line-height: 20px;
-      padding: 9px 15px 9px 15px;
-      width: 150px;
-    }
-
-    .form-actions {
-      padding: 0;
-    }
-
-    label {
-      &::after {
-        content: inherit;
-      }
-    }
-  }
-}
-
-.search-form {
-  .form-type-search {
+  input[type="search"],
+  input[type="text"],
+  .form-actions {
     display: block;
   }
-}
 
-.path-search {
-  #page {
-    max-width: $widestmob;
-  }
-}
-
-@include breakpoint($tab) {
-  .search-block-form {
+  .form--inline .form-item {
+    float: left;
     margin-right: 0;
   }
+
+  .form-actions {
+    padding: 0;
+    clear: none;
+    position: relative;
+  }
+
+
+
+  form .form-actions.form-wrapper:not(:empty) {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .form-item,
+  .form-actions {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+  label {
+    &::after {
+      content: inherit;
+    }
+  }
+
+  .form-type-textfield {
+    display: block;
+  }
+
+  .path-search {
+    #page {
+      max-width: $widestmob;
+    }
+  }
+
 }
 
 @include breakpoint($desk) {
-  #block-views-block-site-search-block-1 .views-exposed-form-site-search-block-1 {
+  #views-exposed-form-site-search-block-1 {
 
     label::after,
     .form-submit {
@@ -120,11 +143,11 @@
 }
 
 @include breakpoint($widedesk) {
-  #block-views-block-site-search-block-1 .views-exposed-form-site-search-block-1 {
+  #views-exposed-form-site-search-block-1 {
 
     label::after,
     .form-submit {
-      background-size: 25px;
+      background-size: 15px;
     }
   }
 }

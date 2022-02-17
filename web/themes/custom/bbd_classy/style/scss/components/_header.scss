@@ -1,18 +1,38 @@
 header.header-outer-wrapper,
 #header-outer-wrapper {
   display: flex;
+  flex-direction: row;
   background: $blue_acqua;
   clear: both;
 }
 
-.region-header,
-.region-header-microsite {
+.region-header {
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
+  box-pack: justify;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.region-header>#block-bbd-classy-main-menu {
+  order: 3;
+  width: 100%;
+  border-top: 1px solid $transparent_white;
+}
+
+@media (max-width: 906px) {
+
+  #block-bbd-classy-branding {
+    width: 200px;
+  }
+
+
+  #block-views-block-site-search-block-1 {
+    order: 3;
+    margin-right: 0;
+  }
+
 }
