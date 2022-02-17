@@ -20,8 +20,8 @@ ul.main-megamenu {
   width: auto;
 
   #main-menu-toggle {
-    top: 95%;
-    right: 40px;
+    top: 160%;
+    right: 38px;
     display: block;
     position: relative;
     width: auto;
@@ -68,24 +68,23 @@ ul.main-megamenu {
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
 
-  }
+    ul.menu li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      border-top: 1px solid #D8DDE0;
+      background: url(../../images/mobile-arrow-right.svg) no-repeat right center;
+      background-size: 24px;
 
-  #main-menu-sidebar ul.menu li {
-    display: block;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    border-top: 1px solid #D8DDE0;
-    background: url(../../images/mobile-arrow-right.svg) no-repeat right center;
-    background-size: 24px;
-  }
-
-  #main-menu-sidebar ul.menu li a {
-    display: block;
-    padding: 17px 0;
-    font-size: 14px;
-    font-weight: bold;
-    color: #033F85;
-    border: none;
+      a {
+        display: block;
+        padding: 17px 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: #033F85;
+        border: none;
+      }
+    }
   }
 }

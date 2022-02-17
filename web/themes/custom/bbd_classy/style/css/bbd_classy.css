@@ -1711,27 +1711,24 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   padding: 20px 0;
 }
 /* line 4, ../scss/components/_brand.scss */
+#block-bbd-classy-branding .site-name {
+  display: none;
+}
+/* line 8, ../scss/components/_brand.scss */
 #block-bbd-classy-branding img {
   width: 80%;
   text-align: center;
 }
 
-/* line 10, ../scss/components/_brand.scss */
-.site-name {
-  display: none;
-}
-
 /* line 1, ../scss/components/_header.scss */
-header.header-outer-wrapper,
-#header-outer-wrapper {
+header.outer-wrapper {
   display: flex;
   flex-direction: row;
   background: #72C6D9;
   clear: both;
 }
-
-/* line 9, ../scss/components/_header.scss */
-.region-header {
+/* line 7, ../scss/components/_header.scss */
+header.outer-wrapper .region-header {
   display: flex;
   flex-wrap: wrap;
   box-pack: justify;
@@ -1741,21 +1738,20 @@ header.header-outer-wrapper,
   max-width: 1140px;
   margin: 0 auto;
 }
-
-/* line 20, ../scss/components/_header.scss */
-.region-header > #block-bbd-classy-main-menu {
+/* line 17, ../scss/components/_header.scss */
+header.outer-wrapper .region-header #block-bbd-classy-main-menu {
   order: 3;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 @media (max-width: 906px) {
-  /* line 28, ../scss/components/_header.scss */
+  /* line 27, ../scss/components/_header.scss */
   #block-bbd-classy-branding {
     width: 200px;
   }
 
-  /* line 33, ../scss/components/_header.scss */
+  /* line 31, ../scss/components/_header.scss */
   #block-views-block-site-search-block-1 {
     order: 3;
     margin-right: 0;
@@ -1784,8 +1780,8 @@ ul.main-megamenu {
 }
 /* line 22, ../scss/components/_menu.scss */
 #nav-opener #main-menu-toggle {
-  top: 95%;
-  right: 40px;
+  top: 160%;
+  right: 38px;
   display: block;
   position: relative;
   width: auto;
@@ -1828,8 +1824,7 @@ ul.main-megamenu {
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
   }
-
-  /* line 73, ../scss/components/_menu.scss */
+  /* line 71, ../scss/components/_menu.scss */
   #main-menu-sidebar ul.menu li {
     display: block;
     margin: 0;
@@ -1839,8 +1834,7 @@ ul.main-megamenu {
     background: url(../../images/mobile-arrow-right.svg) no-repeat right center;
     background-size: 24px;
   }
-
-  /* line 83, ../scss/components/_menu.scss */
+  /* line 80, ../scss/components/_menu.scss */
   #main-menu-sidebar ul.menu li a {
     display: block;
     padding: 17px 0;
@@ -1908,29 +1902,46 @@ ul.main-megamenu {
 #views-exposed-form-site-search-block-1 form .form--inline {
   position: relative;
 }
-/* line 16, ../scss/components/_search-form.scss */
+/* line 15, ../scss/components/_search-form.scss */
+#views-exposed-form-site-search-block-1 form .form--inline .form-item {
+  float: left;
+  margin-right: 0;
+}
+/* line 22, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 form .form--inline input[type="text"] {
-  height: 45px;
+  height: 40px;
   width: 400px;
   background: #fff;
   border-radius: 4px;
   color: #8597A3;
   line-height: normal;
 }
-/* line 25, ../scss/components/_search-form.scss */
+/* line 32, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 form .form--inline .form-actions {
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 32, ../scss/components/_search-form.scss */
-#views-exposed-form-site-search-block-1 form .form-actions.form-wrapper:not(:empty) {
+/* line 37, ../scss/components/_search-form.scss */
+#views-exposed-form-site-search-block-1 form .form--inline .form-actions.form-wrapper:not(:empty) {
   position: relative;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
   margin: 0;
 }
-/* line 40, ../scss/components/_search-form.scss */
+/* line 49, ../scss/components/_search-form.scss */
+#views-exposed-form-site-search-block-1 .form--inline .form-actions {
+  padding: 0;
+  clear: none;
+  position: relative;
+}
+/* line 55, ../scss/components/_search-form.scss */
+#views-exposed-form-site-search-block-1 .form-item,
+#views-exposed-form-site-search-block-1 .form-actions {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 62, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 .visually-hidden {
   position: absolute !important;
   overflow: hidden;
@@ -1939,14 +1950,16 @@ ul.main-megamenu {
   height: 1px;
   word-wrap: normal;
 }
-/* line 49, ../scss/components/_search-form.scss */
+/* line 71, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
   width: 400px;
   font-size: 14px;
   line-height: 20px;
-  padding: 14px 15px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
 }
-/* line 56, ../scss/components/_search-form.scss */
+/* line 80, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 label::after,
 #views-exposed-form-site-search-block-1 .form-submit {
   cursor: pointer;
@@ -1954,80 +1967,56 @@ ul.main-megamenu {
   position: absolute;
   right: 0;
   top: 0;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 5px 5px 0;
   font-size: 0;
   background: #F4ECC9 url("../../images/icon-search.svg") no-repeat center center;
   background-size: 50%;
-  width: 48px;
-  height: 48px;
+  width: 39px;
+  height: 39px;
   margin: 0;
   min-width: inherit;
   text-indent: -9999px;
-  padding: 9px 15px 9px 15px;
+  padding: 9px 13px;
   z-index: 2;
 }
-/* line 79, ../scss/components/_search-form.scss */
+/* line 103, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 .form-submit:hover, #views-exposed-form-site-search-block-1 .form-submit:focus,
 #views-exposed-form-site-search-block-1 .button:hover,
 #views-exposed-form-site-search-block-1 .button:focus {
   box-shadow: none;
 }
-/* line 85, ../scss/components/_search-form.scss */
+/* line 109, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 input[type="search"],
 #views-exposed-form-site-search-block-1 input[type="text"],
 #views-exposed-form-site-search-block-1 .form-actions {
   display: block;
 }
-/* line 91, ../scss/components/_search-form.scss */
-#views-exposed-form-site-search-block-1 .form--inline .form-item {
-  float: left;
-  margin-right: 0;
-}
-/* line 96, ../scss/components/_search-form.scss */
-#views-exposed-form-site-search-block-1 .form-actions {
-  padding: 0;
-  clear: none;
-  position: relative;
-}
-/* line 104, ../scss/components/_search-form.scss */
-#views-exposed-form-site-search-block-1 form .form-actions.form-wrapper:not(:empty) {
-  text-align: center;
-  padding: 20px 0;
-  margin: 0;
-}
-/* line 110, ../scss/components/_search-form.scss */
-#views-exposed-form-site-search-block-1 .form-item,
-#views-exposed-form-site-search-block-1 .form-actions {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* line 118, ../scss/components/_search-form.scss */
+/* line 116, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 label::after {
   content: inherit;
 }
-/* line 123, ../scss/components/_search-form.scss */
+/* line 121, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 .form-type-textfield {
   display: block;
 }
-/* line 128, ../scss/components/_search-form.scss */
+/* line 126, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 .path-search #page {
   max-width: 40em;
 }
 
 @media (min-width: 64em) {
-  /* line 138, ../scss/components/_search-form.scss */
+  /* line 136, ../scss/components/_search-form.scss */
   #views-exposed-form-site-search-block-1 label::after,
   #views-exposed-form-site-search-block-1 .form-submit {
     max-width: 100%;
   }
 }
-@media (min-width: 80em) {
-  /* line 148, ../scss/components/_search-form.scss */
-  #views-exposed-form-site-search-block-1 label::after,
-  #views-exposed-form-site-search-block-1 .form-submit {
-    background-size: 15px;
-  }
+/* line 145, ../scss/components/_search-form.scss */
+#views-exposed-form-site-search-block-1 label::after,
+#views-exposed-form-site-search-block-1 .form-submit {
+  background-size: 15px;
 }
+
 /* line 1, ../scss/components/_top-cta-bar.scss */
 #block-top-cta-bar {
   position: relative;
