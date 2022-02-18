@@ -1,6 +1,8 @@
 header.outer-wrapper {
+  /*
   display: flex;
   flex-direction: row;
+  */
   background: $blue_acqua;
   clear: both;
 
@@ -17,7 +19,7 @@ header.outer-wrapper {
     #block-bbd-classy-main-menu {
       order: 3;
       width: 100%;
-      border-top: 1px solid $transparent_white;
+      border-top: 2px solid $transparent_white;
     }
   }
 }
@@ -26,11 +28,6 @@ header.outer-wrapper {
 
   #block-bbd-classy-branding {
     width: 200px;
-  }
-
-  #block-views-block-site-search-block-1 {
-    order: 3;
-    margin-right: 0;
   }
 
 }

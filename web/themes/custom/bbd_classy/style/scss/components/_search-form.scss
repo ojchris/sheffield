@@ -1,8 +1,8 @@
-#views-exposed-form-site-search-block-1 {
-  width: 400px;
+#block-views-block-site-search-block-1 {
+  width: 35%;
   padding: 0 0 20px 0;
   height: 45px;
-  margin-right: 40px;
+  margin: 0;
   z-index: 1;
 
   form {
@@ -11,6 +11,7 @@
 
     .form--inline {
       position: relative;
+      width: 100%;
 
       .form-item {
         float: left;
@@ -21,7 +22,7 @@
 
       input[type="text"] {
         height: 40px;
-        width: 400px;
+        width: 100%;
         background: #fff;
         border-radius: 4px;
         color: #8597A3;
@@ -58,6 +59,12 @@
     margin-bottom: 0;
   }
 
+  .form-type-textfield {
+    display: block;
+    width: 100%;
+  }
+
+
 
   .visually-hidden {
     position: absolute !important;
@@ -69,7 +76,7 @@
   }
 
   input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
-    width: 400px;
+    width: 100%;
     font-size: 14px;
     line-height: 20px;
     padding: 10px;
@@ -88,8 +95,8 @@
     font-size: 0;
     background: $yellow-light url("../../images/icon-search.svg") no-repeat center center;
     background-size: 50%;
-    width: 39px;
-    height: 39px;
+    width: 40px;
+    height: 40px;
     margin: 0;
     min-width: inherit;
     text-indent: -9999px;
@@ -118,10 +125,6 @@
     }
   }
 
-  .form-type-textfield {
-    display: block;
-  }
-
   .path-search {
     #page {
       max-width: $widestmob;
@@ -146,4 +149,26 @@
   .form-submit {
     background-size: 15px;
   }
+}
+
+
+@media (max-width: 767px) {
+
+  #block-views-block-site-search-block-1 {
+    order: 3;
+    margin: 20px 0;
+  }
+
+  #block-views-block-site-search-block-1,
+  #block-views-block-site-search-block-1,
+  .form--inline,
+  .form-type-textfield {
+    width: 88%;
+  }
+
+  #views-exposed-form-site-search-block-1 input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
+    width: 88%;
+
+  }
+
 }

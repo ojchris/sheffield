@@ -7,8 +7,6 @@ ul.main-megamenu {
   text-align: center;
 }
 
-
-
 @media (min-width: 64em) {
   #block-bbd-classy-main-menu {
     padding: 20px 0;
@@ -16,34 +14,6 @@ ul.main-megamenu {
 }
 
 /* mobile */
-#nav-opener {
-  width: auto;
-
-  #main-menu-toggle {
-    top: 160%;
-    right: 38px;
-    display: block;
-    position: relative;
-    width: auto;
-    height: auto;
-    background: #fff;
-    color: #005EB8;
-    border: 1px solid #fff;
-    padding: 10px 12px;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  &.is-active #main-menu-toggle {
-    color: #fff;
-    background: #033F85;
-  }
-
-
-}
-
-
 
 @media (max-width: $tab) {
 
@@ -81,7 +51,7 @@ ul.main-megamenu {
         display: block;
         padding: 17px 0;
         font-size: 14px;
-        font-weight: bold;
+        font-weight: 700;
         color: #033F85;
         border: none;
       }

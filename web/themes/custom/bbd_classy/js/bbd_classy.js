@@ -38,6 +38,11 @@
         }
       });
 
+      $('.close-menu-btn').on('click', function() {
+        self.toggleMenu(context);
+        $('#nav-opener').toggleClass('is-active');
+      })
+
       /**
        * Hide search field and search filters, while mouseup outside form
        */
