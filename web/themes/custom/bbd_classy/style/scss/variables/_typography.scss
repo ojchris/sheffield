@@ -1,59 +1,100 @@
-@import  "../variables/_breakpoints.scss";
-@import  "../variables/_fonts.scss";
+@import "../variables/_breakpoints.scss";
+@import "../variables/_fonts.scss";
 
 body {
-  font-size: 16px; // 1em, depends on that value breakpoint values counted
+  font-size: 14px; // 1em, depends on that value breakpoint values counted
   font-family: $body-font;
-  line-height: 1.25;
+  line-height: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: $heading-font;
-  font-weight: 700;
   margin: 0 0 25px;
 }
 
-h1, .h1 {
+h1,
+.h1 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+h2,
+.h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h3,
+.h3 {
   font-size: 36px;
-  line-height: 1.1666;
+  line-height: 44px;
 }
 
-h2, .h2 {
-  font-size: 30px;
-  line-height: 1.1666;
+h4,
+.h4 {
+  font-size: 32px;
+  line-height: 39px;
 }
 
-h3, .h3 {
+h5,
+.h5 {
   font-size: 24px;
+  line-height: 28px;
 }
 
-h4, .h4 {
-  font-size: 20px;
-  line-height: 1.15;
-}
-
-h5, .h5 {
+h6,
+.h6 {
   font-size: 18px;
-}
-
-h6, .h6 {
-  font-size: 14px;
-  line-height: 1.1428;
+  line-height: 21px;
 }
 
 p {
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0 0 20px;
+
+  &.small {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  &.large {
+    font-size: 19px;
+    line-height: 28px;
+  }
 }
 
 .region-content {
-  ul, ol {
-    font-size: 11px;
-    line-height: 15px;
-    margin: 0 0 20px;
-    padding: 0;
-    list-style-position: inside;
+
+  ul,
+  ol {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  ul>li,
+  ol>li {
+    margin-bottom: 8px;
   }
 }
 
@@ -62,11 +103,15 @@ a {
   text-decoration: underline;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  color: $black;
+  color: $blue;
 
   &:hover,
   &:focus {
+    color: black;
     text-decoration: none;
+    /*background: $yellow;
+    border-bottom: solid 3px $black;
+    */
   }
 }
 
@@ -88,33 +133,45 @@ blockquote {
 }
 
 @include breakpoint($tab) {
-  h1, .h1 {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h1,
+  .h1 {
     font-size: 48px;
   }
 
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 40px;
     line-height: 1.175;
   }
 
-  h3, .h3 {
+  h3,
+  .h3 {
     font-size: 36px;
   }
 
-  h4, .h4 {
+  h4,
+  .h4 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
   p {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .region-content {
-    ul, ol {
-      font-size: 12px;
-      line-height: 16px;
+
+    ul,
+    ol {
+      font-size: 19px;
+      margin-bottom: 24px;
+      line-height: 1.47368;
     }
   }
 
@@ -126,38 +183,50 @@ blockquote {
 }
 
 @include breakpoint($desk) {
-  h1, .h1 {
+
+  body {
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  h1,
+  .h1 {
     font-size: 72px;
   }
 
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 64px;
     line-height: 1.1718;
   }
 
-  h3, .h3 {
+  h3,
+  .h3 {
     font-size: 48px;
     line-height: 1.1666;
   }
 
-  h4, .h4 {
+  h4,
+  .h4 {
     font-size: 36px;
     line-height: 1.1666;
   }
 
-  h5, .h5 {
+  h5,
+  .h5 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
   p {
-    font-size: 14px;
+    font-size: 19px;
     line-height: 20px;
-    margin-bottom: 20px;
   }
 
   .region-content {
-    ul, ol {
+
+    ul,
+    ol {
       font-size: 14px;
       line-height: 20px;
     }
@@ -167,4 +236,3 @@ blockquote {
     margin-bottom: 50px;
   }
 }
-

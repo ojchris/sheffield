@@ -6,7 +6,7 @@ bbd_classy:
   css:
     theme:
       # Custom CSS file to be loaded in all media circumstances
-      '//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap': { type: external, minified: true }
+      '//fast.fonts.net/cssapi/56c28163-b5b8-47c5-99be-39d4ad6b964d.css': { type: external, minified: true }
       style/css/bbd_classy.css: {}
       style/css/print.css: { media: print }
       libraries/jQuerySelectric/public/selectric.css: {}

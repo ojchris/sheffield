@@ -1,37 +1,47 @@
 // Theme colour pallet
-$main-bg: #fff;
+$main-bg: #f0f4f5;
 
 $white: #fff;
-$black: #000;
+$black: #212B32;
 
 $grey_darkest: #333;
 $grey_dark: #4f4f4f;
-$grey: #828282;
-$grey-light: #bdbdbd;
-$grey-lighter: #e0e0e0;
-$grey-lightest: #f2f2f2;
+$grey: #4C6272;
+$grey-light: #768692;
+$grey-lighter: #AEB7BD;
+$grey-lightest: #D8DDE0;
 
 $red_dark: #AE2626;
-$red: #EB5757;
-$orange: #F2994A;
-$yellow: #F2C94C;
+$red: #D5281B;
+$orange: #ECC5CE;
+$yellow: #FFEB3B;
+$yellow_warm: #FFB81C;
+$yellow_pale: #FFF9C4;
+$yellow-light: #F4ECC9;
 
 $green_dark: #219653;
-$green: #27AE60;
+$green: #007F3B;
 $green_light: #6FCF97;
+$green_lighter:#ECF5DF;
 
 $blue_darkest: #0E5ECB;
 $blue_dark: #2F80ED;
-$blue: #2D9CDB;
-$blue_light: #56CCF2;
+$blue: #005eb8;
+$blue_light: #D0EEF6;
+$blue_acqua: #72C6D9;
 
-$purple_dark: #9B51E0;
+$purple_dark: #330072;
 $purple: #BB6BD9;
+$purple_lilac: #E2D4F0;
+
+$pink: #7C2855;
+$pink-blush: #ECC5CE;
 
 $transparent: transparent;
-$transparent_green: rgba(78,212,193,0.2);
-$transparent_red: rgba(193,58,73,0.2);
-$transparent_black: rgba(0,0,0,0.2);
+$transparent_green: rgba(0, 127, 59, 0.25);
+$transparent_red: rgba(213, 40, 27, 0.25);
+$transparent_black: rgba(33, 43, 50, 0.25);
+$transparent_white:rgba(255, 255, 255, 0.25);
 
 $twitter: #1DA1F2;
 $facebook: #4267B2;
