@@ -1089,49 +1089,50 @@ form .file ~ .button:hover, form .file ~ .button:focus {
   box-sizing: border-box;
 }
 
-/* line 7, ../scss/base/_general.scss */
+/* line 13, ../scss/base/_general.scss */
 table {
   padding: 0;
   margin: 0 auto 20px;
   width: 100%;
   border: 0;
 }
-/* line 13, ../scss/base/_general.scss */
-table th, table td {
+/* line 19, ../scss/base/_general.scss */
+table th,
+table td {
   font-size: 12px;
   border: 0;
   padding: 10px;
   text-align: left;
 }
-/* line 20, ../scss/base/_general.scss */
+/* line 27, ../scss/base/_general.scss */
 table th {
   font-weight: 700;
 }
-/* line 26, ../scss/base/_general.scss */
+/* line 33, ../scss/base/_general.scss */
 table tbody tr:nth-child(odd) td {
   background: #D8DDE0;
 }
 
-/* line 33, ../scss/base/_general.scss */
+/* line 40, ../scss/base/_general.scss */
 figure {
   margin: 0 0 20px;
 }
-/* line 36, ../scss/base/_general.scss */
+/* line 43, ../scss/base/_general.scss */
 figure.align-left {
   float: left;
   margin-right: 20px;
 }
-/* line 41, ../scss/base/_general.scss */
+/* line 48, ../scss/base/_general.scss */
 figure.align-right {
   float: right;
   margin-left: 20px;
 }
-/* line 46, ../scss/base/_general.scss */
+/* line 53, ../scss/base/_general.scss */
 figure.align-center {
   margin: 0 auto;
 }
 
-/* line 51, ../scss/base/_general.scss */
+/* line 58, ../scss/base/_general.scss */
 figcaption,
 .field--name-field-image-caption {
   font-style: italic;
@@ -1141,118 +1142,119 @@ figcaption,
   text-align: left;
 }
 
-/* line 60, ../scss/base/_general.scss */
+/* line 67, ../scss/base/_general.scss */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-/* line 65, ../scss/base/_general.scss */
+/* line 72, ../scss/base/_general.scss */
 img.align-left {
   float: left;
   margin: 0 20px 20px 0;
 }
-/* line 70, ../scss/base/_general.scss */
+/* line 77, ../scss/base/_general.scss */
 img.align-right {
   float: right;
   margin: 0 0 20px 20px;
 }
-/* line 75, ../scss/base/_general.scss */
+/* line 82, ../scss/base/_general.scss */
 img.align-center {
   margin-bottom: 20px;
 }
 
-/* line 80, ../scss/base/_general.scss */
+/* line 87, ../scss/base/_general.scss */
 iframe {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 85, ../scss/base/_general.scss */
+/* line 92, ../scss/base/_general.scss */
 #page-wrapper {
   background: #f0f4f5;
   padding: 0 1.25em;
 }
 
-/* line 90, ../scss/base/_general.scss */
+/* line 97, ../scss/base/_general.scss */
 #page,
 #footer-wrap {
   max-width: 83.75em;
   margin: 0 auto 20px;
 }
 
-/* line 96, ../scss/base/_general.scss */
+/* line 103, ../scss/base/_general.scss */
 .region-content {
   margin-bottom: 20px;
 }
 
-/* line 100, ../scss/base/_general.scss */
+/* line 107, ../scss/base/_general.scss */
 .messages {
   margin-bottom: 20px;
 }
 
-/* line 104, ../scss/base/_general.scss */
+/* line 111, ../scss/base/_general.scss */
 .breadcrumb {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 108, ../scss/base/_general.scss */
+/* line 115, ../scss/base/_general.scss */
 .breadcrumb li {
   font-size: 12px;
 }
-/* line 111, ../scss/base/_general.scss */
+/* line 118, ../scss/base/_general.scss */
 .breadcrumb li::before {
   content: "/";
 }
-/* line 115, ../scss/base/_general.scss */
+/* line 122, ../scss/base/_general.scss */
 .breadcrumb li:first-child:before {
   content: none;
 }
-/* line 120, ../scss/base/_general.scss */
+/* line 127, ../scss/base/_general.scss */
 .breadcrumb a {
   text-decoration: none;
 }
-/* line 123, ../scss/base/_general.scss */
+/* line 130, ../scss/base/_general.scss */
 .breadcrumb a:hover {
   text-decoration: underline;
 }
 
-/* line 129, ../scss/base/_general.scss */
+/* line 136, ../scss/base/_general.scss */
 .item-list li {
   margin: 0 0 20px;
 }
 
 @media screen and (max-width: 30em) {
-  /* line 134, ../scss/base/_general.scss */
+  /* line 141, ../scss/base/_general.scss */
   iframe {
     height: auto;
   }
 }
 @media (min-width: 48em) {
-  /* line 140, ../scss/base/_general.scss */
+  /* line 147, ../scss/base/_general.scss */
   #page-wrapper {
     padding: 0 1.875em;
   }
 }
 @media (min-width: 64em) {
-  /* line 147, ../scss/base/_general.scss */
-  table th, table td {
+  /* line 155, ../scss/base/_general.scss */
+  table th,
+  table td {
     padding: 15px;
     font-size: 14px;
   }
 
-  /* line 153, ../scss/base/_general.scss */
+  /* line 163, ../scss/base/_general.scss */
   #page-wrapper {
     padding: 0 2.5em;
   }
 }
 @media (min-width: 90em) {
-  /* line 160, ../scss/base/_general.scss */
+  /* line 170, ../scss/base/_general.scss */
   .breadcrumb li {
     font-size: 14px;
   }
 
-  /* line 164, ../scss/base/_general.scss */
+  /* line 175, ../scss/base/_general.scss */
   #page-wrapper {
     padding: 0 3.125em;
   }
@@ -2014,7 +2016,7 @@ ul.main-megamenu {
     display: block;
     padding: 17px 0;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     color: #033F85;
     border: none;
   }
