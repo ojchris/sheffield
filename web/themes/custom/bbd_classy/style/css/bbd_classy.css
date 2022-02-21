@@ -136,22 +136,19 @@ a {
 a:hover, a:focus {
   color: black;
   text-decoration: none;
-  /*background: $yellow;
-  border-bottom: solid 3px $black;
-  */
 }
 
-/* line 118, ../scss/variables/_typography.scss */
+/* line 115, ../scss/variables/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 122, ../scss/variables/_typography.scss */
+/* line 119, ../scss/variables/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 126, ../scss/variables/_typography.scss */
+/* line 123, ../scss/variables/_typography.scss */
 blockquote {
   border: none;
   border-left: 2px solid #4C6272;
@@ -162,45 +159,45 @@ blockquote {
 }
 
 @media (min-width: 48em) {
-  /* line 136, ../scss/variables/_typography.scss */
+  /* line 133, ../scss/variables/_typography.scss */
   body {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 141, ../scss/variables/_typography.scss */
+  /* line 138, ../scss/variables/_typography.scss */
   h1,
   .h1 {
     font-size: 48px;
   }
 
-  /* line 146, ../scss/variables/_typography.scss */
+  /* line 143, ../scss/variables/_typography.scss */
   h2,
   .h2 {
     font-size: 40px;
     line-height: 1.175;
   }
 
-  /* line 152, ../scss/variables/_typography.scss */
+  /* line 149, ../scss/variables/_typography.scss */
   h3,
   .h3 {
     font-size: 36px;
   }
 
-  /* line 157, ../scss/variables/_typography.scss */
+  /* line 154, ../scss/variables/_typography.scss */
   h4,
   .h4 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 163, ../scss/variables/_typography.scss */
+  /* line 160, ../scss/variables/_typography.scss */
   p {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 170, ../scss/variables/_typography.scss */
+  /* line 167, ../scss/variables/_typography.scss */
   .region-content ul,
   .region-content ol {
     font-size: 19px;
@@ -208,7 +205,7 @@ blockquote {
     line-height: 1.47368;
   }
 
-  /* line 178, ../scss/variables/_typography.scss */
+  /* line 175, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 30px;
     font-size: 24px;
@@ -216,60 +213,60 @@ blockquote {
   }
 }
 @media (min-width: 64em) {
-  /* line 187, ../scss/variables/_typography.scss */
+  /* line 184, ../scss/variables/_typography.scss */
   body {
     font-size: 19px;
     line-height: 28px;
   }
 
-  /* line 192, ../scss/variables/_typography.scss */
+  /* line 189, ../scss/variables/_typography.scss */
   h1,
   .h1 {
     font-size: 72px;
   }
 
-  /* line 197, ../scss/variables/_typography.scss */
+  /* line 194, ../scss/variables/_typography.scss */
   h2,
   .h2 {
     font-size: 64px;
     line-height: 1.1718;
   }
 
-  /* line 203, ../scss/variables/_typography.scss */
+  /* line 200, ../scss/variables/_typography.scss */
   h3,
   .h3 {
     font-size: 48px;
     line-height: 1.1666;
   }
 
-  /* line 209, ../scss/variables/_typography.scss */
+  /* line 206, ../scss/variables/_typography.scss */
   h4,
   .h4 {
     font-size: 36px;
     line-height: 1.1666;
   }
 
-  /* line 215, ../scss/variables/_typography.scss */
+  /* line 212, ../scss/variables/_typography.scss */
   h5,
   .h5 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 221, ../scss/variables/_typography.scss */
+  /* line 218, ../scss/variables/_typography.scss */
   p {
     font-size: 19px;
     line-height: 20px;
   }
 
-  /* line 228, ../scss/variables/_typography.scss */
+  /* line 225, ../scss/variables/_typography.scss */
   .region-content ul,
   .region-content ol {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 235, ../scss/variables/_typography.scss */
+  /* line 232, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 50px;
   }
@@ -1089,14 +1086,14 @@ form .file ~ .button:hover, form .file ~ .button:focus {
   box-sizing: border-box;
 }
 
-/* line 13, ../scss/base/_general.scss */
+/* line 7, ../scss/base/_general.scss */
 table {
   padding: 0;
   margin: 0 auto 20px;
   width: 100%;
   border: 0;
 }
-/* line 19, ../scss/base/_general.scss */
+/* line 13, ../scss/base/_general.scss */
 table th,
 table td {
   font-size: 12px;
@@ -1104,35 +1101,35 @@ table td {
   padding: 10px;
   text-align: left;
 }
-/* line 27, ../scss/base/_general.scss */
+/* line 21, ../scss/base/_general.scss */
 table th {
   font-weight: 700;
 }
-/* line 33, ../scss/base/_general.scss */
+/* line 27, ../scss/base/_general.scss */
 table tbody tr:nth-child(odd) td {
   background: #D8DDE0;
 }
 
-/* line 40, ../scss/base/_general.scss */
+/* line 34, ../scss/base/_general.scss */
 figure {
   margin: 0 0 20px;
 }
-/* line 43, ../scss/base/_general.scss */
+/* line 37, ../scss/base/_general.scss */
 figure.align-left {
   float: left;
   margin-right: 20px;
 }
-/* line 48, ../scss/base/_general.scss */
+/* line 42, ../scss/base/_general.scss */
 figure.align-right {
   float: right;
   margin-left: 20px;
 }
-/* line 53, ../scss/base/_general.scss */
+/* line 47, ../scss/base/_general.scss */
 figure.align-center {
   margin: 0 auto;
 }
 
-/* line 58, ../scss/base/_general.scss */
+/* line 52, ../scss/base/_general.scss */
 figcaption,
 .field--name-field-image-caption {
   font-style: italic;
@@ -1142,119 +1139,119 @@ figcaption,
   text-align: left;
 }
 
-/* line 67, ../scss/base/_general.scss */
+/* line 61, ../scss/base/_general.scss */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-/* line 72, ../scss/base/_general.scss */
+/* line 66, ../scss/base/_general.scss */
 img.align-left {
   float: left;
   margin: 0 20px 20px 0;
 }
-/* line 77, ../scss/base/_general.scss */
+/* line 71, ../scss/base/_general.scss */
 img.align-right {
   float: right;
   margin: 0 0 20px 20px;
 }
-/* line 82, ../scss/base/_general.scss */
+/* line 76, ../scss/base/_general.scss */
 img.align-center {
   margin-bottom: 20px;
 }
 
-/* line 87, ../scss/base/_general.scss */
+/* line 81, ../scss/base/_general.scss */
 iframe {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 92, ../scss/base/_general.scss */
+/* line 86, ../scss/base/_general.scss */
 #page-wrapper {
   background: #f0f4f5;
   padding: 0 1.25em;
 }
 
-/* line 97, ../scss/base/_general.scss */
+/* line 91, ../scss/base/_general.scss */
 #page,
 #footer-wrap {
   max-width: 83.75em;
   margin: 0 auto 20px;
 }
 
-/* line 103, ../scss/base/_general.scss */
+/* line 97, ../scss/base/_general.scss */
 .region-content {
   margin-bottom: 20px;
 }
 
-/* line 107, ../scss/base/_general.scss */
+/* line 101, ../scss/base/_general.scss */
 .messages {
   margin-bottom: 20px;
 }
 
-/* line 111, ../scss/base/_general.scss */
+/* line 105, ../scss/base/_general.scss */
 .breadcrumb {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 115, ../scss/base/_general.scss */
+/* line 109, ../scss/base/_general.scss */
 .breadcrumb li {
   font-size: 12px;
 }
-/* line 118, ../scss/base/_general.scss */
+/* line 112, ../scss/base/_general.scss */
 .breadcrumb li::before {
   content: "/";
 }
-/* line 122, ../scss/base/_general.scss */
+/* line 116, ../scss/base/_general.scss */
 .breadcrumb li:first-child:before {
   content: none;
 }
-/* line 127, ../scss/base/_general.scss */
+/* line 121, ../scss/base/_general.scss */
 .breadcrumb a {
   text-decoration: none;
 }
-/* line 130, ../scss/base/_general.scss */
+/* line 124, ../scss/base/_general.scss */
 .breadcrumb a:hover {
   text-decoration: underline;
 }
 
-/* line 136, ../scss/base/_general.scss */
+/* line 130, ../scss/base/_general.scss */
 .item-list li {
   margin: 0 0 20px;
 }
 
 @media screen and (max-width: 30em) {
-  /* line 141, ../scss/base/_general.scss */
+  /* line 135, ../scss/base/_general.scss */
   iframe {
     height: auto;
   }
 }
 @media (min-width: 48em) {
-  /* line 147, ../scss/base/_general.scss */
+  /* line 141, ../scss/base/_general.scss */
   #page-wrapper {
     padding: 0 1.875em;
   }
 }
 @media (min-width: 64em) {
-  /* line 155, ../scss/base/_general.scss */
+  /* line 149, ../scss/base/_general.scss */
   table th,
   table td {
     padding: 15px;
     font-size: 14px;
   }
 
-  /* line 163, ../scss/base/_general.scss */
+  /* line 157, ../scss/base/_general.scss */
   #page-wrapper {
     padding: 0 2.5em;
   }
 }
 @media (min-width: 90em) {
-  /* line 170, ../scss/base/_general.scss */
+  /* line 164, ../scss/base/_general.scss */
   .breadcrumb li {
     font-size: 14px;
   }
 
-  /* line 175, ../scss/base/_general.scss */
+  /* line 169, ../scss/base/_general.scss */
   #page-wrapper {
     padding: 0 3.125em;
   }
@@ -1292,19 +1289,8 @@ iframe {
 /* line 29, ../scss/base/_header.scss */
 .region-header {
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
   padding: 10px 0;
   margin: 0 auto;
   max-width: 83.75em;
@@ -1638,10 +1624,6 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
 }
 /* line 274, ../scss/base/_navigation.scss */
 .need-help-menu {
-  -webkit-box-ordinal-group: 3;
-  -moz-box-ordinal-group: 3;
-  -ms-flex-order: 3;
-  -webkit-order: 3;
   order: 3;
   width: 100%;
 }
@@ -1688,23 +1670,13 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
 @media (min-width: 48em) {
   /* line 274, ../scss/base/_navigation.scss */
   .need-help-menu {
-    -webkit-box-ordinal-group: 4;
-    -moz-box-ordinal-group: 4;
-    -ms-flex-order: 4;
-    -webkit-order: 4;
     order: 4;
   }
 }
 @media (min-width: 64em) {
   /* line 274, ../scss/base/_navigation.scss */
   .need-help-menu {
-    -webkit-box-ordinal-group: 3;
-    -moz-box-ordinal-group: 3;
-    -ms-flex-order: 3;
-    -webkit-order: 3;
     order: 3;
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     padding-right: 30px;
     margin: 0;
@@ -1766,10 +1738,6 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
 
   /* line 393, ../scss/base/_navigation.scss */
   #block-bbd-classy-main-menu {
-    -webkit-box-ordinal-group: 5;
-    -moz-box-ordinal-group: 5;
-    -ms-flex-order: 5;
-    -webkit-order: 5;
     order: 5;
     overflow: inherit;
     height: auto;
@@ -1831,10 +1799,6 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   /* line 458, ../scss/base/_navigation.scss */
   ul.main-megamenu {
     display: flex;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
     justify-content: space-between;
   }
   /* line 462, ../scss/base/_navigation.scss */
@@ -1929,14 +1893,10 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
 
 /* line 1, ../scss/components/_header.scss */
 header.outer-wrapper {
-  /*
-  display: flex;
-  flex-direction: row;
-  */
   background: #72C6D9;
   clear: both;
 }
-/* line 9, ../scss/components/_header.scss */
+/* line 5, ../scss/components/_header.scss */
 header.outer-wrapper .region-header {
   display: flex;
   flex-wrap: wrap;
@@ -1947,7 +1907,7 @@ header.outer-wrapper .region-header {
   max-width: 1140px;
   margin: 0 auto;
 }
-/* line 19, ../scss/components/_header.scss */
+/* line 15, ../scss/components/_header.scss */
 header.outer-wrapper .region-header #block-bbd-classy-main-menu {
   order: 3;
   width: 100%;
@@ -1955,7 +1915,7 @@ header.outer-wrapper .region-header #block-bbd-classy-main-menu {
 }
 
 @media (max-width: 906px) {
-  /* line 29, ../scss/components/_header.scss */
+  /* line 25, ../scss/components/_header.scss */
   #block-bbd-classy-branding {
     width: 200px;
   }
@@ -1963,7 +1923,6 @@ header.outer-wrapper .region-header #block-bbd-classy-main-menu {
 /* line 1, ../scss/components/_menu.scss */
 ul.main-megamenu {
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   margin: 0;
   padding: 0 98px;
@@ -1971,24 +1930,23 @@ ul.main-megamenu {
 }
 
 @media (min-width: 64em) {
-  /* line 11, ../scss/components/_menu.scss */
+  /* line 10, ../scss/components/_menu.scss */
   #block-bbd-classy-main-menu {
     padding: 20px 0;
   }
 }
 /* mobile */
 @media (max-width: 48em) {
-  /* line 20, ../scss/components/_menu.scss */
+  /* line 19, ../scss/components/_menu.scss */
   ul.main-megamenu {
     display: block;
-    -webkit-box-pack: unset;
     justify-content: unset;
     margin: 0;
     padding: 0;
     text-align: left;
   }
 
-  /* line 29, ../scss/components/_menu.scss */
+  /* line 27, ../scss/components/_menu.scss */
   #main-menu-sidebar {
     overflow: auto;
     display: none;
@@ -2001,7 +1959,7 @@ ul.main-megamenu {
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
   }
-  /* line 41, ../scss/components/_menu.scss */
+  /* line 39, ../scss/components/_menu.scss */
   #main-menu-sidebar ul.menu li {
     display: block;
     margin: 0;
@@ -2011,7 +1969,7 @@ ul.main-megamenu {
     background: url(../../images/mobile-arrow-right.svg) no-repeat right center;
     background-size: 24px;
   }
-  /* line 50, ../scss/components/_menu.scss */
+  /* line 48, ../scss/components/_menu.scss */
   #main-menu-sidebar ul.menu li a {
     display: block;
     padding: 17px 0;
@@ -2085,46 +2043,46 @@ ul.main-megamenu {
   float: left;
   margin-right: 0;
 }
-/* line 23, ../scss/components/_search-form.scss */
+/* line 21, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 form .form--inline input[type="text"] {
   height: 40px;
   width: 100%;
   background: #fff;
   border-radius: 4px;
-  color: #8597A3;
+  color: #768692;
   line-height: normal;
 }
-/* line 33, ../scss/components/_search-form.scss */
+/* line 31, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 form .form--inline .form-actions {
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 38, ../scss/components/_search-form.scss */
+/* line 36, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 form .form--inline .form-actions.form-wrapper:not(:empty) {
   position: relative;
   padding: 20px 0;
   text-align: center;
   margin: 0;
 }
-/* line 50, ../scss/components/_search-form.scss */
+/* line 48, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 .form--inline .form-actions {
   padding: 0;
   clear: none;
   position: relative;
 }
-/* line 56, ../scss/components/_search-form.scss */
+/* line 54, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 .form-item,
 #block-views-block-site-search-block-1 .form-actions {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 62, ../scss/components/_search-form.scss */
+/* line 60, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 .form-type-textfield {
   display: block;
   width: 100%;
 }
-/* line 69, ../scss/components/_search-form.scss */
+/* line 67, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 .visually-hidden {
   position: absolute !important;
   overflow: hidden;
@@ -2133,16 +2091,16 @@ ul.main-megamenu {
   height: 1px;
   word-wrap: normal;
 }
-/* line 78, ../scss/components/_search-form.scss */
+/* line 76, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
   width: 100%;
   font-size: 14px;
   line-height: 20px;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid #D8DDE0;
   border-radius: 5px;
 }
-/* line 87, ../scss/components/_search-form.scss */
+/* line 85, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 label::after,
 #block-views-block-site-search-block-1 .form-submit {
   cursor: pointer;
@@ -2162,48 +2120,48 @@ ul.main-megamenu {
   padding: 9px 13px;
   z-index: 2;
 }
-/* line 110, ../scss/components/_search-form.scss */
+/* line 108, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 .form-submit:hover, #block-views-block-site-search-block-1 .form-submit:focus,
 #block-views-block-site-search-block-1 .button:hover,
 #block-views-block-site-search-block-1 .button:focus {
   box-shadow: none;
 }
-/* line 116, ../scss/components/_search-form.scss */
+/* line 114, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 input[type="search"],
 #block-views-block-site-search-block-1 input[type="text"],
 #block-views-block-site-search-block-1 .form-actions {
   display: block;
 }
-/* line 123, ../scss/components/_search-form.scss */
+/* line 121, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 label::after {
   content: inherit;
 }
-/* line 129, ../scss/components/_search-form.scss */
+/* line 127, ../scss/components/_search-form.scss */
 #block-views-block-site-search-block-1 .path-search #page {
   max-width: 40em;
 }
 
 @media (min-width: 64em) {
-  /* line 139, ../scss/components/_search-form.scss */
+  /* line 137, ../scss/components/_search-form.scss */
   #views-exposed-form-site-search-block-1 label::after,
   #views-exposed-form-site-search-block-1 .form-submit {
     max-width: 100%;
   }
 }
-/* line 148, ../scss/components/_search-form.scss */
+/* line 146, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-block-1 label::after,
 #views-exposed-form-site-search-block-1 .form-submit {
   background-size: 15px;
 }
 
 @media (max-width: 767px) {
-  /* line 157, ../scss/components/_search-form.scss */
+  /* line 155, ../scss/components/_search-form.scss */
   #block-views-block-site-search-block-1 {
     order: 3;
     margin: 20px 0;
   }
 
-  /* line 162, ../scss/components/_search-form.scss */
+  /* line 160, ../scss/components/_search-form.scss */
   #block-views-block-site-search-block-1,
   #block-views-block-site-search-block-1,
   .form--inline,
@@ -2211,7 +2169,7 @@ ul.main-megamenu {
     width: 88%;
   }
 
-  /* line 169, ../scss/components/_search-form.scss */
+  /* line 167, ../scss/components/_search-form.scss */
   #views-exposed-form-site-search-block-1 input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
     width: 88%;
   }

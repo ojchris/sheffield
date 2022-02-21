@@ -8,50 +8,52 @@
   @if $value==row-reverse {
     flex-direction: $value;
   }
+}
 
-  /* Flexbox wrap */
-  @mixin flex-wrap($value: nowrap) {
-    flex-wrap: $value;
+/* Flexbox wrap */
+@mixin flex-wrap($value: nowrap) {
+  flex-wrap: $value;
+}
+
+/* Flexbox basis */
+@mixin flex-basis($value: auto) {
+  flex-basis: $value;
+}
+
+/* Flexbox grow */
+@mixin flex-grow($value: 0) {
+  flex-grow: $value;
+}
+
+/* Flexbox justify content */
+@mixin justify-content($value: flex-start) {
+  justify-content: $value;
+}
+
+/* Flexbox align items */
+@mixin align-items($value: stretch) {
+  @if $value==flex-start {
+    align-items: $value;
   }
+}
 
-  /* Flexbox basis */
-  @mixin flex-basis($value: auto) {
-    flex-basis: $value;
-  }
+/* Flexbox align content */
+@mixin align-content($value: stretch) {
 
-  /* Flexbox grow */
-  @mixin flex-grow($value: 0) {
-    flex-grow: $value;
-  }
+  align-content: $value;
+}
 
-  /* Flexbox justify content */
-  @mixin justify-content($value: flex-start) {
-    justify-content: $value;
-  }
+/* Flexbox align self */
+@mixin align-self($value: auto) {
+  align-self: $value;
+}
 
-  /* Flexbox align items */
-  @mixin align-items($value: stretch) {
-    @if $value==flex-start {
-      align-items: $value;
-    }
+/* Flex */
+@mixin flex($value) {
+  flex: $value;
+}
 
-    /* Flexbox align content */
-    @mixin align-content($value: stretch) {
-
-      align-content: $value;
-    }
-
-    /* Flexbox align self */
-    @mixin align-self($value: auto) {
-      align-self: $value;
-    }
-
-    /* Flex */
-    @mixin flex($value) {
-      flex: $value;
-    }
-
-    /* Order */
-    @mixin order($value) {
-      order: $value;
-    }
+/* Order */
+@mixin order($value) {
+  order: $value;
+}
