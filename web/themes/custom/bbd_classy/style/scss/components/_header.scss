@@ -1,0 +1,25 @@
+header.outer-wrapper {
+  background: $blue_acqua;
+  clear: both;
+
+  .region-header {
+    @include flex-responsive-div;
+    padding: 0 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    #block-bbd-classy-main-menu {
+      order: 3;
+      width: 100%;
+      border-top: 2px solid $transparent_white;
+    }
+  }
+}
+
+@media (max-width: 906px) {
+
+  #block-bbd-classy-branding {
+    width: 200px;
+  }
+
+}

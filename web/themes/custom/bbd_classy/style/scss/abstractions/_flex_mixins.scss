@@ -5,27 +5,34 @@
 
 /* Flexbox direction */
 @mixin flex-direction($value: row) {
-  @if $value == row-reverse {
+  @if $value==row-reverse {
     -webkit-box-direction: reverse;
     -webkit-box-orient: horizontal;
     -moz-box-direction: reverse;
     -moz-box-orient: horizontal;
-  } @else if $value == column {
+  }
+
+  @else if $value==column {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
     -moz-box-direction: normal;
     -moz-box-orient: vertical;
-  } @else if $value == column-reverse {
+  }
+
+  @else if $value==column-reverse {
     -webkit-box-direction: reverse;
     -webkit-box-orient: vertical;
     -moz-box-direction: reverse;
     -moz-box-orient: vertical;
-  } @else {
+  }
+
+  @else {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     -moz-box-direction: normal;
     -moz-box-orient: horizontal;
   }
+
   flex-direction: $value;
 }
 
@@ -51,42 +58,54 @@
 
 /* Flexbox justify content */
 @mixin justify-content($value: flex-start) {
-  @if $value == flex-start {
+  @if $value==flex-start {
     -webkit-box-pack: start;
     -moz-box-pack: start;
     -ms-flex-pack: start;
-  } @else if $value == flex-end {
+  }
+
+  @else if $value==flex-end {
     -webkit-box-pack: end;
     -moz-box-pack: end;
     -ms-flex-pack: end;
-  } @else if $value == space-between {
+  }
+
+  @else if $value==space-between {
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
-  } @else {
+  }
+
+  @else {
     -webkit-box-pack: $value;
     -moz-box-pack: $value;
     -ms-flex-pack: $value;
   }
+
   -webkit-justify-content: $value;
   justify-content: $value;
 }
 
 /* Flexbox align items */
 @mixin align-items($value: stretch) {
-  @if $value == flex-start {
+  @if $value==flex-start {
     -webkit-box-align: start;
     -moz-box-align: start;
     -ms-flex-align: start;
-  } @else if $value == flex-end {
+  }
+
+  @else if $value==flex-end {
     -webkit-box-align: end;
     -moz-box-align: end;
     -ms-flex-align: end;
-  } @else {
+  }
+
+  @else {
     -webkit-box-align: $value;
     -moz-box-align: $value;
     -ms-flex-align: $value;
   }
+
   -webkit-align-items: $value;
   align-items: $value;
 }
@@ -95,13 +114,19 @@
 @mixin align-content($value: stretch) {
   // No Webkit Box Fallback.
   -webkit-align-content: $value;
-  @if $value == flex-start {
+
+  @if $value==flex-start {
     -ms-flex-line-pack: start;
-  } @else if $value == flex-end {
+  }
+
+  @else if $value==flex-end {
     -ms-flex-line-pack: end;
-  } @else {
+  }
+
+  @else {
     -ms-flex-line-pack: $value;
   }
+
   align-content: $value;
 }
 
@@ -109,13 +134,19 @@
 @mixin align-self($value: auto) {
   // No Webkit Box Fallback.
   -webkit-align-self: $value;
-  @if $value == flex-start {
+
+  @if $value==flex-start {
     -ms-flex-item-align: start;
-  } @else if $value == flex-end {
+  }
+
+  @else if $value==flex-end {
     -ms-flex-item-align: end;
-  } @else {
+  }
+
+  @else {
     -ms-flex-item-align: $value;
   }
+
   align-self: $value;
 }
 
@@ -133,4 +164,12 @@
   -ms-flex-order: $value;
   -webkit-order: $value;
   order: $value;
+}
+
+/* outer div flex responsive */
+@mixin flex-responsive-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }

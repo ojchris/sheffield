@@ -1,111 +1,141 @@
-.search-block-form {
-  width: 40px;
-  height: 40px;
-  margin-right: 40px;
+#block-views-block-site-search-block-1 {
+  width: 35%;
+  padding: 0 0 20px 0;
+  height: 45px;
+  margin: 0;
   z-index: 1;
 
-  h2,
-  input[type="search"],
-  input[type="text"],
-  .form-actions {
-    display: none;
-  }
-
   form {
-    position: relative;
+    max-width: 40em;
+    margin: 0 auto;
 
-    /* label styles has to be overwritten according to search form configuration */
-    label {
-      text-indent: -9999px;
-      overflow: inherit;
+    .form--inline {
+      position: relative;
       width: 100%;
-      height: 40px;
-      margin: 0;
-      position: relative !important;
+
+      .form-item {
+        float: left;
+        margin-right: 0;
+      }
+
+
+
+      input[type="text"] {
+        height: 40px;
+        width: 100%;
+        background: $white;
+        border-radius: 4px;
+        color: $grey-light;
+        line-height: normal;
+
+      }
+
+      .form-actions {
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        &.form-wrapper:not(:empty) {
+          position: relative;
+          padding: 20px 0;
+          text-align: center;
+          margin: 0;
+        }
+      }
     }
 
-    input[type="search"] {
-      background-image: none;
-      padding-right: 15px;
-    }
+
   }
 
+  .form--inline .form-actions {
+    padding: 0;
+    clear: none;
+    position: relative;
+  }
+
+  .form-item,
   .form-actions {
-    &.form-wrapper:not(:empty) {
-      padding: 0;
-    }
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  label::after, .form-submit {
+  .form-type-textfield {
+    display: block;
+    width: 100%;
+  }
+
+
+
+  .visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+  }
+
+  input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    border: 1px solid $grey_lightest;
+    border-radius: 5px;
+  }
+
+  label::after,
+  .form-submit {
     cursor: pointer;
     content: '';
     position: absolute;
-    top: 0;
     right: 0;
-    background: url("../../images/icon-search.svg") no-repeat 50% 50%;
-    background-size: 18px;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 0;
+    background: $yellow-light url("../../images/icon-search.svg") no-repeat center center;
+    background-size: 50%;
     width: 40px;
     height: 40px;
-    padding: 0;
+    margin: 0;
     min-width: inherit;
     text-indent: -9999px;
+    padding: 9px 13px;
     z-index: 2;
   }
 
-  .form-submit, .button {
-    &:hover, &:focus {
+  .form-submit,
+  .button {
+
+    &:hover,
+    &:focus {
       @include box-shadow(none);
     }
   }
 
-  &.search-open {
-    input[type="search"],
-    input[type="text"],
-    .form-actions {
-      display: block;
-    }
-
-    input[type="search"],
-    input[type="text"] {
-      @include absolute($top: 0, $right: 50px);
-      font-size: 14px;
-      line-height: 20px;
-      padding: 9px 15px 9px 15px;
-      width: 150px;
-    }
-
-    .form-actions {
-      padding: 0;
-    }
-
-    label {
-      &::after {
-        content: inherit;
-      }
-    }
-  }
-}
-
-.search-form {
-  .form-type-search {
+  input[type="search"],
+  input[type="text"],
+  .form-actions {
     display: block;
   }
-}
 
-.path-search {
-  #page {
-    max-width: $widestmob;
+  label {
+    &::after {
+      content: inherit;
+    }
   }
-}
 
-@include breakpoint($tab) {
-  .search-block-form {
-    margin-right: 0;
+  .path-search {
+    #page {
+      max-width: $widestmob;
+    }
   }
+
 }
 
 @include breakpoint($desk) {
-  .search-block-form {
+  #views-exposed-form-site-search-block-1 {
+
     label::after,
     .form-submit {
       max-width: 100%;
@@ -113,11 +143,32 @@
   }
 }
 
-@include breakpoint($widedesk) {
-  .search-block-form {
-    label::after,
-    .form-submit {
-      background-size: 25px;
-    }
+#views-exposed-form-site-search-block-1 {
+
+  label::after,
+  .form-submit {
+    background-size: 15px;
   }
+}
+
+
+@media (max-width: 767px) {
+
+  #block-views-block-site-search-block-1 {
+    order: 3;
+    margin: 20px 0;
+  }
+
+  #block-views-block-site-search-block-1,
+  #block-views-block-site-search-block-1,
+  .form--inline,
+  .form-type-textfield {
+    width: 88%;
+  }
+
+  #views-exposed-form-site-search-block-1 input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
+    width: 88%;
+
+  }
+
 }
