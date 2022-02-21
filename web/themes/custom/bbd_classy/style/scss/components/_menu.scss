@@ -32,7 +32,7 @@ ul.main-megamenu {
     margin: 0;
     padding: 20px 20px 0 20px;
     height: auto;
-    background: #fff;
+    background: $white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
 
@@ -41,7 +41,7 @@ ul.main-megamenu {
       margin: 0;
       padding: 0;
       text-align: left;
-      border-top: 1px solid #D8DDE0;
+      border-top: 1px solid $grey_lightest;
       background: url(../../images/mobile-arrow-right.svg) no-repeat right center;
       background-size: 24px;
 
