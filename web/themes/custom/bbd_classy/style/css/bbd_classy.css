@@ -137,6 +137,8 @@ a {
 a:hover, a:focus {
   color: black;
   text-decoration: none;
+  background: #FFEB3B;
+  border-bottom: solid 3px #212B32;
 }
 
 /* line 115, ../scss/variables/_typography.scss */
@@ -214,6 +216,7 @@ blockquote {
   }
 }
 @media (min-width: 64em) {
+
   /* line 184, ../scss/variables/_typography.scss */
   body {
     font-size: 19px;

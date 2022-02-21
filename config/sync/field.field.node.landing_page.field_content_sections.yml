@@ -5,12 +5,15 @@ dependencies:
   config:
     - field.storage.node.field_content_sections
     - node.type.landing_page
+    - paragraphs.paragraphs_type.cta_panel
     - paragraphs.paragraphs_type.download_panel
+    - paragraphs.paragraphs_type.expandable_panel
     - paragraphs.paragraphs_type.four_column_panel
     - paragraphs.paragraphs_type.homepage_carousel
     - paragraphs.paragraphs_type.listing
     - paragraphs.paragraphs_type.page_header
     - paragraphs.paragraphs_type.simple_text
+    - paragraphs.paragraphs_type.tabbed_content_panel
     - paragraphs.paragraphs_type.three_column_panel
     - paragraphs.paragraphs_type.two_column_panel
     - paragraphs.paragraphs_type.two_column_text_panel
@@ -32,15 +35,18 @@ settings:
   handler_settings:
     target_bundles:
       simple_text: simple_text
-      two_column_text_panel: two_column_text_panel
       listing: listing
-      homepage_carousel: homepage_carousel
+      two_column_text_panel: two_column_text_panel
       video_panel: video_panel
+      homepage_carousel: homepage_carousel
       page_header: page_header
       four_column_panel: four_column_panel
       download_panel: download_panel
       two_column_panel: two_column_panel
+      cta_panel: cta_panel
       three_column_panel: three_column_panel
+      expandable_panel: expandable_panel
+      tabbed_content_panel: tabbed_content_panel
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -52,8 +58,17 @@ settings:
       carousel_slide:
         weight: 14
         enabled: false
+      cta_panel:
+        weight: 30
+        enabled: true
       download_panel:
         weight: 23
+        enabled: true
+      expandable_box:
+        weight: 32
+        enabled: false
+      expandable_panel:
+        weight: 33
         enabled: true
       four_column_card:
         weight: 20
@@ -70,14 +85,26 @@ settings:
       listing:
         weight: 13
         enabled: true
+      optional_cta:
+        weight: 39
+        enabled: false
       page_header:
         weight: 19
         enabled: true
       paragraph_banner:
         weight: 10
         enabled: false
+      required_cta:
+        weight: 42
+        enabled: false
       simple_text:
         weight: 11
+        enabled: true
+      tab:
+        weight: 44
+        enabled: false
+      tabbed_content_panel:
+        weight: 45
         enabled: true
       three_column_card:
         weight: 30
