@@ -37,7 +37,6 @@
 
     /* Flexbox align content */
     @mixin align-content($value: stretch) {
-
       align-content: $value;
     }
 
