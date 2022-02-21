@@ -38,7 +38,7 @@
         }
       });
 
-      $('.close-menu-btn').on('click', function() {
+      $('.close-menu-btn', context).click(function () {
         self.toggleMenu(context);
         $('#nav-opener').toggleClass('is-active');
       })

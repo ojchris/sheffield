@@ -18,14 +18,12 @@
         margin-right: 0;
       }
 
-
-
       input[type="text"] {
         height: 40px;
         width: 100%;
-        background: #fff;
+        background: $white;
         border-radius: 4px;
-        color: #8597A3;
+        color: $grey-light;
         line-height: normal;
 
       }
@@ -80,7 +78,7 @@
     font-size: 14px;
     line-height: 20px;
     padding: 10px;
-    border: 1px solid #eee;
+    border: 1px solid $grey-lightest;
     border-radius: 5px;
   }
 
