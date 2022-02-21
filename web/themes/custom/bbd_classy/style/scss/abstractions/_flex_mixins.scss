@@ -57,3 +57,11 @@
 @mixin order($value) {
   order: $value;
 }
+
+@mixin flex-responsive-div {
+  display: flex;
+  flex-wrap: wrap;
+  box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+}

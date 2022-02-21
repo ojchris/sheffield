@@ -483,7 +483,7 @@ button[id^="edit-reset"], button[id^="edit-delete"], a.button[id^="edit-reset"],
 }
 /* line 49, ../scss/base/_form.scss */
 .grey button:active, .grey a.button:active, .grey .form-submit:active, .grey input[type="submit"]:active {
-  background: #768692;
+  background: #8597A3;
 }
 
 /* line 55, ../scss/base/_form.scss */
@@ -653,7 +653,7 @@ form .selectric-items {
   background: #D8DDE0;
   width: 100%;
   padding: 5px;
-  box-shadow: 0 5px 10px 0 #768692;
+  box-shadow: 0 5px 10px 0 #8597A3;
   border-radius: 3px;
 }
 /* line 223, ../scss/base/_form.scss */
@@ -668,12 +668,12 @@ form .selectric-items li {
 }
 /* line 232, ../scss/base/_form.scss */
 form .selectric-items li.highlighted {
-  background-color: #768692;
+  background-color: #8597A3;
   color: #fff;
 }
 /* line 236, ../scss/base/_form.scss */
 form .selectric-items li.highlighted:hover {
-  background-color: #768692;
+  background-color: #8597A3;
   color: #fff;
 }
 /* line 242, ../scss/base/_form.scss */
@@ -765,19 +765,19 @@ form .form-actions.form-wrapper:not(:empty) {
 }
 /* line 107, ../scss/abstractions/_site_mixins.scss */
 form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
-  color: #768692;
+  color: #8597A3;
 }
 /* line 110, ../scss/abstractions/_site_mixins.scss */
 form input::-moz-placeholder, form textarea::-moz-placeholder {
-  color: #768692;
+  color: #8597A3;
 }
 /* line 113, ../scss/abstractions/_site_mixins.scss */
 form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
-  color: #768692;
+  color: #8597A3;
 }
 /* line 116, ../scss/abstractions/_site_mixins.scss */
 form input:-moz-placeholder, form textarea:-moz-placeholder {
-  color: #768692;
+  color: #8597A3;
 }
 /* line 347, ../scss/base/_form.scss */
 form input[type="file"].form-file {
@@ -793,7 +793,7 @@ form input[type="file"].form-file {
 form input[type="file"].form-file::-webkit-file-upload-button, form input[type="file"].form-file::file-selector-button {
   display: inline-block;
   background: #fff;
-  color: #768692;
+  color: #8597A3;
   border: 0;
   white-space: nowrap;
   cursor: pointer;
@@ -803,7 +803,7 @@ form input[type="file"].form-file::-webkit-file-upload-button, form input[type="
 }
 /* line 369, ../scss/base/_form.scss */
 form input[type="file"].form-file::before {
-  color: #768692;
+  color: #8597A3;
   display: block;
   text-align: center;
   content: 'Drop your image here, or browse';
@@ -871,7 +871,7 @@ form .js-form-type-radio label::after {
 form .js-form-type-checkbox label::before,
 form .js-form-type-radio label::before {
   background: #D8DDE0;
-  border: 1px solid #768692;
+  border: 1px solid #8597A3;
 }
 /* line 449, ../scss/base/_form.scss */
 form .js-form-type-checkbox .form-checkbox {
@@ -2049,7 +2049,7 @@ ul.main-megamenu {
   width: 100%;
   background: #fff;
   border-radius: 4px;
-  color: #768692;
+  color: #8597A3;
   line-height: normal;
 }
 /* line 31, ../scss/components/_search-form.scss */
