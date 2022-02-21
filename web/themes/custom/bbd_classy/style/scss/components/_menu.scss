@@ -1,6 +1,5 @@
 ul.main-megamenu {
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   margin: 0;
   padding: 0 98px;
@@ -19,7 +18,6 @@ ul.main-megamenu {
 
   ul.main-megamenu {
     display: block;
-    -webkit-box-pack: unset;
     justify-content: unset;
     margin: 0;
     padding: 0;
