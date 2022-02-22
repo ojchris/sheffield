@@ -3,11 +3,7 @@ header.outer-wrapper {
   clear: both;
 
   .region-header {
-    display: flex;
-    flex-wrap: wrap;
-    box-pack: justify;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-responsive-div;
     padding: 0 20px;
     max-width: 1140px;
     margin: 0 auto;

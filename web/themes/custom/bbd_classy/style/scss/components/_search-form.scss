@@ -1,4 +1,4 @@
-#block-views-block-site-search-block-1 {
+.block-class-views-sitesearch-exposedform-block {
   width: 35%;
   padding: 0 0 20px 0;
   height: 45px;
@@ -6,12 +6,11 @@
   z-index: 1;
 
   form {
-    max-width: 40em;
+    max-width: 43em;
     margin: 0 auto;
 
     .form--inline {
       position: relative;
-      width: 100%;
 
       .form-item {
         float: left;
@@ -35,13 +34,11 @@
 
         &.form-wrapper:not(:empty) {
           position: relative;
-          padding: 20px 0;
           text-align: center;
           margin: 0;
         }
       }
     }
-
 
   }
 
@@ -61,8 +58,6 @@
     display: block;
     width: 100%;
   }
-
-
 
   .visually-hidden {
     position: absolute !important;
@@ -132,7 +127,7 @@
 }
 
 @include breakpoint($desk) {
-  #views-exposed-form-site-search-block-1 {
+  #views-exposed-form-site-search-page-1 {
 
     label::after,
     .form-submit {
@@ -141,7 +136,7 @@
   }
 }
 
-#views-exposed-form-site-search-block-1 {
+#views-exposed-form-site-search-page-1 {
 
   label::after,
   .form-submit {
@@ -149,24 +144,14 @@
   }
 }
 
+@media (max-width: $tab) {
 
-@media (max-width: 767px) {
-
-  #block-views-block-site-search-block-1 {
+  .block-class-views-sitesearch-exposedform-block {
     order: 3;
     margin: 20px 0;
   }
 
-  #block-views-block-site-search-block-1,
-  #block-views-block-site-search-block-1,
-  .form--inline,
-  .form-type-textfield {
-    width: 88%;
+  .block-class-views-sitesearch-exposedform-block {
+    width: 83%;
   }
-
-  #views-exposed-form-site-search-block-1 input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
-    width: 88%;
-
-  }
-
 }

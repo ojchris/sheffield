@@ -11,7 +11,7 @@ dependencies:
 id: nhs_trust_logobox
 theme: bbd_classy
 region: header
-weight: -6
+weight: -5
 provider: null
 plugin: 'block_content:daf01499-1123-4713-9b02-a8fe88fd7a7a'
 settings:
