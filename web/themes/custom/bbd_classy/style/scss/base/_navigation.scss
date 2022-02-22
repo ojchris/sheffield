@@ -210,7 +210,7 @@ ul.main-megamenu {
 
 @include breakpoint($mobileOnly) {
 
-  .region-header > #block-bbd-classy-main-menu {
+  .region-header>#block-bbd-classy-main-menu {
     display: none;
   }
 

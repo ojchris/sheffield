@@ -1291,6 +1291,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
   margin: 0 auto;
   max-width: 83.75em;
@@ -1914,7 +1915,7 @@ header.outer-wrapper .region-header #block-bbd-classy-main-menu {
 }
 
 @media (max-width: 906px) {
-  /* line 21, ../scss/components/_header.scss */
+  /* line 20, ../scss/components/_header.scss */
   #block-bbd-classy-branding {
     width: 200px;
   }
@@ -2050,36 +2051,36 @@ ul.main-megamenu {
   color: #8597A3;
   line-height: normal;
 }
-/* line 30, ../scss/components/_search-form.scss */
+/* line 29, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block form .form--inline .form-actions {
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 35, ../scss/components/_search-form.scss */
+/* line 34, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block form .form--inline .form-actions.form-wrapper:not(:empty) {
   position: relative;
   text-align: center;
   margin: 0;
 }
-/* line 45, ../scss/components/_search-form.scss */
+/* line 43, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form--inline .form-actions {
   padding: 0;
   clear: none;
   position: relative;
 }
-/* line 51, ../scss/components/_search-form.scss */
+/* line 49, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form-item,
 .block-class-views-sitesearch-exposedform-block .form-actions {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 57, ../scss/components/_search-form.scss */
+/* line 55, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form-type-textfield {
   display: block;
   width: 100%;
 }
-/* line 62, ../scss/components/_search-form.scss */
+/* line 60, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .visually-hidden {
   position: absolute !important;
   overflow: hidden;
@@ -2088,7 +2089,7 @@ ul.main-megamenu {
   height: 1px;
   word-wrap: normal;
 }
-/* line 71, ../scss/components/_search-form.scss */
+/* line 69, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
   width: 100%;
   font-size: 14px;
@@ -2097,7 +2098,7 @@ ul.main-megamenu {
   border: 1px solid #D8DDE0;
   border-radius: 5px;
 }
-/* line 80, ../scss/components/_search-form.scss */
+/* line 78, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block label::after,
 .block-class-views-sitesearch-exposedform-block .form-submit {
   cursor: pointer;
@@ -2117,48 +2118,48 @@ ul.main-megamenu {
   padding: 9px 13px;
   z-index: 2;
 }
-/* line 103, ../scss/components/_search-form.scss */
+/* line 101, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form-submit:hover, .block-class-views-sitesearch-exposedform-block .form-submit:focus,
 .block-class-views-sitesearch-exposedform-block .button:hover,
 .block-class-views-sitesearch-exposedform-block .button:focus {
   box-shadow: none;
 }
-/* line 109, ../scss/components/_search-form.scss */
+/* line 107, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block input[type="search"],
 .block-class-views-sitesearch-exposedform-block input[type="text"],
 .block-class-views-sitesearch-exposedform-block .form-actions {
   display: block;
 }
-/* line 116, ../scss/components/_search-form.scss */
+/* line 114, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block label::after {
   content: inherit;
 }
-/* line 122, ../scss/components/_search-form.scss */
+/* line 120, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .path-search #page {
   max-width: 40em;
 }
 
 @media (min-width: 64em) {
-  /* line 132, ../scss/components/_search-form.scss */
+  /* line 130, ../scss/components/_search-form.scss */
   #views-exposed-form-site-search-page-1 label::after,
   #views-exposed-form-site-search-page-1 .form-submit {
     max-width: 100%;
   }
 }
-/* line 141, ../scss/components/_search-form.scss */
+/* line 139, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-page-1 label::after,
 #views-exposed-form-site-search-page-1 .form-submit {
   background-size: 15px;
 }
 
 @media (max-width: 48em) {
-  /* line 149, ../scss/components/_search-form.scss */
+  /* line 147, ../scss/components/_search-form.scss */
   .block-class-views-sitesearch-exposedform-block {
     order: 3;
     margin: 20px 0;
   }
 
-  /* line 154, ../scss/components/_search-form.scss */
+  /* line 152, ../scss/components/_search-form.scss */
   .block-class-views-sitesearch-exposedform-block {
     width: 83%;
   }

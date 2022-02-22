@@ -5,9 +5,7 @@
 
 /* Flexbox direction */
 @mixin flex-direction($value: row) {
-  @if $value==row-reverse {
-    flex-direction: $value;
-  }
+  flex-direction: $value;
 }
 
 /* Flexbox wrap */
@@ -32,14 +30,11 @@
 
 /* Flexbox align items */
 @mixin align-items($value: stretch) {
-  @if $value==flex-start {
-    align-items: $value;
-  }
+  align-items: $value;
 }
 
 /* Flexbox align content */
 @mixin align-content($value: stretch) {
-
   align-content: $value;
 }
 
