@@ -1,5 +1,5 @@
 ul.main-megamenu {
-  display: flex;
+  @include flexbox;
   justify-content: space-between;
   margin: 0;
   padding: 0 98px;
@@ -50,7 +50,7 @@ ul.main-megamenu {
         padding: 17px 0;
         font-size: 14px;
         font-weight: 700;
-        color: #033F85;
+        color: $black;
         border: none;
       }
     }
