@@ -394,14 +394,14 @@ blockquote {
  ******************************************************************************/
 /* line 5, ../scss/base/_footer.scss */
 .region-footer .menu {
-  margin: 0 0 20px;
+  margin: 0;
 }
 /* line 8, ../scss/base/_footer.scss */
 .region-footer .menu li {
   font-size: 12px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 10px;
+  display: block;
+  vertical-align: middle;
+  margin: 0;
 }
 
 /* line 18, ../scss/base/_footer.scss */
@@ -1892,6 +1892,178 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   text-align: center;
 }
 
+/* line 1, ../scss/components/_footer.scss */
+#footer-wrap {
+  background: #72C6D9;
+  clear: both;
+  /* responsive */
+}
+/* line 5, ../scss/components/_footer.scss */
+#footer-wrap .footer-holder,
+#footer-wrap .footer-copyright {
+  padding: 0 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* line 12, ../scss/components/_footer.scss */
+#footer-wrap .region-footer nav#block-bottommenu {
+  padding: 70px 0 50px 0;
+  border-bottom: solid 1px #8597A3;
+  margin-bottom: 20px;
+}
+/* line 17, ../scss/components/_footer.scss */
+#footer-wrap .region-footer nav#block-bottommenu ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 20, ../scss/components/_footer.scss */
+#footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded {
+  width: 25%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+/* line 25, ../scss/components/_footer.scss */
+#footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded a {
+  color: #212B32;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 34, ../scss/components/_footer.scss */
+#footer-wrap .region-footer nav#block-bottommenu ul.level-1 {
+  display: block;
+}
+/* line 37, ../scss/components/_footer.scss */
+#footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 41, ../scss/components/_footer.scss */
+#footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item a {
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 50, ../scss/components/_footer.scss */
+#footer-wrap #block-socialmedialinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+/* line 54, ../scss/components/_footer.scss */
+#footer-wrap #block-socialmedialinks h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+/* line 59, ../scss/components/_footer.scss */
+#footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal {
+  margin: 0;
+  padding: 0;
+}
+/* line 63, ../scss/components/_footer.scss */
+#footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal li {
+  padding: 0 30px 0 0;
+}
+/* line 67, ../scss/components/_footer.scss */
+#footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal li span.fa-2x {
+  font-size: 35px;
+}
+/* line 73, ../scss/components/_footer.scss */
+#footer-wrap #block-socialmedialinks a {
+  color: #212B32;
+}
+/* line 78, ../scss/components/_footer.scss */
+#footer-wrap .footer-copyright .region-copyright {
+  display: flex;
+  padding: 35px 0;
+}
+/* line 82, ../scss/components/_footer.scss */
+#footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer {
+  flex: 10;
+  margin-bottom: 20px;
+}
+/* line 86, ../scss/components/_footer.scss */
+#footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer h2.visually-hidden {
+  display: none;
+}
+/* line 90, ../scss/components/_footer.scss */
+#footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul {
+  display: flex;
+  width: 60%;
+  margin: 0;
+}
+/* line 96, ../scss/components/_footer.scss */
+#footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul li {
+  flex: 1;
+  display: inline-block;
+  padding: 0;
+}
+/* line 101, ../scss/components/_footer.scss */
+#footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul li a {
+  font-size: 13px;
+  color: #212B32;
+  text-decoration: none;
+  font-weight: 700;
+}
+/* line 111, ../scss/components/_footer.scss */
+#footer-wrap .footer-copyright .region-copyright #block-copyright {
+  flex: 2;
+  text-align: right;
+}
+/* line 115, ../scss/components/_footer.scss */
+#footer-wrap .footer-copyright .region-copyright #block-copyright p {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 127, ../scss/components/_footer.scss */
+  #footer-wrap .region-footer nav#block-bottommenu {
+    padding: 70px 0 50px 0;
+  }
+  /* line 132, ../scss/components/_footer.scss */
+  #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded {
+    width: 50%;
+  }
+  /* line 135, ../scss/components/_footer.scss */
+  #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded a {
+    color: #212B32;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* line 144, ../scss/components/_footer.scss */
+  #footer-wrap .region-footer nav#block-bottommenu ul.level-1 {
+    display: flex;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+  /* line 149, ../scss/components/_footer.scss */
+  #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  /* line 153, ../scss/components/_footer.scss */
+  #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item a {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  /* line 162, ../scss/components/_footer.scss */
+  #footer-wrap #block-socialmedialinks {
+    width: 40%;
+  }
+  /* line 166, ../scss/components/_footer.scss */
+  #footer-wrap .footer-copyright .region-copyright {
+    display: block;
+    padding-top: 10px;
+  }
+  /* line 170, ../scss/components/_footer.scss */
+  #footer-wrap .footer-copyright .region-copyright #block-copyright {
+    text-align: left;
+  }
+}
+
 /* line 1, ../scss/components/_header.scss */
 header.outer-wrapper {
   background: #72C6D9;
@@ -1915,7 +2087,7 @@ header.outer-wrapper .region-header #block-bbd-classy-main-menu {
 }
 
 @media (max-width: 906px) {
-  /* line 20, ../scss/components/_header.scss */
+  /* line 21, ../scss/components/_header.scss */
   #block-bbd-classy-branding {
     width: 200px;
   }
@@ -2051,36 +2223,36 @@ ul.main-megamenu {
   color: #8597A3;
   line-height: normal;
 }
-/* line 29, ../scss/components/_search-form.scss */
+/* line 30, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block form .form--inline .form-actions {
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 34, ../scss/components/_search-form.scss */
+/* line 35, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block form .form--inline .form-actions.form-wrapper:not(:empty) {
   position: relative;
   text-align: center;
   margin: 0;
 }
-/* line 43, ../scss/components/_search-form.scss */
+/* line 45, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form--inline .form-actions {
   padding: 0;
   clear: none;
   position: relative;
 }
-/* line 49, ../scss/components/_search-form.scss */
+/* line 51, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form-item,
 .block-class-views-sitesearch-exposedform-block .form-actions {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 55, ../scss/components/_search-form.scss */
+/* line 57, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form-type-textfield {
   display: block;
   width: 100%;
 }
-/* line 60, ../scss/components/_search-form.scss */
+/* line 62, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .visually-hidden {
   position: absolute !important;
   overflow: hidden;
@@ -2089,7 +2261,7 @@ ul.main-megamenu {
   height: 1px;
   word-wrap: normal;
 }
-/* line 69, ../scss/components/_search-form.scss */
+/* line 71, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block input:not([type="radio"], [type="checkbox"], [type="date"], [type="time"], [type="submit"]) {
   width: 100%;
   font-size: 14px;
@@ -2098,7 +2270,7 @@ ul.main-megamenu {
   border: 1px solid #D8DDE0;
   border-radius: 5px;
 }
-/* line 78, ../scss/components/_search-form.scss */
+/* line 80, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block label::after,
 .block-class-views-sitesearch-exposedform-block .form-submit {
   cursor: pointer;
@@ -2118,48 +2290,51 @@ ul.main-megamenu {
   padding: 9px 13px;
   z-index: 2;
 }
-/* line 101, ../scss/components/_search-form.scss */
+
+/* line 103, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form-submit:hover, .block-class-views-sitesearch-exposedform-block .form-submit:focus,
 .block-class-views-sitesearch-exposedform-block .button:hover,
 .block-class-views-sitesearch-exposedform-block .button:focus {
   box-shadow: none;
 }
-/* line 107, ../scss/components/_search-form.scss */
+/* line 109, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block input[type="search"],
 .block-class-views-sitesearch-exposedform-block input[type="text"],
 .block-class-views-sitesearch-exposedform-block .form-actions {
   display: block;
 }
-/* line 114, ../scss/components/_search-form.scss */
+
+/* line 116, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block label::after {
   content: inherit;
 }
-/* line 120, ../scss/components/_search-form.scss */
+/* line 122, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .path-search #page {
   max-width: 40em;
 }
 
 @media (min-width: 64em) {
-  /* line 130, ../scss/components/_search-form.scss */
+  /* line 132, ../scss/components/_search-form.scss */
   #views-exposed-form-site-search-page-1 label::after,
   #views-exposed-form-site-search-page-1 .form-submit {
     max-width: 100%;
   }
 }
-/* line 139, ../scss/components/_search-form.scss */
+
+/* line 141, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-page-1 label::after,
 #views-exposed-form-site-search-page-1 .form-submit {
   background-size: 15px;
 }
 
 @media (max-width: 48em) {
-  /* line 147, ../scss/components/_search-form.scss */
+  /* line 149, ../scss/components/_search-form.scss */
   .block-class-views-sitesearch-exposedform-block {
     order: 3;
     margin: 20px 0;
   }
 
-  /* line 152, ../scss/components/_search-form.scss */
+  /* line 154, ../scss/components/_search-form.scss */
   .block-class-views-sitesearch-exposedform-block {
     width: 83%;
   }

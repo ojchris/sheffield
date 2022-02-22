@@ -1,0 +1,176 @@
+#footer-wrap {
+  background: $blue_acqua;
+  clear: both;
+
+  .footer-holder,
+  .footer-copyright {
+    padding: 0 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .region-footer nav#block-bottommenu {
+    padding: 70px 0 50px 0;
+    border-bottom: solid 1px $grey-light;
+    margin-bottom: 20px;
+
+    ul.menu {
+      @include flex-responsive-div;
+
+      li.menu-item--expanded {
+        width: 25%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+
+        a {
+          color: $black;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+      }
+    }
+
+    ul.level-1 {
+      display: block;
+
+      li.menu-item {
+        width: 100%;
+        box-sizing: border-box;
+
+        a {
+          font-size: 16px;
+          font-weight: normal;
+        }
+
+      }
+    }
+  }
+
+  #block-socialmedialinks {
+    @include flex-responsive-div;
+    width: 25%;
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    .social-media-links--platforms.horizontal {
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 0 30px 0 0;
+
+
+        span.fa-2x {
+          font-size: 35px;
+        }
+      }
+    }
+
+    a {
+      color: $black;
+    }
+  }
+
+  .footer-copyright .region-copyright {
+    @include flexbox;
+    padding: 35px 0;
+
+    #block-bbd-classy-footer {
+      flex: 10;
+      margin-bottom: 20px;
+
+      h2.visually-hidden {
+        display: none;
+      }
+
+      ul {
+        @include flexbox;
+
+        width: 60%;
+        margin: 0;
+
+        li {
+          flex: 1;
+          display: inline-block;
+          padding: 0;
+
+          a {
+            font-size: 13px;
+            color: $black;
+            text-decoration: none;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    #block-copyright {
+      flex: 2;
+      text-align: right;
+
+      p {
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0;
+      }
+    }
+  }
+
+  /* responsive */
+
+  @media (max-width: 767px) {
+
+    .region-footer nav#block-bottommenu {
+      padding: 70px 0 50px 0;
+
+      ul.menu {
+
+        li.menu-item--expanded {
+          width: 50%;
+
+          a {
+            color: $black;
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+        }
+      }
+
+      ul.level-1 {
+        display: flex;
+        margin-right: 20px;
+        box-sizing: border-box;
+
+        li.menu-item {
+          width: 50%;
+          box-sizing: border-box;
+
+          a {
+            font-size: 16px;
+            font-weight: normal;
+          }
+
+        }
+      }
+    }
+
+    #block-socialmedialinks {
+      width: 40%;
+    }
+
+    .footer-copyright .region-copyright {
+      display: block;
+      padding-top: 10px;
+
+      #block-copyright {
+        text-align: left;
+      }
+    }
+  }
+
+}
