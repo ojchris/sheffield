@@ -48,16 +48,15 @@
     {{ page.header }}
 
     <span id="nav-opener" class="button" tabindex="0">
-      <span class="visually-hidden">{{ "Nav opener/closer" | t }}</span>
-      <span id="main-menu-toggle">
-        <span class="hambuger-bar hambuger-bar-1"></span>
-        <span class="hambuger-bar hambuger-bar-2"></span>
-        <span class="hambuger-bar hambuger-bar-3"></span>
-      </span>
+      <span id="main-menu-toggle">{{ "Menu" | t }}</span>
     </span>
 
     <!-- The sidebar menu-->
     <div id="main-menu-sidebar">
+      <div id="close-mobile-item">
+          {{ "Menu" | t }}
+          <button class="close-menu-btn"></button>
+        </div>
       {{ page.header.bbd_classy_main_menu }}
     </div>
   </header>

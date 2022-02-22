@@ -1,0 +1,25 @@
+uuid: ad32584b-6948-4c9c-b863-c72cb3178bb7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:daf01499-1123-4713-9b02-a8fe88fd7a7a'
+  module:
+    - block_content
+  theme:
+    - bbd_classy
+id: nhs_trust_logobox
+theme: bbd_classy
+region: header
+weight: -5
+provider: null
+plugin: 'block_content:daf01499-1123-4713-9b02-a8fe88fd7a7a'
+settings:
+  id: 'block_content:daf01499-1123-4713-9b02-a8fe88fd7a7a'
+  label: 'NHS Trust logo box'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
