@@ -394,14 +394,14 @@ blockquote {
  ******************************************************************************/
 /* line 5, ../scss/base/_footer.scss */
 .region-footer .menu {
-  margin: 0;
+  margin: 0 0 20px;
 }
 /* line 8, ../scss/base/_footer.scss */
 .region-footer .menu li {
   font-size: 12px;
-  display: block;
-  vertical-align: middle;
-  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
 }
 
 /* line 18, ../scss/base/_footer.scss */
@@ -1923,28 +1923,29 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   width: 25%;
   box-sizing: border-box;
   margin-bottom: 30px;
+  margin-right: 0px;
 }
-/* line 25, ../scss/components/_footer.scss */
+/* line 26, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded a {
   color: #212B32;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 34, ../scss/components/_footer.scss */
+/* line 35, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.level-1 {
   display: block;
 }
-/* line 37, ../scss/components/_footer.scss */
+/* line 38, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 41, ../scss/components/_footer.scss */
+/* line 42, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item a {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 50, ../scss/components/_footer.scss */
+/* line 51, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks {
   display: flex;
   flex-wrap: wrap;
@@ -1952,113 +1953,114 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   align-items: center;
   width: 25%;
 }
-/* line 54, ../scss/components/_footer.scss */
+/* line 55, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks h2 {
   font-size: 20px;
   margin-bottom: 0;
 }
-/* line 59, ../scss/components/_footer.scss */
+/* line 60, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal {
   margin: 0;
   padding: 0;
 }
-/* line 63, ../scss/components/_footer.scss */
+/* line 64, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal li {
   padding: 0 30px 0 0;
 }
-/* line 67, ../scss/components/_footer.scss */
+/* line 68, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal li span.fa-2x {
   font-size: 35px;
 }
-/* line 73, ../scss/components/_footer.scss */
+/* line 74, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks a {
   color: #212B32;
 }
-/* line 78, ../scss/components/_footer.scss */
+/* line 79, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright {
   display: flex;
   padding: 35px 0;
 }
-/* line 82, ../scss/components/_footer.scss */
+/* line 83, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer {
   flex: 10;
   margin-bottom: 20px;
 }
-/* line 86, ../scss/components/_footer.scss */
+/* line 87, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer h2.visually-hidden {
   display: none;
 }
-/* line 90, ../scss/components/_footer.scss */
+/* line 91, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul {
   display: flex;
   width: 60%;
   margin: 0;
 }
-/* line 96, ../scss/components/_footer.scss */
+/* line 97, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul li {
   flex: 1;
   display: inline-block;
   padding: 0;
 }
-/* line 101, ../scss/components/_footer.scss */
+/* line 102, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul li a {
   font-size: 13px;
   color: #212B32;
   text-decoration: none;
   font-weight: 700;
 }
-/* line 111, ../scss/components/_footer.scss */
+/* line 112, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-copyright {
   flex: 2;
   text-align: right;
 }
-/* line 115, ../scss/components/_footer.scss */
+/* line 116, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-copyright p {
   font-size: 13px;
   font-weight: 700;
+  line-height: 28px;
   margin: 0;
 }
 @media (max-width: 767px) {
-  /* line 127, ../scss/components/_footer.scss */
+  /* line 129, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu {
     padding: 70px 0 50px 0;
   }
-  /* line 132, ../scss/components/_footer.scss */
+  /* line 134, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded {
     width: 50%;
   }
-  /* line 135, ../scss/components/_footer.scss */
+  /* line 137, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded a {
     color: #212B32;
     font-size: 18px;
     font-weight: bold;
   }
-  /* line 144, ../scss/components/_footer.scss */
+  /* line 146, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.level-1 {
     display: flex;
     margin-right: 20px;
     box-sizing: border-box;
   }
-  /* line 149, ../scss/components/_footer.scss */
+  /* line 151, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item {
     width: 50%;
     box-sizing: border-box;
   }
-  /* line 153, ../scss/components/_footer.scss */
+  /* line 155, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item a {
     font-size: 16px;
     font-weight: normal;
   }
-  /* line 162, ../scss/components/_footer.scss */
+  /* line 164, ../scss/components/_footer.scss */
   #footer-wrap #block-socialmedialinks {
     width: 40%;
   }
-  /* line 166, ../scss/components/_footer.scss */
+  /* line 168, ../scss/components/_footer.scss */
   #footer-wrap .footer-copyright .region-copyright {
     display: block;
     padding-top: 10px;
   }
-  /* line 170, ../scss/components/_footer.scss */
+  /* line 172, ../scss/components/_footer.scss */
   #footer-wrap .footer-copyright .region-copyright #block-copyright {
     text-align: left;
   }
