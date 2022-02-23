@@ -1,0 +1,14 @@
+#content-main-wrapper.outer-wrapper {
+  background: url(../../images/bg.svg) no-repeat fixed center;
+  clear: both;
+
+  .region-content {
+    padding: 20px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    #block-bbd-classy-page-title {
+      display: none;
+    }
+  }
+}

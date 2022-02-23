@@ -1,7 +1,9 @@
 @import "compass";
-@import "breakpoint"; /* Read the intro about usage of breakpoint http://breakpoint-sass.com/ */
+@import "breakpoint";
+/* Read the intro about usage of breakpoint http://breakpoint-sass.com/ */
 
 @import "abstractions/**/*";
 @import "variables/**/*";
 @import "base/**/*";
 @import "components/**/*";
+@import "pages/**/*";
