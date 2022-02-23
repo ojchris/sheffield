@@ -2290,7 +2290,6 @@ ul.main-megamenu {
   padding: 9px 13px;
   z-index: 2;
 }
-
 /* line 103, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block .form-submit:hover, .block-class-views-sitesearch-exposedform-block .form-submit:focus,
 .block-class-views-sitesearch-exposedform-block .button:hover,
@@ -2303,7 +2302,6 @@ ul.main-megamenu {
 .block-class-views-sitesearch-exposedform-block .form-actions {
   display: block;
 }
-
 /* line 116, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block label::after {
   content: inherit;
@@ -2320,7 +2318,6 @@ ul.main-megamenu {
     max-width: 100%;
   }
 }
-
 /* line 141, ../scss/components/_search-form.scss */
 #views-exposed-form-site-search-page-1 label::after,
 #views-exposed-form-site-search-page-1 .form-submit {
