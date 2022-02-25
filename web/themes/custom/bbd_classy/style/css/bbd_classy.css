@@ -1896,56 +1896,57 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
 #footer-wrap {
   background: #72C6D9;
   clear: both;
+  max-width: none;
   /* responsive */
 }
-/* line 5, ../scss/components/_footer.scss */
+/* line 6, ../scss/components/_footer.scss */
 #footer-wrap .footer-holder,
 #footer-wrap .footer-copyright {
   padding: 0 20px;
   max-width: 1140px;
   margin: 0 auto;
 }
-/* line 12, ../scss/components/_footer.scss */
+/* line 13, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu {
   padding: 70px 0 50px 0;
   border-bottom: solid 1px #8597A3;
   margin-bottom: 20px;
 }
-/* line 17, ../scss/components/_footer.scss */
+/* line 18, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-/* line 20, ../scss/components/_footer.scss */
+/* line 21, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded {
   width: 25%;
   box-sizing: border-box;
   margin-bottom: 30px;
   margin-right: 0px;
 }
-/* line 26, ../scss/components/_footer.scss */
+/* line 27, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded a {
   color: #212B32;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 35, ../scss/components/_footer.scss */
+/* line 36, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.level-1 {
   display: block;
 }
-/* line 38, ../scss/components/_footer.scss */
+/* line 39, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 42, ../scss/components/_footer.scss */
+/* line 43, ../scss/components/_footer.scss */
 #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item a {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 51, ../scss/components/_footer.scss */
+/* line 52, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks {
   display: flex;
   flex-wrap: wrap;
@@ -1953,67 +1954,67 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   align-items: center;
   width: 25%;
 }
-/* line 55, ../scss/components/_footer.scss */
+/* line 56, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks h2 {
   font-size: 20px;
   margin-bottom: 0;
 }
-/* line 60, ../scss/components/_footer.scss */
+/* line 61, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal {
   margin: 0;
   padding: 0;
 }
-/* line 64, ../scss/components/_footer.scss */
+/* line 65, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal li {
   padding: 0 30px 0 0;
 }
-/* line 68, ../scss/components/_footer.scss */
+/* line 69, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks .social-media-links--platforms.horizontal li span.fa-2x {
   font-size: 35px;
 }
-/* line 74, ../scss/components/_footer.scss */
+/* line 75, ../scss/components/_footer.scss */
 #footer-wrap #block-socialmedialinks a {
   color: #212B32;
 }
-/* line 79, ../scss/components/_footer.scss */
+/* line 80, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright {
   display: flex;
   padding: 35px 0;
 }
-/* line 83, ../scss/components/_footer.scss */
+/* line 84, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer {
   flex: 10;
   margin-bottom: 20px;
 }
-/* line 87, ../scss/components/_footer.scss */
+/* line 88, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer h2.visually-hidden {
   display: none;
 }
-/* line 91, ../scss/components/_footer.scss */
+/* line 92, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul {
   display: flex;
   width: 60%;
   margin: 0;
 }
-/* line 97, ../scss/components/_footer.scss */
+/* line 98, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul li {
   flex: 1;
   display: inline-block;
   padding: 0;
 }
-/* line 102, ../scss/components/_footer.scss */
+/* line 103, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-bbd-classy-footer ul li a {
   font-size: 13px;
   color: #212B32;
   text-decoration: none;
   font-weight: 700;
 }
-/* line 112, ../scss/components/_footer.scss */
+/* line 113, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-copyright {
   flex: 2;
   text-align: right;
 }
-/* line 116, ../scss/components/_footer.scss */
+/* line 117, ../scss/components/_footer.scss */
 #footer-wrap .footer-copyright .region-copyright #block-copyright p {
   font-size: 13px;
   font-weight: 700;
@@ -2021,46 +2022,46 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   margin: 0;
 }
 @media (max-width: 767px) {
-  /* line 129, ../scss/components/_footer.scss */
+  /* line 130, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu {
     padding: 70px 0 50px 0;
   }
-  /* line 134, ../scss/components/_footer.scss */
+  /* line 135, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded {
     width: 50%;
   }
-  /* line 137, ../scss/components/_footer.scss */
+  /* line 138, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.menu li.menu-item--expanded a {
     color: #212B32;
     font-size: 18px;
     font-weight: bold;
   }
-  /* line 146, ../scss/components/_footer.scss */
+  /* line 147, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.level-1 {
     display: flex;
     margin-right: 20px;
     box-sizing: border-box;
   }
-  /* line 151, ../scss/components/_footer.scss */
+  /* line 152, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item {
     width: 50%;
     box-sizing: border-box;
   }
-  /* line 155, ../scss/components/_footer.scss */
+  /* line 156, ../scss/components/_footer.scss */
   #footer-wrap .region-footer nav#block-bottommenu ul.level-1 li.menu-item a {
     font-size: 16px;
     font-weight: normal;
   }
-  /* line 164, ../scss/components/_footer.scss */
+  /* line 165, ../scss/components/_footer.scss */
   #footer-wrap #block-socialmedialinks {
     width: 40%;
   }
-  /* line 168, ../scss/components/_footer.scss */
+  /* line 169, ../scss/components/_footer.scss */
   #footer-wrap .footer-copyright .region-copyright {
     display: block;
     padding-top: 10px;
   }
-  /* line 172, ../scss/components/_footer.scss */
+  /* line 173, ../scss/components/_footer.scss */
   #footer-wrap .footer-copyright .region-copyright #block-copyright {
     text-align: left;
   }
@@ -2328,11 +2329,16 @@ ul.main-megamenu {
 }
 
 /* line 1, ../scss/pages/_content-wrapper.scss */
+#page {
+  max-width: none;
+}
+
+/* line 5, ../scss/pages/_content-wrapper.scss */
 #content-main-wrapper.outer-wrapper {
   background: url(../../images/bg.svg) no-repeat fixed center;
   clear: both;
 }
-/* line 5, ../scss/pages/_content-wrapper.scss */
+/* line 9, ../scss/pages/_content-wrapper.scss */
 #content-main-wrapper.outer-wrapper .region-content {
   padding: 20px 20px;
   max-width: 1140px;

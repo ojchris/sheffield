@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Functions to support theming in the theme.
@@ -13,7 +14,8 @@ use Drupal\paragraphs\ParagraphInterface;
 /**
  * Implements template_preprocess_page().
  */
-function bbd_classy_preprocess_page(&$variables) {
+function bbd_classy_preprocess_page(&$variables)
+{
   if (isset($variables['node'])) {
     $node = $variables['node'];
     // Adds additional classes.
@@ -25,6 +27,24 @@ function bbd_classy_preprocess_page(&$variables) {
       $path = 'path' . Html::cleanCssIdentifier($node->toUrl()->toString());
       $variables['attributes']['class'][] = $node->getType();
       $variables['attributes']['class'][] = $path;
+
+      $block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
+
+      //add class to page_title block to hide & show
+
+      if (
+        $node->hasField('field_hide_title') && ($node->getType() == 'page' ||
+          $node->getType() == 'landing_page') && $block == 'bbd_classy_page_title'
+      ) {
+
+        if ($node->get('field_hide_title')->value == 1) {
+          $variables['attributes']['class'][] = 'visually-hiden';
+        } else {
+          $variables['attributes']['class'][] = 'visible';
+        }
+      } else {
+        $variables['attributes']['class'][] = 'visually-hiden';
+      } // end class 
     }
   }
 }
