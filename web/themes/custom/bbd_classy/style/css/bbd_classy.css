@@ -256,7 +256,7 @@ blockquote {
   /* line 218, ../scss/variables/_typography.scss */
   p {
     font-size: 19px;
-    line-height: 20px;
+    line-height: 28px;
   }
 
   /* line 225, ../scss/variables/_typography.scss */
@@ -1168,7 +1168,7 @@ iframe {
 
 /* line 86, ../scss/base/_general.scss */
 #page-wrapper {
-  background: #f0f4f5;
+  background: #e5e5e5;
   padding: 0 1.25em;
 }
 
@@ -2153,47 +2153,6 @@ ul.main-megamenu {
     border: none;
   }
 }
-/* line 1, ../scss/components/_page-wrapper.scss */
-#page-wrapper {
-  padding: 0;
-  margin: 0;
-}
-/* line 5, ../scss/components/_page-wrapper.scss */
-#page-wrapper > * {
-  margin: 0;
-  padding: 0 1.25em;
-}
-
-@media (min-width: 90em) {
-  /* line 12, ../scss/components/_page-wrapper.scss */
-  #page-wrapper {
-    padding: 0;
-  }
-  /* line 15, ../scss/components/_page-wrapper.scss */
-  #page-wrapper > * {
-    padding: 0 3.125em;
-  }
-}
-@media (min-width: 64em) {
-  /* line 22, ../scss/components/_page-wrapper.scss */
-  #page-wrapper {
-    padding: 0;
-  }
-  /* line 25, ../scss/components/_page-wrapper.scss */
-  #page-wrapper > * {
-    padding: 0 2.5em;
-  }
-}
-@media (min-width: 48em) {
-  /* line 32, ../scss/components/_page-wrapper.scss */
-  #page-wrapper {
-    padding: 0;
-  }
-  /* line 35, ../scss/components/_page-wrapper.scss */
-  #page-wrapper > * {
-    padding: 0 1.875em;
-  }
-}
 /* line 1, ../scss/components/_search-form.scss */
 .block-class-views-sitesearch-exposedform-block {
   width: 35%;
@@ -2379,7 +2338,45 @@ ul.main-megamenu {
   max-width: 1140px;
   margin: 0 auto;
 }
-/* line 10, ../scss/pages/_content-wrapper.scss */
-#content-main-wrapper.outer-wrapper .region-content #block-bbd-classy-page-title {
-  display: none;
+
+/* line 1, ../scss/pages/_page-wrapper.scss */
+#page-wrapper {
+  padding: 0;
+  margin: 0;
+}
+/* line 5, ../scss/pages/_page-wrapper.scss */
+#page-wrapper > * {
+  margin: 0;
+  padding: 0 1.25em;
+}
+
+@media (min-width: 90em) {
+  /* line 12, ../scss/pages/_page-wrapper.scss */
+  #page-wrapper {
+    padding: 0;
+  }
+  /* line 15, ../scss/pages/_page-wrapper.scss */
+  #page-wrapper > * {
+    padding: 0 3.125em;
+  }
+}
+@media (min-width: 64em) {
+  /* line 22, ../scss/pages/_page-wrapper.scss */
+  #page-wrapper {
+    padding: 0;
+  }
+  /* line 25, ../scss/pages/_page-wrapper.scss */
+  #page-wrapper > * {
+    padding: 0 2.5em;
+  }
+}
+@media (min-width: 48em) {
+  /* line 32, ../scss/pages/_page-wrapper.scss */
+  #page-wrapper {
+    padding: 0;
+  }
+  /* line 35, ../scss/pages/_page-wrapper.scss */
+  #page-wrapper > * {
+    padding: 0 1.875em;
+  }
 }
