@@ -10,6 +10,7 @@ use Drupal\Core\Template\Attribute;
 use Drupal\node\NodeInterface;
 use Drupal\node\Entity\Node;
 use Drupal\paragraphs\ParagraphInterface;
+use Drupal\block\Entity\Block;
 
 /**
  * Implements template_preprocess_page().
@@ -27,24 +28,33 @@ function bbd_classy_preprocess_page(&$variables)
       $path = 'path' . Html::cleanCssIdentifier($node->toUrl()->toString());
       $variables['attributes']['class'][] = $node->getType();
       $variables['attributes']['class'][] = $path;
+    }
+  }
+}
 
-      $block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
+//add class to page_title block to hide & show
+function bbd_classy_preprocess_block(&$variables)
+{
+  $block = Block::load('page_title_block');
 
-      //add class to page_title block to hide & show
+  if ($variables['plugin_id'] ==  'page_title_block') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+
+    if ($node) {
 
       if (
         $node->hasField('field_hide_title') && ($node->getType() == 'page' ||
-          $node->getType() == 'landing_page') && $block == 'bbd_classy_page_title'
+          $node->getType() == 'landing_page')
       ) {
 
         if ($node->get('field_hide_title')->value == 1) {
-          $variables['attributes']['class'][] = 'visually-hiden';
+          $variables['attributes']['class'][] = 'visually-hidden';
         } else {
           $variables['attributes']['class'][] = 'visible';
         }
       } else {
-        $variables['attributes']['class'][] = 'visually-hiden';
-      } // end class 
+        $variables['attributes']['class'][] = 'visually-hidden';
+      }
     }
   }
 }
