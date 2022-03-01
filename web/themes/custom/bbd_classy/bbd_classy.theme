@@ -38,19 +38,15 @@ function bbd_classy_preprocess_page(&$variables)
 function bbd_classy_preprocess_block(&$variables){
   if ($variables['plugin_id'] ==  'page_title_block') {
     $node = \Drupal::routeMatch()->getParameter('node');
-
+	
     if ($node) {
-
-      if (
-        $node->hasField('field_hide_title') && ($node->getType() == 'page' ||
-          $node->getType() == 'landing_page')
-      ) {
+      if ($node->hasField('field_hide_title') && ($node->getType() == 'page' ||
+          $node->getType() == 'landing_page')) {
 
         if ($node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
-        } else {
-          $variables['attributes']['class'][] = 'visible';
         }
+		
       } else {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
