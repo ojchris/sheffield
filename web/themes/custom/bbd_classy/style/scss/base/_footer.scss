@@ -3,13 +3,13 @@
  ******************************************************************************/
 .region-footer {
   .menu {
-    margin: 0;
+    margin: 0 0 20px;
 
     li {
       font-size: 12px;
-      display: block;
-      vertical-align: middle;
-      margin: 0;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
     }
   }
 }
