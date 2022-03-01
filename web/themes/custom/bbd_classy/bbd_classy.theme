@@ -32,11 +32,10 @@ function bbd_classy_preprocess_page(&$variables)
   }
 }
 
-//add class to page_title block to hide & show
-function bbd_classy_preprocess_block(&$variables)
-{
-  $block = Block::load('page_title_block');
-
+/**
+ * add class to page_title block to hide & show.
+ */
+function bbd_classy_preprocess_block(&$variables){
   if ($variables['plugin_id'] ==  'page_title_block') {
     $node = \Drupal::routeMatch()->getParameter('node');
 
