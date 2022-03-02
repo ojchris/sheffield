@@ -1,81 +1,60 @@
-uuid: 4edb2f76-6b7a-4862-9bb2-f910a329b48b
+uuid: b2b2e801-08fe-4606-901f-e048be10c3dc
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.course_page.body
-    - field.field.node.course_page.field_content_sections
-    - field.field.node.course_page.field_display_accessibility_butt
-    - field.field.node.course_page.field_display_social_sharing_but
-    - field.field.node.course_page.field_image
-    - node.type.course_page
-    - workflows.workflow.workflow
+    - field.field.node.course_session.field_course
+    - field.field.node.course_session.field_date
+    - field.field.node.course_session.field_location
+    - field.field.node.course_session.field_time
+    - node.type.course_session
   module:
     - content_moderation
-    - media_library
-    - paragraphs
+    - datetime
+    - datetime_range
     - path
     - scheduler
     - text
-id: node.course_page.default
+id: node.course_session.default
 targetEntityType: node
-bundle: course_page
+bundle: course_session
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_content_sections:
-    type: paragraphs
-    weight: 126
+  field_course:
+    type: entity_reference_autocomplete
+    weight: 125
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-  field_display_accessibility_butt:
-    type: boolean_checkbox
-    weight: 128
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_display_social_sharing_but:
-    type: boolean_checkbox
-    weight: 127
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_image:
-    type: media_library_widget
+  field_date:
+    type: datetime_default
     weight: 122
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_location:
+    type: text_textarea
+    weight: 124
+    region: content
     settings:
-      media_types: {  }
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_time:
+    type: daterange_default
+    weight: 123
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

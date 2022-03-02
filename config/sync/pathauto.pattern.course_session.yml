@@ -1,0 +1,22 @@
+uuid: 2ddeb792-eb9f-4230-bb12-d11a2d3d4b34
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: course_session
+label: 'Course session'
+type: 'canonical_entities:node'
+pattern: '/courses/sessions/[node:title]'
+selection_criteria:
+  b2518bb9-3ce3-4828-8fe0-ab0f376ad78d:
+    id: node_type
+    negate: false
+    uuid: b2518bb9-3ce3-4828-8fe0-ab0f376ad78d
+    context_mapping:
+      node: node
+    bundles:
+      course_session: course_session
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,20 +1,20 @@
-uuid: 6ba853d8-5ba8-4a1f-95e0-38fcd605cdbe
+uuid: c1ab7c40-0061-4807-abef-83835575e976
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_time
-    - node.type.course_page
+    - node.type.course_session
   module:
     - datetime_range
-id: node.course_page.field_time
+id: node.course_session.field_time
 field_name: field_time
 entity_type: node
-bundle: course_page
+bundle: course_session
 label: Time
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
