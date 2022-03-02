@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.download_panel
     - paragraphs.paragraphs_type.expandable_panel
     - paragraphs.paragraphs_type.four_column_panel
+    - paragraphs.paragraphs_type.listing
     - paragraphs.paragraphs_type.simple_text
     - paragraphs.paragraphs_type.tabbed_content_panel
     - paragraphs.paragraphs_type.three_column_panel
@@ -34,6 +35,7 @@ settings:
       simple_text: simple_text
       two_column_text_panel: two_column_text_panel
       video_panel: video_panel
+      listing: listing
       four_column_panel: four_column_panel
       download_panel: download_panel
       two_column_panel: two_column_panel
@@ -78,7 +80,7 @@ settings:
         enabled: false
       listing:
         weight: 20
-        enabled: false
+        enabled: true
       optional_cta:
         weight: 39
         enabled: false

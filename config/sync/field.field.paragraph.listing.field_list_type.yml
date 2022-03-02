@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_list_type
     - paragraphs.paragraphs_type.listing
+    - views.view.course_sessions
   module:
     - viewsreference
 id: paragraph.listing.field_list_type
@@ -15,7 +16,16 @@ label: 'List type'
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    options:
+      title: 0
+      argument: ''
+    display_id: block_1
+    argument: null
+    title: 0
+    data: null
+    target_uuid: c9f0d72d-6c67-492c-84e9-451f47edf0e8
 default_value_callback: ''
 settings:
   handler: 'default:view'
@@ -29,18 +39,20 @@ settings:
     feed: 0
     embed: 0
   preselect_views:
-    courses: courses
+    course_sessions: course_sessions
     block_content: 0
     comment: 0
     comments_recent: 0
     content: 0
     content_recent: 0
+    courses: 0
     files: 0
     frontpage: 0
     maillog_overview: 0
     media: 0
     media_library: 0
     redirect: 0
+    review: 0
     scheduler_scheduled_content: 0
     site_search: 0
     taxonomy_term: 0
