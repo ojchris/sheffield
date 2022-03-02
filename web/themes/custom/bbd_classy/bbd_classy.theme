@@ -32,8 +32,10 @@ function bbd_classy_preprocess_page(&$variables)
   }
 }
 
-function bbd_classy_preprocess_block(&$variables)
-{
+/**
+ * Implements hook_preprocess_block 
+ */
+function bbd_classy_preprocess_block(&$variables){
   /**
    * add class to page_title block to hide & show.
    */
