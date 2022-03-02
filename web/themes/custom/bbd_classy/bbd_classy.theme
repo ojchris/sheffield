@@ -41,8 +41,7 @@ function bbd_classy_preprocess_block(&$variables)
     $node = \Drupal::routeMatch()->getParameter('node');
 
     if ($node) {
-      if ($node->hasField('field_hide_title') && ($node->getType() == 'page' ||
-        $node->getType() == 'landing_page')) {
+      if (($node->getType() == 'page' || $node->getType() == 'landing_page') && $node->hasField('field_hide_title')) {
 
         if ($node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
