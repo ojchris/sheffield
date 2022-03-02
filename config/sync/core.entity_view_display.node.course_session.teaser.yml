@@ -1,0 +1,42 @@
+uuid: 0b60db91-1fca-4241-8675-274f8bec825b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.course_session.field_course
+    - field.field.node.course_session.field_date
+    - field.field.node.course_session.field_location
+    - field.field.node.course_session.field_time
+    - node.type.course_session
+  module:
+    - manage_display
+id: node.course_session.teaser
+targetEntityType: node
+bundle: course_session
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_course: true
+  field_date: true
+  field_location: true
+  field_time: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

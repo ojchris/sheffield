@@ -6,12 +6,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.course_page.body
     - field.field.node.course_page.field_content_sections
-    - field.field.node.course_page.field_date
     - field.field.node.course_page.field_display_accessibility_butt
     - field.field.node.course_page.field_display_social_sharing_but
     - field.field.node.course_page.field_image
-    - field.field.node.course_page.field_location
-    - field.field.node.course_page.field_time
     - node.type.course_page
   module:
     - manage_display
@@ -29,6 +26,11 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -44,14 +46,12 @@ content:
     weight: -50
     region: content
 hidden:
+  addtoany: true
   created: true
   field_content_sections: true
-  field_date: true
   field_display_accessibility_butt: true
   field_display_social_sharing_but: true
   field_image: true
-  field_location: true
-  field_time: true
   langcode: true
   search_api_excerpt: true
   uid: true

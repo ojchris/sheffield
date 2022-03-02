@@ -1,20 +1,20 @@
-uuid: a2ae5a6a-8de9-4fe4-891f-47972b3bbc39
+uuid: c9d05b1c-a5f2-429e-bcf8-ab35e1487f4c
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_location
-    - node.type.course_page
+    - node.type.course_session
   module:
     - text
-id: node.course_page.field_location
+id: node.course_session.field_location
 field_name: field_location
 entity_type: node
-bundle: course_page
+bundle: course_session
 label: Location
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
