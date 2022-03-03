@@ -1,0 +1,29 @@
+uuid: 70cacad9-c8af-4a8a-94be-5f6da3c053c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_how_i_m_feeling
+    - node.type.course_page
+    - taxonomy.vocabulary.how_i_m_feeling
+id: node.course_page.field_how_i_m_feeling
+field_name: field_how_i_m_feeling
+entity_type: node
+bundle: course_page
+label: 'How I''m feeling'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      how_i_m_feeling: how_i_m_feeling
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
