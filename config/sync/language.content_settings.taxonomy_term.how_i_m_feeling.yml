@@ -1,0 +1,11 @@
+uuid: 95d1e2aa-10f2-4062-b701-fd8a87482008
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.how_i_m_feeling
+id: taxonomy_term.how_i_m_feeling
+target_entity_type_id: taxonomy_term
+target_bundle: how_i_m_feeling
+default_langcode: site_default
+language_alterable: false
