@@ -4,13 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.course_session.field_course
-    - field.field.node.course_session.field_date
     - field.field.node.course_session.field_location
     - field.field.node.course_session.field_time
     - node.type.course_session
   module:
     - content_moderation
-    - datetime
     - datetime_range
     - path
     - scheduler
@@ -35,12 +33,6 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_date:
-    type: datetime_default
-    weight: 122
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_location:
     type: text_textarea
