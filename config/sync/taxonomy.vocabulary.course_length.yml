@@ -1,0 +1,8 @@
+uuid: 9af2533d-f119-42d7-88bf-9d2d8e48221a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Course length'
+vid: course_length
+description: ''
+weight: 0
