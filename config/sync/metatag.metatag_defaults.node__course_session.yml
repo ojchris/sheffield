@@ -1,0 +1,8 @@
+uuid: cca5a2df-ab58-4822-8bf2-58e0b3892634
+langcode: en
+status: true
+dependencies: {  }
+id: node__course_session
+label: 'Content: Course session'
+tags:
+  robots: 'noindex, nofollow'
