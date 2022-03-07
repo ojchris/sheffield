@@ -56,7 +56,7 @@ backend_config:
     jts: false
     solr_install_dir: ''
     username: solr
-    password: ''
+    password: SolrRocks
   optimize: false
   fallback_multiple: false
   disabled_field_types: {  }
