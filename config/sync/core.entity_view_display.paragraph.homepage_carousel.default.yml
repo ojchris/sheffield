@@ -6,18 +6,31 @@ dependencies:
     - field.field.paragraph.homepage_carousel.field_slide
     - paragraphs.paragraphs_type.homepage_carousel
   module:
-    - entity_reference_revisions
+    - slick_entityreference
 id: paragraph.homepage_carousel.default
 targetEntityType: paragraph
 bundle: homepage_carousel
 mode: default
 content:
   field_slide:
-    type: entity_reference_revisions_entity_view
+    type: slick_entityreference_vanilla
     label: hidden
     settings:
+      optionset: default
       view_mode: default
-      link: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      lazy: ''
+      loading: lazy
+      preload: false
+      style: ''
+      overridables: {  }
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      use_theme_field: false
     third_party_settings: {  }
     weight: 0
     region: content
