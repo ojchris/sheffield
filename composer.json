@@ -64,6 +64,7 @@
     "drupal/taxonomy_manager": "^2.0",
     "drupal/time_range": "^9.0",
     "drupal/token": "^1.9",
+    "drupal/twig_tweak": "^3.1",
     "drupal/username_enumeration_prevention": "^1.2",
     "drupal/viewsreference": "^1.7",
     "drupal/webform": "^6.1",
