@@ -1,0 +1,59 @@
+.paragraph--type--cta-panel .paragraph-inner-holder {
+  @include flex-responsive-div;
+
+  .optional-cta-1,
+  .optional-cta-2,
+  .required-cta {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+    font-weight: 700;
+  }
+
+  .optional-cta-1,
+  .optional-cta-2 {
+    width: 18%;
+    box-sizing: border-box;
+    padding: 85px 20px;
+  }
+
+  .optional-cta-1 {
+    background-image: url(../../images/cta_make_a_ref_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .optional-cta-2 {
+    background-image: url(../../images/cta_employer_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .required-cta {
+    width: 50%;
+    background-image: url(../../images/cta_assessment_booking_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 85px 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    h4 {
+      font-size: 34px;
+      padding-top: 40px;
+    }
+
+    a {
+      font-size: 16px;
+      padding: 15px 30px;
+      background: #fff;
+      border-radius: 30px;
+      display: inline-block;
+    }
+  }
+
+
+}

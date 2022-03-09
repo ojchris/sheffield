@@ -9,6 +9,7 @@ module:
   bbd_custom: 0
   bbd_linkit_plugins: 0
   bbd_paragraphs: 0
+  blazy: 0
   block: 0
   block_class: 0
   block_content: 0
@@ -83,6 +84,8 @@ module:
   search_api_solr: 0
   search_api_solr_admin: 0
   shortcut: 0
+  slick: 0
+  slick_entityreference: 0
   social_media_links: 0
   structure_sync: 0
   system: 0
@@ -94,6 +97,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  viewfield: 0
   views_ui: 0
   viewsreference: 0
   webform: 0
