@@ -95,6 +95,7 @@ module:
   time_range: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   update: 0
   user: 0
   viewfield: 0
