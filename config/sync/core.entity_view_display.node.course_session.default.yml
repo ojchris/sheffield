@@ -4,12 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.course_session.field_course
-    - field.field.node.course_session.field_date
     - field.field.node.course_session.field_location
     - field.field.node.course_session.field_time
     - node.type.course_session
   module:
-    - datetime
     - datetime_range
     - manage_display
     - text
@@ -25,15 +23,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 3
     region: content
   field_location:
     type: text_default

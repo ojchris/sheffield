@@ -40,7 +40,7 @@ backend_config:
   connector: solr_cloud_basic_auth
   connector_config:
     scheme: http
-    host: ddev-sheffield-iapt-solr
+    host: ddev-sheffield-dev-bbb-solr
     port: 8983
     path: /
     core: bbbsheffield
