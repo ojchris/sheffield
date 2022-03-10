@@ -1,0 +1,31 @@
+ .field--name-field-four-column-card {
+   @include flex-responsive-div;
+
+   .field__item {
+     text-align: left;
+
+     .four-column-card {
+       background: $white;
+       border: 1px solid $gray-light;
+       box-sizing: border-box;
+       box-shadow: inset 0px -4px 0px $gray-light;
+       padding-bottom: 30px;
+
+       .field--name-field-image {
+         margin-bottom: 0;
+       }
+
+       span {
+         display: inline-block;
+         width: 90%;
+         padding: 20px 10px 10px 20px;
+         text-decoration: underline;
+         font-size: 24px;
+       }
+     }
+   }
+
+   a {
+     font-weight: 700;
+   }
+ }
