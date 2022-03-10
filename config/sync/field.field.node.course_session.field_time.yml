@@ -11,7 +11,7 @@ id: node.course_session.field_time
 field_name: field_time
 entity_type: node
 bundle: course_session
-label: Time
+label: 'Date and Time'
 description: ''
 required: true
 translatable: true
