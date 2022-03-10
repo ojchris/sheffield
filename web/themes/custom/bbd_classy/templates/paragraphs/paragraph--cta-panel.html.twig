@@ -1,0 +1,34 @@
+{% extends "paragraph.html.twig" %}
+
+{% block content %}
+
+
+{% for item in content.field_optional_cta_reference['#items'] %}
+  {% if loop.index == 1 %}
+  <div class="optional-cta-{{ loop.index }}">
+    <a href="{{ item.entity.get('field_link_optional_cta').value }}">
+    {{ item.entity.get('field_link_text_optional_cta').value }}</a>
+  </div>
+  {% endif %}
+{% endfor %}
+
+
+{% for item in content.field_required_cta_reference['#items'] %}
+<div class="required-cta">
+  <h4>{{ item.entity.get('field_title_required_cta').value }}</h4>
+  <a href="{{ item.entity.get('field_link_required_cta').value }}">
+  {{ item.entity.get('field_link_text_required_cta').value }}</a>
+</div>
+{% endfor %}
+
+{% for item in content.field_optional_cta_reference['#items'] %}
+  {% if loop.index == 2 %}
+  <div class="optional-cta-{{ loop.index }}">
+    <a href="{{ item.entity.get('field_link_optional_cta').value }}">
+    {{ item.entity.get('field_link_text_optional_cta').value }}</a>
+  </div>
+  {% endif %}
+{% endfor %}
+
+{% endblock %}
+

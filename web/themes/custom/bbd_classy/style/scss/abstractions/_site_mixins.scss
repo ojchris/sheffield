@@ -7,20 +7,23 @@
 @mixin box-shadow($properties) {
   box-shadow: $properties;
 }
+
 @mixin box-shadow-item {
-  -webkit-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
-  box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
 }
+
 @mixin box-shadow-input {
-  -webkit-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
-  box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
 }
+
 @mixin box-shadow-light {
-  -webkit-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
-  box-shadow: 0 10px 30px 10px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Transitions */
@@ -59,16 +62,19 @@
   border-top-left-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-right-radius($radius) {
   border-bottom-right-radius: $radius;
   border-top-right-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-bottom-radius($radius) {
   border-bottom-right-radius: $radius;
   border-bottom-left-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-left-radius($radius) {
   border-bottom-left-radius: $radius;
   border-top-left-radius: $radius;
@@ -92,12 +98,15 @@
   bottom: $bottom;
   left: $left;
 }
+
 @mixin absolute($args...) {
   @include position(absolute, $args...);
 }
+
 @mixin relative($args...) {
   @include position(relative, $args...);
 }
+
 @mixin fixed($args...) {
   @include position(fixed, $args...);
 }
@@ -107,13 +116,22 @@
   &::-webkit-input-placeholder {
     color: $color;
   }
+
   &::-moz-placeholder {
     color: $color;
   }
+
   &:-ms-input-placeholder {
     color: $color;
   }
+
   &:-moz-placeholder {
     color: $color;
   }
+}
+
+/* background placement */
+@mixin bg_placement($percent) {
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
