@@ -1,0 +1,7 @@
+uuid: 7b5c3443-6a64-4c73-ac97-f1549cf93820
+langcode: en
+status: true
+dependencies: {  }
+id: node__course_page
+label: 'Content: Course page'
+tags: {  }

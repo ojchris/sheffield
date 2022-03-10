@@ -1,0 +1,7 @@
+uuid: 7c047c29-21b5-459a-ba32-9261bede4fc1
+langcode: en
+status: true
+dependencies: {  }
+id: node__homepage
+label: 'Content: Homepage'
+tags: {  }

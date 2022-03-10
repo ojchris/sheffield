@@ -20,6 +20,7 @@
 /* Clearfix */
 /* Mixin position */
 /* Placeholder */
+/* background placement */
 /* line 4, ../scss/variables/_typography.scss */
 body {
   font-size: 14px;
@@ -763,19 +764,19 @@ form .form-actions.form-wrapper:not(:empty) {
   padding: 20px 0;
   margin: 0;
 }
-/* line 107, ../scss/abstractions/_site_mixins.scss */
+/* line 116, ../scss/abstractions/_site_mixins.scss */
 form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
   color: #8597A3;
 }
-/* line 110, ../scss/abstractions/_site_mixins.scss */
+/* line 120, ../scss/abstractions/_site_mixins.scss */
 form input::-moz-placeholder, form textarea::-moz-placeholder {
   color: #8597A3;
 }
-/* line 113, ../scss/abstractions/_site_mixins.scss */
+/* line 124, ../scss/abstractions/_site_mixins.scss */
 form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
   color: #8597A3;
 }
-/* line 116, ../scss/abstractions/_site_mixins.scss */
+/* line 128, ../scss/abstractions/_site_mixins.scss */
 form input:-moz-placeholder, form textarea:-moz-placeholder {
   color: #8597A3;
 }
@@ -2339,11 +2340,14 @@ ul.main-megamenu {
 
 /* line 1, ../scss/components/paragraphs/_four-column-card.scss */
 .field--name-field-four-column-card {
+/* line 1, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
+
 /* line 4, ../scss/components/paragraphs/_four-column-card.scss */
 .field--name-field-four-column-card .field__item {
   text-align: left;
@@ -2371,6 +2375,60 @@ ul.main-megamenu {
 /* line 28, ../scss/components/paragraphs/_four-column-card.scss */
 .field--name-field-four-column-card a {
   font-weight: 700;
+  }
+/* line 4, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1,
+.paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2,
+.paragraph--type--cta-panel .paragraph-inner-holder .required-cta {
+  text-align: center;
+}
+/* line 10, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder a {
+  text-decoration: none;
+  color: #212B32;
+  font-weight: 700;
+}
+/* line 16, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1,
+.paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
+  width: 18%;
+  box-sizing: border-box;
+  padding: 85px 20px;
+}
+/* line 23, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1 {
+  background-image: url(../../images/cta_make_a_ref_bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 28, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
+  background-image: url(../../images/cta_employer_bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 33, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder .required-cta {
+  width: 50%;
+  background-image: url(../../images/cta_assessment_booking_bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 85px 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 41, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder .required-cta h4 {
+  font-size: 34px;
+  padding-top: 40px;
+}
+/* line 46, ../scss/components/paragraphs/_cta_panel.scss */
+.paragraph--type--cta-panel .paragraph-inner-holder .required-cta a {
+  font-size: 16px;
+  padding: 10px 30px;
+  background: #fff;
+  border-radius: 30px;
+  display: inline-block;
 }
 
 /* line 1, ../scss/pages/_content-wrapper.scss */
