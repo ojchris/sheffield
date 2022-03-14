@@ -1,9 +1,11 @@
 .page-node-type-page,
 .page-node-type-landing-page {
   --pd-right: 35px;
+
   .content-node-custom-wrap {
     min-height: 280px;
-   > .field--name-field-content-sections > .field__item:first-child {
+
+    > .field--name-field-content-sections > .field__item:first-child {
       padding-right: var(--pd-right);
     }
   }

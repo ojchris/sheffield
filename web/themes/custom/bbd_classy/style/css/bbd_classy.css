@@ -2584,26 +2584,26 @@ ul.main-megamenu {
 .page-node-type-landing-page {
   --pd-right: 35px;
 }
-/* line 4, ../scss/pages/_page-general.scss */
+/* line 5, ../scss/pages/_page-general.scss */
 .page-node-type-page .content-node-custom-wrap,
 .page-node-type-landing-page .content-node-custom-wrap {
   min-height: 280px;
 }
-/* line 6, ../scss/pages/_page-general.scss */
+/* line 8, ../scss/pages/_page-general.scss */
 .page-node-type-page .content-node-custom-wrap > .field--name-field-content-sections > .field__item:first-child,
 .page-node-type-landing-page .content-node-custom-wrap > .field--name-field-content-sections > .field__item:first-child {
   padding-right: var(--pd-right);
 }
 
 @media (min-width: 48em) {
-  /* line 15, ../scss/pages/_page-general.scss */
+  /* line 17, ../scss/pages/_page-general.scss */
   .page-node-type-page .content-node-custom-wrap,
   .page-node-type-landing-page .content-node-custom-wrap {
     min-height: 330px;
   }
 }
 @media (min-width: 90em) {
-  /* line 22, ../scss/pages/_page-general.scss */
+  /* line 24, ../scss/pages/_page-general.scss */
   .page-node-type-page,
   .page-node-type-landing-page {
     --pd-right: 50px;
