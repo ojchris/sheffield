@@ -1,0 +1,38 @@
+// Style for addtoany block.
+.addtoany_list {
+  display: block;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  a {
+    display: block;
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 15px;
+    }
+  }
+}
+
+.addtoany-custom-text {
+  p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    cursor: default;
+    color: $blue_darkest;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    margin: 0 0 0 auto;
+  }
+}
+
+@include breakpoint($tab) {
+  .addtoany_list {
+    a {
+      margin-top: 25px;
+    }
+  }
+}

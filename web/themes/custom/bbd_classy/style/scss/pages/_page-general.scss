@@ -1,0 +1,16 @@
+.page-node-type-page,
+.page-node-type-landing-page {
+  --pd-right: 35px;
+  .content-node-custom-wrap {
+   > .field--name-field-content-sections > .field__item:first-child {
+      padding-right: var(--pd-right);
+    }
+  }
+}
+
+@include breakpoint($widestdesk) {
+  .page-node-type-page,
+  .page-node-type-landing-page {
+    --pd-right: 50px;
+  }
+}
