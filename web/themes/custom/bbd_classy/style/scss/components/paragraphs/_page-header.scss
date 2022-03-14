@@ -1,0 +1,46 @@
+.paragraph--type--page-header {
+
+  &.paragraph-bg--purple {
+    @include page-header-bg($svg_purple);
+  }
+
+  &.paragraph-bg--blue {
+    @include page-header-bg($svg_blue);
+  }
+
+  &.paragraph-bg--red {
+    @include page-header-bg($svg_red);
+  }
+
+  &.paragraph-bg--green {
+    @include page-header-bg($svg_green);
+  }
+
+  &.paragraph-bg--orange {
+    @include page-header-bg($svg_orange);
+  }
+
+  .field--name-field-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@include breakpoint($tab) {
+  .paragraph--type--page-header {
+    .paragraph-inner-holder {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+@include breakpoint($widestdesk) {
+  .paragraph--type--page-header {
+    .paragraph-inner-holder {
+      gap: 40px;
+    }
+  }
+}
