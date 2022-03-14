@@ -1,4 +1,6 @@
 .paragraph--type--page-header {
+  background-size: contain;
+  background-position: center 90%;
 
   &.paragraph-bg--purple {
     @include page-header-bg($svg_purple);
@@ -21,9 +23,11 @@
   }
 
   .field--name-field-image {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
+
+    img {
+      margin: auto;
+    }
   }
 
   h2 {
@@ -31,33 +35,44 @@
     line-height: 43px;
   }
 
-  .field--name-field-tex {
-   color: $grey;
+  .field--name-field-text {
+    color: $grey;
   }
 }
 
 @include breakpoint($tab) {
   .paragraph--type--page-header {
+    padding: 80px 0 40px 0;
+    background-position: center right;
+
     .paragraph-inner-holder {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      display: flex;
+      justify-content: start;
     }
+
     .text-wrapper {
       display: flex;
       flex-flow: wrap;
       align-content: center;
+      padding-right: 20px;
     }
+
     .field--name-field-image {
       margin-left: 0;
+      width: 48%;
+      max-width: 452px;
+      flex-shrink: 0;
+      margin-right: 40px;
     }
   }
 }
 
 @include breakpoint($widestdesk) {
   .paragraph--type--page-header {
-    .paragraph-inner-holder {
-      gap: 40px;
+    padding: 80px 0 40px 0;
+
+    .text-wrapper {
+      padding-right: 20px;
     }
   }
 }

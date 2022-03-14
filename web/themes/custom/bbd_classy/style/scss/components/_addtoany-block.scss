@@ -8,11 +8,7 @@
 
   a {
     display: block;
-    margin-top: 20px;
-
-    &:first-child {
-      margin-top: 15px;
-    }
+    margin-top: 15px;
   }
 }
 
@@ -33,6 +29,10 @@
   .addtoany_list {
     a {
       margin-top: 25px;
+
+      &:first-child {
+        margin-top: 15px;
+      }
     }
   }
 }
