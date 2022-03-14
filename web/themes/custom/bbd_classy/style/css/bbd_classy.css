@@ -459,7 +459,7 @@ button:hover, button:focus, a.button:hover, a.button:focus, .form-submit:hover, 
 }
 /* line 24, ../scss/base/_form.scss */
 button:active, a.button:active, .form-submit:active, input[type="submit"]:active {
-  background: #0E5ECB;
+  background: #033F85;
 }
 /* line 28, ../scss/base/_form.scss */
 button[disabled], a.button[disabled], .form-submit[disabled], input[type="submit"][disabled] {
@@ -1879,6 +1879,42 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
     transform: rotate(360deg);
   }
 }
+/* line 2, ../scss/components/_addtoany-block.scss */
+.addtoany_list {
+  display: block;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 9, ../scss/components/_addtoany-block.scss */
+.addtoany_list a {
+  display: block;
+  margin-top: 20px;
+}
+/* line 13, ../scss/components/_addtoany-block.scss */
+.addtoany_list a:first-child {
+  margin-top: 15px;
+}
+
+/* line 20, ../scss/components/_addtoany-block.scss */
+.addtoany-custom-text p {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  cursor: default;
+  color: #033F85;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  margin: 0 0 0 auto;
+}
+
+@media (min-width: 48em) {
+  /* line 34, ../scss/components/_addtoany-block.scss */
+  .addtoany_list a {
+    margin-top: 25px;
+  }
+}
 /* line 1, ../scss/components/_brand.scss */
 #block-bbd-classy-branding {
   padding: 20px 0;
@@ -2467,17 +2503,36 @@ ul.main-megamenu {
   margin-right: auto;
   margin-bottom: 20px;
 }
+/* line 29, ../scss/components/paragraphs/_page-header.scss */
+.paragraph--type--page-header h2 {
+  font-size: 36px;
+  line-height: 43px;
+}
+/* line 34, ../scss/components/paragraphs/_page-header.scss */
+.paragraph--type--page-header .field--name-field-tex {
+  color: #4C6272;
+}
 
 @media (min-width: 48em) {
-  /* line 32, ../scss/components/paragraphs/_page-header.scss */
+  /* line 41, ../scss/components/paragraphs/_page-header.scss */
   .paragraph--type--page-header .paragraph-inner-holder {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+  /* line 46, ../scss/components/paragraphs/_page-header.scss */
+  .paragraph--type--page-header .text-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+  }
+  /* line 51, ../scss/components/paragraphs/_page-header.scss */
+  .paragraph--type--page-header .field--name-field-image {
+    margin-left: 0;
+  }
 }
 @media (min-width: 90em) {
-  /* line 42, ../scss/components/paragraphs/_page-header.scss */
+  /* line 59, ../scss/components/paragraphs/_page-header.scss */
   .paragraph--type--page-header .paragraph-inner-holder {
     gap: 40px;
   }
@@ -2499,6 +2554,29 @@ ul.main-megamenu {
   margin: 0 auto;
 }
 
+/* line 16, ../scss/pages/_content-wrapper.scss */
+.content-node-custom-wrap {
+  position: relative;
+}
+
+/* line 1, ../scss/pages/_page-general.scss */
+.page-node-type-page,
+.page-node-type-landing-page {
+  --pd-right: 35px;
+}
+/* line 5, ../scss/pages/_page-general.scss */
+.page-node-type-page .content-node-custom-wrap > .field--name-field-content-sections > .field__item:first-child,
+.page-node-type-landing-page .content-node-custom-wrap > .field--name-field-content-sections > .field__item:first-child {
+  padding-right: var(--pd-right);
+}
+
+@media (min-width: 90em) {
+  /* line 12, ../scss/pages/_page-general.scss */
+  .page-node-type-page,
+  .page-node-type-landing-page {
+    --pd-right: 50px;
+  }
+}
 /* line 1, ../scss/pages/_page-wrapper.scss */
 #page-wrapper {
   padding: 0;
