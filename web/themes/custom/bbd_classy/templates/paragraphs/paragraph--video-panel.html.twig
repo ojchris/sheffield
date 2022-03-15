@@ -1,0 +1,22 @@
+{% extends "paragraph.html.twig" %}
+
+{% block content %}
+
+
+<div class="remote-video-container">
+    {{ content.field_video }}
+    <a href="{{ paragraph.field_video.entity.field_media_oembed_video.entity.field_media_oembed_video.value }}">
+      {{ content.field_image }}
+    </a>
+
+    <video width="470" height="491" poster="{{ file_url(content.field_image[0]['#media'].field_media_image.entity.uri.value|image_style('teaser')) }}" controls>
+    <source src="{{ paragraph.field_video.entity.field_media_oembed_video.entity.field_media_oembed_video.value }}">
+    <object data="{{ paragraph.field_video.entity.field_media_oembed_video.entity.field_media_oembed_video.value }}" width="470" height="491">
+    </object>
+</video>
+</div>
+
+
+{% endblock %}
+ 
+ 

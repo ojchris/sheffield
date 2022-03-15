@@ -1,0 +1,47 @@
+.paragraph--type--video-panel {
+  display: block;
+  margin-left: -160px;
+  width: 90%;
+}
+
+.paragraph-inner-holder.bubble-blue {
+  background-image: url('../../images/talk_bubble_blue.svg');
+
+}
+
+.paragraph-inner-holder.bubble-green {
+  background-image: url('../../images/talk_bubble_green.svg');
+}
+
+.paragraph-inner-holder.bubble-purple {
+  background-image: url('../../images/talk_bubble_purple.svg');
+}
+
+.paragraph-inner-holder.bubble-red {
+  background-image: url('../../images/talk_bubble_red.svg');
+}
+
+.paragraph-inner-holder.bubble-orange {
+  background-image: url('../../images/talk_bubble_orange.svg');
+}
+
+.paragraph-inner-holder {
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  .remote-video-container {
+    margin-left: 160px;
+
+    .field--name-field-media-oembed-video,
+    a {
+      display: block;
+      width: 73%;
+
+      iframe.media-oembed-content {
+        height: 491px;
+      }
+    }
+
+  }
+
+}
