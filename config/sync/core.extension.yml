@@ -60,6 +60,8 @@ module:
   masquerade: 0
   media: 0
   media_library: 0
+  media_thumbnails: 0
+  media_thumbnails_video: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
@@ -92,6 +94,7 @@ module:
   time_range: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
