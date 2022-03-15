@@ -1,9 +1,9 @@
 _core:
   default_config_hash: QUZHrnAKd4ixgLLVtD3JrrBMlwbmJ6VU-qKcOMDKatw
-buttons_size: 26
-additional_html: "<a class=\"a2a_button_twitter\"></a>\r\n<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_linkedin\"></a>\r\n<a class=\"a2a_button_email\"></a>\r\n"
+buttons_size: 28
+additional_html: "<div class=\"addtoany-custom-text\"><p>Share this page</p></div>\r\n<a class=\"a2a_button_linkedin\"></a>\r\n<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n"
 additional_css: ''
-additional_js: ''
+additional_js: 'a2a_config.icon_color = "transparent, #212B32";'
 universal_button: none
 custom_universal_button: ''
 universal_button_placement: before
