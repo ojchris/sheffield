@@ -1,47 +1,103 @@
 .paragraph--type--video-panel {
-  display: block;
-  margin-left: -160px;
-  width: 90%;
-}
+  width: 100%;
 
-.paragraph-inner-holder.bubble-blue {
-  background-image: url('../../images/talk_bubble_blue.svg');
+  .field--name-field-body {
+    margin-bottom: 20px;
 
-}
-
-.paragraph-inner-holder.bubble-green {
-  background-image: url('../../images/talk_bubble_green.svg');
-}
-
-.paragraph-inner-holder.bubble-purple {
-  background-image: url('../../images/talk_bubble_purple.svg');
-}
-
-.paragraph-inner-holder.bubble-red {
-  background-image: url('../../images/talk_bubble_red.svg');
-}
-
-.paragraph-inner-holder.bubble-orange {
-  background-image: url('../../images/talk_bubble_orange.svg');
-}
-
-.paragraph-inner-holder {
-  background-repeat: no-repeat;
-  background-size: 100%;
-
-  .remote-video-container {
-    margin-left: 160px;
-
-    .field--name-field-media-oembed-video,
-    a {
-      display: block;
-      width: 73%;
-
-      iframe.media-oembed-content {
-        height: 491px;
-      }
+    @include breakpoint($desk) {
+      max-width: 65%;
     }
-
   }
 
+  iframe,
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    transition: opacity 500ms ease-in;
+  }
+
+  article {
+    position: static;
+  }
+
+  .paragraph-video-play-video {
+    display: none;
+  }
+
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+.paragraph--type--video-panel.paragraph-with-image {
+
+  iframe,
+  video {
+    z-index: -1;
+  }
+
+  .field--name-field-media-image {
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .paragraph-video-play-video {
+    display: block;
+    background: url(../../images/play_media.svg) no-repeat center center;
+    background-size: contain;
+    min-width: auto;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint($tab) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @include breakpoint($widestdesk) {
+      width: 130px;
+      height: 130px;
+    }
+
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      border-radius: 50%;
+      border: 2px dashed $white;
+    }
+  }
+
+  .video-wrap--play {
+
+    .field--name-field-media-image,
+    .paragraph-video-play-video {
+      display: none;
+    }
+
+    iframe,
+    video {
+      opacity: 1;
+      z-index: 0;
+    }
+  }
 }

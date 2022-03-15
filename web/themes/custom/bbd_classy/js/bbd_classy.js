@@ -69,6 +69,32 @@
     },
 
     /**
+     * Trigger play video.
+     * @param context
+     */
+    playVideo: function (context) {
+      $('.paragraph-video-play-video', context).click(function (event) {
+        const $parent = $(this).parents('.remote-video-container');
+        const $image = $('img', $parent);
+
+        if ($image.length > 0) {
+          $parent.addClass('video-wrap--play');
+          const $videoEmbed = $('.field--name-field-media-oembed-video iframe', $parent);
+          const $video = $('.field--name-field-media-video-file video', $parent);
+
+          if ($videoEmbed.length > 0) {
+            $videoEmbed.contents().find('iframe')[0].src += '&amp;autoplay=1';
+          }
+          if ($video.length > 0) {
+            $video[0].play();
+          }
+        }
+        event.preventDefault();
+      })
+    },
+
+
+    /**
      * Adding functionality for custom select elements.
      */
     selectricBehavior: function (context) {

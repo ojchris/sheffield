@@ -2330,55 +2330,105 @@ ul.main-megamenu {
 
 /* line 1, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
 .paragraph--type--video-panel {
-  display: block;
-  margin-left: -160px;
-  width: 90%;
+  width: 100%;
 }
-
-/* line 7, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder.bubble-blue {
-  background-image: url("../../images/talk_bubble_blue.svg");
+/* line 4, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel .field--name-field-body {
+  margin-bottom: 20px;
 }
-
+@media (min-width: 64em) {
+  /* line 4, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+  .paragraph--type--video-panel .field--name-field-body {
+    max-width: 65%;
+  }
+}
 /* line 12, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder.bubble-green {
-  background-image: url("../../images/talk_bubble_green.svg");
+.paragraph--type--video-panel iframe,
+.paragraph--type--video-panel video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  transition: opacity 500ms ease-in;
+}
+/* line 23, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel article {
+  position: static;
+}
+/* line 27, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel .paragraph-video-play-video {
+  display: none;
+}
+/* line 31, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel .video-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
 }
 
-/* line 16, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder.bubble-purple {
-  background-image: url("../../images/talk_bubble_purple.svg");
-}
-
-/* line 20, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder.bubble-red {
-  background-image: url("../../images/talk_bubble_red.svg");
-}
-
-/* line 24, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder.bubble-orange {
-  background-image: url("../../images/talk_bubble_orange.svg");
-}
-
-/* line 28, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder {
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-/* line 32, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder .remote-video-container {
-  margin-left: 160px;
-}
-/* line 35, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder .remote-video-container .field--name-field-media-oembed-video,
-.paragraph-inner-holder .remote-video-container a {
-  display: block;
-  width: 73%;
-}
 /* line 40, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
-.paragraph-inner-holder .remote-video-container .field--name-field-media-oembed-video iframe.media-oembed-content,
-.paragraph-inner-holder .remote-video-container a iframe.media-oembed-content {
-  height: 491px;
+.paragraph--type--video-panel.paragraph-with-image iframe,
+.paragraph--type--video-panel.paragraph-with-image video {
+  z-index: -1;
+}
+/* line 46, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .field--name-field-media-image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+/* line 55, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video {
+  display: block;
+  background: url(../../images/play_media.svg) no-repeat center center;
+  background-size: contain;
+  min-width: auto;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 48em) {
+  /* line 55, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+  .paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 90em) {
+  /* line 55, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+  .paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video {
+    width: 130px;
+    height: 130px;
+  }
+}
+/* line 80, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video:hover {
+  opacity: 0.8;
+}
+/* line 84, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video:focus {
+  border-radius: 50%;
+  border: 2px dashed #fff;
+}
+/* line 92, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .video-wrap--play .field--name-field-media-image,
+.paragraph--type--video-panel.paragraph-with-image .video-wrap--play .paragraph-video-play-video {
+  display: none;
+}
+/* line 97, ../scss/components/paragraphs/_paragraphs-video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .video-wrap--play iframe,
+.paragraph--type--video-panel.paragraph-with-image .video-wrap--play video {
+  opacity: 1;
+  z-index: 0;
 }
 
 /* line 1, ../scss/pages/_content-wrapper.scss */
