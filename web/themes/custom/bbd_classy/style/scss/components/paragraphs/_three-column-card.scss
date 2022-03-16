@@ -1,0 +1,107 @@
+.paragraph--type--three-column-panel {
+  h2 {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 30px;
+  }
+}
+
+.paragraph--type--three-column-card {
+  --bg: #{$white};
+  --title: #{$blue};
+  --text: #{$grey};
+  --bg-color: var(--paragraph-color, $white);
+
+  position: relative;
+
+  &[class*=paragraph-bg--] {
+    --title: var(--text);
+  }
+
+  .field--type-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    a {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 0;
+    }
+
+    &:hover + .three-card__text-wrap {
+      box-shadow: inset 0px -4px 0px $grey;
+
+      h3 {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .field--name-field-image {
+    margin-bottom: 0;
+  }
+}
+
+.three-card__text-wrap {
+  background-color: var(--bg-color);
+  padding: 22px 22px 28px;
+  box-shadow: inset 0px -4px 0px $gray-light;
+
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--title);
+    text-decoration: underline;
+  }
+
+  .field--name-field-text {
+    color: var(--text);
+    line-height: 28px;
+    font-size: 19px;
+
+    p {
+      line-height: 28px;
+      font-size: 19px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+@include breakpoint($tab) {
+  .three-card__text-wrap {
+    padding: 28px 28px 35px;
+
+    h3 {
+      margin-bottom: 18px;
+    }
+  }
+
+  .paragraph--type--three-column-panel {
+    .field--type-entity-reference-revisions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+}
+
+@include breakpoint($desk) {
+  .paragraph--type--three-column-panel {
+    .field--type-entity-reference-revisions {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+  }
+}
