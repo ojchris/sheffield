@@ -2472,6 +2472,31 @@ ul.main-megamenu {
   font-weight: 700;
 }
 
+/* line 1, ../scss/components/paragraphs/_general-paragraph.scss */
+.paragraph-bg--purple {
+  --paragraph-color: #E2D4F0;
+}
+
+/* line 5, ../scss/components/paragraphs/_general-paragraph.scss */
+.paragraph-bg--blue {
+  --paragraph-color: #D0EEF6;
+}
+
+/* line 9, ../scss/components/paragraphs/_general-paragraph.scss */
+.paragraph-bg--red {
+  --paragraph-color: #ECC5CE;
+}
+
+/* line 13, ../scss/components/paragraphs/_general-paragraph.scss */
+.paragraph-bg--green {
+  --paragraph-color: #ECF5DF;
+}
+
+/* line 17, ../scss/components/paragraphs/_general-paragraph.scss */
+.paragraph-bg--orange {
+  --paragraph-color: #F4ECC9;
+}
+
 /* line 1, ../scss/components/paragraphs/_page-header.scss */
 .paragraph--type--page-header {
   background-size: contain;
@@ -2495,7 +2520,7 @@ ul.main-megamenu {
 /* line 17, ../scss/components/paragraphs/_page-header.scss */
 .paragraph--type--page-header.paragraph-bg--green {
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg width='769' height='576' viewBox='0 0 769 576' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M768.875 281.665C768.34 297.139 766.066 312.304 762.588 327.056C759.11 341.809 754.429 356.148 748.409 369.972C742.39 383.899 735.033 397.31 726.472 410.102C717.911 422.894 708.013 435.17 697.044 446.724C623.876 535.65 479.412 578.978 345.515 557.623C326.387 555.251 307.794 552.156 289.602 549.267C206.536 541.943 136.712 506.042 91.3659 456.422C82.0025 446.724 72.2378 437.646 63.5432 427.846C-26.4792 346.554 -15.3767 229.981 62.4733 149.102C72.238 138.992 81.7351 128.882 92.1686 119.288C150.355 65.2314 226.6 23.9666 317.292 9.93657C331.203 7.25436 345.516 5.29426 360.096 3.84999C374.676 2.50889 389.256 0.858333 404.238 0.342524C484.897 -2.95866 566.492 17.6737 627.086 59.1448C638.991 66.882 649.96 75.2381 660.928 83.5942C674.037 93.7041 686.21 104.639 697.446 116.09C731.02 150.753 756.435 192.017 765.665 235.655C768.206 250.82 769.41 266.191 768.875 281.665Z' fill='%23edf5df'/%3E%3Cpath d='M712.971 559.06C713.106 560.904 712.768 562.72 712.045 564.4C711.805 564.96 711.526 565.506 711.203 566.039C709.826 570.183 707.013 574.185 702.094 575.523C698.069 576.622 693.909 575.755 690.585 573.611C689.87 573.208 689.073 572.908 688.298 572.594C682.521 570.948 678.79 566.018 678.489 560.836C678.406 560.105 678.271 559.422 678.203 558.705C677.082 552.888 680.723 547.787 686.056 545.432C686.816 545.097 687.613 544.817 688.441 544.599C692.646 543.725 696.926 542.216 701.274 543.493C705.877 544.824 708.879 548.368 710.804 552.13C711.203 552.826 711.541 553.55 711.835 554.294C712.128 555.039 712.392 555.803 712.595 556.595C712.79 557.381 712.926 558.207 712.971 559.06Z' fill='%23edf5df'/%3E%3Cpath d='M645.39 503.218C648.316 501.284 651.549 499.982 654.844 499.301C655.943 499.074 657.046 498.908 658.161 498.812C665.99 496.613 674.651 496.387 680.507 501.398C685.305 505.492 686.976 511.638 685.928 517.936C685.798 519.235 685.898 520.541 685.959 521.831C687.554 530.788 682.235 540.267 673.95 545.602C672.812 546.406 671.792 547.231 670.665 548.002C661.948 554.992 650.866 555.21 643.032 550.642C641.917 549.991 640.865 549.239 639.89 548.39C635.328 543.849 629.667 539.819 628.53 533.042C627.292 525.885 630.878 518.663 635.623 512.608C636.469 511.433 637.406 510.309 638.41 509.223C639.413 508.137 640.473 507.07 641.623 506.054C642.766 505.054 644.022 504.091 645.39 503.218Z' fill='%23edf5df'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='769' height='576' viewBox='0 0 769 576' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M768.875 281.665C768.34 297.139 766.066 312.304 762.588 327.056C759.11 341.809 754.429 356.148 748.409 369.972C742.39 383.899 735.033 397.31 726.472 410.102C717.911 422.894 708.013 435.17 697.044 446.724C623.876 535.65 479.412 578.978 345.515 557.623C326.387 555.251 307.794 552.156 289.602 549.267C206.536 541.943 136.712 506.042 91.3659 456.422C82.0025 446.724 72.2378 437.646 63.5432 427.846C-26.4792 346.554 -15.3767 229.981 62.4733 149.102C72.238 138.992 81.7351 128.882 92.1686 119.288C150.355 65.2314 226.6 23.9666 317.292 9.93657C331.203 7.25436 345.516 5.29426 360.096 3.84999C374.676 2.50889 389.256 0.858333 404.238 0.342524C484.897 -2.95866 566.492 17.6737 627.086 59.1448C638.991 66.882 649.96 75.2381 660.928 83.5942C674.037 93.7041 686.21 104.639 697.446 116.09C731.02 150.753 756.435 192.017 765.665 235.655C768.206 250.82 769.41 266.191 768.875 281.665Z' fill='%23ecf5df'/%3E%3Cpath d='M712.971 559.06C713.106 560.904 712.768 562.72 712.045 564.4C711.805 564.96 711.526 565.506 711.203 566.039C709.826 570.183 707.013 574.185 702.094 575.523C698.069 576.622 693.909 575.755 690.585 573.611C689.87 573.208 689.073 572.908 688.298 572.594C682.521 570.948 678.79 566.018 678.489 560.836C678.406 560.105 678.271 559.422 678.203 558.705C677.082 552.888 680.723 547.787 686.056 545.432C686.816 545.097 687.613 544.817 688.441 544.599C692.646 543.725 696.926 542.216 701.274 543.493C705.877 544.824 708.879 548.368 710.804 552.13C711.203 552.826 711.541 553.55 711.835 554.294C712.128 555.039 712.392 555.803 712.595 556.595C712.79 557.381 712.926 558.207 712.971 559.06Z' fill='%23ecf5df'/%3E%3Cpath d='M645.39 503.218C648.316 501.284 651.549 499.982 654.844 499.301C655.943 499.074 657.046 498.908 658.161 498.812C665.99 496.613 674.651 496.387 680.507 501.398C685.305 505.492 686.976 511.638 685.928 517.936C685.798 519.235 685.898 520.541 685.959 521.831C687.554 530.788 682.235 540.267 673.95 545.602C672.812 546.406 671.792 547.231 670.665 548.002C661.948 554.992 650.866 555.21 643.032 550.642C641.917 549.991 640.865 549.239 639.89 548.39C635.328 543.849 629.667 539.819 628.53 533.042C627.292 525.885 630.878 518.663 635.623 512.608C636.469 511.433 637.406 510.309 638.41 509.223C639.413 508.137 640.473 507.07 641.623 506.054C642.766 505.054 644.022 504.091 645.39 503.218Z' fill='%23ecf5df'/%3E%3C/svg%3E");
 }
 /* line 21, ../scss/components/paragraphs/_page-header.scss */
 .paragraph--type--page-header.paragraph-bg--orange {
@@ -2555,6 +2580,110 @@ ul.main-megamenu {
   /* line 74, ../scss/components/paragraphs/_page-header.scss */
   .paragraph--type--page-header .text-wrapper {
     padding-right: 20px;
+  }
+}
+/* line 2, ../scss/components/paragraphs/_three-column-card.scss */
+.paragraph--type--three-column-panel h2 {
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 30px;
+}
+
+/* line 9, ../scss/components/paragraphs/_three-column-card.scss */
+.paragraph--type--three-column-card {
+  --bg: #fff;
+  --title: #005eb8;
+  --text: #4C6272;
+  --bg-color: var(--paragraph-color, #fff);
+  position: relative;
+}
+/* line 17, ../scss/components/paragraphs/_three-column-card.scss */
+.paragraph--type--three-column-card[class*=paragraph-bg--] {
+  --title: var(--text);
+}
+/* line 21, ../scss/components/paragraphs/_three-column-card.scss */
+.paragraph--type--three-column-card .field--type-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 28, ../scss/components/paragraphs/_three-column-card.scss */
+.paragraph--type--three-column-card .field--type-link a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+/* line 37, ../scss/components/paragraphs/_three-column-card.scss */
+.paragraph--type--three-column-card .field--type-link:hover + .three-card__text-wrap {
+  box-shadow: inset 0px -4px 0px #4C6272;
+}
+/* line 40, ../scss/components/paragraphs/_three-column-card.scss */
+.paragraph--type--three-column-card .field--type-link:hover + .three-card__text-wrap h3 {
+  text-decoration: none;
+}
+/* line 46, ../scss/components/paragraphs/_three-column-card.scss */
+.paragraph--type--three-column-card .field--name-field-image {
+  margin-bottom: 0;
+}
+
+/* line 51, ../scss/components/paragraphs/_three-column-card.scss */
+.three-card__text-wrap {
+  background-color: var(--bg-color);
+  padding: 22px 22px 28px;
+  box-shadow: inset 0px -4px 0px #D8DDE0;
+}
+/* line 56, ../scss/components/paragraphs/_three-column-card.scss */
+.three-card__text-wrap h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--title);
+  text-decoration: underline;
+}
+/* line 65, ../scss/components/paragraphs/_three-column-card.scss */
+.three-card__text-wrap .field--name-field-text {
+  color: var(--text);
+  line-height: 28px;
+  font-size: 19px;
+}
+/* line 70, ../scss/components/paragraphs/_three-column-card.scss */
+.three-card__text-wrap .field--name-field-text p {
+  line-height: 28px;
+  font-size: 19px;
+}
+/* line 75, ../scss/components/paragraphs/_three-column-card.scss */
+.three-card__text-wrap .field--name-field-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 48em) {
+  /* line 83, ../scss/components/paragraphs/_three-column-card.scss */
+  .three-card__text-wrap {
+    padding: 28px 28px 35px;
+  }
+  /* line 86, ../scss/components/paragraphs/_three-column-card.scss */
+  .three-card__text-wrap h3 {
+    margin-bottom: 18px;
+  }
+
+  /* line 92, ../scss/components/paragraphs/_three-column-card.scss */
+  .paragraph--type--three-column-panel .field--type-entity-reference-revisions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 64em) {
+  /* line 102, ../scss/components/paragraphs/_three-column-card.scss */
+  .paragraph--type--three-column-panel .field--type-entity-reference-revisions {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
   }
 }
 /* line 1, ../scss/pages/_content-wrapper.scss */
@@ -2625,7 +2754,7 @@ ul.main-megamenu {
     padding: 0;
   }
   /* line 14, ../scss/pages/_page-wrapper.scss */
-  #page-wrapper > * {
+  #page-wrapper #content-main-wrapper {
     padding: 0 3.125em;
   }
 }
@@ -2635,7 +2764,7 @@ ul.main-megamenu {
     padding: 0;
   }
   /* line 24, ../scss/pages/_page-wrapper.scss */
-  #page-wrapper > * {
+  #page-wrapper #content-main-wrapper {
     padding: 0 2.5em;
   }
 }
@@ -2645,7 +2774,7 @@ ul.main-megamenu {
     padding: 0;
   }
   /* line 34, ../scss/pages/_page-wrapper.scss */
-  #page-wrapper > * {
+  #page-wrapper #content-main-wrapper {
     padding: 0 1.875em;
   }
 }

@@ -10,7 +10,7 @@
   --bg: #{$white};
   --title: #{$blue};
   --text: #{$grey};
-  --bg-color: var(--paragraph-color, $white);
+  --bg-color: var(--paragraph-color, #{$white});
 
   position: relative;
 
