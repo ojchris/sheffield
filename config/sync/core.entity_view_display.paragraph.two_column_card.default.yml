@@ -3,14 +3,38 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.two_column_card.field_background_colour
     - field.field.paragraph.two_column_card.field_link
     - field.field.paragraph.two_column_card.field_text
     - field.field.paragraph.two_column_card.field_title
     - paragraphs.paragraphs_type.two_column_card
   module:
+    - field_group
     - link
     - manage_display
     - text
+third_party_settings:
+  field_group:
+    group_card__text_wrap:
+      children:
+        - field_title
+        - field_text
+      label: card__text-wrap
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: card__text-wrap
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: paragraph.two_column_card.default
 targetEntityType: paragraph
 bundle: two_column_card
@@ -26,7 +50,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
   field_text:
     type: text_default
@@ -40,9 +64,10 @@ content:
     label: hidden
     settings:
       linked: true
-      tag: h4
+      tag: h3
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_background_colour: true
   search_api_excerpt: true
