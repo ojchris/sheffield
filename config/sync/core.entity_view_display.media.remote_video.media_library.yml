@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.remote_video.field_media_oembed_video
-    - image.style.medium
     - media.type.remote_video
   module:
     - image
@@ -16,10 +15,10 @@ mode: media_library
 content:
   thumbnail:
     type: image
-    label: hidden
+    label: above
     settings:
       image_link: ''
-      image_style: medium
+      image_style: ''
     third_party_settings: {  }
     weight: 0
     region: content

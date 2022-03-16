@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_image
-    - field.storage.node.field_location
     - search_api.server.solr_site_search
   module:
     - search_api_solr
@@ -74,14 +73,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_image
-  field_location:
-    label: Location
-    datasource_id: 'entity:node'
-    property_path: field_location
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_location
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -173,7 +164,6 @@ processor_settings:
     all_fields: false
     fields:
       - body
-      - field_location
       - title
     title: true
     alt: true
@@ -190,7 +180,6 @@ processor_settings:
     all_fields: false
     fields:
       - body
-      - field_location
       - title
     ignorable: '[''¿¡!?,.:;]'
     ignorable_classes:

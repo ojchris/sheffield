@@ -21,6 +21,60 @@
 /* Mixin position */
 /* Placeholder */
 /* background placement */
+/* line 50, ../scss/variables/_breakpoints.scss */
+.max-content-width {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 48em) {
+  /* line 50, ../scss/variables/_breakpoints.scss */
+  .max-content-width {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 64em) {
+  /* line 50, ../scss/variables/_breakpoints.scss */
+  .max-content-width {
+    padding: 0 40px;
+  }
+}
+
+/* line 65, ../scss/variables/_breakpoints.scss */
+.max-content-width-no-padding {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 50, ../scss/variables/_breakpoints.scss */
+.max-content-width {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 48em) {
+  /* line 50, ../scss/variables/_breakpoints.scss */
+  .max-content-width {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 64em) {
+  /* line 50, ../scss/variables/_breakpoints.scss */
+  .max-content-width {
+    padding: 0 40px;
+  }
+}
+
+/* line 65, ../scss/variables/_breakpoints.scss */
+.max-content-width-no-padding {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* line 4, ../scss/variables/_typography.scss */
 body {
   font-size: 14px;
@@ -37,6 +91,7 @@ h5,
 h6,
 .h1,
 .h2,
+.paragraph--type--download-panel .field--name-field-title,
 .h3,
 .h4,
 .h5,
@@ -54,7 +109,8 @@ h1,
 
 /* line 32, ../scss/variables/_typography.scss */
 h2,
-.h2 {
+.h2,
+.paragraph--type--download-panel .field--name-field-title {
   font-size: 40px;
   line-height: 48px;
 }
@@ -174,7 +230,8 @@ blockquote {
 
   /* line 143, ../scss/variables/_typography.scss */
   h2,
-  .h2 {
+  .h2,
+  .paragraph--type--download-panel .field--name-field-title {
     font-size: 40px;
     line-height: 1.175;
   }
@@ -228,7 +285,8 @@ blockquote {
 
   /* line 194, ../scss/variables/_typography.scss */
   h2,
-  .h2 {
+  .h2,
+  .paragraph--type--download-panel .field--name-field-title {
     font-size: 64px;
     line-height: 1.1718;
   }
@@ -2425,6 +2483,58 @@ ul.main-megamenu {
   background: #fff;
   border-radius: 30px;
   display: inline-block;
+}
+
+/* line 1, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel {
+  margin-top: 50px;
+}
+/* line 5, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 40px;
+  width: 100%;
+  margin: 30px 0;
+}
+/* line 14, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item {
+  width: 33.33%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+/* line 21, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-name h4 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+/* line 26, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+/* line 33, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file {
+  padding: 10px 0;
+}
+/* line 36, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file .field__item {
+  background: url("../../images/icon-download.svg") no-repeat 40% center;
+  background-size: contain;
+}
+/* line 41, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file a {
+  text-decoration: none;
+}
+/* line 55, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel a {
+  color: #212B32;
+  font-weight: 700;
 }
 
 /* line 1, ../scss/components/paragraphs/_four-colum-panel.scss */
