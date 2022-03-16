@@ -1,7 +1,6 @@
 .paragraph--type--download-panel {
   margin-top: 50px;
 
-
   .field--name-field-documents {
     @include flexbox;
     @include flex-wrap(wrap);
@@ -44,13 +43,31 @@
       }
 
     }
+
+    &.media-bg--purple>.field__item {
+      @include media-bg($svg_purple);
+    }
+
+    &.media-bg--blue>.field__item {
+      @include media-document-bg($svg_blue);
+    }
+
+    &.media-bg--red>.field__item {
+      @include media-document-bg($svg_red);
+    }
+
+    &.media-bg--green>.field__item {
+      @include media-document-bg($svg_green);
+    }
+
+    &.media-bg--orange>.field__item {
+      @include media-document-bg($svg_orange);
+    }
   }
 
   .field--name-field-title {
     @extend .h2;
   }
-
-
 
   a {
     color: $black;

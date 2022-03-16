@@ -11,11 +11,13 @@ use Drupal\node\NodeInterface;
 use Drupal\node\Entity\Node;
 use Drupal\paragraphs\ParagraphInterface;
 use Drupal\block\Entity\Block;
+use Drupal\media\Entity\Media;
 
 /**
  * Implements template_preprocess_page().
  */
-function bbd_classy_preprocess_page(&$variables){
+function bbd_classy_preprocess_page(&$variables)
+{
   if (isset($variables['node'])) {
     $node = $variables['node'];
     // Adds additional classes.
@@ -34,23 +36,24 @@ function bbd_classy_preprocess_page(&$variables){
 /**
  * Implements hook_preprocess_block
  */
-function bbd_classy_preprocess_block(&$variables){
-/**
- * add class to page_title block to hide & show.
- */
+function bbd_classy_preprocess_block(&$variables)
+{
+  /**
+   * add class to page_title block to hide & show.
+   */
   if ($variables['plugin_id'] ==  'page_title_block') {
     $node = \Drupal::routeMatch()->getParameter('node');
     if ($node && is_numeric($node)) {
       $node = Node::load($node);
     }
 
-  if ($node) {
+    if ($node) {
       if ($node->getType() == 'page' || $node->getType() == 'landing_page') {
 
         if ($node->hasField('field_hide_title') && $node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
-      } elseif($node->getType() == 'homepage') {
+      } elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
     }
@@ -60,12 +63,18 @@ function bbd_classy_preprocess_block(&$variables){
 /**
  * Implements template_preprocess_HOOK().
  */
-function bbd_classy_preprocess_paragraph(&$vars) {
+function bbd_classy_preprocess_paragraph(&$vars)
+{
   $paragraph = $vars['paragraph'];
   if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
     $color = $paragraph->get('field_background_colour')->value;
     $vars['attributes']['class'][] = 'paragraph-bg--' . $color;
   }
+
+  if ($paragraph->hasField('field_documents') && !$paragraph->get('field_documents')->isEmpty()) {
+    $document_field = $paragraph->get('field_documents')->first()->getValue();
+    $media = Media::load($document_field['target_id']);
+    $bg_color = $media->get('field_background_colour')->value;
+    $vars['media_documents_bg'] = 'media-bg--' . $bg_color;
+  }
 }
-
-
