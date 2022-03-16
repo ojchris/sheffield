@@ -6,7 +6,8 @@
   }
 }
 
-.paragraph--type--three-column-card {
+.paragraph--type--three-column-card,
+.paragraph--type--two-column-card {
   --bg: #{$white};
   --title: #{$blue};
   --text: #{$grey};
@@ -34,7 +35,7 @@
       font-size: 0;
     }
 
-    &:hover + .three-card__text-wrap {
+    &:hover + .card__text-wrap {
       box-shadow: inset 0px -4px 0px $grey;
 
       h3 {
@@ -48,7 +49,7 @@
   }
 }
 
-.three-card__text-wrap {
+.card__text-wrap {
   background-color: var(--bg-color);
   padding: 22px 22px 28px;
   box-shadow: inset 0px -4px 0px $gray-light;
@@ -80,7 +81,7 @@
 
 
 @include breakpoint($tab) {
-  .three-card__text-wrap {
+  .card__text-wrap {
     padding: 28px 28px 35px;
 
     h3 {
@@ -88,7 +89,8 @@
     }
   }
 
-  .paragraph--type--three-column-panel {
+  .paragraph--type--three-column-panel,
+  .paragraph--type--two-column-panel {
     .field--type-entity-reference-revisions {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -98,10 +100,16 @@
 }
 
 @include breakpoint($desk) {
+  .paragraph--type--three-column-panel,
+  .paragraph--type--two-column-panel {
+    .field--type-entity-reference-revisions {
+      gap: 40px;
+    }
+  }
+
   .paragraph--type--three-column-panel {
     .field--type-entity-reference-revisions {
       grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
     }
   }
 }

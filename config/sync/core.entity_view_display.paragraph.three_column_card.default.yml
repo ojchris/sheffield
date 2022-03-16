@@ -28,7 +28,7 @@ third_party_settings:
       weight: 2
       format_type: html_element
       format_settings:
-        classes: three-card__text-wrap
+        classes: card__text-wrap
         show_empty_fields: false
         id: ''
         element: div

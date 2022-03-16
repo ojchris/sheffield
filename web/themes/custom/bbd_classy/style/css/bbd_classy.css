@@ -2365,6 +2365,123 @@ ul.main-megamenu {
   padding: 0;
 }
 
+/* line 2, ../scss/components/paragraphs/_column-card.scss */
+.paragraph--type--three-column-panel h2 {
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 30px;
+}
+
+/* line 9, ../scss/components/paragraphs/_column-card.scss */
+.paragraph--type--three-column-card,
+.paragraph--type--two-column-card {
+  --bg: #fff;
+  --title: #005eb8;
+  --text: #4C6272;
+  --bg-color: var(--paragraph-color, #fff);
+  position: relative;
+}
+/* line 18, ../scss/components/paragraphs/_column-card.scss */
+.paragraph--type--three-column-card[class*=paragraph-bg--],
+.paragraph--type--two-column-card[class*=paragraph-bg--] {
+  --title: var(--text);
+}
+/* line 22, ../scss/components/paragraphs/_column-card.scss */
+.paragraph--type--three-column-card .field--type-link,
+.paragraph--type--two-column-card .field--type-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 29, ../scss/components/paragraphs/_column-card.scss */
+.paragraph--type--three-column-card .field--type-link a,
+.paragraph--type--two-column-card .field--type-link a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+/* line 38, ../scss/components/paragraphs/_column-card.scss */
+.paragraph--type--three-column-card .field--type-link:hover + .card__text-wrap,
+.paragraph--type--two-column-card .field--type-link:hover + .card__text-wrap {
+  box-shadow: inset 0px -4px 0px #4C6272;
+}
+/* line 41, ../scss/components/paragraphs/_column-card.scss */
+.paragraph--type--three-column-card .field--type-link:hover + .card__text-wrap h3,
+.paragraph--type--two-column-card .field--type-link:hover + .card__text-wrap h3 {
+  text-decoration: none;
+}
+/* line 47, ../scss/components/paragraphs/_column-card.scss */
+.paragraph--type--three-column-card .field--name-field-image,
+.paragraph--type--two-column-card .field--name-field-image {
+  margin-bottom: 0;
+}
+
+/* line 52, ../scss/components/paragraphs/_column-card.scss */
+.card__text-wrap {
+  background-color: var(--bg-color);
+  padding: 22px 22px 28px;
+  box-shadow: inset 0px -4px 0px #D8DDE0;
+}
+/* line 57, ../scss/components/paragraphs/_column-card.scss */
+.card__text-wrap h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--title);
+  text-decoration: underline;
+}
+/* line 66, ../scss/components/paragraphs/_column-card.scss */
+.card__text-wrap .field--name-field-text {
+  color: var(--text);
+  line-height: 28px;
+  font-size: 19px;
+}
+/* line 71, ../scss/components/paragraphs/_column-card.scss */
+.card__text-wrap .field--name-field-text p {
+  line-height: 28px;
+  font-size: 19px;
+}
+/* line 76, ../scss/components/paragraphs/_column-card.scss */
+.card__text-wrap .field--name-field-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 48em) {
+  /* line 84, ../scss/components/paragraphs/_column-card.scss */
+  .card__text-wrap {
+    padding: 28px 28px 35px;
+  }
+  /* line 87, ../scss/components/paragraphs/_column-card.scss */
+  .card__text-wrap h3 {
+    margin-bottom: 18px;
+  }
+
+  /* line 94, ../scss/components/paragraphs/_column-card.scss */
+  .paragraph--type--three-column-panel .field--type-entity-reference-revisions,
+  .paragraph--type--two-column-panel .field--type-entity-reference-revisions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 64em) {
+  /* line 105, ../scss/components/paragraphs/_column-card.scss */
+  .paragraph--type--three-column-panel .field--type-entity-reference-revisions,
+  .paragraph--type--two-column-panel .field--type-entity-reference-revisions {
+    gap: 40px;
+  }
+
+  /* line 111, ../scss/components/paragraphs/_column-card.scss */
+  .paragraph--type--three-column-panel .field--type-entity-reference-revisions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* line 1, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder {
   display: flex;
@@ -2580,110 +2697,6 @@ ul.main-megamenu {
   /* line 74, ../scss/components/paragraphs/_page-header.scss */
   .paragraph--type--page-header .text-wrapper {
     padding-right: 20px;
-  }
-}
-/* line 2, ../scss/components/paragraphs/_three-column-card.scss */
-.paragraph--type--three-column-panel h2 {
-  font-size: 36px;
-  line-height: 43px;
-  margin-bottom: 30px;
-}
-
-/* line 9, ../scss/components/paragraphs/_three-column-card.scss */
-.paragraph--type--three-column-card {
-  --bg: #fff;
-  --title: #005eb8;
-  --text: #4C6272;
-  --bg-color: var(--paragraph-color, #fff);
-  position: relative;
-}
-/* line 17, ../scss/components/paragraphs/_three-column-card.scss */
-.paragraph--type--three-column-card[class*=paragraph-bg--] {
-  --title: var(--text);
-}
-/* line 21, ../scss/components/paragraphs/_three-column-card.scss */
-.paragraph--type--three-column-card .field--type-link {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 28, ../scss/components/paragraphs/_three-column-card.scss */
-.paragraph--type--three-column-card .field--type-link a {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-}
-/* line 37, ../scss/components/paragraphs/_three-column-card.scss */
-.paragraph--type--three-column-card .field--type-link:hover + .three-card__text-wrap {
-  box-shadow: inset 0px -4px 0px #4C6272;
-}
-/* line 40, ../scss/components/paragraphs/_three-column-card.scss */
-.paragraph--type--three-column-card .field--type-link:hover + .three-card__text-wrap h3 {
-  text-decoration: none;
-}
-/* line 46, ../scss/components/paragraphs/_three-column-card.scss */
-.paragraph--type--three-column-card .field--name-field-image {
-  margin-bottom: 0;
-}
-
-/* line 51, ../scss/components/paragraphs/_three-column-card.scss */
-.three-card__text-wrap {
-  background-color: var(--bg-color);
-  padding: 22px 22px 28px;
-  box-shadow: inset 0px -4px 0px #D8DDE0;
-}
-/* line 56, ../scss/components/paragraphs/_three-column-card.scss */
-.three-card__text-wrap h3 {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: var(--title);
-  text-decoration: underline;
-}
-/* line 65, ../scss/components/paragraphs/_three-column-card.scss */
-.three-card__text-wrap .field--name-field-text {
-  color: var(--text);
-  line-height: 28px;
-  font-size: 19px;
-}
-/* line 70, ../scss/components/paragraphs/_three-column-card.scss */
-.three-card__text-wrap .field--name-field-text p {
-  line-height: 28px;
-  font-size: 19px;
-}
-/* line 75, ../scss/components/paragraphs/_three-column-card.scss */
-.three-card__text-wrap .field--name-field-text p:last-child {
-  margin-bottom: 0;
-}
-
-@media (min-width: 48em) {
-  /* line 83, ../scss/components/paragraphs/_three-column-card.scss */
-  .three-card__text-wrap {
-    padding: 28px 28px 35px;
-  }
-  /* line 86, ../scss/components/paragraphs/_three-column-card.scss */
-  .three-card__text-wrap h3 {
-    margin-bottom: 18px;
-  }
-
-  /* line 92, ../scss/components/paragraphs/_three-column-card.scss */
-  .paragraph--type--three-column-panel .field--type-entity-reference-revisions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-}
-@media (min-width: 64em) {
-  /* line 102, ../scss/components/paragraphs/_three-column-card.scss */
-  .paragraph--type--three-column-panel .field--type-entity-reference-revisions {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
   }
 }
 /* line 1, ../scss/pages/_content-wrapper.scss */
