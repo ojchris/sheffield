@@ -37,10 +37,10 @@ backend_config:
   server_prefix: ''
   domain: generic
   environment: default
-  connector: basic_auth
+  connector: solr_cloud_basic_auth
   connector_config:
     scheme: http
-    host: ddev-sheffield-iapt-solr
+    host: ddev-sheffield-dev-bbb-solr
     port: 8983
     path: /
     core: bbbsheffield
@@ -57,6 +57,10 @@ backend_config:
     solr_install_dir: ''
     username: solr
     password: SolrRocks
+    checkpoints_collection: ''
+    stats_cache: org.apache.solr.search.stats.LRUStatsCache
+    distrib: true
+    context: solr
   optimize: false
   fallback_multiple: false
   disabled_field_types: {  }

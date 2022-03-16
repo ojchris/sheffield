@@ -1,7 +1,12 @@
 uuid: 11365745-9be5-45d4-8b96-c5e703eb1030
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - crop
+third_party_settings:
+  crop:
+    image_field: _none
 id: video
 label: Video
 description: ''
