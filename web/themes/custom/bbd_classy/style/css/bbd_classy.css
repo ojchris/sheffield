@@ -89,43 +89,39 @@ h6,
 
 /* line 62, ../scss/variables/_typography.scss */
 p {
-  font-size: 14px;
-  line-height: 20px;
   margin: 0 0 20px;
 }
-/* line 67, ../scss/variables/_typography.scss */
-p.small {
+
+/* line 66, ../scss/variables/_typography.scss */
+.small {
   font-size: 10px;
   line-height: 14px;
 }
-/* line 72, ../scss/variables/_typography.scss */
-p.large {
+
+/* line 71, ../scss/variables/_typography.scss */
+.large {
   font-size: 19px;
   line-height: 28px;
 }
 
-/* line 80, ../scss/variables/_typography.scss */
+/* line 78, ../scss/variables/_typography.scss */
 .region-content ul,
 .region-content ol {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 16px;
-  list-style-type: none;
-  margin-top: 0;
-  padding-left: 0;
+  margin: 0 0 20px;
+  padding: 0 0 0 16px;
+  list-style-position: outside;
 }
-/* line 90, ../scss/variables/_typography.scss */
+/* line 85, ../scss/variables/_typography.scss */
 .region-content ul {
   list-style-type: disc;
-  padding-left: 20px;
 }
-/* line 95, ../scss/variables/_typography.scss */
+/* line 89, ../scss/variables/_typography.scss */
 .region-content ul > li,
 .region-content ol > li {
   margin-bottom: 8px;
 }
 
-/* line 101, ../scss/variables/_typography.scss */
+/* line 95, ../scss/variables/_typography.scss */
 a {
   position: relative;
   text-decoration: underline;
@@ -133,23 +129,23 @@ a {
   word-wrap: break-word;
   color: #005eb8;
 }
-/* line 108, ../scss/variables/_typography.scss */
+/* line 102, ../scss/variables/_typography.scss */
 a:hover, a:focus {
   color: black;
   text-decoration: none;
 }
 
-/* line 115, ../scss/variables/_typography.scss */
+/* line 109, ../scss/variables/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 119, ../scss/variables/_typography.scss */
+/* line 113, ../scss/variables/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 123, ../scss/variables/_typography.scss */
+/* line 117, ../scss/variables/_typography.scss */
 blockquote {
   border: none;
   border-left: 2px solid #4C6272;
@@ -160,53 +156,39 @@ blockquote {
 }
 
 @media (min-width: 48em) {
-  /* line 133, ../scss/variables/_typography.scss */
+  /* line 127, ../scss/variables/_typography.scss */
   body {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 138, ../scss/variables/_typography.scss */
+  /* line 132, ../scss/variables/_typography.scss */
   h1,
   .h1 {
     font-size: 48px;
   }
 
-  /* line 143, ../scss/variables/_typography.scss */
+  /* line 137, ../scss/variables/_typography.scss */
   h2,
   .h2 {
     font-size: 40px;
     line-height: 1.175;
   }
 
-  /* line 149, ../scss/variables/_typography.scss */
+  /* line 143, ../scss/variables/_typography.scss */
   h3,
   .h3 {
     font-size: 36px;
   }
 
-  /* line 154, ../scss/variables/_typography.scss */
+  /* line 148, ../scss/variables/_typography.scss */
   h4,
   .h4 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 160, ../scss/variables/_typography.scss */
-  p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  /* line 167, ../scss/variables/_typography.scss */
-  .region-content ul,
-  .region-content ol {
-    font-size: 19px;
-    margin-bottom: 24px;
-    line-height: 1.47368;
-  }
-
-  /* line 175, ../scss/variables/_typography.scss */
+  /* line 154, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 30px;
     font-size: 24px;
@@ -214,60 +196,47 @@ blockquote {
   }
 }
 @media (min-width: 64em) {
-  /* line 184, ../scss/variables/_typography.scss */
+  /* line 163, ../scss/variables/_typography.scss */
   body {
     font-size: 19px;
     line-height: 28px;
   }
 
-  /* line 189, ../scss/variables/_typography.scss */
+  /* line 168, ../scss/variables/_typography.scss */
   h1,
   .h1 {
     font-size: 72px;
   }
 
-  /* line 194, ../scss/variables/_typography.scss */
+  /* line 173, ../scss/variables/_typography.scss */
   h2,
   .h2 {
     font-size: 64px;
     line-height: 1.1718;
   }
 
-  /* line 200, ../scss/variables/_typography.scss */
+  /* line 179, ../scss/variables/_typography.scss */
   h3,
   .h3 {
     font-size: 48px;
     line-height: 1.1666;
   }
 
-  /* line 206, ../scss/variables/_typography.scss */
+  /* line 185, ../scss/variables/_typography.scss */
   h4,
   .h4 {
     font-size: 36px;
     line-height: 1.1666;
   }
 
-  /* line 212, ../scss/variables/_typography.scss */
+  /* line 191, ../scss/variables/_typography.scss */
   h5,
   .h5 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 218, ../scss/variables/_typography.scss */
-  p {
-    font-size: 19px;
-    line-height: 28px;
-  }
-
-  /* line 225, ../scss/variables/_typography.scss */
-  .region-content ul,
-  .region-content ol {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  /* line 232, ../scss/variables/_typography.scss */
+  /* line 197, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 50px;
   }
@@ -2697,6 +2666,102 @@ ul.main-megamenu {
   /* line 74, ../scss/components/paragraphs/_page-header.scss */
   .paragraph--type--page-header .text-wrapper {
     padding-right: 20px;
+  }
+}
+/* line 1, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text,
+.paragraph--type--two-column-text-panel {
+  font-size: 14px;
+  line-height: 20px;
+}
+/* line 6, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h1,
+.paragraph--type--simple-text h2,
+.paragraph--type--simple-text h3,
+.paragraph--type--two-column-text-panel h1,
+.paragraph--type--two-column-text-panel h2,
+.paragraph--type--two-column-text-panel h3 {
+  color: #005eb8;
+}
+/* line 12, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h1,
+.paragraph--type--two-column-text-panel h1 {
+  font-size: 48px;
+  line-height: 56px;
+}
+/* line 17, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h2,
+.paragraph--type--two-column-text-panel h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+/* line 22, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h3,
+.paragraph--type--two-column-text-panel h3 {
+  font-size: 36px;
+  line-height: 44px;
+}
+/* line 27, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h4,
+.paragraph--type--two-column-text-panel h4 {
+  font-size: 32px;
+  line-height: 39px;
+}
+/* line 32, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h5,
+.paragraph--type--two-column-text-panel h5 {
+  font-size: 24px;
+  line-height: 28px;
+}
+/* line 37, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h6,
+.paragraph--type--two-column-text-panel h6 {
+  font-size: 18px;
+  line-height: 21px;
+}
+/* line 42, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text ul,
+.paragraph--type--simple-text ol,
+.paragraph--type--two-column-text-panel ul,
+.paragraph--type--two-column-text-panel ol {
+  margin-bottom: 20px;
+}
+/* line 46, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text ul li,
+.paragraph--type--simple-text ol li,
+.paragraph--type--two-column-text-panel ul li,
+.paragraph--type--two-column-text-panel ol li {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 90em) {
+  /* line 55, ../scss/components/paragraphs/_simple-text.scss */
+  .paragraph--type--simple-text ul,
+  .paragraph--type--simple-text ol,
+  .paragraph--type--simple-text p {
+    margin-bottom: 30px;
+  }
+  /* line 61, ../scss/components/paragraphs/_simple-text.scss */
+  .paragraph--type--simple-text h1,
+  .paragraph--type--simple-text h2,
+  .paragraph--type--simple-text h3,
+  .paragraph--type--simple-text h4,
+  .paragraph--type--simple-text h5,
+  .paragraph--type--simple-text h6 {
+    margin: 0 0 35px;
+  }
+}
+/* line 2, ../scss/components/paragraphs/_two-column-text.scss */
+.paragraph--type--two-column-text-panel .paragraph-inner-holder {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 48em) {
+  /* line 11, ../scss/components/paragraphs/_two-column-text.scss */
+  .paragraph--type--two-column-text-panel .paragraph-inner-holder {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* line 1, ../scss/pages/_content-wrapper.scss */
