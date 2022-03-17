@@ -25,5 +25,4 @@ hidden:
   langcode: true
   path: true
   status: true
-  thumbnail: true
   uid: true
