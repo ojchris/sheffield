@@ -1,0 +1,28 @@
+.page-node-type-page,
+.page-node-type-landing-page {
+  --pd-right: 35px;
+
+  .content-node-custom-wrap {
+    min-height: 280px;
+
+    > .field--name-field-content-sections > .field__item:first-child {
+      padding-right: var(--pd-right);
+    }
+  }
+}
+
+@include breakpoint($tab) {
+  .page-node-type-page,
+  .page-node-type-landing-page {
+    .content-node-custom-wrap {
+      min-height: 330px;
+    }
+  }
+}
+
+@include breakpoint($widestdesk) {
+  .page-node-type-page,
+  .page-node-type-landing-page {
+    --pd-right: 50px;
+  }
+}

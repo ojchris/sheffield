@@ -1,0 +1,21 @@
+uuid: 53f0a81c-1c39-4b18-a157-0d6aebe505d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_colour
+    - paragraphs.paragraphs_type.two_column_card
+  module:
+    - options
+id: paragraph.two_column_card.field_background_colour
+field_name: field_background_colour
+entity_type: paragraph
+bundle: two_column_card
+label: 'Background colour'
+description: 'By default, is white color theme.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

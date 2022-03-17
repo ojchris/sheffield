@@ -6,7 +6,7 @@
 #nav-opener {
   position: absolute;
   right: 40px;
-  top: 175px;
+  top: 160px;
   z-index: 4;
   width: auto;
   height: 40px;
@@ -146,8 +146,9 @@
 
   #main-menu-sidebar {
     transform: none;
+    position: relative;
     opacity: 1;
-    z-index: 3;
+    z-index: 5;
   }
 
   #main-menu-overlay {

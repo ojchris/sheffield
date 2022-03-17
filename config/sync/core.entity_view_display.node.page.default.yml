@@ -12,7 +12,30 @@ dependencies:
     - node.type.page
   module:
     - entity_reference_revisions
+    - field_group
     - manage_display
+third_party_settings:
+  field_group:
+    group_content_wrap:
+      children:
+        - addtoany
+        - field_content_sections
+      label: content-wrap
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: content-node-custom-wrap
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 _core:
   default_config_hash: 0--qcxqN8wAXVvdNYMkjw48ah58Je8FjSyDr3LrifmE
 id: node.page.default
@@ -23,7 +46,7 @@ content:
   addtoany:
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 5
     region: content
   content_moderation_control:
     settings: {  }
@@ -37,7 +60,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 6
     region: content
   links:
     settings: {  }

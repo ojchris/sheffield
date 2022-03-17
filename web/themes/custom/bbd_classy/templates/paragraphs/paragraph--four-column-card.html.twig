@@ -1,0 +1,13 @@
+{% extends "paragraph.html.twig" %}
+
+{% block content %}
+<div class="four-column-card">
+  {% for item in paragraph.field_link %} 
+    <a href="{{ item.url }}">
+    {{ content.field_image }}
+    <span>{{ item.title }}</span>
+    </a>
+{% endfor %}
+
+</div>
+  {% endblock %}

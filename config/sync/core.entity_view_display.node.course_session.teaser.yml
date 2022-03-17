@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.course_session.field_course
-    - field.field.node.course_session.field_date
     - field.field.node.course_session.field_location
     - field.field.node.course_session.field_time
     - node.type.course_session
@@ -34,7 +33,6 @@ hidden:
   addtoany: true
   created: true
   field_course: true
-  field_date: true
   field_location: true
   field_time: true
   langcode: true
