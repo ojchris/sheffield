@@ -18,16 +18,39 @@
     width: 18%;
     box-sizing: border-box;
     padding: 85px 20px;
+
+    @include breakpoint($mobileTabletOnly) {
+      padding: 45px 20px;
+    }
+
+    @include breakpoint($mobileOnly) {
+      padding: 45px 20px;
+      width: 48%;
+
+      a {
+        font-size: 19px;
+      }
+    }
   }
 
   .optional-cta-1 {
     background-image: url(../../images/cta_make_a_ref_bg.svg);
     @include bg_placement(100%);
+
+    @include breakpoint($mobileOnly) {
+      order: 2;
+      background: $orange
+    }
   }
 
   .optional-cta-2 {
     background-image: url(../../images/cta_employer_bg.svg);
     @include bg_placement(100%);
+
+    @include breakpoint($mobileOnly) {
+      order: 3;
+      background: $yellow_pale;
+    }
   }
 
   .required-cta {
@@ -38,9 +61,27 @@
     margin-left: 20px;
     margin-right: 20px;
 
+    @include breakpoint($mobileTabletOnly) {
+      padding: 0;
+    }
+
+    @include breakpoint($mobileOnly) {
+      order: 1;
+      width: 100%;
+      background: $blue_acqua;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
     h4 {
       font-size: 34px;
       padding-top: 40px;
+
+      @include breakpoint($mobileOnly) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
 
     a {
@@ -49,6 +90,10 @@
       background: #fff;
       border-radius: 30px;
       display: inline-block;
+
+      @include breakpoint($mobileOnly) {
+        margin-bottom: 40px;
+      }
     }
   }
 
