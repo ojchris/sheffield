@@ -2669,59 +2669,79 @@ ul.main-megamenu {
   }
 }
 /* line 1, ../scss/components/paragraphs/_simple-text.scss */
-.paragraph--type--simple-text {
+.paragraph--type--simple-text,
+.paragraph--type--two-column-text-panel {
   font-size: 14px;
   line-height: 20px;
 }
-/* line 5, ../scss/components/paragraphs/_simple-text.scss */
-.paragraph--type--simple-text h1 {
+/* line 6, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h1,
+.paragraph--type--simple-text h2,
+.paragraph--type--simple-text h3,
+.paragraph--type--two-column-text-panel h1,
+.paragraph--type--two-column-text-panel h2,
+.paragraph--type--two-column-text-panel h3 {
+  color: #005eb8;
+}
+/* line 12, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h1,
+.paragraph--type--two-column-text-panel h1 {
   font-size: 48px;
   line-height: 56px;
 }
-/* line 10, ../scss/components/paragraphs/_simple-text.scss */
-.paragraph--type--simple-text h2 {
+/* line 17, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h2,
+.paragraph--type--two-column-text-panel h2 {
   font-size: 40px;
   line-height: 48px;
 }
-/* line 15, ../scss/components/paragraphs/_simple-text.scss */
-.paragraph--type--simple-text h3 {
+/* line 22, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h3,
+.paragraph--type--two-column-text-panel h3 {
   font-size: 36px;
   line-height: 44px;
 }
-/* line 20, ../scss/components/paragraphs/_simple-text.scss */
-.paragraph--type--simple-text h4 {
+/* line 27, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h4,
+.paragraph--type--two-column-text-panel h4 {
   font-size: 32px;
   line-height: 39px;
 }
-/* line 25, ../scss/components/paragraphs/_simple-text.scss */
-.paragraph--type--simple-text h5 {
+/* line 32, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h5,
+.paragraph--type--two-column-text-panel h5 {
   font-size: 24px;
   line-height: 28px;
 }
-/* line 30, ../scss/components/paragraphs/_simple-text.scss */
-.paragraph--type--simple-text h6 {
+/* line 37, ../scss/components/paragraphs/_simple-text.scss */
+.paragraph--type--simple-text h6,
+.paragraph--type--two-column-text-panel h6 {
   font-size: 18px;
   line-height: 21px;
 }
-/* line 35, ../scss/components/paragraphs/_simple-text.scss */
+/* line 42, ../scss/components/paragraphs/_simple-text.scss */
 .paragraph--type--simple-text ul,
-.paragraph--type--simple-text ol {
+.paragraph--type--simple-text ol,
+.paragraph--type--two-column-text-panel ul,
+.paragraph--type--two-column-text-panel ol {
   margin-bottom: 20px;
 }
-/* line 39, ../scss/components/paragraphs/_simple-text.scss */
+/* line 46, ../scss/components/paragraphs/_simple-text.scss */
 .paragraph--type--simple-text ul li,
-.paragraph--type--simple-text ol li {
+.paragraph--type--simple-text ol li,
+.paragraph--type--two-column-text-panel ul li,
+.paragraph--type--two-column-text-panel ol li {
   margin-bottom: 5px;
 }
 
 @media (min-width: 90em) {
-  /* line 48, ../scss/components/paragraphs/_simple-text.scss */
+  /* line 55, ../scss/components/paragraphs/_simple-text.scss */
   .paragraph--type--simple-text ul,
   .paragraph--type--simple-text ol,
   .paragraph--type--simple-text p {
     margin-bottom: 30px;
   }
-  /* line 54, ../scss/components/paragraphs/_simple-text.scss */
+  /* line 61, ../scss/components/paragraphs/_simple-text.scss */
   .paragraph--type--simple-text h1,
   .paragraph--type--simple-text h2,
   .paragraph--type--simple-text h3,
@@ -2729,6 +2749,19 @@ ul.main-megamenu {
   .paragraph--type--simple-text h5,
   .paragraph--type--simple-text h6 {
     margin: 0 0 35px;
+  }
+}
+/* line 2, ../scss/components/paragraphs/_two-column-text.scss */
+.paragraph--type--two-column-text-panel .paragraph-inner-holder {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 48em) {
+  /* line 11, ../scss/components/paragraphs/_two-column-text.scss */
+  .paragraph--type--two-column-text-panel .paragraph-inner-holder {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* line 1, ../scss/pages/_content-wrapper.scss */

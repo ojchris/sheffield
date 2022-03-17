@@ -1,0 +1,15 @@
+.paragraph--type--two-column-text-panel {
+  .paragraph-inner-holder {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@include breakpoint($tab) {
+  .paragraph--type--two-column-text-panel {
+    .paragraph-inner-holder {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

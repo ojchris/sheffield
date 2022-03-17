@@ -1,6 +1,13 @@
-.paragraph--type--simple-text {
+.paragraph--type--simple-text,
+.paragraph--type--two-column-text-panel {
   font-size: 14px;
   line-height: 20px;
+
+  h1,
+  h2,
+  h3 {
+    color: $blue;
+  }
 
   h1 {
     font-size: 48px;
