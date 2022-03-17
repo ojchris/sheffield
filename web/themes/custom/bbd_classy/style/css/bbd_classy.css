@@ -2913,21 +2913,55 @@ ul.main-megamenu {
   padding: 85px 20px;
 }
 
-/* line 23, ../scss/components/paragraphs/_cta_panel.scss */
+@media (max-width: 64em) {
+  /* line 16, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1,
+  .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
+    padding: 45px 20px;
+  }
+}
+@media (max-width: 47.9375em) {
+  /* line 16, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1,
+  .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
+    padding: 45px 20px;
+    width: 48%;
+  }
+  /* line 30, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1 a,
+  .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 a {
+    font-size: 19px;
+  }
+}
+/* line 36, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1 {
   background-image: url(../../images/cta_make_a_ref_bg.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-/* line 28, ../scss/components/paragraphs/_cta_panel.scss */
+@media (max-width: 47.9375em) {
+  /* line 36, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1 {
+    order: 2;
+    background: #ECC5CE;
+  }
+}
+/* line 46, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
   background-image: url(../../images/cta_employer_bg.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-/* line 33, ../scss/components/paragraphs/_cta_panel.scss */
+@media (max-width: 47.9375em) {
+  /* line 46, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
+    order: 3;
+    background: #FFF9C4;
+  }
+}
+/* line 56, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta {
   width: 50%;
   background-image: url(../../images/cta_assessment_booking_bg.svg);
@@ -2938,19 +2972,49 @@ ul.main-megamenu {
   margin-right: 20px;
 }
 
-/* line 41, ../scss/components/paragraphs/_cta_panel.scss */
+@media (max-width: 64em) {
+  /* line 56, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .required-cta {
+    padding: 0;
+  }
+}
+@media (max-width: 47.9375em) {
+  /* line 56, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .required-cta {
+    order: 1;
+    width: 100%;
+    background: #72C6D9;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+/* line 77, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta h4 {
   font-size: 34px;
   padding-top: 40px;
 }
 
-/* line 46, ../scss/components/paragraphs/_cta_panel.scss */
+@media (max-width: 47.9375em) {
+  /* line 77, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .required-cta h4 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+/* line 87, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta a {
   font-size: 16px;
   padding: 10px 30px;
   background: #fff;
   border-radius: 30px;
   display: inline-block;
+}
+@media (max-width: 47.9375em) {
+  /* line 87, ../scss/components/paragraphs/_cta_panel.scss */
+  .paragraph--type--cta-panel .paragraph-inner-holder .required-cta a {
+    margin-bottom: 40px;
+  }
 }
 
 /* line 1, ../scss/components/paragraphs/_download-panel.scss */
