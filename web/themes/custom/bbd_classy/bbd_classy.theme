@@ -55,7 +55,6 @@ function bbd_classy_preprocess_block(&$variables)
         }
       } elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
-        $variables['attributes']['class'][] = 'Holly-Goldehidden';
       }
     }
   }
@@ -70,63 +69,6 @@ function bbd_classy_preprocess_paragraph(&$vars)
   if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
     $color = $paragraph->get('field_background_colour')->value;
     $vars['attributes']['class'][] = 'paragraph-bg--' . $color;
-    //$variables['documentbg'] = 'media-bg--' . $color;
+    $vars['attributes']['class'][] = 'media-bg--' . $color;
   }
-
-  if ($paragraph->hasField('field_documents') && !$paragraph->get('field_documents')->isEmpty()) {
-    $document_field = $paragraph->get('field_documents')->first()->getValue();
-    $media = Media::load($document_field['target_id']);
-    $bg_color = $media->get('field_background_colour')->value;
-    //$variables['documentbg'] = 'media-bg--' . $bg_color;
-  }
-}
-
-/**
- * Implements hook_preprocess_field().
- */
-function bbd_classy_preprocess_field(&$variables)
-{
-  if ($variables['entity_type'] == 'media') {
-    foreach ($variables['items'] as $key => $item) {
-      $vars['attributes']['class'][] = 'myclass';
-    }
-  }
-
-  if ($variables['element']['#field_name'] == 'field-documents') {
-    foreach (array_keys($variables['items']) as $index) {
-      $variables['items'][$index]['content']['#item_attributes']['class'][] = 'my-img-class';
-    }
-  }
-}
-
-/**
- * Prepares variables for media templates.
- *
- * Default template: media.html.twig.
- *
- * @param array $variables
- *   An associative array containing:
- *   - media: An individual media for display.
- */
-function bbd_class_preprocess_media(&$variables)
-{
-  /** @var \Drupal\media_entity\MediaInterface $media */
-  $media = $variables['elements']['#media'];
-
-  $variables['media'] = $media;
-  $media_type = $media->label();
-
-  $variables['attributes']['class'][] = 'myclassNOW';
-
-  /*
-  if (!$media->isPublished()) {
-    $variables['attributes']['class'][] = 'unpublished';
-  }
-
-  if ($media_type == 'document') {
-    foreach ($variables['items'] as $key => $item) {
-      $variables['attributes']['class'][] = 'myclassNOW';
-    }
-  }
-  */
 }

@@ -21,26 +21,6 @@
         width: 47%;
       }
 
-      &.media-bg--purple {
-        @include media-document-bg($svg_purple);
-      }
-
-      &.media-bg--blue> {
-        @include media-document-bg($svg_blue);
-      }
-
-      &.media-bg--red {
-        @include media-document-bg($svg_red);
-      }
-
-      &.media-bg--green {
-        @include media-document-bg($svg_green);
-      }
-
-      &.media-bg--orange {
-        @include media-document-bg($svg_orange);
-      }
-
       .field--name-name h4 {
         font-size: 24px;
         text-decoration: underline;
@@ -68,6 +48,26 @@
 
     }
 
+  }
+
+  &.media-bg--purple {
+    @include media-document-bg($svg_purple);
+  }
+
+  &.media-bg--blue> {
+    @include media-document-bg($svg_blue);
+  }
+
+  &.media-bg--red {
+    @include media-document-bg($svg_red);
+  }
+
+  &.media-bg--green {
+    @include media-document-bg($svg_green);
+  }
+
+  &.media-bg--orange {
+    @include media-document-bg($svg_orange);
   }
 
   .field--name-field-title {
