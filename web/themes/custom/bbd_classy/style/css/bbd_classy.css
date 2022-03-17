@@ -2494,64 +2494,70 @@ ul.main-megamenu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  column-gap: 40px;
+  column-gap: 5%;
   width: 100%;
   margin: 30px 0;
 }
 /* line 13, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item {
-  width: 33.33%;
+  width: 30%;
   background: #fff;
   box-sizing: border-box;
   padding: 30px;
   margin-bottom: 10px;
 }
-/* line 20, ../scss/components/paragraphs/_download-panel.scss */
+@media (max-width: 47.9375em) {
+  /* line 13, ../scss/components/paragraphs/_download-panel.scss */
+  .paragraph--type--download-panel .field--name-field-documents > .field__item {
+    width: 47%;
+  }
+}
+/* line 24, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item.media-bg--purple {
+  background: e2d4f0;
+}
+/* line 28, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item.media-bg--blue > {
+  background: d0eef6;
+}
+/* line 32, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item.media-bg--red {
+  background: ecc5ce;
+}
+/* line 36, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item.media-bg--green {
+  background: edf5df;
+}
+/* line 40, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item.media-bg--orange {
+  background: f4Ecc9;
+}
+/* line 44, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-name h4 {
   font-size: 24px;
   text-decoration: underline;
 }
-/* line 25, ../scss/components/paragraphs/_download-panel.scss */
+/* line 49, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item p {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
   word-break: break-word;
 }
-/* line 32, ../scss/components/paragraphs/_download-panel.scss */
+/* line 56, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file {
   padding: 10px 0;
 }
-/* line 35, ../scss/components/paragraphs/_download-panel.scss */
+/* line 59, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file .field__item {
   background: url("../../images/icon-download.svg") no-repeat 40% center;
   background-size: contain;
 }
-/* line 40, ../scss/components/paragraphs/_download-panel.scss */
+/* line 64, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file a {
   text-decoration: none;
 }
-/* line 47, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel .field--name-field-documents.media-bg--purple > .field__item {
-  background: e2d4f0;
-}
-/* line 51, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel .field--name-field-documents.media-bg--blue > .field__item {
-  background: d0eef6;
-}
-/* line 55, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel .field--name-field-documents.media-bg--red > .field__item {
-  background: ecc5ce;
-}
-/* line 59, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel .field--name-field-documents.media-bg--green > .field__item {
-  background: edf5df;
-}
-/* line 63, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel .field--name-field-documents.media-bg--orange > .field__item {
-  background: f4Ecc9;
-}
-/* line 72, ../scss/components/paragraphs/_download-panel.scss */
+/* line 77, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel a {
   color: #212B32;
   font-weight: 700;
