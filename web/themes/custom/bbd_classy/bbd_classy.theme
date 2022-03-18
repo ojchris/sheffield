@@ -59,11 +59,24 @@ function bbd_classy_preprocess_block(&$variables) {
 /**
  * Implements template_preprocess_HOOK().
  */
-function bbd_classy_preprocess_paragraph(&$vars) {
-  $paragraph = $vars['paragraph'];
+function bbd_classy_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $type = $paragraph->getType();
+
   if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
     $color = $paragraph->get('field_background_colour')->value;
-    $vars['attributes']['class'][] = 'paragraph-bg--' . $color;
-    $vars['attributes']['class'][] = 'media-bg--' . $color;
+    $variables['attributes']['class'][] = 'paragraph-bg--' . $color;
+    $variables['attributes']['class'][] = 'media-bg--' . $color;
+  }
+
+  if ($type == 'tabbed_content_panel') {
+    if ($paragraph->hasField('field_tab_reference') && !$paragraph->get('field_tab_reference')->isEmpty()) {
+
+      foreach ($paragraph->get('field_tab_reference') as $tab_reference) {
+        $tab = $tab_reference->entity;
+        $variables['tab_title'][] = $tab->get('field_title_tab')->getString();
+        $variables['tab_content'][] = $tab->get('field_description_tab')->value;
+      }
+    }
   }
 }
