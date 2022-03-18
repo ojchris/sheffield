@@ -2869,12 +2869,19 @@ ul.main-megamenu {
     margin-right: 40px;
   }
 }
+@media (min-width: 64em) {
+  /* line 72, ../scss/components/paragraphs/_page-header.scss */
+  .paragraph--type--page-header h2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
 @media (min-width: 90em) {
-  /* line 71, ../scss/components/paragraphs/_page-header.scss */
+  /* line 80, ../scss/components/paragraphs/_page-header.scss */
   .paragraph--type--page-header {
     padding: 80px 0 40px 0;
   }
-  /* line 74, ../scss/components/paragraphs/_page-header.scss */
+  /* line 83, ../scss/components/paragraphs/_page-header.scss */
   .paragraph--type--page-header .text-wrapper {
     padding-right: 20px;
   }
@@ -3029,8 +3036,16 @@ ul.main-megamenu {
     min-height: 330px;
   }
 }
+@media (min-width: 64em) {
+  /* line 26, ../scss/pages/_page-general.scss */
+  .page-node-type-page .page-title,
+  .page-node-type-landing-page .page-title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
 @media (min-width: 90em) {
-  /* line 24, ../scss/pages/_page-general.scss */
+  /* line 34, ../scss/pages/_page-general.scss */
   .page-node-type-page,
   .page-node-type-landing-page {
     --pd-right: 50px;
