@@ -71,7 +71,6 @@ function bbd_classy_preprocess_paragraph(&$variables) {
 
   if ($type == 'tabbed_content_panel') {
     if ($paragraph->hasField('field_tab_reference') && !$paragraph->get('field_tab_reference')->isEmpty()) {
-
       foreach ($paragraph->get('field_tab_reference') as $tab_reference) {
         $tab = $tab_reference->entity;
         $variables['tab_title'][] = $tab->get('field_title_tab')->getString();
