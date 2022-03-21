@@ -15,3 +15,7 @@ bbd_classy:
     - core/drupal
     - core/drupalSettings
     - jquery_ui_datepicker/datepicker
+
+bbd_tabs:
+  js:
+    js/bbd_tabs.js: {}

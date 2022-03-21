@@ -1,0 +1,14 @@
+.tab__button {
+
+  &.is-active {
+    background: red;
+  }
+}
+
+.tab__content {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}

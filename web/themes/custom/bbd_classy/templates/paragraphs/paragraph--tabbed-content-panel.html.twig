@@ -38,6 +38,7 @@
  * @ingroup themeable
  */
 #}
+{{ attach_library('bbd_classy/bbd_tabs') }}
 {% set classes = [
   'paragraph',
   'paragraph--type--' ~ paragraph.bundle|clean_class,
@@ -53,20 +54,20 @@
     <div class="paragraph-inner-holder inner-wrapper">
       {% block content %}
         {% if tab_title is not empty and tab_content is not empty %}
-          <div class="tab" role="tablist">
+          <div class="paragraph-tab-inner" role="tablist">
             {% for key, tab in tab_title %}
               <button
-                class="tab__button"
+                class="tab__button {% if loop.first %}is-active{% endif %}"
                 data-index="{{ key }}"
                 role="tab"
-                aria-selected="false"
+                aria-selected="{% if loop.first %}true{% else %}false{% endif %}"
               >
                 {{ tab }}
               </button>
             {% endfor %}
-            {% for key, content in tab_content %}
-              <div tabindex="0" role="tabpanel" class="tab__content"
-                   data-index="{{ key }}">
+            {% for i, content in tab_content %}
+              <div tabindex="0" role="tabpanel" class="tab__content {% if loop.first %}is-active{% endif %}"
+                   data-index="{{ i }}">
                 {{ content | raw }}
               </div>
             {% endfor %}
