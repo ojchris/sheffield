@@ -49,4 +49,8 @@
   .tab__content {
     padding: 40px 30px;
   }
+
+  .paragraph-tab-inner {
+    max-width: var(--max-width-small);
+  }
 }

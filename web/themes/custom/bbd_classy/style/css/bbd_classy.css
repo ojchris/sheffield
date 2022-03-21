@@ -2770,26 +2770,31 @@ ul.main-megamenu {
 }
 
 /* line 1, ../scss/components/paragraphs/_general-paragraph.scss */
+.paragraph {
+  --max-width-small: 80%;
+}
+
+/* line 5, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--purple {
   --paragraph-color: #E2D4F0;
 }
 
-/* line 5, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 9, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--blue {
   --paragraph-color: #D0EEF6;
 }
 
-/* line 9, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 13, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--red {
   --paragraph-color: #ECC5CE;
 }
 
-/* line 13, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 17, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--green {
   --paragraph-color: #ECF5DF;
 }
 
-/* line 17, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 21, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--orange {
   --paragraph-color: #F4ECC9;
 }
@@ -2949,7 +2954,7 @@ ul.main-megamenu {
 @media (min-width: 64em) {
   /* line 52, ../scss/components/paragraphs/_simple-text.scss */
   .paragraph--type--simple-text {
-    width: 80%;
+    width: var(--max-width-small);
   }
 }
 @media (min-width: 90em) {
@@ -3029,6 +3034,11 @@ ul.main-megamenu {
   /* line 49, ../scss/components/paragraphs/_tabbed-content.scss */
   .tab__content {
     padding: 40px 30px;
+  }
+
+  /* line 53, ../scss/components/paragraphs/_tabbed-content.scss */
+  .paragraph-tab-inner {
+    max-width: var(--max-width-small);
   }
 }
 /* line 2, ../scss/components/paragraphs/_two-column-text.scss */
