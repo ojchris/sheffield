@@ -54,23 +54,23 @@
     <div class="paragraph-inner-holder inner-wrapper">
       {% block content %}
         {% if tab_title is not empty and tab_content is not empty %}
-          <div class="paragraph-tab-inner" role="tablist">
-            {% for key, tab in tab_title %}
-              <button
-                class="tab__button {% if loop.first %}is-active{% endif %}"
-                data-index="{{ key }}"
-                role="tab"
-                aria-selected="{% if loop.first %}true{% else %}false{% endif %}"
-              >
-                {{ tab }}
-              </button>
-            {% endfor %}
-            {% for i, content in tab_content %}
-              <div tabindex="0" role="tabpanel" class="tab__content {% if loop.first %}is-active{% endif %}"
-                   data-index="{{ i }}">
-                {{ content | raw }}
-              </div>
-            {% endfor %}
+          <div class="paragraph-tab-inner tab" role="tablist">
+            <div class="tab__buttons">
+              {% for key, tab in tab_title %}
+                <button
+                  class="tab__button {% if loop.first %}is-active{% endif %}"
+                  data-index="{{ key }}"
+                  role="tab"
+                  aria-selected="{% if loop.first %}true{% else %}false{% endif %}">{{ tab }}</button>
+              {% endfor %}
+            </div>
+            <div class="tab__content-wrap">
+              {% for i, content in tab_content %}
+                <div tabindex="0" role="tabpanel"
+                     class="tab__content {% if loop.first %}is-active{% endif %}"
+                     data-index="{{ i }}">{{ content | raw }}</div>
+              {% endfor %}
+            </div>
           </div>
         {% endif %}
       {% endblock %}
