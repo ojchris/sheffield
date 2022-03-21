@@ -2564,6 +2564,8 @@ ul.main-megamenu {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+/* line 33, ../scss/components/paragraphs/_cta_panel.scss */
+
 @media (max-width: 47.9375em) {
   /* line 46, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
@@ -2581,6 +2583,9 @@ ul.main-megamenu {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+/* line 41, ../scss/components/paragraphs/_cta_panel.scss */
+
 @media (max-width: 64em) {
   /* line 56, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .required-cta {
@@ -2603,6 +2608,8 @@ ul.main-megamenu {
   font-size: 34px;
   padding-top: 40px;
 }
+/* line 46, ../scss/components/paragraphs/_cta_panel.scss */
+
 @media (max-width: 47.9375em) {
   /* line 77, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .required-cta h4 {
@@ -2611,6 +2618,7 @@ ul.main-megamenu {
   }
 }
 /* line 87, ../scss/components/paragraphs/_cta_panel.scss */
+
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta a {
   font-size: 16px;
   padding: 10px 30px;
@@ -2723,45 +2731,51 @@ ul.main-megamenu {
   /* line 1, ../scss/components/paragraphs/_four-column-card.scss */
   .field--name-field-four-column-card {
     display: block;
+    width: 90%;
+    margin: 0 auto;
   }
 }
-/* line 9, ../scss/components/paragraphs/_four-column-card.scss */
-.field--name-field-four-column-card .field__item {
+/* line 10, ../scss/components/paragraphs/_four-column-card.scss */
+.field--name-field-four-column-card > .field__item {
+  width: 23%;
   text-align: left;
 }
-/* line 12, ../scss/components/paragraphs/_four-column-card.scss */
-.field--name-field-four-column-card .field__item .four-column-card {
+@media (max-width: 47.9375em) {
+  /* line 10, ../scss/components/paragraphs/_four-column-card.scss */
+  .field--name-field-four-column-card > .field__item {
+    width: 100%;
+  }
+}
+/* line 18, ../scss/components/paragraphs/_four-column-card.scss */
+.field--name-field-four-column-card > .field__item .four-column-card {
   background: #fff;
   border: 1px solid #D8DDE0;
   box-sizing: border-box;
   box-shadow: inset 0px -4px 0px #D8DDE0;
   padding-bottom: 30px;
 }
-@media (max-width: 47.9375em) {
-  /* line 12, ../scss/components/paragraphs/_four-column-card.scss */
-  .field--name-field-four-column-card .field__item .four-column-card {
-    width: 70%;
-    margin: 0 auto;
-  }
-  /* line 23, ../scss/components/paragraphs/_four-column-card.scss */
-  .field--name-field-four-column-card .field__item .four-column-card img {
-    width: 100%;
-  }
-}
-/* line 28, ../scss/components/paragraphs/_four-column-card.scss */
-.field--name-field-four-column-card .field__item .four-column-card .field--name-field-image {
+/* line 25, ../scss/components/paragraphs/_four-column-card.scss */
+.field--name-field-four-column-card > .field__item .four-column-card .field--name-field-image {
   margin-bottom: 0;
 }
-/* line 32, ../scss/components/paragraphs/_four-column-card.scss */
-.field--name-field-four-column-card .field__item .four-column-card span {
+/* line 28, ../scss/components/paragraphs/_four-column-card.scss */
+.field--name-field-four-column-card > .field__item .four-column-card .field--name-field-image img {
+  width: 100%;
+  max-width: none;
+}
+
+/* line 35, ../scss/components/paragraphs/_four-column-card.scss */
+.field--name-field-four-column-card > .field__item .four-column-card span {
   display: inline-block;
   width: 90%;
   padding: 20px 10px 10px 20px;
   text-decoration: underline;
   font-size: 24px;
+  line-height: 38px;
 }
-/* line 42, ../scss/components/paragraphs/_four-column-card.scss */
+/* line 46, ../scss/components/paragraphs/_four-column-card.scss */
 .field--name-field-four-column-card a {
+  display: block;
   font-weight: 700;
 }
 
@@ -2915,6 +2929,7 @@ ul.main-megamenu {
     margin-right: 40px;
   }
 }
+
 @media (min-width: 64em) {
   /* line 125, ../scss/components/paragraphs/_page-header.scss */
   .paragraph--type--page-header h2 {
@@ -2932,6 +2947,7 @@ ul.main-megamenu {
     padding-right: 20px;
   }
 }
+
 /* line 4, ../scss/components/paragraphs/_simple-text.scss */
 .paragraph--type--simple-text h1,
 .paragraph--type--simple-text h2,
@@ -2998,7 +3014,6 @@ ul.main-megamenu {
     width: 80%;
   }
 }
-@media (min-width: 90em) {
   /* line 60, ../scss/components/paragraphs/_simple-text.scss */
   .paragraph--type--simple-text ul,
   .paragraph--type--simple-text ol,
