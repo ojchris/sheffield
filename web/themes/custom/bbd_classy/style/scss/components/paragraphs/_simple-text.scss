@@ -1,7 +1,5 @@
 .paragraph--type--simple-text,
 .paragraph--type--two-column-text-panel {
-  font-size: 14px;
-  line-height: 20px;
 
   h1,
   h2,
@@ -50,8 +48,15 @@
   }
 }
 
-@include breakpoint($widestdesk) {
+@include breakpoint($desk) {
   .paragraph--type--simple-text {
+    width: 80%;
+  }
+}
+
+@include breakpoint($widestdesk) {
+  .paragraph--type--simple-text,
+  .paragraph--type--two-column-text-panel {
     ul,
     ol,
     p {
