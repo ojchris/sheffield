@@ -3,11 +3,17 @@
 
    @include breakpoint($mobileOnly) {
      display: block;
+     width: 90%;
+     margin: 0 auto;
    }
 
-
-   .field__item {
+   >.field__item {
+     width: 23%;
      text-align: left;
+
+     @include breakpoint($mobileOnly) {
+       width: 100%;
+     }
 
      .four-column-card {
        background: $white;
@@ -16,17 +22,14 @@
        box-shadow: inset 0px -4px 0px $gray-light;
        padding-bottom: 30px;
 
-       @include breakpoint($mobileOnly) {
-         width: 70%;
-         margin: 0 auto;
+       .field--name-field-image {
+         margin-bottom: 0;
 
          img {
            width: 100%;
+           max-width: none;
          }
-       }
 
-       .field--name-field-image {
-         margin-bottom: 0;
        }
 
        span {
@@ -35,11 +38,13 @@
          padding: 20px 10px 10px 20px;
          text-decoration: underline;
          font-size: 24px;
+         line-height: 38px;
        }
      }
    }
 
    a {
+     display: block;
      font-weight: 700;
    }
  }
