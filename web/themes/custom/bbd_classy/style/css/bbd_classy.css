@@ -3038,7 +3038,7 @@ ul.main-megamenu {
 
   /* line 53, ../scss/components/paragraphs/_tabbed-content.scss */
   .paragraph-tab-inner {
-    max-width: var(--max-width-small);
+    width: var(--max-width-small);
   }
 }
 /* line 2, ../scss/components/paragraphs/_two-column-text.scss */
