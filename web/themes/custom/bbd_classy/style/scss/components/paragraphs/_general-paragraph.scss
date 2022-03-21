@@ -1,3 +1,8 @@
+.paragraph {
+  position: relative;
+  z-index: 1;
+}
+
 .paragraph-bg--purple {
   --paragraph-color: #{$purple_lilac};
 }

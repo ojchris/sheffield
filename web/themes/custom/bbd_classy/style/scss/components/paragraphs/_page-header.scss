@@ -1,26 +1,6 @@
 .paragraph--type--page-header {
-  background-size: contain;
-  background-position: center 90%;
-
-  &.paragraph-bg--purple {
-    @include page-header-bg($svg_purple);
-  }
-
-  &.paragraph-bg--blue {
-    @include page-header-bg($svg_blue);
-  }
-
-  &.paragraph-bg--red {
-    @include page-header-bg($svg_red);
-  }
-
-  &.paragraph-bg--green {
-    @include page-header-bg($svg_green);
-  }
-
-  &.paragraph-bg--orange {
-    @include page-header-bg($svg_orange);
-  }
+  position: relative;
+  z-index: 1;
 
   .field--name-field-image {
     margin-bottom: 20px;
@@ -38,12 +18,85 @@
   .field--name-field-text {
     color: $grey;
   }
+
+  .text-wrapper {
+    min-height: 260px;
+  }
+}
+
+
+@include breakpoint($mobileOnly) {
+  .paragraph--type--page-header {
+    &:before {
+      content: "";
+      position: absolute;
+      left: -10%;
+      bottom: 0;
+      width: 140%;
+      height: 100%;
+      background-size: contain;
+      background-position: -20px bottom;
+      z-index: -1;
+    }
+
+    &.paragraph-bg--purple {
+      &:before {
+        @include page-header-bg($svg_purple);
+      }
+    }
+
+    &.paragraph-bg--blue {
+      &:before {
+        @include page-header-bg($svg_blue);
+      }
+    }
+
+    &.paragraph-bg--red {
+      &:before {
+        @include page-header-bg($svg_red);
+      }
+    }
+
+    &.paragraph-bg--green {
+      &:before {
+        @include page-header-bg($svg_green);
+      }
+    }
+
+    &.paragraph-bg--orange {
+      &:before {
+        @include page-header-bg($svg_orange);
+      }
+
+    }
+  }
 }
 
 @include breakpoint($tab) {
   .paragraph--type--page-header {
     padding: 80px 0 40px 0;
     background-position: center right;
+    background-size: contain;
+
+    &.paragraph-bg--purple {
+      @include page-header-bg($svg_purple);
+    }
+
+    &.paragraph-bg--blue {
+      @include page-header-bg($svg_blue);
+    }
+
+    &.paragraph-bg--red {
+      @include page-header-bg($svg_red);
+    }
+
+    &.paragraph-bg--green {
+      @include page-header-bg($svg_green);
+    }
+
+    &.paragraph-bg--orange {
+      @include page-header-bg($svg_orange);
+    }
 
     .paragraph-inner-holder {
       display: flex;
