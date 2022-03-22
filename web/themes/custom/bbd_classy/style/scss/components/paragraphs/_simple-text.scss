@@ -50,7 +50,7 @@
 
 @include breakpoint($desk) {
   .paragraph--type--simple-text {
-    width: 80%;
+    width: var(--max-width-small);
   }
 }
 
