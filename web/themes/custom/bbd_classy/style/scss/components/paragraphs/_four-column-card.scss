@@ -1,6 +1,11 @@
  .field--name-field-four-column-card {
    @include flex-responsive-div;
 
+   @include breakpoint($mobileOnly) {
+     display: block;
+   }
+
+
    .field__item {
      text-align: left;
 
@@ -10,6 +15,15 @@
        box-sizing: border-box;
        box-shadow: inset 0px -4px 0px $gray-light;
        padding-bottom: 30px;
+
+       @include breakpoint($mobileOnly) {
+         width: 70%;
+         margin: 0 auto;
+
+         img {
+           width: 100%;
+         }
+       }
 
        .field--name-field-image {
          margin-bottom: 0;
