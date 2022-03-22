@@ -528,7 +528,7 @@ a.button:active {
 
 /* line 64, ../scss/base/_form.scss */
 input, optgroup, select, textarea {
-  background: #D8DDE0;
+  background: #f0f4f5;
   padding: 10px;
   border: 1px solid #AEB7BD;
   border-radius: 3px;
@@ -2990,7 +2990,6 @@ ul.main-megamenu {
 .paragraph--type--two-column-text-panel h3 {
   color: #005eb8;
 }
-
 /* line 10, ../scss/components/paragraphs/_simple-text.scss */
 .paragraph--type--simple-text h1,
 .paragraph--type--two-column-text-panel h1 {
