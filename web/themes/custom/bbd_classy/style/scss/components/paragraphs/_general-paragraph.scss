@@ -1,5 +1,7 @@
 .paragraph {
   --max-width-small: 80%;
+  position: relative;
+  z-index: 1;
 }
 
 .paragraph-bg--purple {
