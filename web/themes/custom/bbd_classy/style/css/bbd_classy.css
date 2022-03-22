@@ -2772,31 +2772,32 @@ ul.main-megamenu {
 
 /* line 1, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph {
+  --max-width-small: 80%;
   position: relative;
   z-index: 1;
 }
 
-/* line 6, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 7, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--purple {
   --paragraph-color: #E2D4F0;
 }
 
-/* line 10, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 11, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--blue {
   --paragraph-color: #D0EEF6;
 }
 
-/* line 14, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 15, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--red {
   --paragraph-color: #ECC5CE;
 }
 
-/* line 18, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 19, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--green {
   --paragraph-color: #ECF5DF;
 }
 
-/* line 22, ../scss/components/paragraphs/_general-paragraph.scss */
+/* line 23, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--orange {
   --paragraph-color: #F4ECC9;
 }
@@ -3000,7 +3001,7 @@ ul.main-megamenu {
 @media (min-width: 64em) {
   /* line 52, ../scss/components/paragraphs/_simple-text.scss */
   .paragraph--type--simple-text {
-    width: 80%;
+    width: var(--max-width-small);
   }
 }
 @media (min-width: 90em) {
@@ -3027,6 +3028,64 @@ ul.main-megamenu {
   .paragraph--type--two-column-text-panel h5,
   .paragraph--type--two-column-text-panel h6 {
     margin: 0 0 35px;
+  }
+}
+/* line 1, ../scss/components/paragraphs/_tabbed-content.scss */
+.tab__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  background: transparent;
+  text-decoration: underline;
+  padding: 14px 20px;
+  color: #005eb8;
+  margin: 0;
+  vertical-align: bottom;
+  border: 1px solid transparent;
+  position: relative;
+  bottom: -1px;
+}
+/* line 15, ../scss/components/paragraphs/_tabbed-content.scss */
+.tab__button:active, .tab__button:hover, .tab__button:focus {
+  box-shadow: none;
+  text-decoration: underline;
+}
+/* line 22, ../scss/components/paragraphs/_tabbed-content.scss */
+.tab__button.is-active, .tab__button:active {
+  background: #fff;
+  border-color: #D8DDE0;
+  border-bottom-color: #fff;
+}
+
+/* line 30, ../scss/components/paragraphs/_tabbed-content.scss */
+.tab__content {
+  display: none;
+  padding: 25px 20px;
+}
+/* line 34, ../scss/components/paragraphs/_tabbed-content.scss */
+.tab__content.is-active {
+  display: block;
+  background: #fff;
+  border: 1px solid #D8DDE0;
+  box-shadow: inset 0px -4px 0px #D8DDE0;
+}
+
+@media (min-width: 64em) {
+  /* line 43, ../scss/components/paragraphs/_tabbed-content.scss */
+  .tab__button {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 18px 30px;
+  }
+
+  /* line 49, ../scss/components/paragraphs/_tabbed-content.scss */
+  .tab__content {
+    padding: 40px 30px;
+  }
+
+  /* line 53, ../scss/components/paragraphs/_tabbed-content.scss */
+  .paragraph-tab-inner {
+    width: var(--max-width-small);
   }
 }
 /* line 2, ../scss/components/paragraphs/_two-column-text.scss */
