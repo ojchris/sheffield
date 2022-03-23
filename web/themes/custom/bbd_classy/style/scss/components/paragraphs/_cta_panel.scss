@@ -1,3 +1,10 @@
+.paragraph--type--cta-panel {
+  @include breakpoint($mobileOnly) {
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+}
+
 .paragraph--type--cta-panel .paragraph-inner-holder {
   @include flex-responsive-div;
 
@@ -11,88 +18,118 @@
     text-decoration: none;
     color: $black;
     font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+      transition: all .25s ease-in-out;
+    }
   }
 
   .optional-cta-1,
   .optional-cta-2 {
     width: 18%;
     box-sizing: border-box;
-    padding: 85px 20px;
+    padding: 40px 0;
 
-    @include breakpoint($mobileTabletOnly) {
-      padding: 45px 20px;
+    @include breakpoint($tabletOnly) {
+      padding: 20px 0;
     }
 
     @include breakpoint($mobileOnly) {
-      padding: 45px 20px;
+      padding: 15px 0;
       width: 48%;
+    }
 
-      a {
-        font-size: 19px;
+    &:hover {
+      opacity: 0.8;
+      transition: all .25s ease-in-out;
+    }
+
+    a {
+      display: block;
+      font-size: 19px;
+      padding: 60px 20px;
+
+      @include breakpoint($mobileTabletOnly) {
+        font-size: 17px;
       }
     }
   }
 
   .optional-cta-1 {
     background-image: url(../../images/cta_make_a_ref_bg.svg);
-    @include bg_placement(100%);
+    @include bg_placement(100% 100%);
 
     @include breakpoint($mobileOnly) {
       order: 2;
-      background: $orange
     }
   }
 
   .optional-cta-2 {
     background-image: url(../../images/cta_employer_bg.svg);
-    @include bg_placement(100%);
+    @include bg_placement(100% 100%);
 
     @include breakpoint($mobileOnly) {
       order: 3;
-      background: $yellow_pale;
     }
   }
 
   .required-cta {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../../images/cta_assessment_booking_bg.svg);
-    @include bg_placement(100%);
-    padding: 85px 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    @include breakpoint($mobileTabletOnly) {
-      padding: 0;
-    }
+    @include bg_placement(100% 100%);
+    width: 50%;
+    padding: 100px 0px;
 
     @include breakpoint($mobileOnly) {
       order: 1;
       width: 100%;
-      background: $blue_acqua;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 15px;
+      padding: 55px 30px;
     }
 
-    h4 {
-      font-size: 34px;
-      padding-top: 40px;
+    .container {
+      width: 90%;
+      margin-top: 60px;
 
       @include breakpoint($mobileOnly) {
-        padding-left: 30px;
-        padding-right: 30px;
+        box-sizing: border-box;
+        width: 70%;
       }
-    }
 
-    a {
-      font-size: 16px;
-      padding: 10px 30px;
-      background: #fff;
-      border-radius: 30px;
-      display: inline-block;
+      @include breakpoint($mobileTabletOnly) {
+        margin-top: 20px;
+      }
 
-      @include breakpoint($mobileOnly) {
-        margin-bottom: 40px;
+      @include breakpoint($tabletOnlySub) {
+        width: 55%;
+      }
+
+      h4 {
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
+        line-height: 43px;
+
+        @include breakpoint($mobileTabletOnly) {
+          font-size: 32px;
+          line-height: 38px;
+        }
+      }
+
+      a {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 12px 30px;
+        background: $white;
+        border-radius: 30px;
+        display: inline-block;
+        margin-top: 20px;
+
+        &:hover {
+          background: $grey-lightest;
+        }
       }
     }
   }
