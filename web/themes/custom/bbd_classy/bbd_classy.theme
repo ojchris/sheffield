@@ -48,7 +48,8 @@ function bbd_classy_preprocess_block(&$variables) {
         if ($node->hasField('field_hide_title') && $node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
-      } elseif ($node->getType() == 'homepage') {
+      } 
+      elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
     }
