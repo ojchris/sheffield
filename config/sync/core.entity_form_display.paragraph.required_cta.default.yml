@@ -3,30 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.required_cta.field_link_required_cta
-    - field.field.paragraph.required_cta.field_link_text_required_cta
+    - field.field.paragraph.required_cta.field_link
     - field.field.paragraph.required_cta.field_title_required_cta
     - paragraphs.paragraphs_type.required_cta
+  module:
+    - link
 id: paragraph.required_cta.default
 targetEntityType: paragraph
 bundle: required_cta
 mode: default
 content:
-  field_link_required_cta:
-    type: string_textfield
-    weight: 2
+  field_link:
+    type: link_default
+    weight: 3
     region: content
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_link_text_required_cta:
-    type: string_textfield
-    weight: 1
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_title_required_cta:
     type: string_textfield

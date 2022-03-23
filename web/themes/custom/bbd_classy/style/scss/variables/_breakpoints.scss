@@ -3,6 +3,10 @@ $gutter-mob: 20px;
 $gutter-tab: 30px;
 $gutter-desk: 40px;
 
+$max-content-width: 1140px;
+$max-content-width-with-gutter: $max-content-width+$gutter-desk * 2;
+$max-header-width: 1140px;
+
 $mobile: 22.5em; // 360px
 $widemob: 30em; // 480px
 $widestmob: 40em; // 640px
@@ -13,8 +17,10 @@ $widedesk: 80em; // 1280px
 $widestdesk: 90em; // 1440px
 
 $mobileOnly: max-width 47.9375em; // max-width:767px
+$mobileOnlySub: max-width 22.5em; // max-width:360px
 $mobileTabletOnly: max-width 64em; // max-width:1024px
 $tabletOnly: 48em 64em; // min-width:768px and max-width:1024px
+$tabletOnlySub: 36.75em 47.875em; // min-width:588px and max-width:766
 
 // Content width
 $mobile_inner: 20em;
@@ -42,3 +48,24 @@ $breakpoints_max: ('mobile': (max-width: #{$mobile}),
   'tab': (max-width: #{$desk}),
   'desk': (max-width: #{$widedesk}),
 );
+
+.max-content-width {
+  max-width: $max-content-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $gutter-mob;
+
+  @include breakpoint($tab) {
+    padding: 0 $gutter-tab;
+  }
+
+  @include breakpoint($desk) {
+    padding: 0 $gutter-desk;
+  }
+}
+
+.max-content-width-no-padding {
+  max-width: $max-content-width - ($gutter-desk * 2);
+  width: 100%;
+  margin: 0 auto;
+}
