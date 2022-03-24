@@ -48,7 +48,7 @@ function bbd_classy_preprocess_block(&$variables) {
         if ($node->hasField('field_hide_title') && $node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
-      }
+      } 
       elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
@@ -66,7 +66,6 @@ function bbd_classy_preprocess_paragraph(&$variables) {
   if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
     $color = $paragraph->get('field_background_colour')->value;
     $variables['attributes']['class'][] = 'paragraph-bg--' . $color;
-    $variables['attributes']['class'][] = 'media-bg--' . $color;
   }
 
   if ($type == 'tabbed_content_panel') {
@@ -77,5 +76,18 @@ function bbd_classy_preprocess_paragraph(&$variables) {
         $variables['tab_content'][] = $tab->get('field_description_tab')->value;
       }
     }
+  }
+}
+
+/**
+ * Implements template_preprocess_media()
+ */
+function bbd_classy_preprocess_media(&$variables) {
+  /** @var \Drupal\media_entity\MediaInterface $media */
+  $media = $variables['elements']['#media'];
+
+  if ($media->hasField('field_background_colour') && !$media->get('field_background_colour')->isEmpty()) {
+    $color = $media->get('field_background_colour')->value;
+    $variables['attributes']['class'][] = 'media-bg--' . $color;
   }
 }

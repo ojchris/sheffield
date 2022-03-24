@@ -496,11 +496,11 @@ button[disabled], a.button[disabled], .form-submit[disabled], input[type="submit
 }
 /* line 32, ../scss/base/_form.scss */
 button[id^="edit-reset"], button[id^="edit-delete"], a.button[id^="edit-reset"], a.button[id^="edit-delete"], .form-submit[id^="edit-reset"], .form-submit[id^="edit-delete"], input[type="submit"][id^="edit-reset"], input[type="submit"][id^="edit-delete"] {
-  background: #D5281B;
+  background: #ECC5CE;
 }
 /* line 37, ../scss/base/_form.scss */
 .red button, .red a.button, .red .form-submit, .red input[type="submit"] {
-  background: #D5281B;
+  background: #ECC5CE;
 }
 /* line 40, ../scss/base/_form.scss */
 .red button:active, .red a.button:active, .red .form-submit:active, .red input[type="submit"]:active {
@@ -518,7 +518,7 @@ button[id^="edit-reset"], button[id^="edit-delete"], a.button[id^="edit-reset"],
 
 /* line 55, ../scss/base/_form.scss */
 a.button {
-  background: #D5281B;
+  background: #ECC5CE;
   text-decoration: none;
 }
 /* line 59, ../scss/base/_form.scss */
@@ -953,7 +953,7 @@ form .js-form-type-radio label::before {
 }
 /* line 506, ../scss/base/_form.scss */
 form .file ~ .button {
-  background: #D5281B;
+  background: #ECC5CE;
   margin-left: 20px;
   max-width: 200px;
   min-width: 200px;
@@ -961,7 +961,7 @@ form .file ~ .button {
 }
 /* line 513, ../scss/base/_form.scss */
 form .file ~ .button:hover, form .file ~ .button:focus {
-  background: #D5281B;
+  background: #ECC5CE;
 }
 
 @media (min-width: 64em) {
@@ -1515,7 +1515,7 @@ iframe {
 /* line 129, ../scss/base/_navigation.scss */
 #main-menu-overlay {
   display: none;
-  background-color: #D5281B;
+  background-color: #ECC5CE;
   opacity: 1;
   z-index: 2;
   width: 100%;
@@ -1667,7 +1667,7 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
 .need-help-menu .menu-item a {
   text-decoration: none;
   display: inline-block;
-  background: #D5281B;
+  background: #ECC5CE;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px 10px 10px 0;
@@ -1680,11 +1680,11 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
 }
 /* line 298, ../scss/base/_navigation.scss */
 .need-help-menu .menu-item a:hover {
-  background: #e6493d;
+  background: #f9ebee;
 }
 /* line 301, ../scss/base/_navigation.scss */
 .need-help-menu .menu-item a:hover:after {
-  border-color: #e6493d transparent transparent transparent;
+  border-color: #f9ebee transparent transparent transparent;
 }
 /* line 306, ../scss/base/_navigation.scss */
 .need-help-menu .menu-item a:after {
@@ -1697,7 +1697,7 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   height: 0;
   border-style: solid;
   border-width: 8px 8px 0 0;
-  border-color: #D5281B transparent transparent transparent;
+  border-color: #ECC5CE transparent transparent transparent;
 }
 @media (min-width: 48em) {
   /* line 275, ../scss/base/_navigation.scss */
@@ -1760,12 +1760,12 @@ ul.main-megamenu li a:hover, ul.main-megamenu li a.is-active {
   /* line 376, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li a:hover, #main-menu-sidebar nav.navigation ul li a:focus {
     text-decoration: none;
-    border-bottom-color: #D5281B;
+    border-bottom-color: #ECC5CE;
   }
   /* line 384, ../scss/base/_navigation.scss */
   #main-menu-sidebar nav.navigation ul li.menu-item--active-trail a {
     text-decoration: none;
-    border-bottom-color: #D5281B;
+    border-bottom-color: #ECC5CE;
   }
 
   /* line 392, ../scss/base/_navigation.scss */
@@ -2573,31 +2573,31 @@ ul.main-megamenu {
     font-size: 17px;
   }
 }
-/* line 60, ../scss/components/paragraphs/_cta_panel.scss */
+/* line 59, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1 {
   background-image: url(../../images/cta_make_a_ref_bg.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 @media (max-width: 47.9375em) {
-  /* line 60, ../scss/components/paragraphs/_cta_panel.scss */
+  /* line 59, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-1 {
     order: 2;
   }
 }
-/* line 69, ../scss/components/paragraphs/_cta_panel.scss */
+/* line 68, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
   background-image: url(../../images/cta_employer_bg.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 @media (max-width: 47.9375em) {
-  /* line 69, ../scss/components/paragraphs/_cta_panel.scss */
+  /* line 68, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .optional-cta-2 {
     order: 3;
   }
 }
-/* line 78, ../scss/components/paragraphs/_cta_panel.scss */
+/* line 77, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta {
   display: flex;
   justify-content: center;
@@ -2609,38 +2609,38 @@ ul.main-megamenu {
   padding: 100px 0px;
 }
 @media (max-width: 47.9375em) {
-  /* line 78, ../scss/components/paragraphs/_cta_panel.scss */
+  /* line 77, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .required-cta {
     order: 1;
     width: 100%;
     padding: 55px 30px;
   }
 }
-/* line 93, ../scss/components/paragraphs/_cta_panel.scss */
+/* line 92, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta .container {
   width: 90%;
   margin-top: 60px;
 }
 @media (max-width: 47.9375em) {
-  /* line 93, ../scss/components/paragraphs/_cta_panel.scss */
+  /* line 92, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .required-cta .container {
     box-sizing: border-box;
     width: 70%;
   }
 }
 @media (max-width: 64em) {
-  /* line 93, ../scss/components/paragraphs/_cta_panel.scss */
+  /* line 92, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .required-cta .container {
     margin-top: 20px;
   }
 }
 @media (min-width: 36.75em) and (max-width: 47.875em) {
-  /* line 93, ../scss/components/paragraphs/_cta_panel.scss */
+  /* line 92, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .required-cta .container {
     width: 55%;
   }
 }
-/* line 110, ../scss/components/paragraphs/_cta_panel.scss */
+/* line 109, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta .container h4 {
   font-size: 36px;
   padding: 0;
@@ -2648,13 +2648,13 @@ ul.main-megamenu {
   line-height: 43px;
 }
 @media (max-width: 64em) {
-  /* line 110, ../scss/components/paragraphs/_cta_panel.scss */
+  /* line 109, ../scss/components/paragraphs/_cta_panel.scss */
   .paragraph--type--cta-panel .paragraph-inner-holder .required-cta .container h4 {
     font-size: 32px;
     line-height: 38px;
   }
 }
-/* line 122, ../scss/components/paragraphs/_cta_panel.scss */
+/* line 121, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta .container a {
   font-size: 16px;
   line-height: 19px;
@@ -2664,7 +2664,7 @@ ul.main-megamenu {
   display: inline-block;
   margin-top: 20px;
 }
-/* line 131, ../scss/components/paragraphs/_cta_panel.scss */
+/* line 130, ../scss/components/paragraphs/_cta_panel.scss */
 .paragraph--type--cta-panel .paragraph-inner-holder .required-cta .container a:hover {
   background: #f0f4f5;
 }
@@ -2685,10 +2685,10 @@ ul.main-megamenu {
 /* line 13, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item {
   width: 30%;
-  background: #fff;
   box-sizing: border-box;
-  padding: 30px;
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
 }
 @media (max-width: 47.9375em) {
   /* line 13, ../scss/components/paragraphs/_download-panel.scss */
@@ -2696,55 +2696,75 @@ ul.main-megamenu {
     width: 47%;
   }
 }
-/* line 24, ../scss/components/paragraphs/_download-panel.scss */
+@media (max-width: 22.5em) {
+  /* line 13, ../scss/components/paragraphs/_download-panel.scss */
+  .paragraph--type--download-panel .field--name-field-documents > .field__item {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+/* line 30, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-documents > .field__item article {
+  width: 100%;
+  padding: 30px;
+}
+/* line 35, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-name h4 {
   font-size: 24px;
   text-decoration: underline;
 }
-/* line 29, ../scss/components/paragraphs/_download-panel.scss */
+/* line 40, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item p {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
   word-break: break-word;
 }
-/* line 36, ../scss/components/paragraphs/_download-panel.scss */
+/* line 47, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file {
   padding: 10px 0;
 }
-/* line 39, ../scss/components/paragraphs/_download-panel.scss */
+/* line 50, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file .field__item {
-  background: url("../../images/icon-download.svg") no-repeat 40% center;
+  background: url("../../images/icon-download.svg") no-repeat;
   background-size: contain;
+  background-position: 43% center;
 }
-/* line 44, ../scss/components/paragraphs/_download-panel.scss */
+@media (max-width: 64em) {
+  /* line 50, ../scss/components/paragraphs/_download-panel.scss */
+  .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file .field__item {
+    background-position: 60% center;
+  }
+}
+/* line 60, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file a {
   text-decoration: none;
 }
-/* line 53, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel.media-bg--purple {
-  background: e2d4f0;
-}
-/* line 57, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel.media-bg--blue > {
-  background: d0eef6;
-}
-/* line 61, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel.media-bg--red {
-  background: ecc5ce;
-}
-/* line 65, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel.media-bg--green {
-  background: ecf5df;
-}
-/* line 69, ../scss/components/paragraphs/_download-panel.scss */
-.paragraph--type--download-panel.media-bg--orange {
-  background: f4Ecc9;
-}
-/* line 77, ../scss/components/paragraphs/_download-panel.scss */
+/* line 71, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel a {
   color: #212B32;
   font-weight: 700;
+}
+/* line 76, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .media-bg--purple {
+  background: #E2D4F0;
+}
+/* line 80, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .media-bg--blue {
+  background: #D0EEF6;
+}
+/* line 84, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .media-bg--red {
+  background: #ECC5CE;
+}
+/* line 88, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .media-bg--green {
+  background: #ECF5DF;
+}
+/* line 92, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .media-bg--orange {
+  background: #f4Ecc9;
 }
 
 /* line 1, ../scss/components/paragraphs/_four-colum-panel.scss */
@@ -2833,7 +2853,7 @@ ul.main-megamenu {
 
 /* line 15, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--red {
-  --paragraph-color: #ECC5CE;
+  --paragraph-color: #f4Ecc9;
 }
 
 /* line 19, ../scss/components/paragraphs/_general-paragraph.scss */
