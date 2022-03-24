@@ -1,11 +1,12 @@
 {% extends "paragraph.html.twig" %}
 
 {% block content %}
-
-<div class="video-wrap">
-{{ content.field_image }}
-<button aria-label="play video" class="paragraph-video-play-video"></button>
-{{ content.field_video }}
+<div class="video-container">
+  <div class="video-wrap">
+    {{ content.field_image }}
+    <button aria-label="play video" class="paragraph-video-play-video"></button>
+    {{ content.field_video }}
+  </div>
 </div>
 
 {% endblock %}
