@@ -49,7 +49,7 @@ function bbd_classy_preprocess_block(&$variables) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
       } 
-	  elseif ($node->getType() == 'homepage') {
+      elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
     }
@@ -63,7 +63,12 @@ function bbd_classy_preprocess_block(&$variables) {
 function bbd_classy_preprocess_paragraph(&$variables) {
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   $paragraph = $variables['paragraph'];
-
+  
+  if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
+    $color = $paragraph->get('field_background_colour')->value;
+    $variables['attributes']['class'][] = 'paragraph-bg--' . $color;
+  }
+  
   $paragraph_type = $variables['paragraph']->getParagraphType();
   if ($paragraph_type->id == 'video_panel') {
     if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
@@ -94,5 +99,18 @@ function bbd_classy_preprocess_paragraph(&$variables) {
         $variables['attributes']['class'][] = 'paragraph-with-image';
       }
     }
+  }
+}
+
+/**
+ * Implements template_preprocess_media()
+ */
+function bbd_classy_preprocess_media(&$variables) {
+  /** @var \Drupal\media_entity\MediaInterface $media */
+  $media = $variables['elements']['#media'];
+
+  if ($media->hasField('field_background_colour') && !$media->get('field_background_colour')->isEmpty()) {
+    $color = $media->get('field_background_colour')->value;
+    $variables['attributes']['class'][] = 'media-bg--' . $color;
   }
 }
