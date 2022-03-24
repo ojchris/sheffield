@@ -3,26 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.four_column_card.field_background_colour
     - field.field.paragraph.four_column_card.field_image
     - field.field.paragraph.four_column_card.field_link
     - paragraphs.paragraphs_type.four_column_card
   module:
     - link
     - media
-    - options
 id: paragraph.four_column_card.default
 targetEntityType: paragraph
 bundle: four_column_card
 mode: default
 content:
-  field_background_colour:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_image:
     type: media_thumbnail
     label: hidden

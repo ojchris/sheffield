@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.video_panel.field_background_colour
     - field.field.paragraph.video_panel.field_image
     - field.field.paragraph.video_panel.field_video
+    - image.style.video_cover_746x419
     - paragraphs.paragraphs_type.video_panel
   module:
     - media
@@ -19,7 +20,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: video_cover_746x419
     third_party_settings: {  }
     weight: 1
     region: content

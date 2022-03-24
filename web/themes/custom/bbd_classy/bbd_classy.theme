@@ -13,21 +13,10 @@ use Drupal\paragraphs\ParagraphInterface;
 use Drupal\block\Entity\Block;
 use Drupal\media\Entity\Media;
 
-use Drupal\Core\Cache\CacheableMetadata;
-use Drupal\Core\Url;
-use Drupal\media\Entity\Media;
-use Drupal\Core\Site\Settings;
-use Drupal\file\Entity\File;
-
 /**
  * Implements template_preprocess_page().
  */
-<<<<<<< HEAD
-function bbd_classy_preprocess_page(&$variables)
-{
-=======
 function bbd_classy_preprocess_page(&$variables) {
->>>>>>> bf0e73d75a17118fd74ad96ea7ef041cec36149e
   if (isset($variables['node'])) {
     $node = $variables['node'];
     // Adds additional classes.
@@ -44,43 +33,23 @@ function bbd_classy_preprocess_page(&$variables) {
 }
 
 /**
-<<<<<<< HEAD
- * Implements hook_preprocess_block 
- */
-function bbd_classy_preprocess_block(&$variables)
-{
-  /**
-   * add class to page_title block to hide & show.
-   */
-=======
  * Implements hook_preprocess_block
  */
 function bbd_classy_preprocess_block(&$variables) {
   //Add class to hide/show page_title block.
->>>>>>> bf0e73d75a17118fd74ad96ea7ef041cec36149e
   if ($variables['plugin_id'] ==  'page_title_block') {
     $node = \Drupal::routeMatch()->getParameter('node');
     if ($node && is_numeric($node)) {
       $node = Node::load($node);
     }
-<<<<<<< HEAD
-
-    if ($node) {
-      if ($node->getType() == 'page' || $node->getType() == 'landing_page') {
-=======
->>>>>>> bf0e73d75a17118fd74ad96ea7ef041cec36149e
 
     if ($node) {
       if ($node->getType() == 'page' || $node->getType() == 'landing_page') {
         if ($node->hasField('field_hide_title') && $node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
-<<<<<<< HEAD
-      } elseif ($node->getType() == 'homepage') {
-=======
-      }
-      elseif ($node->getType() == 'homepage') {
->>>>>>> bf0e73d75a17118fd74ad96ea7ef041cec36149e
+      } 
+	  elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
     }
@@ -88,59 +57,41 @@ function bbd_classy_preprocess_block(&$variables) {
 }
 
 /**
- * Implements template_preprocess_HOOK().
- */
-function bbd_classy_preprocess_paragraph(&$variables) {
-  $paragraph = $variables['paragraph'];
-  $type = $paragraph->getType();
-
-/**
  * Implements hook_preprocess_paragraph().
  * @param $variables
  */
-function bbd_classy_preprocess_paragraph(&$variables)
-{
+function bbd_classy_preprocess_paragraph(&$variables) {
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   $paragraph = $variables['paragraph'];
 
   $paragraph_type = $variables['paragraph']->getParagraphType();
+  if ($paragraph_type->id == 'video_panel') {
+    if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
+      $selected_colour = $paragraph->get('field_background_colour')->value;
 
-  $node = \Drupal::routeMatch()->getParameter('node');
-  if ($node && is_numeric($node)) {
-    $node = Node::load($node);
-  }
+      //Set background speech bubble colour
+      switch ($selected_colour) {
+        case "blue":
+          $variables['video_bg_colour'] = " bubble-blue";
+          break;
+        case "orange":
+          $variables['video_bg_colour'] = " bubble-orange";
+          break;
+        case "red":
+          $variables['video_bg_colour'] = " bubble-red";
+          break;
+        case "green":
+          $variables['video_bg_colour'] = " bubble-green";
+          break;
+        case "purple":
+          $variables['video_bg_colour'] = " bubble-purple";
+          break;
+        default:
+          $variables['video_bg_colour'] = "";
+      }
 
-  if ($node) {
-    if ($node->hasField('field_content_sections') && !$node->get('field_content_sections')->isEmpty()) {
-      if ($paragraph_type->id == 'video_panel') {
-        if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
-          $selected_colour = $paragraph->get('field_background_colour')->value;
-
-          //set background speech bubble color
-          switch ($selected_colour) {
-            case "blue":
-              $variables['video_bg_colour'] = " bubble-blue";
-              break;
-            case "orange":
-              $variables['video_bg_colour'] = " bubble-orange";
-              break;
-            case "red":
-              $variables['video_bg_colour'] = " bubble-red";
-              break;
-            case "green":
-              $variables['video_bg_colour'] = " bubble-green";
-              break;
-            case "purple":
-              $variables['video_bg_colour'] = " bubble-purple";
-              break;
-            default:
-              $variables['video_bg_colour'] = "";
-          }
-
-          if ($paragraph->hasField('field_image') && !$paragraph->get('field_image')->isEmpty()) {
-            $variables['attributes']['class'][] = 'paragraph-with-image';
-          }
-        }
+      if ($paragraph->hasField('field_image') && !$paragraph->get('field_image')->isEmpty()) {
+        $variables['attributes']['class'][] = 'paragraph-with-image';
       }
     }
   }

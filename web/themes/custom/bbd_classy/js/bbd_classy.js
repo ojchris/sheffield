@@ -74,7 +74,7 @@
      */
     playVideo: function (context) {
       $('.paragraph-video-play-video', context).click(function (event) {
-        const $parent = $(this).parents('.remote-video-container');
+        const $parent = $(this).parents('.video-wrap');
         const $image = $('img', $parent);
 
         if ($image.length > 0) {
