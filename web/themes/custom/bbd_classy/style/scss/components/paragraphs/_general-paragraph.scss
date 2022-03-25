@@ -23,3 +23,8 @@
 .paragraph-bg--orange {
   --paragraph-color: #{$yellow-light};
 }
+
+.card-border {
+  border: 1px solid $gray-light;
+  border-bottom-width: 4px;
+}

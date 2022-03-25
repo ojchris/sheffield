@@ -24,6 +24,7 @@
 
       self.selectricBehavior(context);
       self.headerSearch(context);
+      self.expandedBlockClass(context);
 
       $('#main-menu-overlay', context).click(function (event) {
         self.closeMenu(context);
@@ -65,6 +66,21 @@
         event.preventDefault();
 
         $(this).parents('.search-block-form').toggleClass('search-open');
+      })
+    },
+
+     /**
+     * Expanded button toggle class.
+     * @param context
+     */
+    expandedBlockClass: function (context) {
+      $('.expanded-block__title', context).click(function (event) {
+        event.preventDefault();
+
+        $(this).parents('.expanded-block').toggleClass('expanded-block--active');
+        $(this).attr('aria-expanded', function (i, attr) {
+          return attr === 'true' ? 'false' : 'true'
+        });
       })
     },
 
