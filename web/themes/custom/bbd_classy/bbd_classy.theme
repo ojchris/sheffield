@@ -58,7 +58,6 @@ function bbd_classy_preprocess_block(&$variables) {
 
 /**
  * Implements hook_preprocess_paragraph().
- * @param $variables
  */
 function bbd_classy_preprocess_paragraph(&$variables) {
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
@@ -86,8 +85,7 @@ function bbd_classy_preprocess_paragraph(&$variables) {
 /**
  * Implements template_preprocess_media()
  */
-function bbd_classy_preprocess_media(&$variables)
-{
+function bbd_classy_preprocess_media(&$variables) {
   /** @var \Drupal\media_entity\MediaInterface $media */
   $media = $variables['elements']['#media'];
 
