@@ -3,7 +3,32 @@
 
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-left: -22%;
+  margin-left: -20%;
+
+  &.bubble-blue .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_blue.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  &.bubble-green .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_green.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  &.bubble-purple .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_purple.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  &.bubble-red .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_red.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  &.bubble-orange .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_orange.svg');
+    @include bg_placement(100% 100%);
+  }
 
   @include breakpoint($mobileOnly) {
     margin-left: -10%;
@@ -14,38 +39,18 @@
   }
 
   .paragraph-inner-holder {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     padding: 90px 80px;
-
-    &.bubble-blue {
-      background-image: url('../../images/talk_bubble_blue.svg');
-    }
-
-    &.bubble-green {
-      background-image: url('../../images/talk_bubble_green.svg');
-    }
-
-    &.bubble-purple {
-      background-image: url('../../images/talk_bubble_purple.svg');
-    }
-
-    &.bubble-red {
-      background-image: url('../../images/talk_bubble_red.svg');
-    }
-
-    &.bubble-orange {
-      background-image: url('../../images/talk_bubble_orange.svg');
-    }
 
     .video-container {
       display: block;
-      width: 70%;
+      width: 72%;
+      padding-left: 30px;
       margin: 0 auto;
       margin-bottom: 25px;
 
       @include breakpoint($mobileOnly) {
         width: 90%;
+        padding-left: 0;
       }
     }
   }

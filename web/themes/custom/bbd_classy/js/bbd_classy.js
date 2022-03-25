@@ -24,6 +24,7 @@
 
       self.selectricBehavior(context);
       self.headerSearch(context);
+      self.playVideo(context);
 
       $('#main-menu-overlay', context).click(function (event) {
         self.closeMenu(context);

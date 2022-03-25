@@ -48,8 +48,7 @@ function bbd_classy_preprocess_block(&$variables) {
         if ($node->hasField('field_hide_title') && $node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
-      } 
-	  elseif ($node->getType() == 'homepage') {
+      } elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
     }
@@ -68,27 +67,8 @@ function bbd_classy_preprocess_paragraph(&$variables) {
   if ($paragraph_type->id == 'video_panel') {
     if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
       $selected_colour = $paragraph->get('field_background_colour')->value;
-
       //Set background speech bubble colour
-      switch ($selected_colour) {
-        case "blue":
-          $variables['video_bg_colour'] = " bubble-blue";
-          break;
-        case "orange":
-          $variables['video_bg_colour'] = " bubble-orange";
-          break;
-        case "red":
-          $variables['video_bg_colour'] = " bubble-red";
-          break;
-        case "green":
-          $variables['video_bg_colour'] = " bubble-green";
-          break;
-        case "purple":
-          $variables['video_bg_colour'] = " bubble-purple";
-          break;
-        default:
-          $variables['video_bg_colour'] = "";
-      }
+      $variables['attributes']['class'][] = 'bubble-' . $selected_colour;
 
       if ($paragraph->hasField('field_image') && !$paragraph->get('field_image')->isEmpty()) {
         $variables['attributes']['class'][] = 'paragraph-with-image';
