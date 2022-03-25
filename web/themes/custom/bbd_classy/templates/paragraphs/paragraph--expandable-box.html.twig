@@ -48,21 +48,19 @@
 ]
 %}
 
-{% set expanded = expanded|default("false") %}
-{% set column = column|default("1") %}
-
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     <div class="paragraph-inner-holder inner-wrapper">
-      <div
-        class="expanded-block{% if expanded == "true" %} expanded-block--active{% endif %}">
-        <button
-          aria-expanded="{{ expanded }}"
-          class="expanded-block__title"><span class="expanded-block__icon"><span
-              class="expanded-block__icon-inner"></span></span>{{ content.field_title_expandable }}
+      <div class="expanded-block">
+        <button aria-expanded="{{ expanded }}" class="expanded-block__title">
+          <span class="expanded-block__icon">
+            <span class="expanded-block__icon-inner">
+            </span>
+          </span>{{ content.field_title_expandable }}
         </button>
-        <div role="region"
-             class="expanded-block__body expanded-block__body--column-{{ column }}">{{ content.field_description_expandable }}{{ content.field_body_2 }}{{ content.field_body_3 }}</div>
+        <div role="region" class="expanded-block__body">
+          {{ content.field_description_expandable }}
+        </div>
       </div>
     </div>
   </div>
