@@ -200,3 +200,13 @@ blockquote {
     margin-bottom: 50px;
   }
 }
+
+.p-body-component {
+  font-size: 16px;
+  line-height: 24px;
+
+  @include breakpoint($tab) {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}

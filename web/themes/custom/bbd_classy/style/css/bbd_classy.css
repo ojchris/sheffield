@@ -42,7 +42,8 @@
 }
 
 /* line 67, ../scss/variables/_breakpoints.scss */
-.max-content-width-no-padding, .paragraph--type--video-panel {
+.max-content-width-no-padding, .paragraph--type--video-panel,
+.max-content-width-no-padding, .paragraph--type--expandable-panel {
   max-width: 1060px;
   width: 100%;
   margin: 0 auto;
@@ -69,7 +70,8 @@
 }
 
 /* line 67, ../scss/variables/_breakpoints.scss */
-.max-content-width-no-padding, .paragraph--type--video-panel {
+.max-content-width-no-padding, .paragraph--type--video-panel,
+.max-content-width-no-padding, .paragraph--type--expandable-panel {
   max-width: 1060px;
   width: 100%;
   margin: 0 auto;
@@ -301,6 +303,19 @@ blockquote {
     margin-bottom: 50px;
   }
 }
+/* line 204, ../scss/variables/_typography.scss */
+.p-body-component, .expanded-block__body p {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (min-width: 48em) {
+  /* line 204, ../scss/variables/_typography.scss */
+  .p-body-component, .expanded-block__body p {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
 /* line 1, ../scss/base/_datepicker.scss */
 .ui-datepicker {
   width: calc(100% - 40px);
@@ -2767,6 +2782,204 @@ ul.main-megamenu {
   background: #f4Ecc9;
 }
 
+/* line 4, ../scss/components/paragraphs/_expandable-panel.scss */
+.paragraph--type--expandable-panel.paragraph {
+  margin-bottom: 0;
+}
+
+/* line 10, ../scss/components/paragraphs/_expandable-panel.scss */
+.paragraph--type--expandable-box.paragraph {
+  margin-bottom: 0;
+}
+
+/* line 15, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+@media (min-width: 90em) {
+  /* line 15, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block {
+    margin-bottom: 25px;
+    padding: 20px 30px;
+  }
+}
+/* line 26, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block .expanded-block__body {
+  display: none;
+}
+
+/* line 31, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__title {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: #005eb8;
+  font-size: 13px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 48em) {
+  /* line 31, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 90em) {
+  /* line 31, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block__title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+/* line 51, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__title div {
+  display: inline-block;
+  text-decoration: underline;
+}
+/* line 55, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__title div:hover {
+  text-decoration: none;
+}
+
+/* line 61, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__icon {
+  display: inline-block;
+  --size-wrap: 20px;
+  width: var(--size-wrap);
+  height: var(--size-wrap);
+  background: #005eb8;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 48em) {
+  /* line 61, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block__icon {
+    margin-right: 15px;
+    --size-wrap: 27px;
+  }
+}
+@media (min-width: 90em) {
+  /* line 61, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block__icon {
+    --size-wrap: 34px;
+  }
+}
+
+/* line 83, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__icon-inner {
+  position: relative;
+  --size: 10px;
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+}
+@media (min-width: 48em) {
+  /* line 83, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block__icon-inner {
+    --size: 12px;
+  }
+}
+@media (min-width: 90em) {
+  /* line 83, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block__icon-inner {
+    --size: 14px;
+  }
+}
+/* line 98, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__icon-inner:before, .expanded-block__icon-inner:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  transition: transform 0.1s ease-out;
+}
+/* line 106, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__icon-inner:before {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+}
+/* line 114, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__icon-inner:after {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+}
+
+/* line 123, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__body {
+  margin-top: 15px;
+}
+@media (min-width: 48em) {
+  /* line 123, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block__body {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 90em) {
+  /* line 123, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block__body {
+    margin-top: 30px;
+  }
+}
+/* line 137, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 143, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block--active {
+  border-bottom-width: 1px;
+}
+/* line 146, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block--active .expanded-block__body {
+  display: block;
+}
+/* line 150, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block--active .expanded-block__body--column-2,
+.expanded-block--active .expanded-block__body--column-3 {
+  display: grid;
+}
+@media (max-width: 47.9375em) {
+  /* line 150, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block--active .expanded-block__body--column-2,
+  .expanded-block--active .expanded-block__body--column-3 {
+    grid-row-gap: 20px;
+  }
+}
+@media (min-width: 48em) {
+  /* line 159, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block--active .expanded-block__body--column-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+  }
+}
+@media (min-width: 48em) {
+  /* line 166, ../scss/components/paragraphs/_expandable-panel.scss */
+  .expanded-block--active .expanded-block__body--column-3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3%;
+  }
+}
+/* line 174, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block--active .expanded-block__icon-inner:before {
+  transform: rotate(90deg);
+}
+/* line 178, ../scss/components/paragraphs/_expandable-panel.scss */
+.expanded-block--active .expanded-block__icon-inner:after {
+  transform: rotate(180deg);
+}
+
 /* line 1, ../scss/components/paragraphs/_four-colum-panel.scss */
 .paragraph--type--four-column-panel .paragraph-inner-holder {
   display: block;
@@ -2864,6 +3077,12 @@ ul.main-megamenu {
 /* line 23, ../scss/components/paragraphs/_general-paragraph.scss */
 .paragraph-bg--orange {
   --paragraph-color: #F4ECC9;
+}
+
+/* line 27, ../scss/components/paragraphs/_general-paragraph.scss */
+.card-border, .expanded-block {
+  border: 1px solid #D8DDE0;
+  border-bottom-width: 4px;
 }
 
 /* line 1, ../scss/components/paragraphs/_page-header.scss */
