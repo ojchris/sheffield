@@ -42,8 +42,7 @@
 }
 
 /* line 67, ../scss/variables/_breakpoints.scss */
-.max-content-width-no-padding, .paragraph--type--video-panel,
-.max-content-width-no-padding, .paragraph--type--expandable-panel {
+.max-content-width-no-padding, .paragraph--type--expandable-panel, .paragraph--type--video-panel {
   max-width: 1060px;
   width: 100%;
   margin: 0 auto;
@@ -70,8 +69,7 @@
 }
 
 /* line 67, ../scss/variables/_breakpoints.scss */
-.max-content-width-no-padding, .paragraph--type--video-panel,
-.max-content-width-no-padding, .paragraph--type--expandable-panel {
+.max-content-width-no-padding, .paragraph--type--expandable-panel, .paragraph--type--video-panel {
   max-width: 1060px;
   width: 100%;
   margin: 0 auto;
