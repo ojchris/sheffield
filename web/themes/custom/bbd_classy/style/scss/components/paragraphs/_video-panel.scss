@@ -3,7 +3,7 @@
 
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-left: -20%;
+  margin-left: -22%;
 
   &.bubble-blue .paragraph-inner-holder {
     background-image: url('../../images/talk_bubble_blue.svg');
@@ -39,18 +39,19 @@
   }
 
   .paragraph-inner-holder {
+    width: 100%;
+    box-sizing: unset;
     padding: 90px 80px;
 
     .video-container {
       display: block;
-      width: 72%;
-      padding-left: 30px;
+      width: 70%;
+      padding: 0;
       margin: 0 auto;
       margin-bottom: 25px;
 
       @include breakpoint($mobileOnly) {
         width: 90%;
-        padding-left: 0;
       }
     }
   }
