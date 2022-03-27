@@ -1,0 +1,36 @@
+uuid: 253251c4-7f8a-47c5-a0be-db9eb8eda17c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_background_colour
+field_name: field_background_colour
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blue
+      label: Blue
+    -
+      value: orange
+      label: Orange
+    -
+      value: red
+      label: Red
+    -
+      value: green
+      label: Green
+    -
+      value: purple
+      label: Purple
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
