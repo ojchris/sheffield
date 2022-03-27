@@ -82,3 +82,6 @@ web/robots.txt
 web/sites/.gitignore
 web/sites/default/.gitignore
 web/themes/.gitignore
+
+# Ignore Docksal files.
+.docksal
