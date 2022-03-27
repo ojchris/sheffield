@@ -94,6 +94,7 @@ h6,
 .paragraph--type--download-panel .field--name-field-title,
 .h3,
 .h4,
+.paragraph--type--listing h2,
 .h5,
 .h6 {
   font-family: "Frutiger LT W01_65 Bold1475746", Arial, sans-serif;
@@ -124,7 +125,8 @@ h3,
 
 /* line 44, ../scss/variables/_typography.scss */
 h4,
-.h4 {
+.h4,
+.paragraph--type--listing h2 {
   font-size: 32px;
   line-height: 39px;
 }
@@ -241,7 +243,8 @@ blockquote {
 
   /* line 149, ../scss/variables/_typography.scss */
   h4,
-  .h4 {
+  .h4,
+  .paragraph--type--listing h2 {
     font-size: 24px;
     line-height: 1.2083;
   }
@@ -284,7 +287,8 @@ blockquote {
 
   /* line 187, ../scss/variables/_typography.scss */
   h4,
-  .h4 {
+  .h4,
+  .paragraph--type--listing h2 {
     font-size: 36px;
     line-height: 1.1666;
   }
@@ -3094,6 +3098,55 @@ ul.main-megamenu {
   border-bottom-width: 4px;
 }
 
+/* line 2, ../scss/components/paragraphs/_listing.scss */
+.paragraph--type--listing h2 {
+  margin-bottom: 20px;
+}
+/* line 7, ../scss/components/paragraphs/_listing.scss */
+.paragraph--type--listing table {
+  margin: 0 -10px;
+}
+/* line 9, ../scss/components/paragraphs/_listing.scss */
+.paragraph--type--listing table th, .paragraph--type--listing table td {
+  padding: 10px;
+}
+/* line 13, ../scss/components/paragraphs/_listing.scss */
+.paragraph--type--listing table th {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+/* line 19, ../scss/components/paragraphs/_listing.scss */
+.paragraph--type--listing table td {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+/* line 25, ../scss/components/paragraphs/_listing.scss */
+.paragraph--type--listing table p:last-child {
+  margin-bottom: 0;
+}
+/* line 29, ../scss/components/paragraphs/_listing.scss */
+.paragraph--type--listing table tr:nth-child(odd) td {
+  background: transparent;
+}
+/* line 34, ../scss/components/paragraphs/_listing.scss */
+.paragraph--type--listing tr {
+  vertical-align: top;
+}
+
+@media (min-width: 64em) {
+  /* line 42, ../scss/components/paragraphs/_listing.scss */
+  .paragraph--type--listing table th {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* line 47, ../scss/components/paragraphs/_listing.scss */
+  .paragraph--type--listing table td {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
 /* line 1, ../scss/components/paragraphs/_page-header.scss */
 .paragraph--type--page-header {
   position: relative;
@@ -3493,7 +3546,7 @@ ul.main-megamenu {
   /* line 70, ../scss/pages/_course.scss */
   .course-tags-wrap .field__item {
     margin-bottom: 15px;
-    margin-right: 40px;
+    margin-right: 30px;
   }
 
   /* line 77, ../scss/pages/_course.scss */
