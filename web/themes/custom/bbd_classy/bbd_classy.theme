@@ -29,6 +29,13 @@ function bbd_classy_preprocess_page(&$variables) {
       $variables['attributes']['class'][] = $node->getType();
       $variables['attributes']['class'][] = $path;
     }
+
+    if ($node->getType() == 'course_page') {
+      if ($node->hasField('field_background_colour') && !$node->get('field_background_colour')->isEmpty()) {
+        $color = $node->get('field_background_colour')->value;
+        $variables['attributes']['class'][] = 'node-bg--' . $color;
+      }
+    }
   }
 }
 
@@ -48,7 +55,7 @@ function bbd_classy_preprocess_block(&$variables) {
         if ($node->hasField('field_hide_title') && $node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
-      } 
+      }
       elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }

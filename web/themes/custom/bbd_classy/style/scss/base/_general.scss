@@ -170,3 +170,8 @@ iframe {
     padding: 0 $widedesk_padding;
   }
 }
+
+.messages {
+  position: relative;
+  z-index: 5;
+}

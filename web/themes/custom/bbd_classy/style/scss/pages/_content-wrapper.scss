@@ -1,5 +1,6 @@
 #page {
   max-width: none;
+  overflow: hidden;
 }
 
 #content-main-wrapper.outer-wrapper {
@@ -10,7 +11,6 @@
     padding: 20px 20px;
     max-width: 1140px;
     margin: 0 auto;
-    overflow: hidden;
   }
 }
 

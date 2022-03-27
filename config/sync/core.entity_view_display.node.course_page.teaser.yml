@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.course_page.body
     - field.field.node.course_page.field_audience
+    - field.field.node.course_page.field_background_colour
     - field.field.node.course_page.field_category
     - field.field.node.course_page.field_content_sections
     - field.field.node.course_page.field_course_length
@@ -54,6 +55,7 @@ hidden:
   addtoany: true
   created: true
   field_audience: true
+  field_background_colour: true
   field_category: true
   field_content_sections: true
   field_course_length: true
