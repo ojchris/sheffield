@@ -3128,7 +3128,7 @@ ul.main-megamenu {
 }
 /* line 29, ../scss/components/paragraphs/_listing.scss */
 .paragraph--type--listing table tr:nth-child(odd) td {
-  background: transparent;
+  background: #fff;
 }
 /* line 34, ../scss/components/paragraphs/_listing.scss */
 .paragraph--type--listing tr {
@@ -3136,12 +3136,20 @@ ul.main-megamenu {
 }
 
 @media (min-width: 64em) {
-  /* line 42, ../scss/components/paragraphs/_listing.scss */
+  /* line 40, ../scss/components/paragraphs/_listing.scss */
+  .paragraph--type--listing {
+    margin-bottom: 50px;
+  }
+  /* line 44, ../scss/components/paragraphs/_listing.scss */
+  .paragraph--type--listing table th, .paragraph--type--listing table td {
+    padding: 10px 15px;
+  }
+  /* line 48, ../scss/components/paragraphs/_listing.scss */
   .paragraph--type--listing table th {
     font-size: 16px;
     line-height: 20px;
   }
-  /* line 47, ../scss/components/paragraphs/_listing.scss */
+  /* line 53, ../scss/components/paragraphs/_listing.scss */
   .paragraph--type--listing table td {
     font-size: 19px;
     line-height: 28px;
