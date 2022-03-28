@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.course_page.body
     - field.field.node.course_page.field_audience
+    - field.field.node.course_page.field_background_colour
     - field.field.node.course_page.field_category
     - field.field.node.course_page.field_content_sections
     - field.field.node.course_page.field_course_length
@@ -19,15 +20,16 @@ dependencies:
     - entity_reference_revisions
     - field_group
     - manage_display
+    - metatag
 third_party_settings:
   field_group:
     group_course_tags_wrap:
       children:
         - field_type_of_support
-        - field_how_i_m_feeling
         - field_category
         - field_course_length
         - field_audience
+        - field_how_i_m_feeling
       label: course-tags-wrap
       parent_name: ''
       region: content
@@ -64,9 +66,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-    - media
-    - metatag
-    - text
 id: node.course_page.default
 targetEntityType: node
 bundle: course_page
@@ -94,7 +93,7 @@ content:
     type: entity_reference_label
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 2
     region: content
