@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.landing_page.field_display_social_sharing_but
     - field.field.node.landing_page.field_hide_title
     - field.field.node.landing_page.field_landing_page_owner
+    - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.field_page_owner
     - field.field.node.landing_page.field_review_date
     - node.type.landing_page
@@ -15,6 +16,7 @@ dependencies:
     - entity_reference_revisions
     - field_group
     - manage_display
+    - metatag
 third_party_settings:
   field_group:
     group_content:
@@ -60,6 +62,13 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
     region: content
   links:
     settings: {  }
