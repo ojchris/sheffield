@@ -13,12 +13,14 @@ dependencies:
     - field.field.node.course_page.field_display_social_sharing_but
     - field.field.node.course_page.field_how_i_m_feeling
     - field.field.node.course_page.field_image
+    - field.field.node.course_page.field_meta_tags
     - field.field.node.course_page.field_type_of_support
     - node.type.course_page
     - workflows.workflow.workflow
   module:
     - content_moderation
     - media_library
+    - metatag
     - paragraphs
     - path
     - scheduler
@@ -112,6 +114,14 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 134
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_type_of_support:
     type: options_select

@@ -8,10 +8,15 @@ dependencies:
     - field.field.node.landing_page.field_display_social_sharing_but
     - field.field.node.landing_page.field_hide_title
     - field.field.node.landing_page.field_landing_page_owner
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_page_owner
     - field.field.node.landing_page.field_review_date
     - node.type.landing_page
+    - workflows.workflow.workflow
   module:
+    - content_moderation
     - datetime
+    - metatag
     - paragraphs
     - path
     - scheduler
@@ -66,6 +71,14 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 101
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
   field_page_owner:
     type: entity_reference_autocomplete
     weight: 12
@@ -88,6 +101,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -151,4 +170,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_landing_page_owner: true
