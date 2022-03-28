@@ -3,16 +3,41 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.three_column_card.field_background_colour
     - field.field.paragraph.three_column_card.field_image
     - field.field.paragraph.three_column_card.field_link
     - field.field.paragraph.three_column_card.field_text
     - field.field.paragraph.three_column_card.field_title
+    - image.style.727x464
     - paragraphs.paragraphs_type.three_column_card
   module:
+    - field_group
     - link
     - manage_display
     - media
     - text
+third_party_settings:
+  field_group:
+    group_text:
+      children:
+        - field_title
+        - field_text
+      label: text-wrap
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: card__text-wrap
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: paragraph.three_column_card.default
 targetEntityType: paragraph
 bundle: three_column_card
@@ -23,7 +48,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: 727x464
     third_party_settings: {  }
     weight: 0
     region: content
@@ -37,23 +62,24 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_text:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_title:
     type: title
     label: hidden
     settings:
       linked: true
-      tag: h4
+      tag: h3
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden:
+  field_background_colour: true
   search_api_excerpt: true

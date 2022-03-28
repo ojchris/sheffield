@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.homepage.field_content_sections
+    - field.field.node.homepage.field_meta_tags
     - node.type.homepage
   module:
     - manage_display
@@ -36,6 +37,7 @@ hidden:
   addtoany: true
   created: true
   field_content_sections: true
+  field_meta_tags: true
   langcode: true
   search_api_excerpt: true
   uid: true

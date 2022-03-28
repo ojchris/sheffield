@@ -1,21 +1,21 @@
-uuid: 370c0f3d-aa0c-4ca7-a8dc-7d4cac0ee4b5
+uuid: 3a2f3b2d-a1f6-454f-b272-5ec4e81fdaeb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_date
+    - field.storage.node.field_meta_tags
     - node.type.course_session
   module:
-    - datetime
-id: node.course_session.field_date
-field_name: field_date
+    - metatag
+id: node.course_session.field_meta_tags
+field_name: field_meta_tags
 entity_type: node
 bundle: course_session
-label: Date
+label: 'Meta Tags'
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: metatag

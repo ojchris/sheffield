@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.paragraph.page_header.field_background_colour
     - field.field.paragraph.page_header.field_image
+    - field.field.paragraph.page_header.field_link
     - field.field.paragraph.page_header.field_text
     - field.field.paragraph.page_header.field_title
+    - image.style.452x422
     - paragraphs.paragraphs_type.page_header
   module:
     - field_group
@@ -46,7 +48,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: 452x422
     third_party_settings: {  }
     weight: 0
     region: content
@@ -62,10 +64,11 @@ content:
     label: hidden
     settings:
       linked: true
-      tag: h4
+      tag: h2
     third_party_settings: {  }
     weight: 2
     region: content
 hidden:
   field_background_colour: true
+  field_link: true
   search_api_excerpt: true

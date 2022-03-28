@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.four_column_card.field_image
     - field.field.paragraph.four_column_card.field_link
-    - field.field.paragraph.four_column_card.field_title
     - paragraphs.paragraphs_type.four_column_card
   module:
     - link
@@ -29,14 +28,6 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings: {  }
-  field_title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

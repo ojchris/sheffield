@@ -7,12 +7,38 @@ dependencies:
     - field.field.node.landing_page.field_display_accessibility_butt
     - field.field.node.landing_page.field_display_social_sharing_but
     - field.field.node.landing_page.field_hide_title
+    - field.field.node.landing_page.field_landing_page_owner
+    - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.field_page_owner
     - field.field.node.landing_page.field_review_date
     - node.type.landing_page
   module:
     - entity_reference_revisions
+    - field_group
     - manage_display
+    - metatag
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - addtoany
+        - field_content_sections
+      label: content-wrap
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: content-node-custom-wrap
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -21,7 +47,7 @@ content:
   addtoany:
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   content_moderation_control:
     settings: {  }
@@ -35,7 +61,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 6
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
     region: content
   links:
     settings: {  }

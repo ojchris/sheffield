@@ -1,0 +1,15 @@
+uuid: 1735258d-95f0-4c3e-bbc5-29c55fb59391
+langcode: en
+status: true
+dependencies: {  }
+name: 452x422
+label: 452x422
+effects:
+  7ee4902b-f338-4e43-a26b-a15ad2f0db6d:
+    uuid: 7ee4902b-f338-4e43-a26b-a15ad2f0db6d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 452
+      height: 422
+      anchor: center-center

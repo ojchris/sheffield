@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.two_column_card.field_background_colour
     - field.field.paragraph.two_column_card.field_link
     - field.field.paragraph.two_column_card.field_text
     - field.field.paragraph.two_column_card.field_title
@@ -15,6 +16,12 @@ targetEntityType: paragraph
 bundle: two_column_card
 mode: default
 content:
+  field_background_colour:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_link:
     type: link_default
     weight: 2

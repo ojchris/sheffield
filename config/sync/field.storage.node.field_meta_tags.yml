@@ -1,17 +1,16 @@
-uuid: 98b329c3-dad8-499f-9eb5-9e3e2ba4d8b7
+uuid: b03d0d92-a980-4cd0-92ae-3d6e62116ddb
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
+    - metatag
     - node
-id: node.field_date
-field_name: field_date
+id: node.field_meta_tags
+field_name: field_meta_tags
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: metatag
+settings: {  }
+module: metatag
 locked: false
 cardinality: 1
 translatable: true
