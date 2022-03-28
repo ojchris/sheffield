@@ -42,7 +42,7 @@
 }
 
 /* line 67, ../scss/variables/_breakpoints.scss */
-.max-content-width-no-padding, .paragraph--type--expandable-panel {
+.max-content-width-no-padding, .paragraph--type--expandable-panel, .paragraph--type--video-panel {
   max-width: 1060px;
   width: 100%;
   margin: 0 auto;
@@ -69,7 +69,7 @@
 }
 
 /* line 67, ../scss/variables/_breakpoints.scss */
-.max-content-width-no-padding, .paragraph--type--expandable-panel {
+.max-content-width-no-padding, .paragraph--type--expandable-panel, .paragraph--type--video-panel {
   max-width: 1060px;
   width: 100%;
   margin: 0 auto;
@@ -3382,6 +3382,161 @@ ul.main-megamenu {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* line 1, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: -22%;
+}
+/* line 8, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.bubble-blue .paragraph-inner-holder {
+  background-image: url("../../images/talk_bubble_blue.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* line 13, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.bubble-green .paragraph-inner-holder {
+  background-image: url("../../images/talk_bubble_green.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* line 18, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.bubble-purple .paragraph-inner-holder {
+  background-image: url("../../images/talk_bubble_purple.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* line 23, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.bubble-red .paragraph-inner-holder {
+  background-image: url("../../images/talk_bubble_red.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* line 28, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.bubble-orange .paragraph-inner-holder {
+  background-image: url("../../images/talk_bubble_orange.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media (max-width: 47.9375em) {
+  /* line 1, ../scss/components/paragraphs/_video-panel.scss */
+  .paragraph--type--video-panel {
+    margin-left: -10%;
+  }
+}
+/* line 37, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.paragraph {
+  position: unset;
+}
+/* line 41, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel .paragraph-inner-holder {
+  width: 100%;
+  box-sizing: unset;
+  padding: 90px 80px;
+}
+/* line 46, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel .paragraph-inner-holder .video-container {
+  display: block;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+@media (max-width: 47.9375em) {
+  /* line 46, ../scss/components/paragraphs/_video-panel.scss */
+  .paragraph--type--video-panel .paragraph-inner-holder .video-container {
+    width: 90%;
+  }
+}
+/* line 59, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel iframe,
+.paragraph--type--video-panel video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  transition: opacity 500ms ease-in;
+}
+/* line 70, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel article {
+  position: static;
+}
+/* line 74, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel .paragraph-video-play-video {
+  display: none;
+}
+/* line 78, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel .video-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+/* line 87, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image iframe,
+.paragraph--type--video-panel.paragraph-with-image video {
+  z-index: -1;
+}
+/* line 93, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .field--name-field-image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+/* line 102, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video {
+  display: block;
+  background: url(../../images/play-media.svg) no-repeat center center;
+  background-size: contain;
+  min-width: auto;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 48em) {
+  /* line 102, ../scss/components/paragraphs/_video-panel.scss */
+  .paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (min-width: 90em) {
+  /* line 102, ../scss/components/paragraphs/_video-panel.scss */
+  .paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* line 126, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video:hover {
+  opacity: 0.8;
+}
+/* line 130, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .paragraph-video-play-video:focus {
+  border-radius: 50%;
+  border: 2px dashed #fff;
+}
+/* line 138, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .video-wrap--play .field--name-field-image,
+.paragraph--type--video-panel.paragraph-with-image .video-wrap--play .paragraph-video-play-video {
+  display: none;
+}
+/* line 143, ../scss/components/paragraphs/_video-panel.scss */
+.paragraph--type--video-panel.paragraph-with-image .video-wrap--play iframe,
+.paragraph--type--video-panel.paragraph-with-image .video-wrap--play video {
+  opacity: 1;
+  z-index: 0;
+}
+
 /* line 1, ../scss/pages/_content-wrapper.scss */
 #page {
   max-width: none;
@@ -3397,10 +3552,9 @@ ul.main-megamenu {
   padding: 20px 20px;
   max-width: 1140px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
-/* line 17, ../scss/pages/_content-wrapper.scss */
+/* line 16, ../scss/pages/_content-wrapper.scss */
 .content-node-custom-wrap {
   position: relative;
 }

@@ -49,7 +49,7 @@ function bbd_classy_preprocess_block(&$variables) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
       } 
-      elseif ($node->getType() == 'homepage') {
+	  elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
     }
@@ -57,23 +57,26 @@ function bbd_classy_preprocess_block(&$variables) {
 }
 
 /**
- * Implements template_preprocess_HOOK().
+ * Implements hook_preprocess_paragraph().
  */
 function bbd_classy_preprocess_paragraph(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   $paragraph = $variables['paragraph'];
-  $type = $paragraph->getType();
 
   if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
     $color = $paragraph->get('field_background_colour')->value;
     $variables['attributes']['class'][] = 'paragraph-bg--' . $color;
   }
 
-  if ($type == 'tabbed_content_panel') {
-    if ($paragraph->hasField('field_tab_reference') && !$paragraph->get('field_tab_reference')->isEmpty()) {
-      foreach ($paragraph->get('field_tab_reference') as $tab_reference) {
-        $tab = $tab_reference->entity;
-        $variables['tab_title'][] = $tab->get('field_title_tab')->getString();
-        $variables['tab_content'][] = $tab->get('field_description_tab')->value;
+  $paragraph_type = $variables['paragraph']->getParagraphType();
+  if ($paragraph_type->id == 'video_panel') {
+    if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
+      $selected_colour = $paragraph->get('field_background_colour')->value;
+      //Set background speech bubble colour
+      $variables['attributes']['class'][] = 'bubble-' . $selected_colour;
+
+      if ($paragraph->hasField('field_image') && !$paragraph->get('field_image')->isEmpty()) {
+        $variables['attributes']['class'][] = 'paragraph-with-image';
       }
     }
   }
