@@ -1,0 +1,30 @@
+.paragraph {
+  --max-width-small: 80%;
+  position: relative;
+  z-index: 1;
+}
+
+.paragraph-bg--purple {
+  --paragraph-color: #{$purple_lilac};
+}
+
+.paragraph-bg--blue {
+  --paragraph-color: #{$blue_light};
+}
+
+.paragraph-bg--red {
+  --paragraph-color: #{$orange};
+}
+
+.paragraph-bg--green {
+  --paragraph-color: #{$green_lighter};
+}
+
+.paragraph-bg--orange {
+  --paragraph-color: #{$yellow-light};
+}
+
+.card-border {
+  border: 1px solid $gray-light;
+  border-bottom-width: 4px;
+}

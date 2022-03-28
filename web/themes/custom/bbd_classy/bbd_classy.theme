@@ -11,11 +11,12 @@ use Drupal\node\NodeInterface;
 use Drupal\node\Entity\Node;
 use Drupal\paragraphs\ParagraphInterface;
 use Drupal\block\Entity\Block;
+use Drupal\media\Entity\Media;
 
 /**
  * Implements template_preprocess_page().
  */
-function bbd_classy_preprocess_page(&$variables){
+function bbd_classy_preprocess_page(&$variables) {
   if (isset($variables['node'])) {
     $node = $variables['node'];
     // Adds additional classes.
@@ -32,29 +33,61 @@ function bbd_classy_preprocess_page(&$variables){
 }
 
 /**
- * Implements hook_preprocess_block 
+ * Implements hook_preprocess_block
  */
-function bbd_classy_preprocess_block(&$variables){
-/**
- * add class to page_title block to hide & show.
- */
+function bbd_classy_preprocess_block(&$variables) {
+  //Add class to hide/show page_title block.
   if ($variables['plugin_id'] ==  'page_title_block') {
     $node = \Drupal::routeMatch()->getParameter('node');
     if ($node && is_numeric($node)) {
       $node = Node::load($node);
     }
-  
-  if ($node) {
-      if ($node->getType() == 'page' || $node->getType() == 'landing_page') {
 
+    if ($node) {
+      if ($node->getType() == 'page' || $node->getType() == 'landing_page') {
         if ($node->hasField('field_hide_title') && $node->get('field_hide_title')->value == 1) {
           $variables['attributes']['class'][] = 'visually-hidden';
         }
-      } elseif($node->getType() == 'homepage') {
+      } 
+      elseif ($node->getType() == 'homepage') {
         $variables['attributes']['class'][] = 'visually-hidden';
       }
     }
   }
 }
 
+/**
+ * Implements template_preprocess_HOOK().
+ */
+function bbd_classy_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $type = $paragraph->getType();
 
+  if ($paragraph->hasField('field_background_colour') && !$paragraph->get('field_background_colour')->isEmpty()) {
+    $color = $paragraph->get('field_background_colour')->value;
+    $variables['attributes']['class'][] = 'paragraph-bg--' . $color;
+  }
+
+  if ($type == 'tabbed_content_panel') {
+    if ($paragraph->hasField('field_tab_reference') && !$paragraph->get('field_tab_reference')->isEmpty()) {
+      foreach ($paragraph->get('field_tab_reference') as $tab_reference) {
+        $tab = $tab_reference->entity;
+        $variables['tab_title'][] = $tab->get('field_title_tab')->getString();
+        $variables['tab_content'][] = $tab->get('field_description_tab')->value;
+      }
+    }
+  }
+}
+
+/**
+ * Implements template_preprocess_media()
+ */
+function bbd_classy_preprocess_media(&$variables) {
+  /** @var \Drupal\media_entity\MediaInterface $media */
+  $media = $variables['elements']['#media'];
+
+  if ($media->hasField('field_background_colour') && !$media->get('field_background_colour')->isEmpty()) {
+    $color = $media->get('field_background_colour')->value;
+    $variables['attributes']['class'][] = 'media-bg--' . $color;
+  }
+}
