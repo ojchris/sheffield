@@ -1,0 +1,153 @@
+.paragraph--type--video-panel {
+  @extend .max-content-width-no-padding;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: -22%;
+
+  &.bubble-blue .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_blue.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  &.bubble-green .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_green.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  &.bubble-purple .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_purple.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  &.bubble-red .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_red.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  &.bubble-orange .paragraph-inner-holder {
+    background-image: url('../../images/talk_bubble_orange.svg');
+    @include bg_placement(100% 100%);
+  }
+
+  @include breakpoint($mobileOnly) {
+    margin-left: -10%;
+  }
+
+  &.paragraph {
+    position: unset;
+  }
+
+  .paragraph-inner-holder {
+    width: 100%;
+    box-sizing: unset;
+    padding: 90px 80px;
+
+    @include breakpoint($widestmobOnly) {
+      padding: 30px 35px;
+    }
+
+    .video-container {
+      display: block;
+      width: 70%;
+      padding: 0;
+      margin: 0 auto;
+      margin-bottom: 25px;
+
+      @include breakpoint($mobileOnly) {
+        width: 90%;
+      }
+    }
+  }
+
+  iframe,
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    transition: opacity 500ms ease-in;
+  }
+
+  article {
+    position: static;
+  }
+
+  .paragraph-video-play-video {
+    display: none;
+  }
+
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+.paragraph--type--video-panel.paragraph-with-image {
+
+  iframe,
+  video {
+    z-index: -1;
+  }
+
+  .field--name-field-image {
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .paragraph-video-play-video {
+    display: block;
+    background: url(../../images/play-media.svg) no-repeat center center;
+    background-size: contain;
+    min-width: auto;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint($tab) {
+      width: 70px;
+      height: 70px;
+    }
+
+    @include breakpoint($widestdesk) {
+      width: 100px;
+      height: 100px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      border-radius: 50%;
+      border: 2px dashed $white;
+    }
+  }
+
+  .video-wrap--play {
+
+    .field--name-field-image,
+    .paragraph-video-play-video {
+      display: none;
+    }
+
+    iframe,
+    video {
+      opacity: 1;
+      z-index: 0;
+    }
+  }
+}

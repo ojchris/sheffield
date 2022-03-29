@@ -8,16 +8,23 @@ dependencies:
     - field.field.node.landing_page.field_display_accessibility_butt
     - field.field.node.landing_page.field_display_social_sharing_but
     - field.field.node.landing_page.field_hide_title
+    - field.field.node.landing_page.field_landing_page_owner
+    - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.field_page_owner
     - field.field.node.landing_page.field_review_date
     - node.type.landing_page
   module:
-    - user
+    - manage_display
 id: node.landing_page.teaser
 targetEntityType: node
 bundle: landing_page
 mode: teaser
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -33,11 +40,14 @@ content:
     weight: -50
     region: content
 hidden:
+  addtoany: true
   created: true
   field_content_sections: true
   field_display_accessibility_butt: true
   field_display_social_sharing_but: true
   field_hide_title: true
+  field_landing_page_owner: true
+  field_meta_tags: true
   field_page_owner: true
   field_review_date: true
   langcode: true

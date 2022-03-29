@@ -1,0 +1,59 @@
+.paragraph--type--listing {
+  h2 {
+    @extend .h4;
+    margin-bottom: 20px;
+  }
+
+  table {
+    margin: 0 -10px;
+    th, td {
+      padding: 10px;
+    }
+
+    th {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    td {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    tr:nth-child(odd) td {
+      background: $white;
+    }
+  }
+
+  tr {
+    vertical-align: top;
+  }
+}
+
+@include breakpoint($desk) {
+  .paragraph--type--listing {
+    margin-bottom: 50px;
+
+    table {
+      th, td {
+        padding: 10px 15px;
+      }
+
+      th {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      td {
+        font-size: 19px;
+        line-height: 28px;
+      }
+    }
+  }
+}

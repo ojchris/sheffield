@@ -1,28 +1,34 @@
 .page-node-type-page,
+.page-node-type-landing-page,
+.page-node-type-course-page {
+  --pd-right: 35px;
+}
+
+.page-node-type-page,
 .page-node-type-landing-page {
   --pd-right: 35px;
 
-  .content-node-custom-wrap {
-    min-height: 280px;
-
-    > .field--name-field-content-sections > .field__item:first-child {
-      padding-right: var(--pd-right);
-    }
+  > .field--name-field-content-sections > .field__item:first-child {
+    padding-right: var(--pd-right);
   }
+}
+.page-node-type-course-page .content-node-custom-wrap {
+  padding-right: var(--pd-right);
+}
+.content-node-custom-wrap {
+  min-height: 280px;
 }
 
 @include breakpoint($tab) {
-  .page-node-type-page,
-  .page-node-type-landing-page {
-    .content-node-custom-wrap {
-      min-height: 330px;
-    }
+  .content-node-custom-wrap {
+    min-height: 330px;
   }
 }
 
 @include breakpoint($desk) {
   .page-node-type-page,
-  .page-node-type-landing-page {
+  .page-node-type-landing-page,
+  .page-node-type-course-page {
     .page-title {
       font-size: 48px;
       line-height: 56px;
@@ -32,7 +38,8 @@
 
 @include breakpoint($widestdesk) {
   .page-node-type-page,
-  .page-node-type-landing-page {
+  .page-node-type-landing-page,
+  .page-node-type-course-page {
     --pd-right: 50px;
   }
 }
