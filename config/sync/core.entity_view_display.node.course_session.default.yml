@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.course_session.field_course
-    - field.field.node.course_session.field_date
     - field.field.node.course_session.field_location
+    - field.field.node.course_session.field_meta_tags
     - field.field.node.course_session.field_time
     - node.type.course_session
   module:
-    - datetime
     - datetime_range
     - manage_display
+    - metatag
     - text
 id: node.course_session.default
 targetEntityType: node
@@ -26,21 +26,19 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_location:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 5
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_time:
     type: daterange_default

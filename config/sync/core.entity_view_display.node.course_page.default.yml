@@ -12,12 +12,14 @@ dependencies:
     - field.field.node.course_page.field_display_social_sharing_but
     - field.field.node.course_page.field_how_i_m_feeling
     - field.field.node.course_page.field_image
+    - field.field.node.course_page.field_meta_tags
     - field.field.node.course_page.field_type_of_support
     - node.type.course_page
   module:
     - entity_reference_revisions
     - manage_display
     - media
+    - metatag
     - text
 id: node.course_page.default
 targetEntityType: node
@@ -90,6 +92,13 @@ content:
       image_style: ''
     third_party_settings: {  }
     weight: 9
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
     region: content
   field_type_of_support:
     type: entity_reference_label

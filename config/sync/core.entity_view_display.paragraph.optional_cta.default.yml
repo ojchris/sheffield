@@ -3,29 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.optional_cta.field_link_optional_cta
-    - field.field.paragraph.optional_cta.field_link_text_optional_cta
+    - field.field.paragraph.optional_cta.field_link
     - paragraphs.paragraphs_type.optional_cta
+  module:
+    - link
 id: paragraph.optional_cta.default
 targetEntityType: paragraph
 bundle: optional_cta
 mode: default
 content:
-  field_link_optional_cta:
-    type: string
+  field_link:
+    type: link
     label: above
     settings:
-      link_to_entity: false
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_link_text_optional_cta:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
 hidden:
   search_api_excerpt: true

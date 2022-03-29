@@ -31,6 +31,7 @@ module:
   datetime_range: 0
   dblog: 0
   devel_generate: 0
+  devel_kint_extras: 0
   dynamic_page_cache: 0
   editor: 0
   editor_advanced_link: 0
@@ -92,6 +93,7 @@ module:
   time_range: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0

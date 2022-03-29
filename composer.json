@@ -11,6 +11,10 @@
     {
       "type": "composer",
       "url": "https://packages.bigbluedoor.net/8"
+    },
+    {
+        "type": "composer",
+        "url": "https://asset-packagist.org"
     }
   ],
   "require": {
@@ -30,6 +34,7 @@
     "drupal/core-composer-scaffold": "^9.2",
     "drupal/core-recommended": "^9.2",
     "drupal/devel": "^4.1",
+    "drupal/devel_kint_extras": "^1.0",
     "drupal/editor_advanced_link": "^2.0",
     "drupal/entity_type_clone": "^1.7",
     "drupal/eu_cookie_compliance": "^1.19",
@@ -66,6 +71,7 @@
     "drupal/taxonomy_manager": "^2.0",
     "drupal/time_range": "^9.0",
     "drupal/token": "^1.9",
+    "drupal/twig_tweak": "^3.1",
     "drupal/username_enumeration_prevention": "^1.2",
     "drupal/viewfield": "^3.0@beta",
     "drupal/viewsreference": "^1.7",
@@ -74,6 +80,8 @@
     "drupal/workflow": "^1.5",
     "drupal/xmlsitemap": "^1.2",
     "drush/drush": "^10.6",
+    "npm-asset/slick-slider": "~1.8.2",
+    "oomphinc/composer-installers-extender": "^2.0",
     "phpstan/phpstan": "^1.0",
     "squizlabs/php_codesniffer": "^3.6",
     "vijaycs85/drupal-quality-checker": "^1.5"
@@ -102,9 +110,10 @@
     "patchLevel": {
       "drupal/core": "-p2"
     },
+    "installer-types": ["bower-asset", "npm-asset", "drupal-library"],
     "installer-paths": {
       "web/core": ["type:drupal-core"],
-      "web/libraries/{$name}": ["type:drupal-library"],
+      "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
       "web/modules/contrib/{$name}": ["type:drupal-module"],
       "web/profiles/contrib/{$name}": ["type:drupal-profile"],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],

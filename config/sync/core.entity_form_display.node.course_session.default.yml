@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.course_session.field_course
-    - field.field.node.course_session.field_date
     - field.field.node.course_session.field_location
+    - field.field.node.course_session.field_meta_tags
     - field.field.node.course_session.field_time
     - node.type.course_session
   module:
     - content_moderation
-    - datetime
     - datetime_range
+    - metatag
     - path
     - scheduler
     - text
@@ -36,12 +36,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_date:
-    type: datetime_default
-    weight: 122
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_location:
     type: text_textarea
     weight: 124
@@ -49,6 +43,14 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 126
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_time:
     type: daterange_default

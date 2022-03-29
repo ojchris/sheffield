@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.homepage.field_content_sections
+    - field.field.node.homepage.field_meta_tags
     - node.type.homepage
+    - workflows.workflow.workflow
   module:
+    - content_moderation
+    - metatag
     - paragraphs
     - path
     - scheduler
@@ -38,6 +42,14 @@ content:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 101
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_page_owner:
     type: entity_reference_autocomplete

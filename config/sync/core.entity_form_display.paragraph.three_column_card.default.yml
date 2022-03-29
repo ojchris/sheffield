@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.three_column_card.field_background_colour
     - field.field.paragraph.three_column_card.field_image
     - field.field.paragraph.three_column_card.field_link
     - field.field.paragraph.three_column_card.field_text
@@ -17,6 +18,12 @@ targetEntityType: paragraph
 bundle: three_column_card
 mode: default
 content:
+  field_background_colour:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_image:
     type: media_library_widget
     weight: 1

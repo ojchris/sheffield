@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_display_accessibility_butt
     - field.field.node.page.field_display_social_sharing_but
     - field.field.node.page.field_hide_title
+    - field.field.node.page.field_meta_tags
     - field.field.node.page.field_page_owner
     - field.field.node.page.field_review_date
     - node.type.page
@@ -48,6 +49,7 @@ hidden:
   field_display_accessibility_butt: true
   field_display_social_sharing_but: true
   field_hide_title: true
+  field_meta_tags: true
   field_page_owner: true
   field_review_date: true
   langcode: true

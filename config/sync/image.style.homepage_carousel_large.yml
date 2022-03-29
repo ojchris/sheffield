@@ -1,0 +1,17 @@
+uuid: b13f1c7d-0e25-4b8d-86c0-591ca4a088d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: homepage_carousel_large
+label: 'Homepage Carousel (885x500)'
+effects:
+  9a1c4a75-36e0-4d9a-a5b4-fd240b665944:
+    uuid: 9a1c4a75-36e0-4d9a-a5b4-fd240b665944
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 885
+      height: 500
+      crop_type: focal_point
