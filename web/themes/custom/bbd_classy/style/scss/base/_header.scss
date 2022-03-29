@@ -53,7 +53,16 @@
 .site-logo {
   display: inline-block;
   vertical-align: top;
-  width: 200px;
+  width: 160px;
+
+  &:focus {
+    box-shadow: 0 0 0 4px var(--focus-dark),  0 0 0 4px var(--focus-dark);
+    outline: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px var(--focus-dark),  0 0 0 1px var(--focus-dark);
+  }
 }
 
 .site-name {
