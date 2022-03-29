@@ -11,10 +11,7 @@
     display: block;
     margin-top: 15px;
 
-    &:focus {
-      background: var(--focus-white);
-      outline: 1px solid var(--focus-black);
-    }
+    @include focus-link;
   }
 }
 

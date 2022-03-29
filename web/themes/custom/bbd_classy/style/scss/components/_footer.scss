@@ -11,10 +11,7 @@
   }
 
   a {
-    &:focus {
-      background: var(--focus-white);
-      outline: 0;
-    }
+    @include focus-link;
   }
 
   .region-footer nav#block-bottommenu {

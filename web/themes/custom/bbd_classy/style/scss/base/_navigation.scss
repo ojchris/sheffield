@@ -434,13 +434,10 @@ ul.main-megamenu {
           font-weight: normal;
           padding: 10px 15px;
 
+          @include focus-link;
+
           &:hover {
             text-decoration: underline;
-          }
-
-          &:focus {
-            background: var(--focus-white);
-            outline: 0;
           }
         }
       }

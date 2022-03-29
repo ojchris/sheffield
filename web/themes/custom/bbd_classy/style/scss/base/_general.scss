@@ -125,6 +125,7 @@ iframe {
 
   a {
     text-decoration: none;
+    @include focus-link;
 
     &:hover {
       text-decoration: underline;
