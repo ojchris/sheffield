@@ -95,4 +95,61 @@
       $('#main-menu-sidebar > a', context).attr('tabindex', -1);
     },
   }
+
+  // To set Slick slider on Homepage Carousel.
+  Drupal.behaviors.homepage_carousel = {
+    attach: function (context, settings) {
+      // To set position to the slider buttons (arrows) according to the Image height.
+      function applyHeight(el) {
+        let $currentSlide = el.find('.slick-current');
+        let $currentArrows = $currentSlide.closest('.field--name-field-slide').find('.arrow-wrapper');
+        let $imageHeight = $currentSlide.find('img').height() + 15;
+        $currentArrows.css('top', $imageHeight + 'px');
+      }
+
+      // To set Slick.
+      $('.paragraph--type--homepage-carousel', context).once('homepage-carousel-slick').each(function() {
+        let $slick = $(this).find('.slider-images--wrapper');
+        let $arrows = $(this).find('.arrow-wrapper');
+        let $next = $arrows.children('.slick-next');
+        let $prev = $arrows.children('.slick-prev');
+
+        $slick.each(function() {
+          let $currentSlider = $(this).closest('.field--name-field-slide');
+          let $prev = $currentSlider.find('.slick-prev');
+          let $next = $currentSlider.find('.slick-next');
+
+          $(this).on('init', function(event, slick) {
+            applyHeight($(this))
+          });
+
+          let $slider = $(this).slick({
+            arrows: false,
+            appendArrows: $arrows,
+            adaptiveHeight: true,
+            speed: 600,
+            slidesToShow: 1,
+            fade: true,
+            cssEase: 'linear'
+          });
+
+          $(this).on('afterChange', function() {
+            applyHeight($(this))
+          });
+
+          $(this).on('setPosition', function() {
+            applyHeight($(this))
+          });
+
+          $next.on('click', function(e) {
+            $slider.slick('slickNext');
+          });
+
+          $prev.on('click', function(e) {
+            $slider.slick('slickPrev');
+          });
+        });
+      });
+    }
+  }
 })(jQuery);

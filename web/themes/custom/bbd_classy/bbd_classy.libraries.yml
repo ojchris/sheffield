@@ -1,17 +1,17 @@
 bbd_classy:
   fonts:
   js:
-    js/bbd_classy.js: {}
     libraries/jQuerySelectric/public/jquery.selectric.min.js: {}
-    libraries/slick-slider/slick/slick.min.js: { weight: -3, minified: true }
+    /libraries/slick-slider/slick/slick.min.js: { weight: -3, minified: true }
+    js/bbd_classy.js: {}
   css:
     theme:
       # Custom CSS file to be loaded in all media circumstances
       '//fast.fonts.net/cssapi/56c28163-b5b8-47c5-99be-39d4ad6b964d.css': { type: external, minified: true }
-      style/css/bbd_classy.css: {}
       style/css/print.css: { media: print }
       libraries/jQuerySelectric/public/selectric.css: {}
-      libraries/slick/slick.css: {}
+      /libraries/slick-slider/slick/slick.css: {}
+      style/css/bbd_classy.css: {}
   dependencies:
     - core/jquery
     - core/drupal

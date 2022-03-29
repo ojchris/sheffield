@@ -1,0 +1,153 @@
+.paragraph--type--homepage-carousel {
+
+  // Slide
+  .carousel-slide {
+    >.content-wrapper {
+      @include breakpoint($tab) {
+        @include column-row();
+      }
+
+      .carousel-slide--content {
+        padding-bottom: 20px;
+        @include column-create(4);
+
+        @include breakpoint($tab) {
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content(center);
+          padding-bottom: 60px;
+        }
+      }
+
+      .carousel-slide--image {
+        padding-bottom: 40px;
+        @include column-create(8);
+
+        @include breakpoint($tab) {
+          padding-bottom: 60px;
+        }
+      }
+    }
+
+    // Title
+    .slide-title {
+
+      h1,
+      h2 {
+        font-size: 40px;
+        line-height: 1;
+
+        @include breakpoint($widedesk) {
+          font-size: 3.75em;
+        }
+      }
+    }
+
+    // Description
+    .slide-description {
+      margin-top: -5px;
+      color: $color-dark-grey;
+    }
+
+    .slide-title,
+    .slide-description {
+      @include breakpoint(0 $tab-max) {
+        padding-right: 100px;
+      }
+    }
+
+    // Button
+    .slide-link {
+      margin-top: 1em;
+
+      a {
+        @extend %btn-secondary;
+
+        &:focus {
+          background: $color-background-focus;
+          color: $color-black;
+        }
+      }
+    }
+  }
+
+  // Slider container
+  .field--name-field-slide {
+    position: relative;
+
+    .slick-list {
+      margin: 0 -$mobile_padding;
+      height: auto !important;
+
+      @include breakpoint($tab) {
+        margin: 0 -$tab_padding;
+      }
+    }
+
+    .slick-slide {
+      @include breakpoint($tab) {
+        margin: 0 $tab_padding;
+      }
+    }
+
+    .slick-slide:not(.slick-active) {
+      .slide-image {
+        img {
+          box-shadow: none;
+        }
+      }
+    }
+
+    // Slide counter
+    .slide-counter {
+      position: relative;
+      top: 22px;
+      left: 77px;
+
+      @include breakpoint($widedesk) {
+        top: 37px;
+        left: 160px;
+      }
+    }
+
+    // Slick arrows
+    .arrow-wrapper {
+      @include breakpoint(0 $tab-max) {
+        position: relative;
+        top: -29px !important;
+      }
+
+      @include breakpoint($tab) {
+        position: absolute;
+        width: 100%;
+      }
+
+      .column-row {
+        @include breakpoint($tab) {
+          @include justify-content(flex-end);
+        }
+      }
+
+      .slick-next {
+        position: relative;
+        left: 2px;
+
+        @include breakpoint($widedesk) {
+          left: 10px;
+        }
+      }
+
+      .slick-next,
+      .slick-prev {
+        &:focus {
+          background: $color-background-focus;
+
+          &::before {
+            background: url("../../images/icons/angle-right-dark.svg") no-repeat center center, $color-background-focus;
+            background-size: 15px auto;
+          }
+        }
+      }
+    }
+  }
+}
