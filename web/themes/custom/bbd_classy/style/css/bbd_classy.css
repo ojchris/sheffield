@@ -21,7 +21,7 @@
 /* Mixin position */
 /* Placeholder */
 /* background placement */
-/* line 52, ../scss/variables/_breakpoints.scss */
+/* line 53, ../scss/variables/_breakpoints.scss */
 .max-content-width {
   max-width: 1140px;
   width: 100%;
@@ -29,26 +29,26 @@
   padding: 0 20px;
 }
 @media (min-width: 48em) {
-  /* line 52, ../scss/variables/_breakpoints.scss */
+  /* line 53, ../scss/variables/_breakpoints.scss */
   .max-content-width {
     padding: 0 30px;
   }
 }
 @media (min-width: 64em) {
-  /* line 52, ../scss/variables/_breakpoints.scss */
+  /* line 53, ../scss/variables/_breakpoints.scss */
   .max-content-width {
     padding: 0 40px;
   }
 }
 
-/* line 67, ../scss/variables/_breakpoints.scss */
+/* line 68, ../scss/variables/_breakpoints.scss */
 .max-content-width-no-padding {
   max-width: 1060px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 52, ../scss/variables/_breakpoints.scss */
+/* line 53, ../scss/variables/_breakpoints.scss */
 .max-content-width {
   max-width: 1140px;
   width: 100%;
@@ -56,19 +56,19 @@
   padding: 0 20px;
 }
 @media (min-width: 48em) {
-  /* line 52, ../scss/variables/_breakpoints.scss */
+  /* line 53, ../scss/variables/_breakpoints.scss */
   .max-content-width {
     padding: 0 30px;
   }
 }
 @media (min-width: 64em) {
-  /* line 52, ../scss/variables/_breakpoints.scss */
+  /* line 53, ../scss/variables/_breakpoints.scss */
   .max-content-width {
     padding: 0 40px;
   }
 }
 
-/* line 67, ../scss/variables/_breakpoints.scss */
+/* line 68, ../scss/variables/_breakpoints.scss */
 .max-content-width-no-padding {
   max-width: 1060px;
   width: 100%;
@@ -91,7 +91,6 @@ h5,
 h6,
 .h1,
 .h2,
-.paragraph--type--download-panel .field--name-field-title,
 .h3,
 .h4,
 .h5,
@@ -109,8 +108,7 @@ h1,
 
 /* line 32, ../scss/variables/_typography.scss */
 h2,
-.h2,
-.paragraph--type--download-panel .field--name-field-title {
+.h2 {
   font-size: 40px;
   line-height: 48px;
 }
@@ -227,8 +225,7 @@ blockquote {
 
   /* line 138, ../scss/variables/_typography.scss */
   h2,
-  .h2,
-  .paragraph--type--download-panel .field--name-field-title {
+  .h2 {
     font-size: 40px;
     line-height: 1.175;
   }
@@ -269,8 +266,7 @@ blockquote {
 
   /* line 175, ../scss/variables/_typography.scss */
   h2,
-  .h2,
-  .paragraph--type--download-panel .field--name-field-title {
+  .h2 {
     font-size: 64px;
     line-height: 1.1718;
   }
@@ -2696,7 +2692,7 @@ ul.main-megamenu {
     width: 47%;
   }
 }
-@media (max-width: 22.5em) {
+@media (max-width: 30em) {
   /* line 13, ../scss/components/paragraphs/_download-panel.scss */
   .paragraph--type--download-panel .field--name-field-documents > .field__item {
     width: 90%;
@@ -2707,62 +2703,68 @@ ul.main-megamenu {
 /* line 30, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item article {
   width: 100%;
+  height: 100%;
   padding: 30px;
 }
-/* line 35, ../scss/components/paragraphs/_download-panel.scss */
+/* line 36, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-name h4 {
   font-size: 24px;
   text-decoration: underline;
 }
-/* line 40, ../scss/components/paragraphs/_download-panel.scss */
+/* line 41, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item p {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
   word-break: break-word;
 }
-/* line 47, ../scss/components/paragraphs/_download-panel.scss */
+/* line 48, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file {
   padding: 10px 0;
 }
-/* line 50, ../scss/components/paragraphs/_download-panel.scss */
+/* line 51, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file .field__item {
   background: url("../../images/icon-download.svg") no-repeat;
   background-size: contain;
   background-position: 43% center;
 }
 @media (max-width: 64em) {
-  /* line 50, ../scss/components/paragraphs/_download-panel.scss */
+  /* line 51, ../scss/components/paragraphs/_download-panel.scss */
   .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file .field__item {
     background-position: 60% center;
   }
 }
-/* line 60, ../scss/components/paragraphs/_download-panel.scss */
+/* line 61, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .field--name-field-documents > .field__item .field--name-field-media-file a {
   text-decoration: none;
 }
-/* line 71, ../scss/components/paragraphs/_download-panel.scss */
+/* line 68, ../scss/components/paragraphs/_download-panel.scss */
+.paragraph--type--download-panel .field--name-field-title h2 {
+  font-size: 36px;
+  line-height: 40px;
+}
+/* line 73, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel a {
   color: #212B32;
   font-weight: 700;
 }
-/* line 76, ../scss/components/paragraphs/_download-panel.scss */
+/* line 78, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .media-bg--purple {
   background: #E2D4F0;
 }
-/* line 80, ../scss/components/paragraphs/_download-panel.scss */
+/* line 82, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .media-bg--blue {
   background: #D0EEF6;
 }
-/* line 84, ../scss/components/paragraphs/_download-panel.scss */
+/* line 86, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .media-bg--red {
   background: #ECC5CE;
 }
-/* line 88, ../scss/components/paragraphs/_download-panel.scss */
+/* line 90, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .media-bg--green {
   background: #ECF5DF;
 }
-/* line 92, ../scss/components/paragraphs/_download-panel.scss */
+/* line 94, ../scss/components/paragraphs/_download-panel.scss */
 .paragraph--type--download-panel .media-bg--orange {
   background: #f4Ecc9;
 }
