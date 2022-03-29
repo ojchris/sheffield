@@ -43,6 +43,10 @@
     box-sizing: unset;
     padding: 90px 80px;
 
+    @include breakpoint($widestmobOnly) {
+      padding: 30px 35px;
+    }
+
     .video-container {
       display: block;
       width: 70%;
