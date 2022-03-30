@@ -3491,21 +3491,27 @@ ul.main-megamenu {
 /* line 15, ../scss/components/paragraphs/_tabbed-content.scss */
 .tab__button:active, .tab__button:hover, .tab__button:focus {
   box-shadow: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
-/* line 22, ../scss/components/paragraphs/_tabbed-content.scss */
+/* line 148, ../scss/abstractions/_site_mixins.scss */
+.tab__button:focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--focus-dark), 0 0 0 4px var(--focus-dark);
+}
+/* line 26, ../scss/components/paragraphs/_tabbed-content.scss */
 .tab__button.is-active, .tab__button:active {
   background: #fff;
   border-color: #D8DDE0;
   border-bottom-color: #fff;
 }
 
-/* line 30, ../scss/components/paragraphs/_tabbed-content.scss */
+/* line 34, ../scss/components/paragraphs/_tabbed-content.scss */
 .tab__content {
   display: none;
   padding: 25px 20px;
+  word-break: break-word;
 }
-/* line 34, ../scss/components/paragraphs/_tabbed-content.scss */
+/* line 39, ../scss/components/paragraphs/_tabbed-content.scss */
 .tab__content.is-active {
   display: block;
   background: #fff;
@@ -3514,19 +3520,19 @@ ul.main-megamenu {
 }
 
 @media (min-width: 64em) {
-  /* line 43, ../scss/components/paragraphs/_tabbed-content.scss */
+  /* line 48, ../scss/components/paragraphs/_tabbed-content.scss */
   .tab__button {
     font-size: 24px;
     line-height: 32px;
     padding: 18px 30px;
   }
 
-  /* line 49, ../scss/components/paragraphs/_tabbed-content.scss */
+  /* line 54, ../scss/components/paragraphs/_tabbed-content.scss */
   .tab__content {
     padding: 40px 30px;
   }
 
-  /* line 53, ../scss/components/paragraphs/_tabbed-content.scss */
+  /* line 58, ../scss/components/paragraphs/_tabbed-content.scss */
   .paragraph-tab-inner {
     width: var(--max-width-small);
   }

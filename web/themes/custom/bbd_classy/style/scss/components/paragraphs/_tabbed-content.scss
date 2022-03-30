@@ -16,7 +16,11 @@
   &:hover,
   &:focus {
     box-shadow: none;
-    text-decoration: underline;
+    text-decoration: none;
+  }
+
+  &:focus {
+    @include focus-card;
   }
 
   &.is-active,
@@ -30,6 +34,7 @@
 .tab__content {
   display: none;
   padding: 25px 20px;
+  word-break: break-word;
 
   &.is-active {
     display: block;
