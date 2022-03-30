@@ -135,3 +135,18 @@
   background-repeat: no-repeat;
   background-size: $percent;
 }
+
+@mixin focus-link {
+ &:focus {
+   background-color: var(--focus-white);
+   box-shadow: 0 -2px var(--focus-white), 0 4px var(--focus-dark);
+   outline: 4px solid transparent;
+  }
+}
+
+@mixin focus-card {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--focus-dark), 0 0 0 4px var(--focus-dark);
+  }
+}

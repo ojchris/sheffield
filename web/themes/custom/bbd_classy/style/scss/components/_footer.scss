@@ -10,6 +10,10 @@
     margin: 0 auto;
   }
 
+  a {
+    @include focus-link;
+  }
+
   .region-footer nav#block-bottommenu {
     padding: 70px 0 50px 0;
     border-bottom: solid 1px $grey-light;
@@ -28,6 +32,7 @@
           color: $black;
           font-size: 18px;
           font-weight: bold;
+          margin-bottom: 10px;
         }
 
       }
@@ -43,8 +48,13 @@
         a {
           font-size: 16px;
           font-weight: normal;
-        }
+          margin-bottom: 5px;
 
+          &:focus {
+            background: var(--focus-white);
+            outline: 0;
+          }
+        }
       }
     }
   }
@@ -74,6 +84,14 @@
 
     a {
       color: $black;
+
+      &:focus {
+        outline: 0;
+
+        span {
+          background: var(--focus-white);
+        }
+      }
     }
   }
 
@@ -105,6 +123,10 @@
             color: $black;
             text-decoration: none;
             font-weight: 700;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }

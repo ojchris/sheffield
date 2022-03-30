@@ -21,7 +21,7 @@
         width: 47%;
       }
 
-      @include breakpoint($widemobOnly) {
+      @include breakpoint($widestmobOnly) {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 30px;
@@ -73,6 +73,8 @@
   a {
     color: $black;
     font-weight: 700;
+
+    @include focus-link;
   }
 
   .media-bg--purple {

@@ -10,14 +10,6 @@
   a.button {
     background: none;
   }
-
-  button:hover,
-  button:focus,
-  a.button:hover,
-  a.button:focus {
-    box-shadow: none;
-    text-decoration: none;
-  }
 }
 
 .paragraph--type--expandable-box {
@@ -52,6 +44,7 @@
   text-align: left;
   @include flexbox();
   @include align-items(center);
+  @include focus-card;
 
   div {
     display: inline-block;
