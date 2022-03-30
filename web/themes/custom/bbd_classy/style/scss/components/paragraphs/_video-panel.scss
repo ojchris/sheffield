@@ -132,8 +132,11 @@
     }
 
     &:focus {
-      border-radius: 50%;
-      border: 2px dashed $white;
+      border-radius: 0;
+      border: 2px solid $white;
+      background: url(../../images/play-media.svg) no-repeat center center var(--focus-dark);
+      background-size: contain;
+      box-shadow: none;
     }
   }
 
