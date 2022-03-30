@@ -20,138 +20,7 @@
 /* Clearfix */
 /* Mixin position */
 /* Placeholder */
-/* borrowed */
-/* line 76, ../scss/variables/_breakpoints.scss */
-.btn-secondary,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-  background-image: linear-gradient(to right, #de3528, #cc051c);
-  color: #fff;
-}
-
-/* line 86, ../scss/variables/_breakpoints.scss */
-.btn-secondary,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-  transition: all .2s ease-in-out;
-}
-/* line 92, ../scss/variables/_breakpoints.scss */
-.btn-secondary:hover,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a:hover {
-  background-image: linear-gradient(to right, #de3528, #cc051c);
-  color: #fff;
-  box-shadow: 0 5px 20px 5px rgba(42, 42, 60, 0.3);
-  transform: translateY(-5px);
-}
-
-/* line 101, ../scss/variables/_breakpoints.scss */
-.btn-secondary,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-  border-radius: 5px;
-}
-@media (min-width: 80em) {
-  /* line 101, ../scss/variables/_breakpoints.scss */
-  .btn-secondary,
-  .paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-    border-radius: 10px;
-  }
-}
-
-/* line 112, ../scss/variables/_breakpoints.scss */
-.btn-secondary,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-  padding: 10px;
-  box-shadow: 0 5px 20px 0 rgba(42, 42, 60, 0.3);
-  display: inline-block;
-}
-@media (min-width: 80em) {
-  /* line 112, ../scss/variables/_breakpoints.scss */
-  .btn-secondary,
-  .paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-    font-size: 16px;
-    padding: 18px 20px;
-  }
-}
-
-/* line 140, ../scss/variables/_breakpoints.scss */
-.column-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -13px;
-  margin-right: -13px;
-}
-@media (min-width: 48em) {
-  /* line 140, ../scss/variables/_breakpoints.scss */
-  .column-row {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-}
-
-/* borrowed */
-/* line 76, ../scss/variables/_breakpoints.scss */
-.btn-secondary,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-  background-image: linear-gradient(to right, #de3528, #cc051c);
-  color: #fff;
-}
-
-/* line 86, ../scss/variables/_breakpoints.scss */
-.btn-secondary,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-  transition: all .2s ease-in-out;
-}
-/* line 92, ../scss/variables/_breakpoints.scss */
-.btn-secondary:hover,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a:hover {
-  background-image: linear-gradient(to right, #de3528, #cc051c);
-  color: #fff;
-  box-shadow: 0 5px 20px 5px rgba(42, 42, 60, 0.3);
-  transform: translateY(-5px);
-}
-
-/* line 101, ../scss/variables/_breakpoints.scss */
-.btn-secondary,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-  border-radius: 5px;
-}
-@media (min-width: 80em) {
-  /* line 101, ../scss/variables/_breakpoints.scss */
-  .btn-secondary,
-  .paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-    border-radius: 10px;
-  }
-}
-
-/* line 112, ../scss/variables/_breakpoints.scss */
-.btn-secondary,
-.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-  padding: 10px;
-  box-shadow: 0 5px 20px 0 rgba(42, 42, 60, 0.3);
-  display: inline-block;
-}
-@media (min-width: 80em) {
-  /* line 112, ../scss/variables/_breakpoints.scss */
-  .btn-secondary,
-  .paragraph--type--homepage-carousel .carousel-slide .slide-link a {
-    font-size: 16px;
-    padding: 18px 20px;
-  }
-}
-
-/* line 140, ../scss/variables/_breakpoints.scss */
-.column-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -13px;
-  margin-right: -13px;
-}
-@media (min-width: 48em) {
-  /* line 140, ../scss/variables/_breakpoints.scss */
-  .column-row {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-}
-
+/* for homepage carousel */
 /* line 4, ../scss/variables/_typography.scss */
 body {
   font-size: 14px;
@@ -895,19 +764,19 @@ form .form-actions.form-wrapper:not(:empty) {
   padding: 20px 0;
   margin: 0;
 }
-/* line 107, ../scss/abstractions/_site_mixins.scss */
+/* line 116, ../scss/abstractions/_site_mixins.scss */
 form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
   color: #8597A3;
 }
-/* line 110, ../scss/abstractions/_site_mixins.scss */
+/* line 120, ../scss/abstractions/_site_mixins.scss */
 form input::-moz-placeholder, form textarea::-moz-placeholder {
   color: #8597A3;
 }
-/* line 113, ../scss/abstractions/_site_mixins.scss */
+/* line 124, ../scss/abstractions/_site_mixins.scss */
 form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
   color: #8597A3;
 }
-/* line 116, ../scss/abstractions/_site_mixins.scss */
+/* line 128, ../scss/abstractions/_site_mixins.scss */
 form input:-moz-placeholder, form textarea:-moz-placeholder {
   color: #8597A3;
 }
@@ -1388,6 +1257,22 @@ iframe {
     padding: 0 3.125em;
   }
 }
+/* homepage carousel column */
+/* line 190, ../scss/base/_general.scss */
+.column-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -13px;
+  margin-right: -13px;
+}
+@media (min-width: 48em) {
+  /* line 190, ../scss/base/_general.scss */
+  .column-row {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
 /*******************************************************************************
  * Region Header
  ******************************************************************************/
@@ -2484,6 +2369,7 @@ ul.main-megamenu {
   padding-right: 13px;
   box-sizing: border-box;
   width: 100%;
+  background: transparent;
 }
 @media (min-width: 48em) {
   /* line 10, ../scss/components/paragraphs/_homepage-carousel.scss */
@@ -2496,7 +2382,7 @@ ul.main-megamenu {
   /* line 10, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .carousel-slide > .content-wrapper .carousel-slide--content {
     width: 100%;
-    max-width: 33.33333%;
+    max-width: 41.66667%;
   }
 }
 @media (min-width: 48em) {
@@ -2508,147 +2394,179 @@ ul.main-megamenu {
     padding-bottom: 60px;
   }
 }
-/* line 22, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 24, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .carousel-slide > .content-wrapper .carousel-slide--image {
   padding-bottom: 40px;
   padding-left: 13px;
   padding-right: 13px;
   box-sizing: border-box;
   width: 100%;
+  background: transparent;
 }
 @media (min-width: 48em) {
-  /* line 22, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 24, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .carousel-slide > .content-wrapper .carousel-slide--image {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (min-width: 48em) {
-  /* line 22, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 24, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .carousel-slide > .content-wrapper .carousel-slide--image {
     width: 100%;
-    max-width: 66.66667%;
+    max-width: 50%;
   }
 }
 @media (min-width: 48em) {
-  /* line 22, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 24, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .carousel-slide > .content-wrapper .carousel-slide--image {
     padding-bottom: 60px;
   }
 }
-/* line 35, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 38, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .carousel-slide .slide-title h1,
 .paragraph--type--homepage-carousel .carousel-slide .slide-title h2 {
-  font-size: 40px;
-  line-height: 1;
+  font-size: 36px;
+  line-height: 43px;
 }
-@media (min-width: 80em) {
-  /* line 35, ../scss/components/paragraphs/_homepage-carousel.scss */
-  .paragraph--type--homepage-carousel .carousel-slide .slide-title h1,
-  .paragraph--type--homepage-carousel .carousel-slide .slide-title h2 {
-    font-size: 3.75em;
-  }
-}
-/* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 46, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .carousel-slide .slide-description {
   margin-top: -5px;
   color: #3E3D40;
 }
 @media (min-width: 0) and (max-width: 47.9375em) {
-  /* line 52, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 51, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .carousel-slide .slide-title,
   .paragraph--type--homepage-carousel .carousel-slide .slide-description {
     padding-right: 100px;
   }
 }
-/* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 59, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .carousel-slide .slide-link {
-  margin-top: 1em;
+  margin-top: 20px;
 }
-/* line 66, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 62, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
+  color: #212B32;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 12px 30px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px 0 rgba(42, 42, 60, 0.3);
+  display: inline-block;
+  text-decoration: none;
+}
+/* line 77, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .carousel-slide .slide-link a:focus {
-  background: #fd0;
-  color: #000;
+  background: #FFEB3B;
+  color: #005eb8;
+  text-decoration: underline;
 }
-/* line 75, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 87, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .field--name-field-slide {
   position: relative;
 }
-/* line 78, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 90, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .field--name-field-slide .slick-list {
   margin: -1.25em;
   height: auto !important;
 }
 @media (min-width: 48em) {
-  /* line 78, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 90, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .field--name-field-slide .slick-list {
     margin: -1.875em;
   }
 }
+/* line 99, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--homepage-carousel .field--name-field-slide .slick-slide {
+  padding-top: 120px;
+  background: url(../../images/home_carousel_bg_purple.svg);
+  background-repeat: no-repeat;
+  background-position: right 100%;
+}
 @media (min-width: 48em) {
-  /* line 87, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 99, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .field--name-field-slide .slick-slide {
     margin: 0 1.875em;
   }
 }
-/* line 95, ../scss/components/paragraphs/_homepage-carousel.scss */
+@media (max-width: 47.9375em) {
+  /* line 99, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .paragraph--type--homepage-carousel .field--name-field-slide .slick-slide {
+    padding-top: 10px;
+  }
+}
+/* line 116, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .field--name-field-slide .slick-slide:not(.slick-active) .slide-image img {
   box-shadow: none;
 }
-/* line 102, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 123, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .field--name-field-slide .slide-counter {
   position: relative;
   top: 22px;
   left: 77px;
 }
 @media (min-width: 80em) {
-  /* line 102, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 123, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .field--name-field-slide .slide-counter {
     top: 37px;
     left: 160px;
   }
 }
 @media (min-width: 0) and (max-width: 47.9375em) {
-  /* line 114, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 135, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper {
     position: relative;
     top: -29px !important;
   }
 }
 @media (min-width: 48em) {
-  /* line 114, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 135, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper {
     position: absolute;
     width: 100%;
   }
 }
 @media (min-width: 48em) {
-  /* line 125, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 146, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper .column-row {
     justify-content: flex-end;
   }
 }
-/* line 131, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 152, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper .slick-next {
   position: relative;
   left: 2px;
 }
 @media (min-width: 80em) {
-  /* line 131, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 152, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper .slick-next {
     left: 10px;
   }
 }
-/* line 142, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 163, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper .slick-next:focus,
 .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper .slick-prev:focus {
-  background: #fd0;
+  background: #FFEB3B;
 }
-/* line 145, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 166, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper .slick-next:focus::before,
 .paragraph--type--homepage-carousel .field--name-field-slide .arrow-wrapper .slick-prev:focus::before {
-  background: url("../../images/icons/angle-right-dark.svg") no-repeat center center, #fd0;
+  background: url("../../images/icons/angle-right-dark.svg") no-repeat center center, #FFEB3B;
   background-size: 15px auto;
+}
+/* line 175, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--homepage-carousel .carousel-slide .slide-link a {
+  transition: all .2s ease-in-out;
+}
+/* line 178, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--homepage-carousel .carousel-slide .slide-link a:hover {
+  box-shadow: 0 5px 20px 5px rgba(216, 221, 224, 0.3);
+  transform: translateY(-5px);
+  color: #005eb8;
+  text-decoration: underline;
 }
 
 /* line 1, ../scss/pages/_content-wrapper.scss */

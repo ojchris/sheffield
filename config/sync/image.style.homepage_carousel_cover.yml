@@ -4,14 +4,14 @@ status: true
 dependencies:
   module:
     - focal_point
-name: homepage_carousel_large
-label: 'Homepage Carousel (885x500)'
+name: homepage_carousel_cover
+label: 'Homepage Carousel  Item Cover (552x369)'
 effects:
   9a1c4a75-36e0-4d9a-a5b4-fd240b665944:
     uuid: 9a1c4a75-36e0-4d9a-a5b4-fd240b665944
     id: focal_point_scale_and_crop
     weight: 1
     data:
-      width: 885
-      height: 500
+      width: 552
+      height: 369
       crop_type: focal_point

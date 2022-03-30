@@ -48,3 +48,27 @@ $twitter: #1DA1F2;
 $facebook: #4267B2;
 $instagram: #F56040;
 $instagram-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+/* for homepage carousel */
+$bright-yellow: #fd0;
+$color-white: #fff;
+$color-black: #000;
+
+$color-primary: #2A2A3C; //Dark
+$color-primary-darker: #19192a; //Deep dark
+
+$color-secondary: #CC051C; //Scarlet
+$color-secondary-light: #DE3528; //Tomato
+$color-background-focus: $yellow;
+
+$color-dark-grey: #3E3D40; //Charcoal grey
+$color-grey: #545456; //Slat grey
+
+$box-shadow-primary: 0 5px 20px 0 rgba($color-primary, 0.58);
+$box-shadow-secondary: 0 5px 20px 0 rgba($color-primary, 0.58);
+$box-shadow-primary-hover: 0 5px 20px 0 $color-secondary;
+$box-shadow-secondary-hover: 0 5px 20px 5px rgba($color-primary, 0.58);
+$box-shadow-secondary-hover-big: 0 20px 60px 0 rgba($color-secondary, 0.56);
+$box-shadow-gray-light: 0 20px 40px 0 rgba(97, 97, 97, 0.2);
+$box-shadow-dark: 0 32px 40px -37px rgba(0, 0, 0, 0.5);
+$box-shadow-primary-btn: 0 5px 20px 0 rgba($color-primary, 0.3);

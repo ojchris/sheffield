@@ -9,7 +9,9 @@
 
       .carousel-slide--content {
         padding-bottom: 20px;
-        @include column-create(4);
+        @include column-create(5);
+        background: transparent;
+
 
         @include breakpoint($tab) {
           @include flexbox();
@@ -21,7 +23,8 @@
 
       .carousel-slide--image {
         padding-bottom: 40px;
-        @include column-create(8);
+        @include column-create(6);
+        background: transparent;
 
         @include breakpoint($tab) {
           padding-bottom: 60px;
@@ -34,12 +37,8 @@
 
       h1,
       h2 {
-        font-size: 40px;
-        line-height: 1;
-
-        @include breakpoint($widedesk) {
-          font-size: 3.75em;
-        }
+        font-size: 36px;
+        line-height: 43px;
       }
     }
 
@@ -58,14 +57,27 @@
 
     // Button
     .slide-link {
-      margin-top: 1em;
+      margin-top: 20px;
 
       a {
         @extend %btn-secondary;
 
+        color: $black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        padding: 12px 30px;
+        background: $white;
+        border-radius: 30px;
+        box-shadow: $box-shadow-primary-btn;
+        display: inline-block;
+        text-decoration: none;
+
+
         &:focus {
           background: $color-background-focus;
-          color: $color-black;
+          color: $blue;
+          text-decoration: underline;
         }
       }
     }
@@ -85,8 +97,17 @@
     }
 
     .slick-slide {
+      padding-top: 120px;
+      background: url(../../images/home_carousel_bg_purple.svg);
+      background-repeat: no-repeat;
+      background-position: right 100%;
+
       @include breakpoint($tab) {
         margin: 0 $tab_padding;
+      }
+
+      @include breakpoint($mobileOnly) {
+        padding-top: 10px;
       }
     }
 
@@ -148,6 +169,17 @@
           }
         }
       }
+    }
+  }
+
+  %btn-secondary {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 5px 20px 5px rgba($grey-lightest, 0.3);
+      transform: translateY(-5px);
+      color: $blue;
+      text-decoration: underline;
     }
   }
 }
