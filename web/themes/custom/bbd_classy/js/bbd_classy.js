@@ -78,7 +78,6 @@
       $('.expanded-block__title', context).click(function (event) {
         event.preventDefault();
 
-        $('.expanded-block').removeClass('expanded-block--active');
         $(this).parents('.expanded-block').toggleClass('expanded-block--active');
         $(this).attr('aria-expanded', function (i, attr) {
           return attr === 'true' ? 'false' : 'true'

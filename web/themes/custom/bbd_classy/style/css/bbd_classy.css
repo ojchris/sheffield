@@ -2822,73 +2822,77 @@ ul.main-megamenu {
   background: #f4Ecc9;
 }
 
+/* line 1, ../scss/components/paragraphs/_expandable-panel.scss */
+.paragraph--type--expandable-panel {
+  /* reset button styles */
+}
 /* line 4, ../scss/components/paragraphs/_expandable-panel.scss */
 .paragraph--type--expandable-panel.paragraph {
   margin-bottom: 0;
 }
+/* line 9, ../scss/components/paragraphs/_expandable-panel.scss */
+.paragraph--type--expandable-panel button,
+.paragraph--type--expandable-panel a.button {
+  background: none;
+}
+/* line 14, ../scss/components/paragraphs/_expandable-panel.scss */
+.paragraph--type--expandable-panel button:hover,
+.paragraph--type--expandable-panel button:focus,
+.paragraph--type--expandable-panel a.button:hover,
+.paragraph--type--expandable-panel a.button:focus {
+  box-shadow: none;
+  text-decoration: none;
+}
 
-/* line 10, ../scss/components/paragraphs/_expandable-panel.scss */
+/* line 24, ../scss/components/paragraphs/_expandable-panel.scss */
 .paragraph--type--expandable-box.paragraph {
   margin-bottom: 0;
 }
 
-/* line 15, ../scss/components/paragraphs/_expandable-panel.scss */
+/* line 29, ../scss/components/paragraphs/_expandable-panel.scss */
 .expanded-block {
   background: #fff;
   margin-bottom: 20px;
   padding: 15px 20px;
 }
 @media (min-width: 90em) {
-  /* line 15, ../scss/components/paragraphs/_expandable-panel.scss */
+  /* line 29, ../scss/components/paragraphs/_expandable-panel.scss */
   .expanded-block {
     margin-bottom: 25px;
     padding: 20px 30px;
   }
 }
-/* line 26, ../scss/components/paragraphs/_expandable-panel.scss */
+/* line 40, ../scss/components/paragraphs/_expandable-panel.scss */
 .expanded-block .expanded-block__body {
   display: none;
 }
 
-/* line 31, ../scss/components/paragraphs/_expandable-panel.scss */
+/* line 45, ../scss/components/paragraphs/_expandable-panel.scss */
 .expanded-block__title {
   padding: 0;
   margin: 0;
   background: transparent;
   color: #005eb8;
-  font-size: 13px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
   display: flex;
   align-items: center;
 }
-@media (min-width: 48em) {
-  /* line 31, ../scss/components/paragraphs/_expandable-panel.scss */
-  .expanded-block__title {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-@media (min-width: 90em) {
-  /* line 31, ../scss/components/paragraphs/_expandable-panel.scss */
-  .expanded-block__title {
-    font-size: 18px;
-    line-height: 32px;
-  }
-}
-/* line 51, ../scss/components/paragraphs/_expandable-panel.scss */
+/* line 56, ../scss/components/paragraphs/_expandable-panel.scss */
 .expanded-block__title div {
   display: inline-block;
   text-decoration: underline;
 }
-/* line 55, ../scss/components/paragraphs/_expandable-panel.scss */
+/* line 60, ../scss/components/paragraphs/_expandable-panel.scss */
 .expanded-block__title div:hover {
   text-decoration: none;
 }
 
-/* line 61, ../scss/components/paragraphs/_expandable-panel.scss */
+/* line 66, ../scss/components/paragraphs/_expandable-panel.scss */
 .expanded-block__icon {
   display: inline-block;
-  --size-wrap: 20px;
+  --size-wrap: 34px;
   width: var(--size-wrap);
   height: var(--size-wrap);
   background: #005eb8;
@@ -2898,17 +2902,10 @@ ul.main-megamenu {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 48em) {
-  /* line 61, ../scss/components/paragraphs/_expandable-panel.scss */
+@media (max-width: 47.9375em) {
+  /* line 66, ../scss/components/paragraphs/_expandable-panel.scss */
   .expanded-block__icon {
-    margin-right: 15px;
-    --size-wrap: 27px;
-  }
-}
-@media (min-width: 90em) {
-  /* line 61, ../scss/components/paragraphs/_expandable-panel.scss */
-  .expanded-block__icon {
-    --size-wrap: 34px;
+    height: 24px;
   }
 }
 
