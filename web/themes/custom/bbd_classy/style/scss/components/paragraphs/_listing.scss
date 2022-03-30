@@ -27,7 +27,7 @@
     }
 
     tr:nth-child(odd) td {
-      background: transparent;
+      background: $white;
     }
   }
 
@@ -38,7 +38,13 @@
 
 @include breakpoint($desk) {
   .paragraph--type--listing {
+    margin-bottom: 50px;
+
     table {
+      th, td {
+        padding: 10px 15px;
+      }
+
       th {
         font-size: 16px;
         line-height: 20px;

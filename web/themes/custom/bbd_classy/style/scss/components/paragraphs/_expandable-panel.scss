@@ -4,6 +4,20 @@
   &.paragraph {
     margin-bottom: 0;
   }
+
+  /* reset button styles */
+  button,
+  a.button {
+    background: none;
+  }
+
+  button:hover,
+  button:focus,
+  a.button:hover,
+  a.button:focus {
+    box-shadow: none;
+    text-decoration: none;
+  }
 }
 
 .paragraph--type--expandable-box {
@@ -33,20 +47,11 @@
   margin: 0;
   background: transparent;
   color: $blue;
-  font-size: 13px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
   @include flexbox();
   @include align-items(center);
-
-  @include breakpoint($tab) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  @include breakpoint($widestdesk) {
-    font-size: 18px;
-    line-height: 32px;
-  }
 
   div {
     display: inline-block;
@@ -60,7 +65,7 @@
 
 .expanded-block__icon {
   display: inline-block;
-  --size-wrap: 20px;
+  --size-wrap: 34px;
   width: var(--size-wrap);
   height: var(--size-wrap);
   background: $blue;
@@ -70,13 +75,8 @@
   @include justify-content(center);
   @include align-items(center);
 
-  @include breakpoint($tab) {
-    margin-right: 15px;
-    --size-wrap: 27px
-  }
-
-  @include breakpoint($widestdesk) {
-    --size-wrap: 34px
+  @include breakpoint($mobileOnly) {
+    height: 24px;
   }
 }
 
