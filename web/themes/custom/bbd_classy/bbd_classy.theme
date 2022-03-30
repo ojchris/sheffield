@@ -91,11 +91,14 @@ function bbd_classy_preprocess_paragraph(&$variables) {
   $type = $paragraph->getType();
   if ($type == 'tabbed_content_panel') {
     if ($paragraph->hasField('field_tab_reference') && !$paragraph->get('field_tab_reference')->isEmpty()) {
-
-      foreach ($paragraph->get('field_tab_reference') as $tab_reference) {
-        $tab = $tab_reference->entity;
-        $variables['tab_title'][] = $tab->get('field_title_tab')->getString();
-        $variables['tab_content'][] = $tab->get('field_description_tab')->value;
+      $tabs = $paragraph->get('field_tab_reference')->referencedEntities();
+      foreach ($tabs as $tab) {
+        if ($tab->hasField('field_title_tab') && !$tab->get('field_title_tab')->isEmpty()) {
+          $variables['tab_title'][] = $tab->get('field_title_tab')->getString();
+        }
+        if ($tab->hasField('field_description_tab') && !$tab->get('field_description_tab')->isEmpty()) {
+          $variables['tab_content'][] = $tab->get('field_description_tab')->value;
+        }
       }
     }
   }
