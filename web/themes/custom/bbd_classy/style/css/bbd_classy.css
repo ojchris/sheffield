@@ -192,18 +192,23 @@ a:hover, a:focus {
   color: black;
   text-decoration: none;
 }
+/* line 108, ../scss/variables/_typography.scss */
+a:focus {
+  outline: 3px solid #005eb8;
+  border-radius: 0;
+}
 
-/* line 109, ../scss/variables/_typography.scss */
+/* line 114, ../scss/variables/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 113, ../scss/variables/_typography.scss */
+/* line 118, ../scss/variables/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 117, ../scss/variables/_typography.scss */
+/* line 122, ../scss/variables/_typography.scss */
 blockquote {
   border: none;
   border-left: 2px solid #4C6272;
@@ -215,19 +220,19 @@ blockquote {
 }
 
 @media (min-width: 48em) {
-  /* line 128, ../scss/variables/_typography.scss */
+  /* line 133, ../scss/variables/_typography.scss */
   body {
     font-size: 14px;
     line-height: 20px;
   }
 
-  /* line 133, ../scss/variables/_typography.scss */
+  /* line 138, ../scss/variables/_typography.scss */
   h1,
   .h1 {
     font-size: 48px;
   }
 
-  /* line 138, ../scss/variables/_typography.scss */
+  /* line 143, ../scss/variables/_typography.scss */
   h2,
   .h2,
   .paragraph--type--download-panel .field--name-field-title {
@@ -235,13 +240,13 @@ blockquote {
     line-height: 1.175;
   }
 
-  /* line 144, ../scss/variables/_typography.scss */
+  /* line 149, ../scss/variables/_typography.scss */
   h3,
   .h3 {
     font-size: 36px;
   }
 
-  /* line 149, ../scss/variables/_typography.scss */
+  /* line 154, ../scss/variables/_typography.scss */
   h4,
   .h4,
   .paragraph--type--listing h2 {
@@ -249,7 +254,7 @@ blockquote {
     line-height: 1.2083;
   }
 
-  /* line 155, ../scss/variables/_typography.scss */
+  /* line 160, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 30px;
     font-size: 24px;
@@ -258,19 +263,19 @@ blockquote {
   }
 }
 @media (min-width: 64em) {
-  /* line 165, ../scss/variables/_typography.scss */
+  /* line 170, ../scss/variables/_typography.scss */
   body {
     font-size: 19px;
     line-height: 28px;
   }
 
-  /* line 170, ../scss/variables/_typography.scss */
+  /* line 175, ../scss/variables/_typography.scss */
   h1,
   .h1 {
     font-size: 72px;
   }
 
-  /* line 175, ../scss/variables/_typography.scss */
+  /* line 180, ../scss/variables/_typography.scss */
   h2,
   .h2,
   .paragraph--type--download-panel .field--name-field-title {
@@ -278,14 +283,14 @@ blockquote {
     line-height: 1.1718;
   }
 
-  /* line 181, ../scss/variables/_typography.scss */
+  /* line 186, ../scss/variables/_typography.scss */
   h3,
   .h3 {
     font-size: 48px;
     line-height: 1.1666;
   }
 
-  /* line 187, ../scss/variables/_typography.scss */
+  /* line 192, ../scss/variables/_typography.scss */
   h4,
   .h4,
   .paragraph--type--listing h2 {
@@ -293,25 +298,25 @@ blockquote {
     line-height: 1.1666;
   }
 
-  /* line 193, ../scss/variables/_typography.scss */
+  /* line 198, ../scss/variables/_typography.scss */
   h5,
   .h5 {
     font-size: 24px;
     line-height: 1.2083;
   }
 
-  /* line 199, ../scss/variables/_typography.scss */
+  /* line 204, ../scss/variables/_typography.scss */
   blockquote {
     margin-bottom: 50px;
   }
 }
-/* line 204, ../scss/variables/_typography.scss */
+/* line 209, ../scss/variables/_typography.scss */
 .p-body-component, .expanded-block__body p {
   font-size: 16px;
   line-height: 24px;
 }
 @media (min-width: 48em) {
-  /* line 204, ../scss/variables/_typography.scss */
+  /* line 209, ../scss/variables/_typography.scss */
   .p-body-component, .expanded-block__body p {
     font-size: 19px;
     line-height: 28px;
@@ -3511,7 +3516,12 @@ ul.main-megamenu {
   padding: 25px 20px;
   word-break: break-word;
 }
-/* line 39, ../scss/components/paragraphs/_tabbed-content.scss */
+/* line 148, ../scss/abstractions/_site_mixins.scss */
+.tab__content:focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--focus-dark), 0 0 0 4px var(--focus-dark);
+}
+/* line 43, ../scss/components/paragraphs/_tabbed-content.scss */
 .tab__content.is-active {
   display: block;
   background: #fff;
@@ -3520,19 +3530,19 @@ ul.main-megamenu {
 }
 
 @media (min-width: 64em) {
-  /* line 48, ../scss/components/paragraphs/_tabbed-content.scss */
+  /* line 52, ../scss/components/paragraphs/_tabbed-content.scss */
   .tab__button {
     font-size: 24px;
     line-height: 32px;
     padding: 18px 30px;
   }
 
-  /* line 54, ../scss/components/paragraphs/_tabbed-content.scss */
+  /* line 58, ../scss/components/paragraphs/_tabbed-content.scss */
   .tab__content {
     padding: 40px 30px;
   }
 
-  /* line 58, ../scss/components/paragraphs/_tabbed-content.scss */
+  /* line 62, ../scss/components/paragraphs/_tabbed-content.scss */
   .paragraph-tab-inner {
     width: var(--max-width-small);
   }

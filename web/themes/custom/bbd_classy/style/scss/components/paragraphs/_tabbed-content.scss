@@ -36,6 +36,10 @@
   padding: 25px 20px;
   word-break: break-word;
 
+  &:focus {
+    @include focus-card;
+  }
+
   &.is-active {
     display: block;
     background: $white;
