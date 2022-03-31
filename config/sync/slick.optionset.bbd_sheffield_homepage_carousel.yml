@@ -15,7 +15,7 @@ options:
   settings:
     mobileFirst: true
     dots: true
-    appendDots: .slick_
+    appendDots: .slick__slide
     fade: true
     infinite: false
     lazyLoad: ondemand
