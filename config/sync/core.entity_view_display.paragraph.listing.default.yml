@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.listing.field_title
     - paragraphs.paragraphs_type.listing
   module:
+    - manage_display
     - viewsreference
 id: paragraph.listing.default
 targetEntityType: paragraph
@@ -23,10 +24,11 @@ content:
     weight: 1
     region: content
   field_title:
-    type: string
-    label: above
+    type: title
+    label: hidden
     settings:
-      link_to_entity: false
+      linked: true
+      tag: h2
     third_party_settings: {  }
     weight: 0
     region: content

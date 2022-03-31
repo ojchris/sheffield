@@ -207,3 +207,8 @@ $column-padding-default: 20px;
     max-width: 100%/12*$cols;
   }
 }
+
+.messages {
+  position: relative;
+  z-index: 5;
+}

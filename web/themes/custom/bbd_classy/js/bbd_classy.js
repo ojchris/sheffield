@@ -24,6 +24,8 @@
 
       self.selectricBehavior(context);
       self.headerSearch(context);
+      self.playVideo(context);
+      self.expandedBlockClass(context);
 
       $('#main-menu-overlay', context).click(function (event) {
         self.closeMenu(context);
@@ -68,6 +70,47 @@
       })
     },
 
+     /**
+     * Expanded button toggle class.
+     * @param context
+     */
+    expandedBlockClass: function (context) {
+      $('.expanded-block__title', context).click(function (event) {
+        event.preventDefault();
+
+        $(this).parents('.expanded-block').toggleClass('expanded-block--active');
+        $(this).attr('aria-expanded', function (i, attr) {
+          return attr === 'true' ? 'false' : 'true'
+        });
+      })
+    },
+
+    /**
+     * Trigger play video.
+     * @param context
+     */
+    playVideo: function (context) {
+      $('.paragraph-video-play-video', context).click(function (event) {
+        const $parent = $(this).parents('.video-wrap');
+        const $image = $('img', $parent);
+
+        if ($image.length > 0) {
+          $parent.addClass('video-wrap--play');
+          const $videoEmbed = $('.field--name-field-media-oembed-video iframe', $parent);
+          const $video = $('.field--name-field-media-video-file video', $parent);
+
+          if ($videoEmbed.length > 0) {
+            $videoEmbed.contents().find('iframe')[0].src += '&amp;autoplay=1';
+          }
+          if ($video.length > 0) {
+            $video[0].play();
+          }
+        }
+        event.preventDefault();
+      })
+    },
+
+
     /**
      * Adding functionality for custom select elements.
      */
@@ -94,62 +137,5 @@
       $('#main-menu-sidebar', context).removeClass('open');
       $('#main-menu-sidebar > a', context).attr('tabindex', -1);
     },
-  }
-
-  // To set Slick slider on Homepage Carousel.
-  Drupal.behaviors.homepage_carousel = {
-    attach: function (context, settings) {
-      // To set position to the slider buttons (arrows) according to the Image height.
-      function applyHeight(el) {
-        let $currentSlide = el.find('.slick-current');
-        let $currentArrows = $currentSlide.closest('.field--name-field-slide').find('.arrow-wrapper');
-        let $imageHeight = $currentSlide.find('img').height() + 15;
-        $currentArrows.css('top', $imageHeight + 'px');
-      }
-
-      // To set Slick.
-      $('.paragraph--type--homepage-carousel', context).once('homepage-carousel-slick').each(function() {
-        let $slick = $(this).find('.slider-images--wrapper');
-        let $arrows = $(this).find('.arrow-wrapper');
-        let $next = $arrows.children('.slick-next');
-        let $prev = $arrows.children('.slick-prev');
-
-        $slick.each(function() {
-          let $currentSlider = $(this).closest('.field--name-field-slide');
-          let $prev = $currentSlider.find('.slick-prev');
-          let $next = $currentSlider.find('.slick-next');
-
-          $(this).on('init', function(event, slick) {
-            applyHeight($(this))
-          });
-
-          let $slider = $(this).slick({
-            arrows: false,
-            appendArrows: $arrows,
-            adaptiveHeight: true,
-            speed: 600,
-            slidesToShow: 1,
-            fade: true,
-            cssEase: 'linear'
-          });
-
-          $(this).on('afterChange', function() {
-            applyHeight($(this))
-          });
-
-          $(this).on('setPosition', function() {
-            applyHeight($(this))
-          });
-
-          $next.on('click', function(e) {
-            $slider.slick('slickNext');
-          });
-
-          $prev.on('click', function(e) {
-            $slider.slick('slickPrev');
-          });
-        });
-      });
-    }
   }
 })(jQuery);

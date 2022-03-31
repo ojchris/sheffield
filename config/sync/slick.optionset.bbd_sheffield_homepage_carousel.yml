@@ -1,0 +1,24 @@
+uuid: 06acec57-5eb5-4fae-81b4-4d72ac395bc3
+langcode: en
+status: true
+dependencies: {  }
+id: bbd_sheffield_homepage_carousel
+name: bbd_sheffield_homepage_carousel
+weight: 0
+label: bbd_sheffield_homepage_carousel
+group: overlay
+skin: fullwidth
+breakpoints: 0
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    mobileFirst: true
+    dots: true
+    appendDots: .slick_
+    fade: true
+    infinite: false
+    lazyLoad: ondemand
+    randomize: true
+    slidesToShow: 1
+    swipe: false

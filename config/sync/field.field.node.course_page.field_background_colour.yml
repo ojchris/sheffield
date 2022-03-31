@@ -1,0 +1,21 @@
+uuid: 8326c22d-f3ba-4cbd-b2ab-5818d3f045df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_colour
+    - node.type.course_page
+  module:
+    - options
+id: node.course_page.field_background_colour
+field_name: field_background_colour
+entity_type: node
+bundle: course_page
+label: 'Background colour'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,24 @@
+.paragraph-bg--purple,
+.node-bg--purple {
+  --paragraph-color: #{$purple_lilac};
+}
+
+.paragraph-bg--blue,
+.node-bg--blue{
+  --paragraph-color: #{$blue_light};
+}
+
+.paragraph-bg--red,
+.node-bg--red {
+  --paragraph-color: #{$orange};
+}
+
+.paragraph-bg--green,
+.node-bg--green {
+  --paragraph-color: #{$green_lighter};
+}
+
+.paragraph-bg--orange,
+.node-bg--orange {
+  --paragraph-color: #{$yellow-light};
+}

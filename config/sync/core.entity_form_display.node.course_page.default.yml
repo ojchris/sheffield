@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.course_page.body
     - field.field.node.course_page.field_audience
+    - field.field.node.course_page.field_background_colour
     - field.field.node.course_page.field_category
     - field.field.node.course_page.field_content_sections
     - field.field.node.course_page.field_course_length
@@ -48,6 +49,12 @@ content:
   field_audience:
     type: options_select
     weight: 129
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_background_colour:
+    type: options_select
+    weight: 134
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,173 +1,95 @@
 .paragraph--type--homepage-carousel {
+  z-index: 0;
+  margin-top: -70px;
+}
+
+
+.paragraph--type--carousel-slide .paragraph-inner-holder {
+  display: flex;
+  padding-top: 140px;
+  background: url(../../images/home_carousel_bg_purple.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
 
   // Slide
-  .carousel-slide {
-    >.content-wrapper {
+  >.content-wrapper {
+    @include breakpoint($tab) {
+      @include column-row();
+    }
+
+    .text-wrapper {
+      padding-bottom: 20px;
+      @include column-create(5);
+      background: transparent;
+
+
       @include breakpoint($tab) {
-        @include column-row();
-      }
-
-      .carousel-slide--content {
-        padding-bottom: 20px;
-        @include column-create(5);
-        background: transparent;
-
-
-        @include breakpoint($tab) {
-          @include flexbox();
-          @include flex-direction(column);
-          @include justify-content(center);
-          padding-bottom: 60px;
-        }
-      }
-
-      .carousel-slide--image {
-        padding-bottom: 40px;
-        @include column-create(6);
-        background: transparent;
-
-        @include breakpoint($tab) {
-          padding-bottom: 60px;
-        }
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(center);
+        padding-bottom: 60px;
       }
     }
 
-    // Title
-    .slide-title {
+    .field--name-field-image {
+      padding-bottom: 40px;
+      @include column-create(6);
+      background: transparent;
 
-      h1,
-      h2 {
-        font-size: 36px;
-        line-height: 43px;
-      }
-    }
-
-    // Description
-    .slide-description {
-      margin-top: -5px;
-      color: $color-dark-grey;
-    }
-
-    .slide-title,
-    .slide-description {
-      @include breakpoint(0 $tab-max) {
-        padding-right: 100px;
-      }
-    }
-
-    // Button
-    .slide-link {
-      margin-top: 20px;
-
-      a {
-        @extend %btn-secondary;
-
-        color: $black;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19px;
-        padding: 12px 30px;
-        background: $white;
-        border-radius: 30px;
-        box-shadow: $box-shadow-primary-btn;
-        display: inline-block;
-        text-decoration: none;
-
-
-        &:focus {
-          background: $color-background-focus;
-          color: $blue;
-          text-decoration: underline;
-        }
+      @include breakpoint($tab) {
+        padding-bottom: 60px;
       }
     }
   }
 
-  // Slider container
-  .field--name-field-slide {
-    position: relative;
+  // Title
+  .field--name-field-title {
 
-    .slick-list {
-      margin: 0 -$mobile_padding;
-      height: auto !important;
-
-      @include breakpoint($tab) {
-        margin: 0 -$tab_padding;
-      }
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-size: 36px;
+      line-height: 43px;
     }
+  }
 
-    .slick-slide {
-      padding-top: 120px;
-      background: url(../../images/home_carousel_bg_purple.svg);
-      background-repeat: no-repeat;
-      background-position: right 100%;
+  // Description
+  .field--name-field-text {
+    margin-top: -5px;
+    color: $color-dark-grey;
+  }
 
-      @include breakpoint($tab) {
-        margin: 0 $tab_padding;
-      }
-
-      @include breakpoint($mobileOnly) {
-        padding-top: 10px;
-      }
+  .field--name-field-title,
+  .field--name-field-text {
+    @include breakpoint(0 $tab-max) {
+      padding-right: 100px;
     }
+  }
 
-    .slick-slide:not(.slick-active) {
-      .slide-image {
-        img {
-          box-shadow: none;
-        }
-      }
-    }
+  // Button
+  .field--name-field-link {
+    margin-top: 5px;
 
-    // Slide counter
-    .slide-counter {
-      position: relative;
-      top: 22px;
-      left: 77px;
+    a {
+      @extend %btn-secondary;
 
-      @include breakpoint($widedesk) {
-        top: 37px;
-        left: 160px;
-      }
-    }
+      color: $black;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      padding: 12px 30px;
+      background: $white;
+      border-radius: 30px;
+      box-shadow: $box-shadow-primary-btn;
+      display: inline-block;
+      text-decoration: none;
 
-    // Slick arrows
-    .arrow-wrapper {
-      @include breakpoint(0 $tab-max) {
-        position: relative;
-        top: -29px !important;
-      }
 
-      @include breakpoint($tab) {
-        position: absolute;
-        width: 100%;
-      }
-
-      .column-row {
-        @include breakpoint($tab) {
-          @include justify-content(flex-end);
-        }
-      }
-
-      .slick-next {
-        position: relative;
-        left: 2px;
-
-        @include breakpoint($widedesk) {
-          left: 10px;
-        }
-      }
-
-      .slick-next,
-      .slick-prev {
-        &:focus {
-          background: $color-background-focus;
-
-          &::before {
-            background: url("../../images/icons/angle-right-dark.svg") no-repeat center center, $color-background-focus;
-            background-size: 15px auto;
-          }
-        }
+      &:focus {
+        background: $color-background-focus;
+        color: $blue;
+        text-decoration: underline;
       }
     }
   }
@@ -182,4 +104,34 @@
       text-decoration: underline;
     }
   }
+}
+
+.slick-arrow {
+  border-radius: 0;
+  font-size: 14px;
+  color: $black;
+  background: none;
+  height: 60px;
+  padding: 0;
+  min-width: auto;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    background-color: none;
+  }
+}
+
+.slick-prev {
+  left: -120px;
+  background: url('../../images/slider-arrow-previous.svg') no-repeat left top;
+  background-size: 50%;
+  text-align: left;
+}
+
+.slick-next {
+  right: -120px;
+  background: url('../../images/slider-arrow-next.svg') no-repeat right top;
+  background-size: 50%;
+  text-align: right;
 }

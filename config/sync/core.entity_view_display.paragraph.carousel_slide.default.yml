@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.carousel_slide.field_link
     - field.field.paragraph.carousel_slide.field_text
     - field.field.paragraph.carousel_slide.field_title
+    - image.style.homepage_carousel_cover
     - paragraphs.paragraphs_type.carousel_slide
   module:
     - field_group
@@ -23,13 +24,33 @@ third_party_settings:
         - field_text
         - field_link
       label: 'Text Wrapper'
-      parent_name: ''
+      parent_name: group_content_wrapper
       region: content
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         classes: text-wrapper
         show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_content_wrapper:
+      children:
+        - field_image
+        - group_text_wrapper
+      label: 'Content Wrapper'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: content-wrapper
+        show_empty_fields: true
         id: ''
         element: div
         show_label: false
@@ -48,9 +69,9 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: homepage_carousel_cover
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_link:
     type: link

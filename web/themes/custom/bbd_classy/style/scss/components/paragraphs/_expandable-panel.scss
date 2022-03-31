@@ -1,0 +1,182 @@
+.paragraph--type--expandable-panel {
+  @extend .max-content-width-no-padding;
+
+  &.paragraph {
+    margin-bottom: 0;
+  }
+
+  /* reset button styles */
+  button,
+  a.button {
+    background: none;
+  }
+
+  button:hover,
+  button:focus,
+  a.button:hover,
+  a.button:focus {
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+.paragraph--type--expandable-box {
+  &.paragraph {
+    margin-bottom: 0;
+  }
+}
+
+.expanded-block {
+  @extend .card-border;
+  background: $white;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+
+  @include breakpoint($widestdesk) {
+    margin-bottom: 25px;
+    padding: 20px 30px;
+  }
+
+  .expanded-block__body {
+    display: none;
+  }
+}
+
+.expanded-block__title {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: $blue;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+  @include flexbox();
+  @include align-items(center);
+
+  div {
+    display: inline-block;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.expanded-block__icon {
+  display: inline-block;
+  --size-wrap: 34px;
+  width: var(--size-wrap);
+  height: var(--size-wrap);
+  background: $blue;
+  border-radius: 50%;
+  margin-right: 10px;
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+
+  @include breakpoint($mobileOnly) {
+    height: 24px;
+  }
+}
+
+.expanded-block__icon-inner {
+  position: relative;
+  --size: 10px;
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+
+  @include breakpoint($tab) {
+    --size: 12px;
+  }
+
+  @include breakpoint($widestdesk) {
+    --size: 14px;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: $white;
+    transition: transform 0.1s ease-out;
+  }
+
+  &:before {
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+  }
+
+  &:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+  }
+}
+
+.expanded-block__body {
+  margin-top: 15px;
+
+  @include breakpoint($tab) {
+    margin-top: 25px;
+  }
+
+  @include breakpoint($widestdesk) {
+    margin-top: 30px;
+  }
+
+  p {
+    @extend .p-body-component;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.expanded-block--active {
+  border-bottom-width: 1px;
+
+  .expanded-block__body {
+    display: block;
+  }
+
+  .expanded-block__body--column-2,
+  .expanded-block__body--column-3 {
+    display: grid;
+
+    @include breakpoint($mobileOnly) {
+      grid-row-gap: 20px;
+    }
+  }
+
+  .expanded-block__body--column-2 {
+    @include breakpoint($tab) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 5%;
+    }
+  }
+
+  .expanded-block__body--column-3 {
+    @include breakpoint($tab) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 3%;
+    }
+  }
+
+  .expanded-block__icon-inner {
+    &:before {
+      transform: rotate(90deg);
+    }
+
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 #page {
   max-width: none;
+  overflow: hidden;
 }
 
 #content-main-wrapper.outer-wrapper {
@@ -11,4 +12,8 @@
     max-width: 1140px;
     margin: 0 auto;
   }
+}
+
+.content-node-custom-wrap {
+  position: relative;
 }
