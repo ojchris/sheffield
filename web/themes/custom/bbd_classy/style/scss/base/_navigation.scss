@@ -432,6 +432,13 @@ ul.main-megamenu {
           font-size: 13px;
           line-height: 19px;
           font-weight: normal;
+          padding: 10px 15px;
+
+          @include focus-link;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

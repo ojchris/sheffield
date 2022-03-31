@@ -1,50 +1,64 @@
- .field--name-field-four-column-card {
-   @include flex-responsive-div;
+.field--name-field-four-column-card {
+  display: grid;
+  gap: 30px;
+  margin: 0 auto;
 
-   @include breakpoint($mobileOnly) {
-     display: block;
-     width: 90%;
-     margin: 0 auto;
-   }
+  > .field__item {
+    text-align: left;
+    background: $white;
+    border: 1px solid $gray-light;
+    box-sizing: border-box;
+    box-shadow: inset 0px -4px 0px $gray-light;
 
-   >.field__item {
-     width: 23%;
-     text-align: left;
+    @include breakpoint($mobileOnly) {
+      width: 100%;
+    }
 
-     @include breakpoint($mobileOnly) {
-       width: 100%;
-     }
+    .four-column-card {
+      .field--name-field-image {
+        margin-bottom: 0;
 
-     .four-column-card {
-       background: $white;
-       border: 1px solid $gray-light;
-       box-sizing: border-box;
-       box-shadow: inset 0px -4px 0px $gray-light;
-       padding-bottom: 30px;
+        img {
+          width: 100%;
+          max-width: none;
+        }
 
-       .field--name-field-image {
-         margin-bottom: 0;
+      }
 
-         img {
-           width: 100%;
-           max-width: none;
-         }
+      span {
+        display: inline-block;
+        width: 90%;
+        padding: 20px 10px 20px 20px;
+        text-decoration: underline;
+        font-size: 24px;
+        line-height: 38px;
+      }
+    }
+  }
 
-       }
+  a {
+    display: block;
+    font-weight: 700;
 
-       span {
-         display: inline-block;
-         width: 90%;
-         padding: 20px 10px 10px 20px;
-         text-decoration: underline;
-         font-size: 24px;
-         line-height: 38px;
-       }
-     }
-   }
+    @include focus-card;
+  }
+}
 
-   a {
-     display: block;
-     font-weight: 700;
-   }
- }
+
+.paragraph--type--four-column-card {
+  margin-bottom: 0;
+  height: 100%;
+
+  .paragraph-inner-holder,
+  .four-column-card,
+  a {
+    height: 100%;
+  }
+}
+
+@include breakpoint($tab) {
+  .field--name-field-four-column-card {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+}

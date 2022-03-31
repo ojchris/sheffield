@@ -4,6 +4,11 @@
   @include box-sizing(border-box);
 }
 
+:root {
+  --focus-dark: #1F223A;
+  --focus-white: #FEFCF1;
+}
+
 table {
   padding: 0;
   margin: 0 auto 20px;
@@ -120,6 +125,7 @@ iframe {
 
   a {
     text-decoration: none;
+    @include focus-link;
 
     &:hover {
       text-decoration: underline;
@@ -211,4 +217,23 @@ $column-padding-default: 20px;
 .messages {
   position: relative;
   z-index: 5;
+}
+
+#backtotop {
+  min-width: 70px;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px var(--focus-dark), 0 0 0 1px var(--focus-dark);
+    background-color: $gray-light;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px var(--focus-dark), 0 0 0 4px var(--focus-dark);
+    background-color: var(--focus-white);
+  }
 }

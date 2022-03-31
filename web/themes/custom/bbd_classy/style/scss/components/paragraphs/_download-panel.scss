@@ -73,6 +73,8 @@
   a {
     color: $black;
     font-weight: 700;
+
+    @include focus-link;
   }
 
   .media-bg--purple {

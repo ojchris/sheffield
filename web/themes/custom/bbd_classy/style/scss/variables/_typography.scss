@@ -104,6 +104,11 @@ a {
     color: black;
     text-decoration: none;
   }
+
+  &:focus {
+    outline: 4px solid $blue_darkest;
+    border-radius: 0;
+  }
 }
 
 strong {

@@ -10,6 +10,8 @@
   a {
     display: block;
     margin-top: 15px;
+
+    @include focus-link;
   }
 }
 
