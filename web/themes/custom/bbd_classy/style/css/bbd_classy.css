@@ -3227,22 +3227,42 @@ ul.main-megamenu {
   margin-top: -70px;
 }
 
-/* line 8, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 10, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--blue .paragraph-inner-holder {
+  background-image: url("../../images/bubble_home_carousel_bg_blue.svg");
+}
+/* line 14, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--green .paragraph-inner-holder {
+  background-image: url("../../images/bubble_home_carousel_bg_green.svg");
+}
+/* line 18, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--purple .paragraph-inner-holder {
+  background-image: url("../../images/bubble_home_carousel_bg_purple.svg");
+}
+/* line 22, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--red .paragraph-inner-holder {
+  background-image: url("../../images/bubble_home_carousel_bg_red.svg");
+}
+/* line 26, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--orange .paragraph-inner-holder {
+  background-image: url("../../images/bubble_home_carousel_bg_orange.svg");
+}
+
+/* line 31, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder {
   display: flex;
   padding-top: 140px;
-  background: url(../../images/home_carousel_bg_purple.svg);
   background-repeat: no-repeat;
   background-position: right top;
 }
 @media (max-width: 30em) {
-  /* line 8, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 31, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder {
     padding-top: 100px;
   }
 }
 @media (min-width: 48em) {
-  /* line 20, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 42, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -3251,14 +3271,14 @@ ul.main-megamenu {
   }
 }
 @media (min-width: 48em) and (min-width: 48em) {
-  /* line 20, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 42, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper {
     margin-left: -20px;
     margin-right: -20px;
   }
 }
 
-/* line 25, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .text-wrapper {
   padding-bottom: 20px;
   padding-left: 13px;
@@ -3268,21 +3288,21 @@ ul.main-megamenu {
   background: transparent;
 }
 @media (min-width: 48em) {
-  /* line 25, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .text-wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (min-width: 48em) {
-  /* line 25, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .text-wrapper {
     width: 100%;
     max-width: 41.66667%;
   }
 }
 @media (min-width: 48em) {
-  /* line 25, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .text-wrapper {
     display: flex;
     flex-direction: column;
@@ -3290,7 +3310,7 @@ ul.main-megamenu {
     padding-bottom: 60px;
   }
 }
-/* line 38, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .field--name-field-image {
   padding-bottom: 40px;
   padding-left: 13px;
@@ -3300,26 +3320,26 @@ ul.main-megamenu {
   background: transparent;
 }
 @media (min-width: 48em) {
-  /* line 38, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .field--name-field-image {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (min-width: 48em) {
-  /* line 38, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .field--name-field-image {
     width: 100%;
     max-width: 50%;
   }
 }
 @media (min-width: 48em) {
-  /* line 38, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .field--name-field-image {
     padding-bottom: 60px;
   }
 }
-/* line 52, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 74, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title h1,
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title h2,
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title h3,
@@ -3327,23 +3347,23 @@ ul.main-megamenu {
   font-size: 36px;
   line-height: 43px;
 }
-/* line 62, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 84, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-text {
   margin-top: -5px;
   color: #3E3D40;
 }
 @media (min-width: 0) and (max-width: 47.9375em) {
-  /* line 67, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 89, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title,
   .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-text {
     padding-right: 100px;
   }
 }
-/* line 75, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 97, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link {
   margin-top: 5px;
 }
-/* line 78, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 100, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a {
   color: #212B32;
   font-size: 16px;
@@ -3356,17 +3376,17 @@ ul.main-megamenu {
   display: inline-block;
   text-decoration: none;
 }
-/* line 92, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 114, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a:focus {
   background: #FFEB3B;
   color: #005eb8;
   text-decoration: underline;
 }
-/* line 100, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 122, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a {
   transition: all .2s ease-in-out;
 }
-/* line 103, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 125, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a:hover {
   box-shadow: 0 5px 20px 5px rgba(240, 244, 245, 0.3);
   transform: translateY(-5px);
@@ -3374,7 +3394,7 @@ ul.main-megamenu {
   text-decoration: underline;
 }
 
-/* line 112, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 134, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-arrow {
   border-radius: 0;
   font-size: 14px;
@@ -3384,13 +3404,13 @@ ul.main-megamenu {
   padding: 0;
   min-width: auto;
 }
-/* line 121, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 143, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-arrow:hover, .slick-arrow:focus {
   box-shadow: none;
   background-color: none;
 }
 
-/* line 128, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 150, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-prev {
   left: -120px;
   background: url("../../images/slider-arrow-previous.svg") no-repeat left top;
@@ -3398,7 +3418,7 @@ ul.main-megamenu {
   text-align: left;
 }
 
-/* line 135, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 157, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-next {
   right: -120px;
   background: url("../../images/slider-arrow-next.svg") no-repeat right top;
@@ -3406,10 +3426,10 @@ ul.main-megamenu {
   text-align: right;
 }
 
-/* line 142, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 164, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots {
   position: absolute;
-  bottom: 45px;
+  bottom: 35px;
   display: block;
   width: 100%;
   padding: 0;
@@ -3419,20 +3439,20 @@ ul.main-megamenu {
   z-index: 1;
 }
 
-/* line 154, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 176, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 0;
+  margin: 0 3px;
   padding: 0;
   cursor: pointer;
   box-shadow: none;
   background-color: none;
 }
 
-/* line 166, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 188, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots li button {
   font-size: 0;
   line-height: 0;
@@ -3448,9 +3468,9 @@ ul.main-megamenu {
   box-shadow: none;
 }
 
-/* line 181, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 203, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots li button:before {
-  font-size: 25px;
+  font-size: 32px;
   line-height: 20px;
   position: absolute;
   top: 0;
@@ -3459,14 +3479,15 @@ ul.main-megamenu {
   height: 20px;
   content: '•';
   text-align: center;
-  opacity: .25;
+  opacity: .4;
   color: black;
   box-shadow: none;
 }
 
-/* line 196, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 218, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots li.slick-active button:before {
-  opacity: .5;
+  font-size: 33px;
+  opacity: 0.9;
 }
 
 /* line 2, ../scss/components/paragraphs/_listing.scss */

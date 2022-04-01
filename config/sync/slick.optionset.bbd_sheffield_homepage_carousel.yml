@@ -6,7 +6,7 @@ id: bbd_sheffield_homepage_carousel
 name: bbd_sheffield_homepage_carousel
 weight: 0
 label: bbd_sheffield_homepage_carousel
-group: overlay
+group: main
 skin: fullwidth
 breakpoints: 0
 optimized: true
@@ -20,5 +20,7 @@ options:
     infinite: false
     lazyLoad: ondemand
     randomize: true
+    slidesPerRow: 5
     slidesToShow: 1
     swipe: false
+    cssEase: ease-in
