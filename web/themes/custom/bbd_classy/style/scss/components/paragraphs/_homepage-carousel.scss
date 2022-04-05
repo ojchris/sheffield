@@ -2,40 +2,63 @@
 
 .paragraph--type--homepage-carousel {
   z-index: 0;
-  margin-top: -70px;
+  margin-top: -50px;
+
+  @include breakpoint($mobileTabletOnly) {
+    .region-content ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 .paragraph--type--carousel-slide {
 
-  &.paragraph-bg--blue .paragraph-inner-holder {
+  &.paragraph-bg--blue .paragraph-inner-holder:before {
     background-image: url('../../images/bubble_home_carousel_bg_blue.svg');
   }
 
-  &.paragraph-bg--green .paragraph-inner-holder {
+  &.paragraph-bg--green .paragraph-inner-holder:before {
     background-image: url('../../images/bubble_home_carousel_bg_green.svg');
   }
 
-  &.paragraph-bg--purple .paragraph-inner-holder {
+  &.paragraph-bg--purple .paragraph-inner-holder:before {
     background-image: url('../../images/bubble_home_carousel_bg_purple.svg');
   }
 
-  &.paragraph-bg--red .paragraph-inner-holder {
+  &.paragraph-bg--red .paragraph-inner-holder:before {
     background-image: url('../../images/bubble_home_carousel_bg_red.svg');
   }
 
-  &.paragraph-bg--orange .paragraph-inner-holder {
+  &.paragraph-bg--orange .paragraph-inner-holder:before {
     background-image: url('../../images/bubble_home_carousel_bg_orange.svg');
   }
 }
 
 .paragraph--type--carousel-slide .paragraph-inner-holder {
   display: flex;
-  padding-top: 140px;
-  background-repeat: no-repeat;
-  background-position: right top;
+  padding-top: 100px;
+  padding-bottom: 50px;
 
-  @include breakpoint($widestmobOnly) {
-    padding-top: 100px;
+  &:before {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    content: "";
+    width: 100%;
+    max-width: 769px;
+    height: 100vw;
+    min-height: 600px;
+    z-index: -1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    @include breakpoint($widestmobOnly) {
+      width: 120%;
+      top: -50px;
+      left: -100px;
+    }
   }
 
   // Slide
@@ -59,7 +82,7 @@
 
     .field--name-field-image {
       padding-bottom: 40px;
-      @include column-create(6);
+      @include column-create(7);
       background: transparent;
 
       @include breakpoint($tab) {
@@ -86,10 +109,19 @@
     color: $color-dark-grey;
   }
 
+  @include breakpoint($tab-max) {
+    padding-right: 100px;
+  }
+
+  @include breakpoint($tabletOnly) {
+    padding-right: 50px;
+  }
+
   .field--name-field-title,
   .field--name-field-text {
-    @include breakpoint(0 $tab-max) {
-      padding-right: 100px;
+    @include breakpoint($widestmobOnly) {
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
 
@@ -111,6 +143,13 @@
       display: inline-block;
       text-decoration: none;
 
+      @include breakpoint($widestmobOnly) {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+      }
+
       &:focus {
         background: $color-background-focus;
         color: $blue;
@@ -131,6 +170,20 @@
   }
 }
 
+.slick__arrow {
+  @include breakpoint($mobileOnly) {
+    position: relative;
+    top: unset;
+    left: 10px;
+    width: 20%;
+  }
+
+  @include breakpoint($tabletOnly) {
+    top: 78%;
+    width: 20%;
+  }
+}
+
 .slick-arrow {
   border-radius: 0;
   font-size: 14px;
@@ -148,22 +201,41 @@
 }
 
 .slick-prev {
-  left: -120px;
+  left: 10px;
+  font-size: 12px;
   background: url('../../images/slider-arrow-previous.svg') no-repeat left top;
   background-size: 50%;
   text-align: left;
+
+  @include breakpoint($desk) {
+    font-size: 12px;
+    left: -50px;
+  }
+
+  @include breakpoint($widedesk) {
+    left: -120px;
+    font-size: 14px;
+  }
 }
 
 .slick-next {
-  right: -120px;
+  right: -10px;
   background: url('../../images/slider-arrow-next.svg') no-repeat right top;
   background-size: 50%;
   text-align: right;
+
+  @include breakpoint($desk) {
+    right: -50px;
+  }
+
+  @include breakpoint($widedesk) {
+    right: -120px;
+  }
 }
 
 .slick-dots {
   position: absolute;
-  bottom: 35px;
+  bottom: -35px;
   display: block;
   width: 100%;
   padding: 0;
@@ -171,6 +243,22 @@
   list-style: none;
   text-align: center;
   z-index: 1;
+
+  @include breakpoint($widestmob) {
+    bottom: 70px;
+  }
+
+  @include breakpoint($widestmobOnly) {
+    position: relative;
+    float: right;
+    right: 10px;
+    bottom: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    bottom: -30px
+  }
 }
 
 .slick-dots li {

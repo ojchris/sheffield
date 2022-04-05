@@ -3224,45 +3224,68 @@ ul.main-megamenu {
 /* line 3, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--homepage-carousel {
   z-index: 0;
-  margin-top: -70px;
+  margin-top: -50px;
+}
+@media (max-width: 64em) {
+  /* line 8, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .paragraph--type--homepage-carousel .region-content ul {
+    margin: 0;
+    padding: 0;
+  }
 }
 
-/* line 10, ../scss/components/paragraphs/_homepage-carousel.scss */
-.paragraph--type--carousel-slide.paragraph-bg--blue .paragraph-inner-holder {
+/* line 17, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--blue .paragraph-inner-holder:before {
   background-image: url("../../images/bubble_home_carousel_bg_blue.svg");
 }
-/* line 14, ../scss/components/paragraphs/_homepage-carousel.scss */
-.paragraph--type--carousel-slide.paragraph-bg--green .paragraph-inner-holder {
+/* line 21, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--green .paragraph-inner-holder:before {
   background-image: url("../../images/bubble_home_carousel_bg_green.svg");
 }
-/* line 18, ../scss/components/paragraphs/_homepage-carousel.scss */
-.paragraph--type--carousel-slide.paragraph-bg--purple .paragraph-inner-holder {
+/* line 25, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--purple .paragraph-inner-holder:before {
   background-image: url("../../images/bubble_home_carousel_bg_purple.svg");
 }
-/* line 22, ../scss/components/paragraphs/_homepage-carousel.scss */
-.paragraph--type--carousel-slide.paragraph-bg--red .paragraph-inner-holder {
+/* line 29, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--red .paragraph-inner-holder:before {
   background-image: url("../../images/bubble_home_carousel_bg_red.svg");
 }
-/* line 26, ../scss/components/paragraphs/_homepage-carousel.scss */
-.paragraph--type--carousel-slide.paragraph-bg--orange .paragraph-inner-holder {
+/* line 33, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide.paragraph-bg--orange .paragraph-inner-holder:before {
   background-image: url("../../images/bubble_home_carousel_bg_orange.svg");
 }
 
-/* line 31, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 38, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder {
   display: flex;
-  padding-top: 140px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+/* line 43, ../scss/components/paragraphs/_homepage-carousel.scss */
+.paragraph--type--carousel-slide .paragraph-inner-holder:before {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  content: "";
+  width: 100%;
+  max-width: 769px;
+  height: 100vw;
+  min-height: 600px;
+  z-index: -1;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: right top;
 }
 @media (max-width: 30em) {
-  /* line 31, ../scss/components/paragraphs/_homepage-carousel.scss */
-  .paragraph--type--carousel-slide .paragraph-inner-holder {
-    padding-top: 100px;
+  /* line 43, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .paragraph--type--carousel-slide .paragraph-inner-holder:before {
+    width: 120%;
+    top: -50px;
+    left: -100px;
   }
 }
 @media (min-width: 48em) {
-  /* line 42, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 65, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -3271,14 +3294,14 @@ ul.main-megamenu {
   }
 }
 @media (min-width: 48em) and (min-width: 48em) {
-  /* line 42, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 65, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper {
     margin-left: -20px;
     margin-right: -20px;
   }
 }
 
-/* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 70, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .text-wrapper {
   padding-bottom: 20px;
   padding-left: 13px;
@@ -3288,21 +3311,21 @@ ul.main-megamenu {
   background: transparent;
 }
 @media (min-width: 48em) {
-  /* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 70, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .text-wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (min-width: 48em) {
-  /* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 70, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .text-wrapper {
     width: 100%;
     max-width: 41.66667%;
   }
 }
 @media (min-width: 48em) {
-  /* line 47, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 70, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .text-wrapper {
     display: flex;
     flex-direction: column;
@@ -3310,7 +3333,7 @@ ul.main-megamenu {
     padding-bottom: 60px;
   }
 }
-/* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 83, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .field--name-field-image {
   padding-bottom: 40px;
   padding-left: 13px;
@@ -3320,26 +3343,26 @@ ul.main-megamenu {
   background: transparent;
 }
 @media (min-width: 48em) {
-  /* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 83, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .field--name-field-image {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (min-width: 48em) {
-  /* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 83, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .field--name-field-image {
     width: 100%;
-    max-width: 50%;
+    max-width: 58.33333%;
   }
 }
 @media (min-width: 48em) {
-  /* line 60, ../scss/components/paragraphs/_homepage-carousel.scss */
+  /* line 83, ../scss/components/paragraphs/_homepage-carousel.scss */
   .paragraph--type--carousel-slide .paragraph-inner-holder > .content-wrapper .field--name-field-image {
     padding-bottom: 60px;
   }
 }
-/* line 74, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 97, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title h1,
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title h2,
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title h3,
@@ -3347,23 +3370,36 @@ ul.main-megamenu {
   font-size: 36px;
   line-height: 43px;
 }
-/* line 84, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 107, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-text {
   margin-top: -5px;
   color: #3E3D40;
 }
-@media (min-width: 0) and (max-width: 47.9375em) {
-  /* line 89, ../scss/components/paragraphs/_homepage-carousel.scss */
-  .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title,
-  .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-text {
+@media (min-width: 47.9375em) {
+  /* line 38, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .paragraph--type--carousel-slide .paragraph-inner-holder {
     padding-right: 100px;
   }
 }
-/* line 97, ../scss/components/paragraphs/_homepage-carousel.scss */
+@media (min-width: 48em) and (max-width: 64em) {
+  /* line 38, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .paragraph--type--carousel-slide .paragraph-inner-holder {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 30em) {
+  /* line 120, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-title,
+  .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-text {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+/* line 129, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link {
   margin-top: 5px;
 }
-/* line 100, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 132, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a {
   color: #212B32;
   font-size: 16px;
@@ -3376,17 +3412,26 @@ ul.main-megamenu {
   display: inline-block;
   text-decoration: none;
 }
-/* line 114, ../scss/components/paragraphs/_homepage-carousel.scss */
+@media (max-width: 30em) {
+  /* line 132, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+/* line 153, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a:focus {
   background: #FFEB3B;
   color: #005eb8;
   text-decoration: underline;
 }
-/* line 122, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 161, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a {
   transition: all .2s ease-in-out;
 }
-/* line 125, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 164, ../scss/components/paragraphs/_homepage-carousel.scss */
 .paragraph--type--carousel-slide .paragraph-inner-holder .field--name-field-link a:hover {
   box-shadow: 0 5px 20px 5px rgba(240, 244, 245, 0.3);
   transform: translateY(-5px);
@@ -3394,7 +3439,24 @@ ul.main-megamenu {
   text-decoration: underline;
 }
 
-/* line 134, ../scss/components/paragraphs/_homepage-carousel.scss */
+@media (max-width: 47.9375em) {
+  /* line 173, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .slick__arrow {
+    position: relative;
+    top: unset;
+    left: 10px;
+    width: 20%;
+  }
+}
+@media (min-width: 48em) and (max-width: 64em) {
+  /* line 173, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .slick__arrow {
+    top: 78%;
+    width: 20%;
+  }
+}
+
+/* line 187, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-arrow {
   border-radius: 0;
   font-size: 14px;
@@ -3404,32 +3466,59 @@ ul.main-megamenu {
   padding: 0;
   min-width: auto;
 }
-/* line 143, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 196, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-arrow:hover, .slick-arrow:focus {
   box-shadow: none;
   background-color: none;
 }
 
-/* line 150, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 203, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-prev {
-  left: -120px;
+  left: 10px;
+  font-size: 12px;
   background: url("../../images/slider-arrow-previous.svg") no-repeat left top;
   background-size: 50%;
   text-align: left;
 }
+@media (min-width: 64em) {
+  /* line 203, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .slick-prev {
+    font-size: 12px;
+    left: -50px;
+  }
+}
+@media (min-width: 80em) {
+  /* line 203, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .slick-prev {
+    left: -120px;
+    font-size: 14px;
+  }
+}
 
-/* line 157, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 221, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-next {
-  right: -120px;
+  right: -10px;
   background: url("../../images/slider-arrow-next.svg") no-repeat right top;
   background-size: 50%;
   text-align: right;
 }
+@media (min-width: 64em) {
+  /* line 221, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .slick-next {
+    right: -50px;
+  }
+}
+@media (min-width: 80em) {
+  /* line 221, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .slick-next {
+    right: -120px;
+  }
+}
 
-/* line 164, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 236, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots {
   position: absolute;
-  bottom: 35px;
+  bottom: -35px;
   display: block;
   width: 100%;
   padding: 0;
@@ -3438,8 +3527,28 @@ ul.main-megamenu {
   text-align: center;
   z-index: 1;
 }
+@media (min-width: 40em) {
+  /* line 236, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .slick-dots {
+    bottom: 70px;
+  }
+}
+@media (max-width: 30em) {
+  /* line 236, ../scss/components/paragraphs/_homepage-carousel.scss */
+  .slick-dots {
+    position: relative;
+    float: right;
+    right: 10px;
+    bottom: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    bottom: -30px;
+  }
+}
 
-/* line 176, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 264, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -3452,7 +3561,7 @@ ul.main-megamenu {
   background-color: none;
 }
 
-/* line 188, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 276, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots li button {
   font-size: 0;
   line-height: 0;
@@ -3468,7 +3577,7 @@ ul.main-megamenu {
   box-shadow: none;
 }
 
-/* line 203, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 291, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots li button:before {
   font-size: 32px;
   line-height: 20px;
@@ -3484,7 +3593,7 @@ ul.main-megamenu {
   box-shadow: none;
 }
 
-/* line 218, ../scss/components/paragraphs/_homepage-carousel.scss */
+/* line 306, ../scss/components/paragraphs/_homepage-carousel.scss */
 .slick-dots li.slick-active button:before {
   font-size: 33px;
   opacity: 0.9;
